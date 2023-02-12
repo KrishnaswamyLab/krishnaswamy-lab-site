@@ -50,7 +50,7 @@
 </script>
 <div class="bg-primary h-16"></div>
 
-<div class="hero">
+<div class="hero h-full min-h-screen">
     <div class="hero-content text-center w-full">
         <div class="w-full">
             <h1 class="my-5 text-5xl uppercase">

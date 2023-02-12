@@ -45,7 +45,6 @@
         },
     ]
 </script>
-
 <div class="hero h-[40rem]" style="background-image: url(/images/lab_hero.jpg);">
     <div class="hero-overlay bg-opacity-60"></div>
     <div class="hero-content text-center text-neutral-content">

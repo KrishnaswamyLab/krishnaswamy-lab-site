@@ -29,6 +29,7 @@
 	"type": "module",
 	"dependencies": {
 		"@tailwindcss/container-queries": "^0.1.0",
-		"daisyui": "^2.50.0"
+		"daisyui": "^2.50.0",
+		"svelte-youtube-embed": "^0.1.8"
 	}
 }

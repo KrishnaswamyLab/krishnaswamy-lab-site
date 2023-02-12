@@ -22,7 +22,7 @@
         goto(twitterLink)
     }
 </script>
-	
+
 <div class="navbar inset-x-0 top-0 absolute text-secondary-content">
 	<div class="flex-1">
 		<a class="btn btn-ghost normal-case text-2xl font-bold" href="/">
@@ -68,38 +68,38 @@
 		</div>
 	</div>	
 </div>
+<!-- <div class="bg-primary h-16"></div> -->
 
-<slot></slot>
-
-
-
-<div class="py-8"></div> 
-<footer class="footer p-10 bg-base-300 text-base-content">
-	<div>
-		<div class="animate-pulse rounded-full bg-slate-700 h-24 w-24"></div>
-		<p>
-			The Krishnaswamy Lab at Yale University.
-			<br/>
-			51 Prospect Street, AKW 204, New Haven, CT 06511
-		</p>
-	</div> 
-	<div>
-	  <span class="footer-title">Column 1</span> 	  
-	  <a class="link link-hover">Option 1</a> 
-	</div> 
-	<div>
-		<span class="footer-title">Column 2</span> 	  
+<div class="min-h-screen flex flex-col">
+	<slot></slot>
+	<div class="flex-1 py-8"></div> 	
+	<footer class="footer p-10 bg-base-300 text-base-content">
+		<div>
+			<div class="animate-pulse rounded-full bg-slate-700 h-24 w-24"></div>
+			<p>
+				The Krishnaswamy Lab at Yale University.
+				<br/>
+				51 Prospect Street, AKW 204, New Haven, CT 06511
+			</p>
+		</div> 
+		<div>
+		<span class="footer-title">Column 1</span> 	  
 		<a class="link link-hover">Option 1</a> 
-	</div> 
-	<div>
-		<span class="footer-title">Social</span> 
-		<div class="grid grid-flow-col gap-4">
-			<a href="twitterLink inline-block">
-				<div class="inline-flex gap-2" >
-					<Twitter class="h-6 w-6 stroke-sky-400 fill-sky-400"/>
-					Follow us on Twitter
-				</div>							
-			</a>			
+		</div> 
+		<div>
+			<span class="footer-title">Column 2</span> 	  
+			<a class="link link-hover">Option 1</a> 
+		</div> 
+		<div>
+			<span class="footer-title">Social</span> 
+			<div class="grid grid-flow-col gap-4">
+				<a href="twitterLink inline-block">
+					<div class="inline-flex gap-2" >
+						<Twitter class="h-6 w-6 stroke-sky-400 fill-sky-400"/>
+						Follow us on Twitter
+					</div>							
+				</a>			
+			</div>
 		</div>
-	</div>
-  </footer>
+	</footer>
+</div>

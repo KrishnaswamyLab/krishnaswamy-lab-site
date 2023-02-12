@@ -1,6 +1,6 @@
 [
     {
-        "projectUrl": "/projects/magic",
+        "projectUrl": "magic",
         "projectTitle": "Markov Affinity-based Graph Imputation of Cells",
         "projectAbbreviation": "MAGIC",
         "projectListDescription": "an algorithm that uses graph signal processing for denoising and missing transcript recovery in single cell RNA sequencing. MAGIC successfully recovers gene-gene relationships from data and allows for the prediction of transcription targets.",
@@ -65,7 +65,7 @@
         "youtube": null
     },
     {
-        "projectUrl": "/projects/phate",
+        "projectUrl": "phate",
         "projectTitle": "Potential of Heat-diffusion Affinity-based Transition Embedding",
         "projectAbbreviation": "PHATE",
         "projectListDescription": "a visualization and dimensionality reduction technique that is sensitive to local and global relationships and successfully preserves structures of interest in biological data including cluster structure and branching trajectory structure.",
@@ -107,7 +107,7 @@
         "journalImage": "/images/journals/nature_biotech.jpg",
         "githubLink": "https://github.com/KrishnaswamyLab/PHATE",
         "publicationLink": "https://www.nature.com/articles/s41587-019-0336-3",
-        "publicationImage": "/images/projects/phate_image.jpg",
+        "publicationImage": "/images/projects/phate_image.png",
         "publicationTitle": "PHATE: Visualizing Transitions and Structure for Biological Data Exploration",
         "publicationAbstract": "In the era of 'Big Data' there is a pressing need for tools that provide human interpretable visualizations of emergent patterns in high-throughput high-dimensional data. Further, to enable insightful data exploration, such visualizations should faithfully capture and emphasize emergent structures and patterns without enforcing prior assumptions on the shape or form of the data.\nIn this paper, we present PHATE (Potential of Heat-diffusion for Affinity-based Transition Embedding) - an unsupervised low-dimensional embedding for visualization of data that is aimed at solving these issues. Unlike previous methods that are commonly used for visualization, such as PCA and tSNE, PHATE is able to capture and highlight both local and global structure in the data.",
         "publicationPoster": null,
@@ -115,12 +115,12 @@
         "youtube": null
     },
     {
-        "projectUrl": "/projects/saucie",
+        "projectUrl": "saucie",
         "projectTitle": "Sparse AutoEncoders for Clustering Imputation and Embedding",
         "projectAbbreviation": "SAUCIE",
         "projectListDescription": "a deep autoencoder architecture that allows for unsupervised exploration of data, and has novel regularizations that allow for data denoising, batch normalization, clustering and visualization simultaneously  in various layers of the network.",
         "heroBlurb": "Exploring Single-Cell Data with Deep Multitasking Neural Networks",
-        "heroImage": "/images/saucie_hero.jpg",
+        "heroImage": "/images/projects/saucie_hero.jpg",
         "authors": [
             {
                 "name": "Matthew Amodio"
@@ -163,7 +163,7 @@
             }
         ],
         "journal": "bioRxiv",
-        "journalImage": "/images/projects/journals/bioarchives.png",
+        "journalImage": "/images/journals/bioarchives.png",
         "githubLink": "https://github.com/KrishnaswamyLab/SAUCIE",
         "publicationLink": "https://www.biorxiv.org/content/early/2018/08/27/237065.1",
         "publicationImage": "/images/projects/saucie_image.jpg",
@@ -174,7 +174,7 @@
         "youtube": null
     },
     {
-        "projectUrl": "/projects/meld",
+        "projectUrl": "meld",
         "projectTitle": "Manifold Enhancement of Latent Dimensions",
         "projectAbbreviation": "MELD",
         "projectListDescription": "a graph signal processing tool to analyze multiple scRNA-seq samples from two or more conditions.",
@@ -224,12 +224,12 @@
         "youtube": null
     },
     {
-        "projectUrl": "/projects/phemd",
+        "projectUrl": "phemd",
         "projectTitle": "Phenotypic Earth Mover's Distance",
         "projectAbbreviation": "PhEMD",
         "projectListDescription": "a computational method to quantify relationships between drug perturbations on dozens to hundreds of single cell samples.",
         "heroBlurb": "Single cell analysis of drug perturbations",
-        "heroImage": "/images/projects/phemd_hero.jpeg",
+        "heroImage": "/images/projects/phemd_hero.jpg",
         "authors": [
             {
                 "name": "William S Chen"
@@ -251,7 +251,7 @@
             }
         ],
         "journal": "bioRxiv",
-        "journalImage": "/images/projects/journals/bioarchives.png",
+        "journalImage": "/images/journals/bioarchives.png",
         "githubLink": null,
         "publicationLink": "https://www.biorxiv.org/content/early/2018/12/31/455436",
         "publicationImage": "/images/projects/phemd_image.png",
@@ -262,7 +262,7 @@
         "youtube": null
     },
     {
-        "projectUrl": "/projects/dremi",
+        "projectUrl": "dremi",
         "projectTitle": "conditional Density-based Resampled Estimate of Mutual Information",
         "projectAbbreviation": "DREMI",
         "projectListDescription": "a computational method based on established statistical concepts, to characterize signaling network relationships by quantifying the strengths of network edges and deriving signaling response functions.",
@@ -295,7 +295,7 @@
             }
         ],
         "journal": "Science AAAS",
-        "journalImage": "/images/projects/journals/science_aaas.png",
+        "journalImage": "/images/journals/science_aaas.png",
         "githubLink": "https://github.com/KrishnaswamyLab/scprep/blob/master/python/scprep/stats.py#L82",
         "publicationLink": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4334155/",
         "publicationImage": "/images/projects/dremi_image.jpg",
@@ -306,7 +306,7 @@
         "youtube": null
     },
     {
-        "projectUrl": "/projects/tides",
+        "projectUrl": "tides",
         "projectTitle": "Trajectory Interpolated DREMI Scores",
         "projectAbbreviation": "TIDES",
         "projectListDescription": null,
@@ -330,7 +330,7 @@
             }
         ],
         "journal": "PLOS ONE",
-        "journalImage": "/images/projects/journals/plos_one.png",
+        "journalImage": "/images/journals/plos_one.png",
         "githubLink": null,
         "publicationLink": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0203389",
         "publicationImage": "/images/projects/tides_image.png",
@@ -341,7 +341,7 @@
         "youtube": null
     },
     {
-        "projectUrl": "/projects/dymon",
+        "projectUrl": "dymon",
         "projectTitle": "Dynamics Modeling Networks",
         "projectAbbreviation": "DyMoN",
         "projectListDescription": "A neural network framework for learning stochastic dynamics for generative and embedding purposes. DyMoN serves as a deep model that itself embodies a dynamic system such that the gene logic and features driving the system can be studied.",
@@ -358,10 +358,10 @@
             {"name": "Smita Krishnaswamy"}
         ],
         "journal": "arXiv",
-        "journalImage": "/images/projects/journals/arxiv.png",
+        "journalImage": "/images/journals/arxiv.png",
         "githubLink": null,
         "publicationLink": "https://arxiv.org/abs/1802.03497",
-        "publicationImage": "/images/projects/dymon_image.jpg",
+        "publicationImage": "/images/projects/dymon_image.png",
         "publicationTitle": "Dynamics Modeling Networks: Modeling Dynamics of Biological Systems with Deep Generative Neural Networks",
         "publicationAbstract": "Biological data often contains measurements of dynamic entities such as cells or organisms in various states of progression. However, biological systems are notoriously difficult to describe analytically due to their many interacting components, and in many cases, the technical challenge of taking longitudinal measurements.\nThis leads to difficulties in studying the features of the dynamics, for examples the drivers of the transition. To address this problem, we present a deep neural network framework we call Dynamics Modeling Network or DyMoN. DyMoN is a neural network framework trained as a deep generative Markov model whose next state is a probability distribution based on the current state.\nDyMoN is well-suited to the idiosyncrasies of biological data, including noise, sparsity, and the lack of longitudinal measurements in many types of systems. Thus, DyMoN can be trained using probability distributions derived from the data in any way, such as trajectories derived via dimensionality reduction methods, and does not require longitudinal measurements.\nWe show the advantage of learning deep models over shallow models such as Kalman filters and hidden Markov models that do not learn representations of the data, both in terms of learning embeddings of the data and also in terms training efficiency, accuracy and ability to multitask. We perform three case studies of applying DyMoN to different types of biological systems and extracting features of the dynamics in each case by examining the learned model.",
         "publicationPoster": null,
@@ -369,7 +369,7 @@
         "youtube": null
     },
     {
-        "projectUrl": "/projects/sugar",
+        "projectUrl": "sugar",
         "projectTitle": "Synthesis Using Geometrically Aligned Random-walks",
         "projectAbbreviation": "SUGAR",
         "projectListDescription": "A new kind of data generation algorithm that generates of data geometry rather than density and is able to generate data in sparse regions and predicts hypothetical data points.",
@@ -382,7 +382,7 @@
             {"name": "Smita Krishnaswamy"}
         ],
         "journal": "arXiv",
-        "journalImage": "/images/projects/journals/arxiv.png",
+        "journalImage": "/images/journals/arxiv.png",
         "githubLink": null,
         "publicationLink": "https://arxiv.org/abs/1802.04927",
         "publicationImage": "/images/projects/sugar_image.png",
@@ -390,10 +390,10 @@
         "publicationAbstract": "Many generative models attempt to replicate the density of their input data. However, this approach is often undesirable, since data density is highly affected by sampling biases, noise, and artifacts. We propose a method called SUGAR (Synthesis Using Geometrically Aligned Random-walks) that uses a diffusion process to learn a manifold geometry from the data. Then, it generates new points evenly along the manifold by pulling randomly generated points into its intrinsic structure using a diffusion kernel.\nSUGAR equalizes the density along the manifold by selectively generating points in sparse areas of the manifold. We demonstrate how the approach corrects sampling biases and artifacts, while also revealing intrinsic patterns (e.g. progression) and relations in the data. The method is applicable for correcting missing data, finding hypothetical data points, and learning relationships between data features.",
         "publicationPoster": "https://static1.squarespace.com/static/58fba552f7e0ab0af45cd6fb/t/5bf8ebb64ae237e15d457661/1543039928671/SUGAR_poster.pdf",
         "publicationYear": null,
-        "youtube": "https://youtu.be/VAbUs_nXbs0"
+        "youtube": "VAbUs_nXbs0"
     },
     {
-        "projectUrl": "/projects/magan",
+        "projectUrl": "magan",
         "projectTitle": "Manifold Alignment Generative Adversarial Network",
         "projectAbbreviation": "MAGAN",
         "projectListDescription": "a dual GAN (generative adversarial network) framework that can find correspondences between two data modalities measuring the same system to create an integrated dataset",
@@ -404,7 +404,7 @@
             {"name": "Smita Krishnaswamy"}
         ],
         "journal": "PMLR",
-        "journalImage": "/images/projects/journals/pmlr.png",
+        "journalImage": "/images/journals/pmlr.png",
         "githubLink": null,
         "publicationLink": "http://proceedings.mlr.press/v80/amodio18a.html",
         "publicationImage": "/images/projects/magan_image.png",
@@ -415,7 +415,7 @@
         "youtube": null
     },
     {
-        "projectUrl": "/projects/neuron_editing",
+        "projectUrl": "neuron_editing",
         "projectTitle": "Neuron Editing",
         "projectAbbreviation": null,
         "projectListDescription": "a neural network inference method which maps between datasets with the signal learned on a subset of the data, for example when a drug perturbation is applied to one cell type neuron editing can be used to apply it in silico to another cell type.",
@@ -429,10 +429,10 @@
             {"name": "Smita Krishnaswamy"}
         ],
         "journal": "arXiv",
-        "journalImage": "/images/projects/journals/arxiv.png",
+        "journalImage": "/images/journals/arxiv.png",
         "githubLink": null,
         "publicationLink": "https://arxiv.org/abs/1805.12198",
-        "publicationImage": "/image/projects/neuron_editing_image.png",
+        "publicationImage": "/images/projects/neuron_editing_image.png",
         "publicationTitle": "Out-of-Sample Extrapolation with Neuron Editing",
         "publicationAbstract": "While neural networks can be trained to map from one specific dataset to another, they usually do not learn a generalized transformation that can extrapolate accurately outside the space of training. For instance, a generative adversarial network (GAN) exclusively trained to transform images of cars from light to dark might not have the same effect on images of horses. This is because neural networks are good at generation within the manifold of the data that they are trained on. However, generating new samples outside of the manifold or extrapolating \"out-of-sample\" is a much harder problem that has been less well studied.\nTo address this, we introduce a technique called neuron editing that learns how neurons encode an edit for a particular transformation in a latent space. We use an autoencoder to decompose the variation within the dataset into activations of different neurons and generate transformed data by defining an editing transformation on those neurons.\nBy performing the transformation in a latent trained space, we encode fairly complex and non-linear transformations to the data with much simpler distribution shifts to the neuron's activations. We showcase our technique on image domain/style transfer and two biological applications: removal of batch artifacts representing unwanted noise and modeling the effect of drug treatments to predict synergy between drugs.",
         "publicationPoster": null,
@@ -440,12 +440,12 @@
         "youtube": null
     },
     {
-        "projectUrl": "/projects/trajectory_net",
+        "projectUrl": "trajectory_net",
         "projectTitle": "TrajectoryNet",
         "projectAbbreviation": null,
         "projectListDescription": "Relates continuous normalizing flows with the Breiner formulation of dynamic optimal transport to perform continuous optimal transport in high dimensions in the neural network framework. Uses dynamic optimal transport to infer continuous cell trajectories over time.",
         "heroBlurb": "A Dynamic Optimal Transport Network for Modeling Cellular Dynamics",
-        "heroImage": "/iamges/projects/trajectory_net_hero.png",
+        "heroImage": "/images/projects/trajectory_net_hero.png",
         "authors": [
             {"name": "Alexander Tong"},
             {"name": "Jessie Huang"},
@@ -454,7 +454,7 @@
             {"name": "Smita Krishnaswamy"}
         ],
         "journal": "ICML",
-        "journalImage": "/images/projects/journals/icml.jpeg",
+        "journalImage": "/images/journals/icml.jpeg",
         "githubLink": "https://github.com/KrishnaswamyLab/TrajectoryNet",
         "publicationLink": "http://proceedings.mlr.press/v119/tong20a/tong20a-supp.pdf",
         "publicationImage": "/images/projects/trajectory_net_image.gif",
@@ -462,10 +462,10 @@
         "publicationAbstract": "It is increasingly common to encounter data from dynamic processes captured by static cross-sectional measurements over time, particularly in biomedical settings. Recent attempts to model individual trajectories from this data use optimal transport to create pairwise matchings between time points. However, these methods cannot model continuous dynamics and non-linear paths that entities can take in these systems. To address this issue, we establish a link between continuous normalizing flows and dynamic optimal transport, that allows us to model the expected paths of points over time. Continuous normalizing flows are generally under constrained, as they are allowed to take an arbitrary path from the source to the target distribution. We present {TrajectoryNet}, which controls the continuous paths taken between distributions to produce dynamic optimal transport. We show how this is particularly applicable for studying cellular dynamics in data from single-cell RNA sequencing (scRNA-seq) technologies, and that TrajectoryNet improves upon recently proposed static optimal transport-based models that can be used for interpolating cellular distributions.",
         "publicationPoster": null,
         "publicationYear": 2020,
-        "youtube": "https://www.youtube.com/watch?v=uEEbC3KI8RM"
+        "youtube": "uEEbC3KI8RM"
     },
     {
-        "projectUrl": "/projects/topological_fmri_analysis",
+        "projectUrl": "topological_fmri_analysis",
         "projectTitle": "Topological fMRI Analysis",
         "projectAbbreviation": null,
         "projectListDescription": "A novel fMRI analysis method based on the concepts of cubical persistent homology, which analyzes functions on structured data sets at different scales.",
@@ -481,7 +481,7 @@
             {"name": "Smita Krishnaswamy"}
         ],
         "journal": "arXiv",
-        "journalImage": "/images/projects/journals/arxiv.png",
+        "journalImage": "/images/journals/arxiv.png",
         "githubLink": null,
         "publicationLink": "https://arxiv.org/abs/2006.07882",
         "publicationImage": "/images/projects/topological_fmri_analysis_image.png",
@@ -492,7 +492,7 @@
         "youtube": null
     },
     {
-        "projectUrl": "/projects/gsae",
+        "projectUrl": "gsae",
         "projectTitle": "Geometric Scattering Autoencoder",
         "projectAbbreviation": "GSAE",
         "projectListDescription": "Here we combine the flexibility of deep learning with the representational power of graph scattering transforms to study thermodynamic landscapes within RNA folding.",
@@ -506,7 +506,7 @@
             {"name": "Smita Krishnaswamy"}
         ],
         "journal": "IEEE",
-        "journalImage": "/images/projects/journals/ieee.jpg",
+        "journalImage": "/images/journals/ieee.jpeg",
         "githubLink": null,
         "publicationLink": "https://ieeexplore.ieee.org/document/9378305",
         "publicationImage": "/images/projects/gsae_image.gif",
@@ -574,7 +574,7 @@
         "youtube": null
     },
     {
-        "projectUrl": "/projects/demd",
+        "projectUrl": "demd",
         "projectTitle": "Diffusion Earth Mover's Distance and Distribution Embeddings",
         "projectAbbreviation": "DEMD",
         "projectListDescription": "a fast multi-scale approximation of the Earth Mover's Distance with manifold geodesics as a ground distance between distributions on a manifold.",
@@ -591,7 +591,7 @@
             {"name": "Smita Krishnaswamy"}
         ],
         "journal": "ICML",
-        "journalImage": "/images/projects/journals/icml.jpeg",
+        "journalImage": "/images/journals/icml.jpeg",
         "githubLink": "https://github.com/KrishnaswamyLab/DiffusionEMD",
         "publicationLink": "http://proceedings.mlr.press/v139/tong21a/tong21a-supp.pdf",
         "publicationImage": null,
@@ -599,7 +599,7 @@
         "publicationAbstract": "We propose a new fast method of measuring distances between large numbers of related high dimensional datasets called the Diffusion Earth Mover's Distance (EMD). We model the datasets as distributions supported on common data graph that is derived from the affinity matrix computed on the combined data. In such cases where the graph is a discretization of an underlying Riemannian closed manifold, we prove that Diffusion EMD is topologically equivalent to the standard EMD with a geodesic ground distance. Diffusion EMD can be computed in $\tilde{O}(n)$ time and is more accurate than similarly fast algorithms such as tree-based EMDs. We also show Diffusion EMD is fully differentiable, making it amenable to future uses in gradient-descent frameworks such as deep neural networks. Finally, we demonstrate an application of Diffusion EMD to single cell data collected from 210 COVID-19 patient samples at Yale New Haven Hospital. Here, Diffusion EMD can derive distances between patients on the manifold of cells at least two orders of magnitude faster than equally accurate methods. This distance matrix between patients can be embedded into a higher level patient manifold which uncovers structure and heterogeneity in patients. More generally, Diffusion EMD is applicable to all datasets that are massively collected in parallel in many medical and biological systems.",
         "publicationPoster": null,
         "publicationYear": 2021,
-        "youtube": "https://youtu.be/3Lwi_nYsmDs"
+        "youtube": "3Lwi_nYsmDs"
     },
     {
         "projectUrl": null,
@@ -619,7 +619,7 @@
             {"name": "Smita Krishnaswamy"}
         ],
         "journal": "ICASSP",
-        "journalImage": "/images/projects/journals/arxiv.png",
+        "journalImage": "/images/journals/arxiv.png",
         "githubLink": "https://github.com/KrishnaswamyLab/DiffusionEMD",
         "publicationLink": "https://arxiv.org/abs/2107.12334",
         "publicationImage": "/images/projects/udemd_signal_graphs_image.png",
