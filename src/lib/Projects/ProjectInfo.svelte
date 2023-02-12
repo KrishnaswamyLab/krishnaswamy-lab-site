@@ -4,6 +4,7 @@
     } from '$lib/types'
     export let project: projectInterface
     export let useProjectHero = true
+    export let contentWidthClasses = ''
     
     import { goto } from '$app/navigation';
     import GitHub from '$lib/Icons/GitHub.svelte';
@@ -52,7 +53,7 @@
     {/if}
 
     <div class="flex justify-center">
-        <div class="max-w-full my-4">
+        <div class="max-w-full my-4 {contentWidthClasses}">
             <!-- md:w-[36rem] lg:w-[48rem]  -->
             <div class="text-4xl font-light text-center">
                 {project?.publicationTitle}

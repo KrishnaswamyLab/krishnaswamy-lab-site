@@ -61,7 +61,7 @@
 
 <div class="flex flex-col justify-center">
     {#each data.projects as project, i}
-            <ProjectInfo {project} class="mt-8"/>    
+            <ProjectInfo {project} class="mt-8" contentWidthClasses={"md:w-[36rem] lg:w-[48rem]"}/>    
     {/each}   
     
 </div>
