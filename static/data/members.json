@@ -1,0 +1,290 @@
+[
+    {
+        "name": "Smita Krishnaswamy",
+        "title": "PhD",
+        "image": "/images/members/smita_krishnaswamy.jpeg",
+        "website": "/",
+        "cv": "https://docs.google.com/document/d/1pDm0GNMrXCTxD4E3tDDkYCGE3WUn0V5YPVpVCcAU6cU/edit?usp=sharing",
+        "isAlum": false,
+        "about": "Smita Krishnaswamy is an Associate Professor in the department of Genetics at the Yale School of Medicine and Department of Computer Science in the Yale School of Applied Science and Engineering and a core member of the Program in Applied Mathematics. She is also affiliated with the Yale Center for Biomedical Data Science, Yale Cancer Center, and Program in Interdisciplinary Neuroscience. Smita's research focuses on developing unsupervised machine learning methods (especially graph signal processing and deep-learning) to denoise, impute, visualize and extract structure, patterns and relationships from big, high throughput, high dimensional biomedical data. Her methods have been applied variety of datasets from many systems including embryoid body differentiation, zebrafish development, the epithelial-to-mesenchymal transition in breast cancer, lung cancer immunotherapy, infectious disease data, gut microbiome data and patient data.\nSmita teaches three courses: Machine Learning for Biology (Fall), Deep Learning Theory and applications (spring), Advanced Topics in Machine Learning & Data Mining (Spring). She completed her postdoctoral training at Columbia University in the systems biology department where she focused on learning computational models of cellular signaling from single-cell mass cytometry data. She was trained as a computer scientist with a Ph.D. from the University of Michigan's EECS department where her research focused on algorithms for automated synthesis and probabilistic verification of nanoscale logic circuits. Following her time in Michigan, Smita spent 2 years at IBM's TJ Watson Research  Center as a researcher in the systems division where she worked on automated bug finding and error correction in logic."
+    },
+    {
+        "name": "Jessie Huang",
+        "title": "PhD",
+        "image": "/images/members/jessie_huang.jpg",
+        "website": null,
+        "cv": null,
+        "isAlum": false,
+        "about": "Jessie Huang is a postdoc in the department of computer science at Yale. She is generally interested in machine learning and its applications in medical and biological research. She was previously a postdoc in the Reasoning and Learning Lab at McGill University in Montreal. Her research at McGill focused on developing algorithms to learn robust policies with respect to misspecified rewards in reinforcement learning.\nJessie received her PhD in Mechanical Engineering from the University of Michigan, Ann Arbor. She worked as an engineering consultant at Exponent in the San Francisco bay area for two years before moving to Montreal. Before machine learning, she studied fracture mechanics and statistics and how to utilize the natural failure of materials to develop micro-scale tools for biomedical applications"
+    },
+    {
+        "name": "Dennis Shung ",
+        "title": null,
+        "image": "/images/members/dennis_shung.jpeg",
+        "website": null,
+        "cv": null,
+        "isAlum": false,
+        "about": "Dennis is a board-certified physician trained in Internal Medicine and  Gastroenterology. He is working on applying unsupervised machine  learning techniques to electronic health record data.\nDennis grew up in Plano, Texas and attended Rice University and Baylor College of Medicine prior to his Internal Medicine residency training at Yale-New Haven Hospital. He is currently completing his clinical fellowship in Gastroenterology & Hepatology with a Master's of Health Science in Clinical Informatics at Yale; in this capacity, he is developing machine learning models for predicting outcomes in acute  gastrointestinal bleeding. His long-term goal is to become a physician data scientist who creates, validates, and tests integrated machine learning models to improve risk stratification for patients."
+    },
+    {
+        "name": "Matt Amodio",
+        "title": "PhD",
+        "image": "/images/members/matt_amodio.png",
+        "website": null,
+        "cv": null,
+        "isAlum": true,
+        "about": "Matt Amodio is currently a doctoral candidate at Yale University in the Department of Computer Science. His research interest is in artificial intelligence, specifically deep learning. He enjoys developing new statistical and information theoretical techniques for use in neural networks, as well as practical optimization techniques general to any learning task.\nMatt grew up in a suburb of Cleveland, Ohio. He completed his undergraduate studies at the Ohio State University before working in D.C. for two years. He is an ardent baseball fan as well as a trivia enthusiast."
+    },
+    {
+        "name": "Egbert Castro",
+        "title": null,
+        "image": "/images/members/egbert_castro.jpeg",
+        "website": null,
+        "cv": null,
+        "isAlum": false,
+        "about": "Egbert Castro is a PhD student in the Computational Biology and Bioinformatics track at Yale University. He is interested in methods for learning informative and useful representations of biomolecules. Currently his work in the Krishnaswamy lab focuses on learning latent representations of graph-structured data such as miRNA secondary structure ensembles.\nPreviously he majored in Pharmacological Chemistry with a minor in Mathematics at UC San Diego. While at UC San Diego, he performed research in the lab of Dr. Rommie Amaro applying molecular dynamics and Brownian dynamics in drug discovery. After graduating, he interned at Genentech applying machine learning to chemical property prediction tasks"
+    },
+    {
+        "name": "Manik Kuchroo",
+        "title": null,
+        "image": "/images/members/manik_kuchroo.png",
+        "website": null,
+        "cv": null,
+        "isAlum": false,
+        "about": "Manik Kuchroo is an MD candidate at Yale School of Medicine and is interested in the intersection of genomics, immunology and oncology. His current projects in the lab include developing a novel manifold based clustering algorithm for single cell genomics data, understanding tumor infiltrating immune cells developmental progression using deep learning and helping characterize interactions in the exoproteome using phage and yeast display technologies in collaboration with the Ring lab.\nManik is originally from Newton, Massachusetts and graduated from Harvard College with a BA in Neurobiology. Manik's interest in the intersection of genomics and immunology was piqued during his time in Aviv Regev's Lab at the Broad Institute and during his time with Phil De Jager and Nikolaos Patsopoulos at Harvard Medical School.\nWhile not in the lab or in the hospital, Manik loves playing cricket and watching TV shows."
+    },
+    {
+        "name": "Aarthi Venkat",
+        "title": null,
+        "image": "/images/members/aarthi_venkat.jpg",
+        "website": null,
+        "cv": null,
+        "isAlum": false,
+        "about": "Aarthi is a PhD student in Computational Biology and Bioinformatics at Yale University. She is interested in developing improved methods to study cancer immunogenomics. To this end, her research focuses on machine learning and graph-based methods that leverage the rich properties of single-cell RNA sequencing data.Aarthi graduated from UC San Diego with a B.S. in Bioengineering: Bioinformatics. While there, she performed resesarch in Dr. Ferhat Ay's lab, where she analyzed Hi-C sequencing data to interpret the conserved organizational features of parasite genomes. She also worked with Dr. Theresa Gaasterland to study cancer genomics and structural variation. Over the summers, Aarthi interned at Auris Health and Regeneron, where she further grew her skillset in synergistic approaches to computer science and biological discovery."
+    },
+    {
+        "name": "Monica Munnangi",
+        "title": null,
+        "image": "/images/members/monica_munnangi.jpeg",
+        "website": null,
+        "cv": null,
+        "isAlum": false,
+        "about": "Monica is a Postgraduate Researcher at Yale School of Medicine. Her research interest is Machine Learning for Healthcare. She is currently working on time series analysis with deep learning models. Monica has graduated with Masters in Computer Science from University of Massachusetts Amherst where she worked at Information Fusion Lab in the intersection of Medical Imaging and deep Learning. She interned at GE Healthcare during her graduate study where she used Computer Vision algorithms for Chest X-Ray imaging."
+    },
+    {
+        "name": "Dhananjay Bhaskar",
+        "title": "PhD",
+        "image": "/images/members/dhananjay_bhaskar.jpg",
+        "website": null,
+        "cv": null,
+        "isAlum": false,
+        "about": "Dhananjay Bhaskar is a postdoc in Genetics at the School of Medicine and a Yale-Boehringer Ingelheim Biomedical Data Science Fellow. His interdisciplinary research combines topological data analysis, machine learning, and mathematical modeling with applications in biophysics and biomedical research. Previously he worked on quantitative analysis of pattern formation and phase transitions in active matter, automated embryo selection for IVF, and unsupervised methods for analyzing cell shape and motility in time-lapse microscopy.Dhananjay received his Ph.D. in Biomedical Engineering and Sc.M. in Data Science from Brown University. Prior to Brown, he studied Computer Science and Applied Mathematics at the University of British Columbia. When he is not busy transforming coffee beans into code, Dhananjay enjoys hiking, swimming, and playing badminton."
+    },
+    {
+        "name": "Sasha Safonova",
+        "title": null,
+        "image": "/images/members/sasha_safonova.jpg",
+        "website": null,
+        "cv": null,
+        "isAlum": false,
+        "about": "Sasha is a PhD student in Astronomy at Yale University, working with Smita Krishnaswamy and Nikhil Padmanabhan. Her scientific interests include computational cosmology and the large scale structure of the Universe. She is working on harnessing machine learning to enhance the connection between theory and observations on the largest scales in the Universe. Sasha got her Master's in Physics at Durham University, where she created a mock galaxy catalog from cosmological simulations, working with Prof. Shaun Cole and Dr. Peder Norberg. Prior to Durham, Sasha majored in physics at the University of Arizona and performed research at the SLAC National Accelerator Laboratory, Lawrence Livermore National Laboratory and MIT's Haystack Observatory. She has dedicated many nights to collecting cosmological data at the Kitt Peak National Observatory."
+    },
+    {
+        "name": "Andrew Benz",
+        "title": null,
+        "image": "/images/members/andrew_benz.jpg",
+        "website": "https://andrewbe.nz/",
+        "cv": null,
+        "isAlum": false,
+        "about": "Andrew is pursuing a BS/MS degree in math at Yale and has been involved in the Krishnaswamy Lab since 2019. His research interests revolve around applying spectral graph theory to high-dimensional biological data. He spends his spare time reading and playing bass guitar."
+    },
+    {
+        "name": "Kincaid MacDonald",
+        "title": null,
+        "image": "/images/members/kincaid_macdonald.jpg",
+        "website": null,
+        "cv": null,
+        "isAlum": false,
+        "about": "Kincaid is an undergraduate at Yale studying mathematics, computer science, philosophy, and exploring their practical intersection in artificial intelligence. He is particularly interested in developing mathematical tools to shine light into the \"black box\" of modern deep neural networks."
+    },
+    {
+        "name": "Abhinav Godavarthi",
+        "title": null,
+        "image": "/images/members/abhinav_godavarthi.jpeg",
+        "website": null,
+        "cv": null,
+        "isAlum": false,
+        "about": "Abhi is an undergrad studying applied math and chemistry. In the lab he focuses on unsupervised and deep learning methods for multiomics, protein function prediction, and molecular simulation. In his free time he enjoys singing, playing the cello, and losing at ping pong."
+    },
+    {
+        "name": "Michał Gerasimiuk",
+        "title": null,
+        "image": "/images/members/michał_gerasimiuk.jpg",
+        "website": null,
+        "cv": null,
+        "isAlum": false,
+        "about": "Michał is an undergraduate at Yale studying computer science. His work in the lab includes building unsupervised learning models that handle electronic health records data and exploring deep neural networks as components of brain-computer interfaces. When not in class, you can find him playing in chess tournaments, reading, or practicing taekwondo."
+    },
+    {
+        "name": "Katherine Du",
+        "title": null,
+        "image": "/images/members/katherine_du.png",
+        "website": null,
+        "cv": null,
+        "isAlum": false,
+        "about": "Katherine is an undergrad at Yale studying biology and statistics. In the lab, she is currently working on single-cell RNA sequencing (scRNA-seq) analysis, applying tools developed by Krishnaswamy Lab such as PHATE and MELD. Aside from research, she ice skates with the Yale Collegiate Figure Skating Club and is passionate about mental health advocacy and education."
+    },
+    {
+        "name": "Tom Wallenstein",
+        "title": null,
+        "image": "/images/members/tom_wallenstein.jpeg",
+        "website": "https://tomwallenstein.com/",
+        "cv": null,
+        "isAlum": false,
+        "about": "om is an undergraduate at Yale majoring in Computer Science and joined the lab to work on his senior project. He is generally interested in machine learning, specifically reinforcement learning. Outside of his studies, he is a goalkeeper of Yale men's soccer team."
+    },
+    {
+        "name": "Jackson Grady",
+        "title": null,
+        "image": "/images/members/jackson_grady.jpg",
+        "website": null,
+        "cv": null,
+        "isAlum": false,
+        "about": "Jackson is an undergrad at Yale studying Computer Science. In the lab, he is interested in thinking about low-dimensional encodings of complex data, and how they can be transformed to generate new data. In his free time, Jackson enjoys singing and cooking!"
+    },
+    {
+        "name": "Guy Wolf",
+        "title": "PhD",
+        "image": "",
+        "website": null,
+        "cv": null,
+        "isAlum": true,
+        "about": "Guy Wolf received the M.Sc. and Ph.D. degrees in computer science from Tel Aviv University in 2009 and 2014, respectively. During his M.Sc. studies he served in the Israeli Defense Forces in software design and development roles. Between the years 2013 and 2015 he was a post-doctoral researcher in the Computer Science Department at Ècole Normale Supérieure in Paris. Since 2015, he is a Gibbs Assistant Professor in the Applied Math Program at Yale University. One of the main goals of his current research at Yale is to create meaningful interaction between data analysis aspects of machine learning, applied mathematics, and computational sciences, especially in Big Data applications. His research interests include exploratory & high-dimensional data analysis, manifold learning, diffusion geometries, machine learning, and deep learning. He now has his own lab at the University of Montreal."
+    },
+    {
+        "name": "David van Dijk",
+        "title": "PhD",
+        "image": "",
+        "website": null,
+        "cv": null,
+        "isAlum": true,
+        "about": "Previously, David was a postdoc in the Krishnaswamy lab where he developed new machine learning tools for biomedical data analysis. David co-developed tools such as MAGIC, PHATE, and SAUCIE. David is now an Assistant Professor and started his own lab at Yale."
+    },
+    {
+        "name": "Jay Stanley",
+        "title": "PhD",
+        "image": "",
+        "website": null,
+        "cv": null,
+        "isAlum": true,
+        "about": "Jay Stanley was born in Arkansas. He graduated with his BA in Biology from Hendrix College in 2016. At Yale, Jay is working on his PhD in Computational Biology and Bioinformatics. His research interests are Spectral Graph Theory, Signal Processing, Dimensionality reduction, data visualization. Jay is currently pursing a postdoctoral fellowship at Yale University.\nJay is an avid music enthusiast, rock climber, and whitewater kayaker."
+    },
+    {
+        "name": "Ngan Vu",
+        "title": null,
+        "image": "",
+        "website": null,
+        "cv": null,
+        "isAlum": true,
+        "about": "NV joined the lab as a senior in Yale College pursuing a combined B.S./M.S. in Computer Science and a B.A. in Statistics and Data Science. She is focused on studying and developing graph-based and deep learning methods. She is also interested in creating good platforms and tools for researchers, which was what she worked on while interning at Google Research and Facebook Feed Machine Learning. NV is currently working on speeding up kernel methods, including ones developed by Krishnaswamy Lab such as MAGIC and PHATE. While not coding, she spends lots of time ice skating with Yale Collegiate Figure Skating Club and playing percussion for Davenport Pops Orchestra. NV is currently a researcher at Google Brain."
+    },
+    {
+        "name": "Ofir Lindenbaum",
+        "title": "PhD",
+        "image": "",
+        "website": null,
+        "cv": null,
+        "isAlum": true,
+        "about": "Ofir Lindenbaum completed a postdoctoral fellowship in the Krishnaswamy Lab from 2017 to 2018, and is now a Gibbs Assistant Professor in the Yale University Applied Mathematics Program. Ofir’s areas of interest include machine learning, applied and computational harmonic analysis, musical signals analysis."
+    },
+    {
+        "name": "Kevin Moon",
+        "title": "PhD",
+        "image": "",
+        "website": null,
+        "cv": null,
+        "isAlum": true,
+        "about": "Kevin completed a postdoctoral fellowship in the Krishnaswamy Lab from 2016 to 2018, and is now an Assistant Professor in the Department of Mathematics and Statistics at Utah State University, where he focuses on the development of theory and applications in machine learning."
+    },
+    {
+        "name": "Alexander Strzalkowski",
+        "title": null,
+        "image": "",
+        "website": null,
+        "cv": null,
+        "isAlum": true,
+        "about": "Alexander completed his undergraduate thesis in Applied Mathematics with the Krishnaswamy Lab in 2017. He is currently a PhD student in the Department of Computer Science at Princeton University, where he is focusing on utilizing Probabilistic Graphical Models to extract structure from Electronic Healthcare Records."
+    },
+    {
+        "name": "Krishnan Srinivasan",
+        "title": null,
+        "image": "",
+        "website": null,
+        "cv": null,
+        "isAlum": true,
+        "about": "Krishnan completed his undergraduate thesis in the Krishnaswamy Lab in 2016 and 2017, and is now a PhD Student in the Computer Science Department at Stanford University, where he's researching reinforcement learning and its applications to robot learning."
+    },
+    {
+        "name": "Jad Habouch",
+        "title": null,
+        "image": "",
+        "website": null,
+        "cv": null,
+        "isAlum": true,
+        "about": "Jad completed a Computational Biology Lab Rotation with the Krishnaswamy Lab in 2017 and 2018, and is now a Masters' Student at Yale University, where he's working on the intersection of Microbiology, Immunology, and Environmental Science research."
+    },
+    {
+        "name": "Will Chen",
+        "title": null,
+        "image": "",
+        "website": null,
+        "cv": null,
+        "isAlum": true,
+        "about": "William Chen was an MD candidate at the Yale School of Medicine. He graduated with distinction from Stanford University with a B.S. in Computer Science and is most interested in computational cancer genomics. He worked on investigating the effects of various small-molecule inhibitors on epithelial-to-mesenchymal transition (EMT) in breast cancer using mass cytometry in the lab. He is now pursuing residency at UCSF."
+    },
+    {
+        "name": "Alex Gonopolskiy",
+        "title": null,
+        "image": "",
+        "website": null,
+        "cv": null,
+        "isAlum": true,
+        "about": "Alex Gonopolskiy was a software developer associated with the lab and worked on developing novel algorithms for the analysis of biological data. Prior to that he has worked in algorithmic trading for several years. He graduated from the University of Michigan in 2007 obtained and his MA degree in Computer Science specializing in Intelligent Systems. He is currently a Data engineer at QuantCo."
+    },
+    {
+        "name": "Daniel Burkhardt",
+        "title": null,
+        "image": "",
+        "website": null,
+        "cv": null,
+        "isAlum": true,
+        "about": "Daniel earned his B.S. in Microbiology at the University of Massachusetts, Amherst in 2015. He studied the effects of simulated climate warming on soil microbial communities with Dr. Kristen DeAngelis, and this work became the focus of his senior thesis. Daniel joined the PhD program in Genetics at Yale University in 2015. Under the mentorship of Smita Krishnaswamy, Daniel has worked on developing unsupervised machine learning algorithms for analysis of high dimensional biomedical data. Previous projects include manifold learning methods for dimensionality reduction and analysis of experimental perturbations and a neural network for archetypal analysis."
+    },
+    {
+        "name": "Scott Gigante",
+        "title": null,
+        "image": "",
+        "website": null,
+        "cv": null,
+        "isAlum": true,
+        "about": "Scott was a PhD student in Computational Biology and Bioinformatics, and jointly advised by Smita Krishnaswamy and Ronald Coifman. His research interests include deep learning and graph-based methods for the analysis of single-cell genomics data.\nScott completed his Bachelor of Science in Mathematics & Statistics at the University of Melbourne, Australia. Before coming to Yale, Scott was a research technician at the Walter and Eliza Hall Institute of Medical Research, where he developed computational methods for detecting and analysing epigenetic modifications to DNA in nanopore sequencing.\nScott is passionate about open, reproducible science and open source software. In his spare time, Scott enjoys singing with the Yale Camerata and cycling with the Yale Cycling Team."
+    },
+    {
+        "name": "Feng Gao",
+        "title": null,
+        "image": "",
+        "website": null,
+        "cv": null,
+        "isAlum": true,
+        "about": "Feng Gao was a postdoc in the Department of Genetics at the Yale School of Medicine. His research interests lie in machine learning, deep learning and their applications in biomedical research. Feng received his PhD in Computational Science and Environmental Toxicology from Michigan State University in 2019. During his PhD study, Feng studied geometric scattering transform for graphs and manifolds as well as molecular dynamics simulation of complex environmental systems. In his spare time, he likes travelling and photography."
+    },
+    {
+        "name": "Alexander Tong",
+        "title": null,
+        "image": "",
+        "website": "https://alextong.net/",
+        "cv": null,
+        "isAlum": true,
+        "about": "Alex, now at MILA, was a computer science PhD student at Yale University.  His research interests are in machine learning and algorithms. Currently, he is working on optimal transport methods for single-cell data using a combination of graph and deep learning methods.\nAlex grew up in Seattle, Washington. He completed B.S. and M.S. degrees in computer science from Tufts University in 2017. He splits his spare time between racing sailboats and trail running."
+    }
+]
