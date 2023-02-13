@@ -19,20 +19,24 @@
         about: lipsum
     }
 
-    const styleCardSide = member.image ? "card-side" : ""
-    const styleCardWidth = member.image ? "min-w-min w-1/2" : ""
+    $: styleCardSide = member.image ? "md:card-side" : ""
+    $: styleCardWidth = member.image ? "md:min-w-min md:w-1/2" : ""
 
     const toCv = () => goto(String(member?.cv))
     const toWebsite = () => goto(String(member?.website))
 </script>
 
-<div class="p-4 m-4 card {styleCardSide} ease-in-out duration-300 hover:shadow-2xl">
+<div class="p-4 m-4 card {styleCardSide} ease-in-out duration-300 ">
+    <!-- hover:shadow-2xl -->
     {#if member?.image}
-    <figure>
+    <figure class="">
         <div class="avatar inline-flex place-content-center place-items-start">
             <div class="w-48 min-w-max max-h-max h-48 inline-flex m-8 mask mask-squircle">
                 <!--  -->
-            <img src={member?.image} alt="{`${member?.name} profile image`}"/>
+                <img 
+                    src={member?.image} 
+                    alt="{`${member?.name} profile image`}"
+                />
             </div>
         </div>            
     </figure>   
@@ -41,7 +45,9 @@
         <h2 class="card-title sticky">
             {member?.name}{#if member?.title}, {member?.title}{/if}
         </h2>
-        <div class="max-h-48 overflow-y-scroll">
+        <div class="
+        ">
+            <!-- max-h-48 overflow-y-scroll -->
             {member?.about}
         </div>
         {#if member?.website || member?.cv}

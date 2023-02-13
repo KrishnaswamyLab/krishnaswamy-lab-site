@@ -40,8 +40,8 @@
         {
             dept: 'Computer Science Department',
             school: 'Yale School of Applied Science and Engineering',
-            street: '51 Prospect Street',
-            room: 'AKW 204',
+            street: '10 Hillhouse Avenue',
+            room: 'DL 227',
             city: 'New Haven',
             state: 'CT',
             zip: '06511',
@@ -61,14 +61,20 @@
             </p>
 
             <div class="py-8 inline-flex place-content-center w-full md:w-1/2 xl:w-full">
-                <div class="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2 place-items-center break-words">
+                <div class="
+                    w-full grid grid-cols-1 md:grid-cols-2 
+                    xl:grid-cols-4 gap-2 place-items-center break-word
+                    text-lg
+                    "
+                >
                     {#each contactInfos as {bold, pref, link, text} }
                         <div>
                             <span class="capitalize font-bold">
                                 {bold}
                             </span>
                             <span class="">
-                                {pref}                 
+                                {pref}      
+                                <br>           
                                 <a class="link" href="{link}">
                                     {text}
                                 </a> 
@@ -82,7 +88,11 @@
             <div class="p-8 inline-flex place-content-center w-full">
                 <div class="grid grid-cols-1 md:grid-cols-2  w-full gap-8">
                     {#each departments as {dept, school, street, room, city, state, zip}}
-                        <div class="card card-compact bg-base-100 shadow-xl">
+                        <div class="
+                            card card-compact 
+                            bg-base-100 hover:shadow-2xl
+                            ease-in-out duration-300
+                        ">
                             <div class="card-body">
                                 <div class="card-title text-center inline-block">
                                     {dept} | {school}

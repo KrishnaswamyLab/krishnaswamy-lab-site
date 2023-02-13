@@ -309,7 +309,7 @@
         "projectUrl": "tides",
         "projectTitle": "Trajectory Interpolated DREMI Scores",
         "projectAbbreviation": "TIDES",
-        "projectListDescription": null,
+        "projectListDescription": "Learning time-varying information flow form single-cell epithelial to mesenchymal transition data",
         "heroBlurb": "Learning time-varying information flow form single-cell epithelial to mesenchymal transition data",
         "heroImage": null,
         "authors": [

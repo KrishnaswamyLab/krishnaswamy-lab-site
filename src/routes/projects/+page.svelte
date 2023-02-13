@@ -43,7 +43,12 @@
     </div>
 </div>
 
-<div class="py-8"></div> 
+<div class="flex justify-center py-8">
+    <div class="max-w-fit w-[42rem] ">
+        <div class="divider divider-vertical"></div>
+    </div>
+</div>
+
 
 
 <div class="px-8 flex justify-center">

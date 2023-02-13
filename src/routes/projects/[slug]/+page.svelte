@@ -16,10 +16,10 @@
 
 <ProjectHero project={data?.project} />
 
-<div class="flex flex-col md:flex-row justify-center">
+<div class="flex flex-col md:flex-row justify-center mt-8 mx-16">
     <div class="md:w-[72rem] block">   
         <div class="inline-flex flex-col md:flex-row ">
-            <div class="w-[28rem]">  
+            <div class="max-w-min md:w-[16rem]  mt-4">  
                 <div class="hidden md:block sticky top-0">
                     <span class="font-extralight text-slate-700 text-4xl">
                         Projects
@@ -49,7 +49,7 @@
                 </div>                              
             </div> 
             
-            <div>
+            <div class="md:ml-16 w-full">
                 <ProjectInfo  useProjectHero="{false}" project={data?.project} />
             </div>
         </div>            
