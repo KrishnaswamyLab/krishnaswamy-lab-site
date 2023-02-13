@@ -1,16 +1,17 @@
 <script>
+    import {LabTwitterLink, LabGitHubLink} from '$lib/utils';
 
     const contactInfos = [
         {
             bold: 'Follow us',
             pref: 'on',
-            link: 'https://twitter.com/KrishnaswamyLab',
+            link: LabTwitterLink,
             text: 'Twitter',
         },
         {
             bold: 'Access',
             pref: 'on',
-            link: 'https://github.com/KrishnaswamyLab',
+            link: LabGitHubLink,
             text: 'GitHub',
         },
         {

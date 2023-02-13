@@ -117,7 +117,7 @@
         </div>
 
         <a href="https://scholar.google.com/citations?user=l2Pr9m8AAAAJ&hl=en&oi=ao">
-            <img class="h-12" src="/images/journals/google_scholar.jpg" alt="">
+            <img class="h-12" src="/images/journals/google_scholar.jpeg" alt="">
         </a>
 
         <div class="divider divider-vertical"></div>

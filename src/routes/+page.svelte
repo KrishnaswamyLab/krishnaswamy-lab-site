@@ -2,16 +2,10 @@
 	import { goto } from '$app/navigation';
     import Twitter from "$lib/Icons/Twitter.svelte";
 
-    const twitterLink = "https://twitter.com/KrishnaswamyLab"
-    const toTwitter = () => {
-        goto(twitterLink)
-    }
-    const lipsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere 
-            lectus libero, non feugiat odio finibus sed. Lorem ipsum dolor sit amet, consectetur adipiscing 
-            elit. Ut sollicitudin interdum metus sit amet pretium. In hac habitasse platea dictumst. Fusce 
-            auctor nibh ante, porttitor commodo felis faucibus eget. Donec purus nunc, sollicitudin sed pharetra 
-            quis, posuere a leo. Integer pellentesque lorem eget lobortis auctor. Nullam in tellus ac risus 
-            luctus pharetra. Nunc et scelerisque erat, at sodales mauris. `
+    import {openUrlInNewTab, lipsum, LabTwitterLink} from '$lib/utils'
+    
+    const toTwitter = () => openUrlInNewTab(LabTwitterLink)
+
     const categories = [
         {
             title: 'Data Geometry and Topology',

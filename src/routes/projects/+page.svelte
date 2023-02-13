@@ -2,19 +2,17 @@
 	/** @type {import('./$types').PageData} */
     export let data;
     import { goto } from '$app/navigation';
+    import {LabTwitterLink, LabGitHubLink, openUrlInNewTab} from '$lib/utils';
 
     import ProjectListItem from '$lib/Projects/ProjectListItem.svelte';
     import ProjectInfo from '$lib/Projects/ProjectInfo.svelte';
     import Twitter from "$lib/Icons/Twitter.svelte";
     import GitHub from '$lib/Icons/GitHub.svelte';
-	const twitterLink = "https://twitter.com/KrishnaswamyLab"
-    const toTwitter = () => {
-        goto(twitterLink)
-    }
-    const githubLink = "https://github.com/KrishnaswamyLab"
-    const toGitHub = () => {
-        goto(githubLink)
-    }
+
+	
+    const toTwitter = () => openUrlInNewTab(LabTwitterLink)
+    const toGitHub = () => openUrlInNewTab(LabGitHubLink)
+        
 </script>
 
 <!-- <div class="bg-primary h-16"></div> -->

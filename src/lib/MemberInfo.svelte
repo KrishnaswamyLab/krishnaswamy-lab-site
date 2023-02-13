@@ -1,14 +1,10 @@
 <script lang="ts">
     import { goto } from '$app/navigation';
+    import { browser } from '$app/environment';
     import type {member as memberInterface} from '$lib/types'
-    const lipsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere 
-            lectus libero, non feugiat odio finibus sed. Lorem ipsum dolor sit amet, consectetur adipiscing 
-            elit. Ut sollicitudin interdum metus sit amet pretium. In hac habitasse platea dictumst. Fusce 
-            auctor nibh ante, porttitor commodo felis faucibus eget. Donec purus nunc, sollicitudin sed pharetra 
-            quis, posuere a leo. Integer pellentesque lorem eget lobortis auctor. Nullam in tellus ac risus 
-            luctus pharetra. Nunc et scelerisque erat, at sodales mauris. `
-    
 
+    import {openUrlInNewTab, lipsum} from '$lib/utils'
+        
     export let member: memberInterface = {
         name: 'Lab Member',
         title: 'PhD',
@@ -22,8 +18,15 @@
     $: styleCardSide = member.image ? "md:card-side" : ""
     $: styleCardWidth = member.image ? "md:min-w-min md:w-1/2" : ""
 
-    const toCv = () => goto(String(member?.cv))
-    const toWebsite = () => goto(String(member?.website))
+    const toCv = () => {
+        let url = String(member?.cv)
+        openUrlInNewTab(url)
+    }
+    const toWebsite = () => {
+        let url = String(member?.website)
+        openUrlInNewTab(url)
+        
+    }
 </script>
 
 <div class="p-4 m-4 card {styleCardSide} ease-in-out duration-300 ">

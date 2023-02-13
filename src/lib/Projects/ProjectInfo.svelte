@@ -2,14 +2,16 @@
     import type {
         project as projectInterface
     } from '$lib/types'
-    export let project: projectInterface
-    export let useProjectHero = true
-    export let contentWidthClasses = ''
-    
     import { goto } from '$app/navigation';
     import GitHub from '$lib/Icons/GitHub.svelte';
     import Youtube from "svelte-youtube-embed";
     import ProjectHero from '$lib/Projects/ProjectHero.svelte';
+
+    export let project: projectInterface
+    export let useProjectHero = true
+    export let contentWidthClasses = ''
+    
+    
     $: heroTitle = project?.projectAbbreviation 
                             ? project?.projectAbbreviation 
                             : project.projectTitle
