@@ -1,101 +1,91 @@
-<script>
+<script lang="ts">
+/** @type {import('./$types').PageData} */
+export let data;
 
-    const categories = [
-        {
-            category: 'Unsupervised Deep Learning',
-            links: [
-                {
-                    href:"/projects/saucie",
-                    text: 'SAUCIE'
-                },
-                {
-                    href:"/projects/dymon",
-                    text: 'DyMoN'
-                }
-            ]
-        },
-        {
-            category: 'Manifold Learning and Data Geometry',
-            links: [
-                {
-                    href:"/projects/magic",
-                    text: 'MAGIC'
-                },
-                {
-                    href:"/projects/phate",
-                    text: 'PHATE'
-                },
-                {
-                    href:"/projects/saucie",
-                    text: 'SAUCIE'
-                },
-                {
-                    href:"/projects/sugar",
-                    text: 'SUGAR'
-                },
-            ]
-        },
-        {
-            category: 'Graph Signal Processing and Filtering',
-            links: [
-                {
-                    href: null,
-                    text: 'Diffusion Maps'
-                },
-                {
-                    href:"/projects/magic",
-                    text: 'MAGIC'
-                },
-                {
-                    href:"/projects/phate",
-                    text: 'PHATE'
-                },
-            ]
-        },
-        {
-            category: 'Information Theory and Gene Logic',
-            links: [
-                {
-                    href:"/projects/dremi",
-                    text: 'DREMI'
-                },
-                {
-                    href:"/projects/magic",
-                    text: 'MAGIC'
-                }
-            ]
-        },        
-        {
-            category: 'Single-Cell, High-Throughput, and High-Dimensional Data',
-            links: [
-                {
-                    href: null,
-                    text: 'Single-cell RNA sequencing (e.g. 10x genomics)'
-                },
-                {
-                    href: null,
-                    text: 'CyTOF'
-                }
-            ]
-        },
-        {
-            category: 'Biological Systems',
-            links: [
-                {
-                    href: null,
-                    text: 'Developmental (Embryoid Bodies, Brain organoids, Mouse Brain, Hematopoiesis)'
-                },
-                {
-                    href: null,
-                    text: 'Immunology (Dengue, Zika, HIV, Cancer Immunotherapy, Lupus, Type 1 Diabetes)'
-                },
-                {
-                    href: null,
-                    text: 'Cancer (EMT, Immunotherapy)'
-                }
-            ]
-        },
-    ]
+import type {
+    author as authorInterface,
+    publication as publicationInterface
+} from '$lib/types'
+
+const makeAuthorString = (authors:authorInterface[]) => {
+    let a = authors.map(({name}) => name.join(" "))
+    if (a.length > 10) {
+        a = [...a.slice(0, 7), '...',...a.slice(-3, -1)]
+    }
+    let s = ''
+    for (let index = 0; index < a.length; index++) {
+        const name = a[index];
+        if (name === 'Smita Krishnaswamy') {
+            s += `<span class="font-bold">${name}</span>`
+        } else {
+            s += name
+        }
+        if (index < a.length - 2) {
+            s += ', '
+        } else if (index < a.length - 1) {
+            s += ' &amp; '
+        }
+    }
+    return s
+}
+
+const makeDateString = (pub:publicationInterface) => {
+    if (pub?.year === null) return ''
+    let s
+    if (pub?.month && pub?.year) {
+        s = `(${pub?.month}, ${pub?.year})`
+    } else if (pub?.year) {
+        s = `(${pub?.year})`
+    } else {
+        return ''
+    }
+    return s
+}
+
+
+const makeVolumeIssueString = (pub:publicationInterface) => {
+    if (pub?.volume === null) return ''
+    let s = ''
+    if (pub?.issue && pub?.volume) {
+        s = `${pub?.issue}:<span class="font-bold">${pub?.volume}</span>.`
+    } else if (pub?.volume) {
+        s = `<span class="font-bold">${pub?.volume}</span>.`
+    } else {
+        return ''
+    }
+    if (pub?.pages) {
+        if (pub?.pages.indexOf((pub?.volume as string)) >= 0) {
+            return s
+        } else {
+            s += ` ${pub?.pages}`
+        }
+
+    }
+    return s
+}
+
+const makePublicationString = (pub:publicationInterface) => {
+    let s = ``
+    s += `${makeDateString(pub)}`
+    s += ` ${makeVolumeIssueString(pub)}`
+
+    let p = pub?.periodical ? pub?.periodical : ''
+    p = p.replace(':', '')
+    p = p.replace(pub?.volume as string, '')
+    p = p.replace(pub?.issue as string, '')
+    p = p.replace(pub?.month as string, '')
+    p = p.replace(pub?.year as string, '')
+    p = p.replace('|', '')
+    s += ` ${p}`
+    return s
+}
+
+const makeKeywordsString = (pub:publicationInterface) => {
+    let kws = pub?.keywords
+    if (!kws) return ''
+    return (kws as string[]).join(', ') 
+}
+
 </script>
 
 <div class="hero h-[40rem]" style="background-image: url(/images/publications_hero.jpeg);">
@@ -127,7 +117,7 @@
         </div>
 
         <div class="flex flex-col gap-8">
-            {#each categories as {category, links}}
+            {#each data?.categories as {category, links}}
             <div class="flex flex-row gap-2">
                 <div class="font-bold flex-1 text-xl">
                     {category}
@@ -156,6 +146,44 @@
         <div class="text-5xl font-light">
             Selected Publications
         </div>
+
+
+        <div class="divider divider-vertical"></div>
+
+
+        <div class="text-5xl font-light">
+            Publications
+        </div>
+
+        <ul>
+            {#each data?.publications as pub}
+                <li>
+                    <div class="card card-bordered m-4 bg-base-200">
+                        <div class="card-body">
+                            <div class="card-title">
+                                {#if pub?.urls?.length}
+                                <a class="link" href={pub?.urls[0]?.href}>
+                                    {pub?.title}
+                                </a>   
+                                {:else}
+                                    {pub?.title}
+                                {/if}
+                            </div>
+                            <span>
+                                {@html makeAuthorString(pub?.authors)}                                
+                            </span>
+                            <span>
+                                {@html makePublicationString(pub)}
+                            </span>   
+                            <span>
+                                {makeKeywordsString(pub)}                                
+                            </span>                    
+                        </div>
+                    </div>
+                </li>
+            {/each}
+
+        </ul>
 
 
     </div>

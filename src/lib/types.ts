@@ -8,6 +8,33 @@ export interface member {
     isAlum?: boolean;
 }
 
+export interface href {
+    href: string
+}
+
+export interface author {
+    name: string[]
+}
+
+export interface publication {
+    title?: string;
+    type?: string;
+    authors?: author[] | Array<author | author[]> | ArrayLike<author | author[]>,
+    year?: string|number|null;
+    month?:string|number|null;
+    pages?:string;
+    abstract?:string;
+    volume?:string|number;
+    issue?:string|number;
+    publisher:string;
+    periodical:string|null;
+    keywords: string[] | Array<string | string[]> | ArrayLike<string | string[]>,
+    urls: href[] | Array<href | href[]> | ArrayLike<href | href[]>,
+    google_scholar_url:string;
+    journal_source:string;
+    cites:string|number|null;
+}
+
 export interface project {
     // link to project specific page on website
     projectUrl?: string | null,
@@ -44,3 +71,4 @@ export interface project {
     // link to youtube
     youtube?: string | null,
 }
+
