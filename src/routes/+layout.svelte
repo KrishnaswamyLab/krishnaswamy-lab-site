@@ -43,12 +43,12 @@
 			</ul>
 		</div>
 		<div class="lg:hidden dropdown dropdown-end">
-			<label for="hamburger" class="">
+			<label tabindex="0" for="hamburger" class="btn btn-square btn-ghost">
 				<button id="hamburger" class="btn btn-square btn-ghost">
-					<Hamburger class="inline-block w-5 h-5"/>			
+					<Hamburger id="hamburger" class="inline-block w-5 h-5"/>			
 				</button>
 			</label>	
-			<ul class="
+			<ul tabindex="0" class="
 				menu menu-compact dropdown-content 				
 				mt-3 p-2 shadow rounded-box
 				text-right uppercase text-lg
