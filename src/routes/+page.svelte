@@ -38,7 +38,7 @@ characterizing data representations to provide more holistic analyses e.g. const
         },
         {
             title: 'Biomedical Systems Applications',
-            about: `Combining all our prior efforts - understanding data topology, producing useful data embeddings, characterizing data dynamics - we produce state-of-the-art pipelines for biological insight. Whether its cancers, immunology, or developmental biology we continue to unravel mysteries of biological systems.`,
+            about: `Combining all our prior efforts - understanding data topology, producing useful data embeddings, characterizing data dynamics - we produce state-of-the-art pipelines for biological insight. Whether it's cancers, immunology, or developmental biology we continue to unravel mysteries of biological systems.`,
             examples: ['example 1', 'example 2', 'example 3'],
             image: '/images/heroes/karyotype.png'
         },
