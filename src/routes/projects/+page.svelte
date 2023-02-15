@@ -62,7 +62,7 @@
     </div>
 </div>
 
-<div class="flex flex-col justify-center">
+<div class="mt-8 flex flex-col justify-center">
     {#each data.projects as project, i}
             <ProjectInfo {project} class="mt-8" contentWidthClasses={"md:w-[36rem] lg:w-[48rem]"}/>    
     {/each}   

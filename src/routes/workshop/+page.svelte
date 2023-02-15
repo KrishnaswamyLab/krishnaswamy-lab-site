@@ -2,6 +2,7 @@
     import GitHub from "$lib/Workshops/GitHub.svelte";
     import Colab from "$lib/Workshops/Colab.svelte";
     import Forms from "$lib/Workshops/Forms.svelte";
+    import Carousel from '$lib/Workshops/Carousel.svelte';
 
     const day1 = [
         {
@@ -339,6 +340,18 @@
             col3: "End of Course Survey"
         },
     ]
+    
+    const images = [
+        '/images/workshops/workshop_1.jpg',
+        '/images/workshops/workshop_2.jpeg',
+        '/images/workshops/workshop_3.jpeg',
+        '/images/workshops/workshop_4.jpg',
+        '/images/workshops/workshop_5.jpg',
+        '/images/workshops/workshop_6.jpg',
+        '/images/workshops/workshop_7.jpeg',
+        '/images/workshops/workshop_8.jpg',
+    ]
+    
 </script>
 <div class="hero h-[40rem] bg-base-200" style="background-image: url(/images/workshops/workshop_hero.png)">       
     <div class="hero-overlay bg-opacity-60"></div>
@@ -573,45 +586,7 @@
                 Images
             </h2>            
             <div class="flex flex-row justify-center">                
-                <div class="">
-                    <div class="carousel carousel-end w-full rounded-box place-items-center">                    
-                        <div class="carousel-item w-full" id="workshop_image_1">
-                            <img src="/images/workshops/workshop_1.jpg" alt="workshop 1" />
-                        </div> 
-                        <div class="carousel-item w-full" id="workshop_image_2">
-                            <img src="/images/workshops/workshop_2.jpeg" alt="workshop 2" />
-                        </div> 
-                        <div class="carousel-item w-full" id="workshop_image_3">
-                            <img src="/images/workshops/workshop_3.jpeg" alt="workshop 3" />
-                        </div> 
-                        <div class="carousel-item w-full" id="workshop_image_4">
-                            <img src="/images/workshops/workshop_4.jpg" alt="workshop 4" />
-                        </div> 
-                        <div class="carousel-item w-full" id="workshop_image_5">
-                            <img src="/images/workshops/workshop_5.jpg" alt="workshop 5" />
-                        </div> 
-                        <div class="carousel-item w-full" id="workshop_image_6">
-                            <img src="/images/workshops/workshop_6.jpg" alt="workshop 6" />
-                        </div> 
-                        <div class="carousel-item w-full" id="workshop_image_7">
-                            <img src="/images/workshops/workshop_7.jpeg" alt="workshop 7" />
-                        </div> 
-                        <div class="carousel-item w-full" id="workshop_image_8">
-                            <img src="/images/workshops/workshop_8.jpg" alt="workshop 8" />
-                        </div>                                                
-                    </div>
-                    <div class="flex justify-center w-full py-2 gap-2 relative bottom-0">
-                        <a href="#workshop_image_1" class="btn btn-xs">1</a> 
-                        <a href="#workshop_image_2" class="btn btn-xs">2</a> 
-                        <a href="#workshop_image_3" class="btn btn-xs">3</a> 
-                        <a href="#workshop_image_4" class="btn btn-xs">4</a>
-                        <a href="#workshop_image_5" class="btn btn-xs">5</a>
-                        <a href="#workshop_image_6" class="btn btn-xs">6</a>
-                        <a href="#workshop_image_7" class="btn btn-xs">7</a>
-                        <a href="#workshop_image_8" class="btn btn-xs">8</a>
-                    </div>
-                </div>
-                
+                <Carousel {images} />
             </div>
             
         </div>

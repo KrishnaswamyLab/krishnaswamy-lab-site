@@ -32,10 +32,10 @@
 <div class="p-4 m-4 card {styleCardSide} ease-in-out duration-300 ">
     <!-- hover:shadow-2xl -->
     {#if member?.image}
-    <figure class="">
+    <figure class="m-8">
         <div class="avatar inline-flex place-content-center place-items-start">
-            <div class="w-48 min-w-max max-h-max h-48 inline-flex m-8 mask mask-squircle">
-                <!--  -->
+            <div class="w-48 mask mask-squircle">
+                <!-- min-w-max max-h-max h-48 inline-flex -->
                 <img 
                     src={member?.image} 
                     alt="{`${member?.name} profile image`}"
