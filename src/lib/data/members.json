@@ -9,21 +9,29 @@
         "about": "Smita Krishnaswamy is an Associate Professor in the department of Genetics at the Yale School of Medicine and Department of Computer Science in the Yale School of Applied Science and Engineering and a core member of the Program in Applied Mathematics. She is also affiliated with the Yale Center for Biomedical Data Science, Yale Cancer Center, and Program in Interdisciplinary Neuroscience. Smita's research focuses on developing unsupervised machine learning methods (especially graph signal processing and deep-learning) to denoise, impute, visualize and extract structure, patterns and relationships from big, high throughput, high dimensional biomedical data. Her methods have been applied variety of datasets from many systems including embryoid body differentiation, zebrafish development, the epithelial-to-mesenchymal transition in breast cancer, lung cancer immunotherapy, infectious disease data, gut microbiome data and patient data.\nSmita teaches three courses: Machine Learning for Biology (Fall), Deep Learning Theory and applications (spring), Advanced Topics in Machine Learning & Data Mining (Spring). She completed her postdoctoral training at Columbia University in the systems biology department where she focused on learning computational models of cellular signaling from single-cell mass cytometry data. She was trained as a computer scientist with a Ph.D. from the University of Michigan's EECS department where her research focused on algorithms for automated synthesis and probabilistic verification of nanoscale logic circuits. Following her time in Michigan, Smita spent 2 years at IBM's TJ Watson Research  Center as a researcher in the systems division where she worked on automated bug finding and error correction in logic."
     },
     {
+        "name": "Dami Fasina",
+        "title": null,
+        "image": "/images/members/dami_fasina.jpg",
+        "cv": null,
+        "isAlum": false,
+        "about": "Dami is a PhD student in applied mathematics at Yale University. He is broadly interested in methods development in machine learning and numerical analysis to solve problems in the physical sciences. He grew up in Auburn, Alabama and completed his B.S. in Nuclear Engineering from NC State and M.S. in Medical Physics from Duke before coming to Yale. In his free enjoys watching and playing soccer, chess, reading, and travelling."
+    },
+    {
         "name": "Jessie Huang",
         "title": "PhD",
         "image": "/images/members/jessie_huang.jpg",
         "website": null,
         "cv": null,
-        "isAlum": false,
+        "isAlum": true,
         "about": "Jessie Huang is a postdoc in the department of computer science at Yale. She is generally interested in machine learning and its applications in medical and biological research. She was previously a postdoc in the Reasoning and Learning Lab at McGill University in Montreal. Her research at McGill focused on developing algorithms to learn robust policies with respect to misspecified rewards in reinforcement learning.\nJessie received her PhD in Mechanical Engineering from the University of Michigan, Ann Arbor. She worked as an engineering consultant at Exponent in the San Francisco bay area for two years before moving to Montreal. Before machine learning, she studied fracture mechanics and statistics and how to utilize the natural failure of materials to develop micro-scale tools for biomedical applications"
     },
     {
-        "name": "Dennis Shung ",
+        "name": "Dennis Shung",
         "title": null,
         "image": "/images/members/dennis_shung.jpeg",
         "website": null,
         "cv": null,
-        "isAlum": false,
+        "isAlum": true,
         "about": "Dennis is a board-certified physician trained in Internal Medicine and  Gastroenterology. He is working on applying unsupervised machine  learning techniques to electronic health record data.\nDennis grew up in Plano, Texas and attended Rice University and Baylor College of Medicine prior to his Internal Medicine residency training at Yale-New Haven Hospital. He is currently completing his clinical fellowship in Gastroenterology & Hepatology with a Master's of Health Science in Clinical Informatics at Yale; in this capacity, he is developing machine learning models for predicting outcomes in acute  gastrointestinal bleeding. His long-term goal is to become a physician data scientist who creates, validates, and tests integrated machine learning models to improve risk stratification for patients."
     },
     {
@@ -68,7 +76,7 @@
         "image": "/images/members/monica_munnangi.jpeg",
         "website": null,
         "cv": null,
-        "isAlum": false,
+        "isAlum": true,
         "about": "Monica is a Postgraduate Researcher at Yale School of Medicine. Her research interest is Machine Learning for Healthcare. She is currently working on time series analysis with deep learning models. Monica has graduated with Masters in Computer Science from University of Massachusetts Amherst where she worked at Information Fusion Lab in the intersection of Medical Imaging and deep Learning. She interned at GE Healthcare during her graduate study where she used Computer Vision algorithms for Chest X-Ray imaging."
     },
     {
@@ -86,7 +94,7 @@
         "image": "/images/members/sasha_safonova.jpg",
         "website": null,
         "cv": null,
-        "isAlum": false,
+        "isAlum": true,
         "about": "Sasha is a PhD student in Astronomy at Yale University, working with Smita Krishnaswamy and Nikhil Padmanabhan. Her scientific interests include computational cosmology and the large scale structure of the Universe. She is working on harnessing machine learning to enhance the connection between theory and observations on the largest scales in the Universe. Sasha got her Master's in Physics at Durham University, where she created a mock galaxy catalog from cosmological simulations, working with Prof. Shaun Cole and Dr. Peder Norberg. Prior to Durham, Sasha majored in physics at the University of Arizona and performed research at the SLAC National Accelerator Laboratory, Lawrence Livermore National Laboratory and MIT's Haystack Observatory. She has dedicated many nights to collecting cosmological data at the Kitt Peak National Observatory."
     },
     {
@@ -131,7 +139,7 @@
         "image": "/images/members/katherine_du.png",
         "website": null,
         "cv": null,
-        "isAlum": false,
+        "isAlum": true,
         "about": "Katherine is an undergrad at Yale studying biology and statistics. In the lab, she is currently working on single-cell RNA sequencing (scRNA-seq) analysis, applying tools developed by Krishnaswamy Lab such as PHATE and MELD. Aside from research, she ice skates with the Yale Collegiate Figure Skating Club and is passionate about mental health advocacy and education."
     },
     {
@@ -149,7 +157,7 @@
         "image": "/images/members/jackson_grady.jpg",
         "website": null,
         "cv": null,
-        "isAlum": false,
+        "isAlum": true,
         "about": "Jackson is an undergrad at Yale studying Computer Science. In the lab, he is interested in thinking about low-dimensional encodings of complex data, and how they can be transformed to generate new data. In his free time, Jackson enjoys singing and cooking!"
     },
     {

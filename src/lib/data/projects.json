@@ -1,5 +1,125 @@
 [
     {
+        "projectUrl": "mioflow",
+        "projectTitle": "Manifold Interpolating Optimal-Transport Flows for Trajectory Inference",
+        "projectAbbreviation": "MIOFlow",
+        "projectListDescription": ".",
+        "heroBlurb": "Continuous Population Dynamics from Static Snapshots",
+        "heroImage": "/images/projects/mioflow_hero_1.jpg",
+        "authors": [    
+            {
+                "name": "Guillaume Huguet"
+            },
+            {
+                "name": "Sumner Magruder"
+            },
+            {
+                "name": "Alexander Tong"
+            },
+            {
+                "name": "Oluwadamilola Fasina"
+            },
+            {
+                "name": "Manik Kuchroo"
+            },
+            {
+                "name": "Guy Wolf"
+            },
+            {
+                "name": "Smita Krishnaswamy"
+            }
+        ],
+        "journal": "arXiv",
+        "journalImage": "/images/journals/arxiv.png",
+        "githubLink": "https://github.com/KrishnaswamyLab/MIOFlow",
+        "publicationLink": "https://arxiv.org/pdf/2206.14928.pdf",
+        "publicationImage": "/images/projects/mioflow_image.png",
+        "publicationTitle": "Manifold Interpolating Optimal-Transport Flows for Trajectory Inference",
+        "publicationAbstract": "We present a method called Manifold Interpolating Optimal-Transport Flow (MIOFlow) that learns stochastic, continuous population dynamics from static snapshot samples taken at sporadic timepoints. MIOFlow combines dynamic models, manifold learning, and optimal transport by training neural ordinary differential equations (Neural ODE) to interpolate between static population snapshots as penalized by optimal transport with manifold ground distance. Further, we ensure that the flow follows the geometry by operating in the latent space of an autoencoder that we call a geodesic autoencoder (GAE). In GAE the latent space distance between points is regularized to match a novel multiscale geodesic distance on the data manifold that we define. We show that this method is superior to normalizing flows, Schrödinger bridges and other generative models that are designed to flow from noise to data in terms of interpolating between populations. Theoretically, we link these trajectories with dynamic optimal transport. We evaluate our method on simulated data with bifurcations and merges, as well as scRNA-seq data from embryoid body differentiation, and acute myeloid leukemia treatment.",
+        "publicationPoster": "/images/projects/mioflow_poster.png",
+        "publicationYear": 2022,
+        "youtube": null
+    },
+    {
+        "projectUrl": "diffusion_curvature",
+        "projectTitle": "Diffusion Curvature",
+        "projectAbbreviation": null,
+        "projectListDescription": "a method for computing diffusion-based curvature on high-dimensional data that hinges on the canonical data diffusion framework. Allows for estimation of neural network Hessians as well as curvature-based inference on point cloud data such as single-cell data.",
+        "heroBlurb": "Estimating Local Curvature in High Dimensional Data",
+        "heroImage": "/images/projects/diffusion_curvature_hero.jpg",
+        "authors": [    
+            {
+                "name": "Dhananjay Bhaskar"
+            },
+            {
+                "name": "Kincaid MacDonald"
+            },
+            {
+                "name": "Oluwadamilola Fasina"
+            },
+            {
+                "name": "Dawson Thomas"
+            },
+            {
+                "name": "Bastian Rieck"
+            },
+            {
+                "name": "Ian Adelstein"
+            },
+            {
+                "name": "Smita Krishnaswamy"
+            }
+        ],
+        "journal": "NeurIPS",
+        "journalImage": "/images/journals/neurips.png",
+        "githubLink": "https://github.com/KrishnaswamyLab/CurveNet",
+        "publicationLink": "https://nips.cc/media/neurips-2022/Slides/53769.pdf",
+        "publicationImage": "/images/projects/diffusion_curvature_image.png",
+        "publicationTitle": "Diffusion Curvature for Estimating Local Curvature in High Dimensional Data",
+        "publicationAbstract": "We introduce a new intrinsic measure of local curvature on point-cloud data called diffusion curvature. Our measure uses the framework of diffusion maps, including the data diffusion operator, to structure point cloud data and define local curvature based on the laziness of a random walk starting at a point or region of the data. We show that this laziness directly relates to volume comparison results from Riemannian geometry. We then extend this scalar curvature notion to an entire quadratic form using neural network estimations based on the diffusion map of point-cloud data. We show applications of both estimations on toy data, single-cell data and on estimating local Hessian matrices of neural network loss landscapes.",
+        "publicationPoster": null,
+        "publicationYear": 2022,
+        "youtube": null
+    },
+    {
+        "projectUrl": "neural_fim",
+        "projectTitle": "Neural Fisher Information Metric",
+        "projectAbbreviation": "NeuralFIM",
+        "projectListDescription": "a network that imbues point cloud data with smooth manifold-intrinsic geometric entities on high-dimensional data with fisher information metrics. Also has connections to JSD-PHATE and other desirable information theoretic quantities.",
+        "heroBlurb": "point cloud data with smooth manifold-intrinsic geometric entities",
+        "heroImage": "/images/projects/neural_fim_hero.jpg",
+        "authors": [    
+            {
+                "name": "Dhananjay Bhaskar"
+            },            
+            {
+                "name": "Oluwadamilola Fasina"
+            },
+            {
+                "name": "Guillaume Huguet"
+            },
+            {
+                "name": "Alexander Tong"
+            },
+            {
+                "name": "Ian Adelstein"
+            },
+            {
+                "name": "Smita Krishnaswamy"
+            }
+        ],
+        "journal": null,
+        "journalImage": null,
+        "githubLink": null,
+        "publicationLink": null,
+        "publicationImage": null,
+        "publicationTitle": null,
+        "publicationAbstract": null,
+        "publicationPoster": null,
+        "publicationYear": null,
+        "youtube": null
+    },
+    {
         "projectUrl": "magic",
         "projectTitle": "Markov Affinity-based Graph Imputation of Cells",
         "projectAbbreviation": "MAGIC",
