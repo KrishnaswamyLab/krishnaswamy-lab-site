@@ -8,7 +8,7 @@ export function load({ params }) {
     const slug = params.slug
     const matches = projects.filter(({projectUrl}) => projectUrl === slug)
     const routes = projects
-        .filter(({projectUrl}) => projectUrl !== null)
+        .filter(({projectUrl, publicationTitle}) => projectUrl !== null && publicationTitle !== null)
         .map(({projectTitle, projectAbbreviation, projectUrl}) => {
             return {projectTitle, projectAbbreviation, projectUrl}
         })

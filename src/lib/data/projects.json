@@ -3,7 +3,7 @@
         "projectUrl": "mioflow",
         "projectTitle": "Manifold Interpolating Optimal-Transport Flows for Trajectory Inference",
         "projectAbbreviation": "MIOFlow",
-        "projectListDescription": ".",
+        "projectListDescription": "a neural ODE to interpolates between static population snapshots, penalized by optimal transport with manifold ground distance. MIOFlow has theoretical links with dynamic optimal transport.",
         "heroBlurb": "Continuous Population Dynamics from Static Snapshots",
         "heroImage": "/images/projects/mioflow_hero_1.jpg",
         "authors": [    
@@ -430,7 +430,7 @@
         "projectTitle": "Trajectory Interpolated DREMI Scores",
         "projectAbbreviation": "TIDES",
         "projectListDescription": "Learning time-varying information flow form single-cell epithelial to mesenchymal transition data",
-        "heroBlurb": "Learning time-varying information flow form single-cell epithelial to mesenchymal transition data",
+        "heroBlurb": "Learning time-varying information flow form single-cell epithelial to mesenchymal transition data.",
         "heroImage": null,
         "authors": [
             {
@@ -637,41 +637,154 @@
         "youtube": null
     },
     {
-        "projectUrl": null,
+        "projectUrl": "multiscale_phate",
         "projectTitle": "Multiscale PHATE",
-        "projectAbbreviation": null,
+        "projectAbbreviation": "MSPHATE",
         "projectListDescription": "Capturing meaningful biological signals in high-dimensional data using a continuous coarse-graining process which can be used to produce both a high-level summarization and more detailed representations of the data.",
-        "heroBlurb": null,
-        "heroImage": null,
-        "authors": [],
-        "journal": null,
-        "journalImage": null,
-        "githubLink": null,
-        "publicationLink": null,
-        "publicationImage": null,
-        "publicationTitle": null,
-        "publicationAbstract": null,
+        "heroBlurb": "Abstracted biological features across all levels of data granularity",
+        "heroImage": "/images/projects/multiscale_phate_hero.png",
+        "authors": [
+            {
+                "name": "Manik Kuchroo"
+            },
+            {
+                "name": "Jessie Huang"
+            },
+            {
+                "name": "Patrick Wong"
+            },
+            {
+                "name": "Jean-Christophe Grenier"
+            },
+            {
+                "name": "Dennis Shung"
+            },
+            {
+                "name": "Alexander Tong"
+            },
+            {
+                "name": "Carolina Lucas"
+            },
+            {
+                "name": "Manik Kuchroo"
+            },
+            {
+                "name": "Jon Klein"
+            },
+            {
+                "name": "Daniel B Burkhardt"
+            },
+            {
+                "name": "Scott A Gigante"
+            },
+            {
+                "name": "Abhinav Godavarthi"
+            },
+            {
+                "name": "Bastian Rieck"
+            },
+            {
+                "name": "Benjamin Israelow"
+            },
+            {
+                "name": "Michael Simonov"
+            },
+            {
+                "name": "Tianyang Mao"
+            },
+            {
+                "name": "Ji Eun Oh"
+            },
+            {
+                "name": "Julio Silva"
+            },
+            {
+                "name": "Takehiro Takahashi"
+            },
+            {
+                "name": "Camila D. Odio"
+            },
+            {
+                "name": "Arnau Casanovas-Massana"
+            },
+            {
+                "name": "John Fournier"
+            },
+            {
+                "name": "Yale IMPACT Team"
+            },
+            {
+                "name": "Shelli Farhadian"
+            },
+            {
+                "name": "Charles S Dela Cruz"
+            },
+            {
+                "name": "Albert I Ko"
+            },
+            {
+                "name": "Matthew J Hirn"
+            },
+            {
+                "name": "F Perry Wilson"
+            },
+            {
+                "name": "Julie G Hussin"
+            },
+            {
+                "name": "Guy Wolf"
+            },
+            {
+                "name": "Akiko Iwasaki"
+            },
+            {
+                "name": "Smita Krishnaswamy"
+            }
+        ],
+        "journal": "Nature Biotechnology",
+        "journalImage": "/images/journals/nature_biotech.jpg",
+        "githubLink": "https://github.com/KrishnaswamyLab/Multiscale_PHATE",
+        "publicationLink": "https://www.nature.com/articles/s41587-021-01186-x",
+        "publicationImage": "/images/projects/multiscale_phate_image.png",
+        "publicationTitle": "Multiscale PHATE identifies multimodal signatures of COVID-19",
+        "publicationAbstract": "As the biomedical community produces datasets that are increasingly complex and high dimensional, there is a need for more sophisticated computational tools to extract biological insights. We present Multiscale PHATE, a method that sweeps through all levels of data granularity to learn abstracted biological features directly predictive of disease outcome. Built on a coarse-graining process called diffusion condensation, Multiscale PHATE learns a data topology that can be analyzed at coarse resolutions for high-level summarizations of data and at fine resolutions for detailed representations of subsets. We apply Multiscale PHATE to a coronavirus disease 2019 (COVID-19) dataset with 54 million cells from 168 hospitalized patients and find that patients who die show CD16hiCD66blo neutrophil and IFN-γ+ granzyme B+ Th17 cell responses. We also show that population groupings from Multiscale PHATE directly fed into a classifier predict disease outcome more accurately than naive featurizations of the data. Multiscale PHATE is broadly generalizable to different data types, including flow cytometry, single-cell RNA sequencing (scRNA-seq), single-cell sequencing assay for transposase-accessible chromatin (scATAC-seq), and clinical variables.",
         "publicationPoster": null,
-        "publicationYear": null,
+        "publicationYear": 2022,
         "youtube": null
     },
     {
-        "projectUrl": null,
+        "projectUrl": "integrated_diffusion",
         "projectTitle": "Integrated Diffusion",
         "projectAbbreviation": null,
         "projectListDescription": "Combining multi-modal datasets by learning an integrated diffusion operator to effectively visualize the relationships between them.",
-        "heroBlurb": null,
-        "heroImage": null,
-        "authors": [],
-        "journal": null,
-        "journalImage": null,
+        "heroBlurb": "multi-modal datasets combined",
+        "heroImage": "/images/projects/integrated_diffusion_hero.png",
+        "authors": [
+            {
+                "name": "Manik Kuchroo"
+            },
+            {
+                "name": "Abhinav Godavarthi"
+            },
+            {
+                "name": "Alexander Tong"
+            },
+            {
+                "name": "Guy Wolf"
+            },
+            {
+                "name": "Smita Krishnaswamy"
+            }
+        ],
+        "journal": "IEEE",
+        "journalImage": "/images/journals/ieee.jpeg",
         "githubLink": null,
-        "publicationLink": null,
-        "publicationImage": null,
-        "publicationTitle": null,
-        "publicationAbstract": null,
+        "publicationLink": "https://ieeexplore.ieee.org/document/9596214",
+        "publicationImage": "/images/projects/integrated_diffusion_image.png",
+        "publicationTitle": "Multimodal Data Visualization and Denoising with Integrated Diffusion",
+        "publicationAbstract": "We propose a method called integrated diffusion for combining multimodal data, gathered via different sensors on the same system, to create a integrated data diffusion operator. As real world data suffers from both local and global noise, we introduce mechanisms to optimally calculate a diffusion operator that reflects the combined information in data by maintaining low frequency eigenvectors of each modality both globally and locally. We show the utility of this integrated operator in denoising and visualizing multimodal toy data as well as multi-omic data generated from blood cells, measuring both gene expression and chromatin accessibility. Our approach better visualizes the geometry of the integrated data and captures known cross-modality associations. More generally, integrated diffusion is broadly applicable to multimodal datasets generated by noisy sensors collected in a variety of fields.",
         "publicationPoster": null,
-        "publicationYear": null,
+        "publicationYear": 2021,
         "youtube": null        
     },
     {

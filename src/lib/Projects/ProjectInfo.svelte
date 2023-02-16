@@ -79,21 +79,33 @@
                 
                 <div class="flex place-content-evenly place-items-center my-4">
                     {#if project?.githubLink}
-                        <GitHub 
-                            on:click={()=>goto(String(project?.githubLink))} 
-                            class="h-12 w-12"
-                        />
+                        <a 
+                            href="{project?.githubLink}" 
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <GitHub 
+                                on:click={()=>goto(String(project?.githubLink))} 
+                                class="h-12 w-12"
+                            />
+                        </a>
                     {/if}
 
                     {#if project?.publicationLink}
                         {#if project?.journalImage}
-                            <figure>
-                                <img 
-                                    class="h-12 max-h-min" 
-                                    src={project?.journalImage} 
-                                    alt="{project?.journal} image"
-                                >
-                            </figure>
+                            <a 
+                                href="{project?.publicationLink}" 
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <figure>
+                                    <img 
+                                        class="h-12 max-h-min" 
+                                        src={project?.journalImage} 
+                                        alt="{project?.journal} image"
+                                    >
+                                </figure>
+                            </a>
                         {:else}
                             <button class="btn btn-link btn-primary btn-outline btn-ghost">
                                 <a href="{project?.publicationLink}">

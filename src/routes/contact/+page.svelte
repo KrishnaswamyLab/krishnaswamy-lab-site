@@ -90,9 +90,10 @@
                 <div class="grid grid-cols-1 md:grid-cols-2  w-full gap-8">
                     {#each departments as {dept, school, street, room, city, state, zip}}
                         <div class="
-                            card card-compact 
-                            bg-base-100 hover:shadow-2xl
-                            ease-in-out duration-300
+                            card card-compact card-bordered
+                            bg-base-200                            
+                            hover:shadow-2xl transition-all ease-in-out
+                            duration-300 hover:-translate-y-2
                         ">
                             <div class="card-body">
                                 <div class="card-title text-center inline-block">

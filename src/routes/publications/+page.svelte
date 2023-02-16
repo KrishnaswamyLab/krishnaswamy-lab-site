@@ -157,8 +157,12 @@ const makeKeywordsString = (pub:publicationInterface) => {
 
         <ul>
             {#each data?.publications as pub}
-                <li>
-                    <div class="card card-bordered m-4 bg-base-200">
+                <li class="">
+                    <div class="
+                        card card-bordered m-4 bg-base-200
+                        hover:shadow-2xl transition-all ease-in-out
+                        duration-300 hover:-translate-y-2
+                    ">
                         <div class="card-body">
                             <div class="card-title">
                                 {#if pub?.urls?.length}
@@ -175,8 +179,13 @@ const makeKeywordsString = (pub:publicationInterface) => {
                             <span>
                                 {@html makePublicationString(pub)}
                             </span>   
-                            <span>
-                                {makeKeywordsString(pub)}                                
+                            <span class="">
+                                {#each pub?.keywords as kw}
+                                <div class="mr-4 mt-1 p-3 badge badge-secondary badge-outline">
+                                    {kw}
+                                </div>    
+                                {/each}                                
+                                <!-- {makeKeywordsString(pub)}                                 -->
                             </span>                    
                         </div>
                     </div>
