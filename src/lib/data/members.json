@@ -17,6 +17,15 @@
         "about": "Dami is a PhD student in applied mathematics at Yale University. He is broadly interested in methods development in machine learning and numerical analysis to solve problems in the physical sciences. He grew up in Auburn, Alabama and completed his B.S. in Nuclear Engineering from NC State and M.S. in Medical Physics from Duke before coming to Yale. In his free enjoys watching and playing soccer, chess, reading, and travelling."
     },
     {
+        "name": "Chen Liu",
+        "title": null,
+        "image": "/images/members/chen_liu.jpg",
+        "cv": null,
+        "isAlum": false,
+        "about": "Chen Liu joined the lab as a PhD student in Computer Science at Yale University starting 2022. His research interest is machine learning for healthcare. He primarily worked on radiological images in the past but also enjoys exploring new areas such as computational biology and genomics. He is excited about developing generalizable machine learning techniques that are widely applicable.\nChen grew up in Shanghai, China. He completed his B.S. and M.S. degrees at Bucknell University and Columbia University respectively. Prior to joining Yale, he was a senior Research Scientist at GE Healthcare, working on deep learning in X-ray and MRI data.",
+        "website": "https://www.chenliu1996.com/"
+    },
+    {
         "name": "Jessie Huang",
         "title": "PhD",
         "image": "/images/members/jessie_huang.jpg",

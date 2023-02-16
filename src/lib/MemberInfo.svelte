@@ -27,6 +27,10 @@
         openUrlInNewTab(url)
         
     }
+
+    $: about = member?.about 
+        ? member?.about.replace('\n', '<br/>')
+        : null   
 </script>
 
 <div class="p-4 m-4 card {styleCardSide} ease-in-out duration-300 ">
@@ -51,7 +55,7 @@
         <div class="
         ">
             <!-- max-h-48 overflow-y-scroll -->
-            {member?.about}
+            {@html about}
         </div>
         {#if member?.website || member?.cv}
             <div class="card-actions justify-end">
