@@ -362,20 +362,20 @@
                 Workshop
             </h1>
             <p class="mb-5 text-2xl uppercase font-extralight break-all">
-                Machine Learnign for Single-Cell Analysis
+                Machine Learning for Single-Cell Analysis
             </p>
         </div>
     </div>
 </div>
 
 <div class="flex mt-8 justify-center">
-    <figure class="max-w-max w-1/2">
+    <figure class="max-w-max w-5/6 md:w-1/2">
         <img src="/images/workshops/ML_workshop.png" alt="ML_workshop">
     </figure>    
 </div>
 
 <div class="flex mt-8 justify-center">
-    <div class="text-left max-w-max w-1/2 prose">
+    <div class="text-left max-w-max w-5/6 md:w-1/2 prose">
         <div>
             <h2 class="font-bold text-xl">
                 Registration

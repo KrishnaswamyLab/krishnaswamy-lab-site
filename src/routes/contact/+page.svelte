@@ -7,6 +7,10 @@
     import AcademicCap from '$lib/Icons/AcademicCap.svelte';
     import Phone from '$lib/Icons/Phone.svelte';
 
+    import JellyContainer from '$lib/Layout/JellyContainer.svelte';
+    import TextHero from '$lib/Layout/TextHero.svelte';
+    import ContactSquare from '$lib/Layout/ContactSquare.svelte';
+
 
     const key = 'pk.eyJ1IjoiZHNtNzIiLCJhIjoiY2w5OGxyd3BqMHRmOTQxbXZxdnc5ZDFneiJ9.nSwC10Ves0TE5xZYWUEwww'
     import { browser } from '$app/environment';
@@ -113,6 +117,7 @@
 
 <div class="bg-primary h-16"></div>
 
+
 <div class="hero h-full min-h-screen">
     <div class="hero-content text-center w-full">
         <div class="w-full">
@@ -132,69 +137,53 @@
             </p>
 
             <div class="py-8 grid grid-cols-2 md:grid-cols-4 justify-evenly  gap-4">
-                <div class="card card-bordered border-slate-700 grid-cols-1">
-                    <div class="card-body place-items-center">
-                        <div class="card-title">
-                            <span class="capitalize">
-                                Follow us
-                            </span>                            
-                        </div>
-                        <a href="{LabTwitterLink}" class="py-2">
-                            <Twitter class="w-8 h-8 fill-sky-400  {iconHover}"/>
-                        </a>                        
-                        <a href="{LabTwitterLink}" class="link link-hover text-sky-400">
-                            @KrishnaswamyLab
-                        </a>
-                    </div>                    
-                </div>
-                <div class="card card-bordered border-slate-700 grid-cols-1">
-                    <div class="card-body place-items-center">
-                        <div class="card-title">
-                            <span class="capitalize">
-                                Fork us
-                            </span>
-                        </div>
-                        <a href="{LabGitHubLink}" class="py-2">
-                            <GitHub class="w-8 h-8 {iconHover}"/>
-                        </a>                                                
-                        <a href="{LabGitHubLink}" class="link link-hover text-slate-900">
-                            @KrishnaswamyLab
-                        </a>
-                    </div>                    
-                </div>
-                <div class="card card-bordered border-slate-700 grid-cols-1">
-                    <div class="card-body place-items-center">
-                        <div class="card-title">
-                            <span class="capitalize">
-                                Email us
-                            </span>
-                        </div>
-                        <a href="mailto:smita.krishnaswamy@yale.edu" class="py-2">
-                            <Mail class="w-8 h-8 fill-slate-400  {iconHover}"/>
-                        </a>                        
-                        <a 
-                            href="mailto:smita.krishnaswamy@yale.edu" 
-                            class="link link-hover text-slate-900 break-all "
-                        >
-                            smita.krishnaswamy@yale.edu
-                        </a>
-                    </div>                    
-                </div>
-                <div class="card card-bordered border-slate-700 grid-cols-1">
-                    <div class="card-body place-items-center">
-                        <div class="card-title">
-                            <span class="capitalize">
-                                Call us
-                            </span>
-                        </div>
-                        <a href="tel:203.785.7833" class="py-2">
-                            <Phone class="w-8 h-8 fill-green-400  {iconHover}" />
-                        </a>
-                        <a href="tel:203.785.7833" class="link link-hover text-green-500">
-                            203.785.7833
-                        </a>
-                    </div>                    
-                </div>              
+                <ContactSquare href="{LabTwitterLink}" howClass="text-sky-400">
+                    <span slot="what">
+                        Follow Us
+                    </span>
+                    <span slot="icon">
+                        <Twitter class="w-8 h-8 fill-sky-400  {iconHover}"/>
+                    </span>
+                    <span slot="how">
+                        @KrishnaswamyLab
+                    </span>
+                </ContactSquare>
+    
+                <ContactSquare href="{LabGitHubLink}" howClass="text-slate-900">
+                    <span slot="what">
+                        Fork Us
+                    </span>
+                    <span slot="icon">
+                        <GitHub class="w-8 h-8 {iconHover}"/>
+                    </span>
+                    <span slot="how">
+                        @KrishnaswamyLab
+                    </span>
+                </ContactSquare>
+    
+                <ContactSquare href="mailto:smita.krishnaswamy@yale.edu" howClass="text-slate-900">
+                    <span slot="what">
+                        Email us
+                    </span>
+                    <span slot="icon">
+                        <Mail class="w-8 h-8 fill-slate-400  {iconHover}"/>
+                    </span>
+                    <span slot="how">
+                        smita.krishnaswamy@yale.edu
+                    </span>
+                </ContactSquare>
+    
+                <ContactSquare href="tel:203.785.7833" howClass="text-green-500">
+                    <span slot="what">
+                        Call us
+                    </span>
+                    <span slot="icon">
+                        <Phone class="w-8 h-8 fill-green-400  {iconHover}" />
+                    </span>
+                    <span slot="how">
+                        203.785.7833
+                    </span>
+                </ContactSquare>            
             </div>
 
             <!-- <div class="w-72 inline-block place-items-center">

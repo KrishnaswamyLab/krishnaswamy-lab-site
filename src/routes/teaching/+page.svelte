@@ -1,11 +1,14 @@
 <script>
 /** @type {import('./$types').PageData} */
 export let data;
+
+import JellyContainer from '$lib/Layout/JellyContainer.svelte';
+import TextHero from '$lib/Layout/TextHero.svelte';
 </script>
 <div class="bg-primary h-16"></div>
 
 <div class="mt-8 flex justify-center">
-    <div class="max-w-max w-[48rem] mx-8">
+    <div class="mx-8 w-5/6 md:w-[48rem]">
         <div class="font-extralight text-7xl text-center mb-8">
             Selected Yale University Courses
         </div>

@@ -15,8 +15,8 @@
         about: lipsum
     }
 
-    $: styleCardSide = member.image ? "md:card-side" : ""
-    $: styleCardWidth = member.image ? "md:min-w-min md:w-1/2" : ""
+    $: styleCardSide = member.image ? "lg:card-side" : ""
+    $: styleCardWidth = member.image ? "lg:min-w-min lg:w-1/2" : ""
 
     const toCv = () => {
         let url = String(member?.cv)
@@ -33,7 +33,7 @@
         : null   
 </script>
 
-<div class="p-4 m-4 card {styleCardSide} ease-in-out duration-300 ">
+<div class="card {styleCardSide} ease-in-out duration-300 ">
     <!-- hover:shadow-2xl -->
     {#if member?.image}
     <figure class="m-8">

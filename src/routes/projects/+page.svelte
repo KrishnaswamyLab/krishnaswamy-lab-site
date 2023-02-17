@@ -20,7 +20,7 @@
     <div class="hero-overlay bg-opacity-60"></div>
     <div class="hero-content text-center text-neutral-content">
       <div class="max-w-md">
-        <h1 class="mb-5 text-8xl font-light capitalize">
+        <h1 class="mb-5 text-5xl md:text-8xl font-light capitalize">
             Projects
         </h1>
       </div>
@@ -30,7 +30,7 @@
 
 <div class="py-8"></div> 
 
-<div class="flex">
+<div class="flex mx-2">
     <div class="w-full text-center">
         <div class="text-2xl font-light">
             You can access the Lab's Github Repository by clicking the link below
@@ -41,7 +41,7 @@
     </div>
 </div>
 
-<div class="flex justify-center py-8">
+<div class="flex justify-center py-8  mx-2">
     <div class="max-w-fit w-[42rem] ">
         <div class="divider divider-vertical"></div>
     </div>

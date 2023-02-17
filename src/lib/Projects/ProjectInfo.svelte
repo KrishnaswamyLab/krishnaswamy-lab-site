@@ -54,7 +54,7 @@
         <ProjectHero {project} />    
     {/if}
 
-    <div class="flex justify-center">
+    <div class="flex justify-center  mx-4">
         <div class="max-w-full my-4 {contentWidthClasses}">
             <!-- md:w-[36rem] lg:w-[48rem]  -->
             <div class="text-4xl font-light text-center">
