@@ -87,8 +87,13 @@
     
 </script>
 <style>
+    /* this one not necessary */
     :global(.mapboxgl-map) {
-        height: 320px; /* tailwindcss h-80 */
+        height: 24rem; /* 320px tailwindcss h-80 */
+    }
+    /* this one necessary */
+    .map-wrap {        
+        height: 24rem; /* tailwindcss h-96 */
     }
     :global(#logo svg) {
         fill: white;
@@ -97,9 +102,7 @@
     .slogan {
         margin-top: 14px;
     }
-    .map-wrap {        
-        height: 320px; /* tailwindcss h-80 */
-    }
+    
     .action-buttons {
         display: flex;
         justify-content: space-between;
@@ -205,31 +208,6 @@
                 Meet in person
             </p>
 
-
-            <div class="flex place-content-center">
-                <div class="w-1/2 h-80">
-                    {#if browser}
-                    <div id="map" class="">
-                        <div class="w-full map-wrap">
-                            <Map
-                                accessToken="{key}"
-                                style='mapbox://styles/mapbox/light-v11'
-                                bind:this={mapComponent}
-                                on:drag={drag}
-                                bind:zoom
-                                on:recentre={recentre}
-                                options={{ scrollZoom: false }} 
-                            >
-                                <NavigationControl />
-                                <Marker lat={lat} lng={lng} />
-                            </Map>
-                            
-                        </div>
-                    </div>            
-                    {/if}
-                </div>
-            </div>
-
             <div class="p-8 inline-flex place-content-center w-full">
                 <div class="grid grid-cols-1 md:grid-cols-2  w-full gap-8">
                     {#each departments as {dept, school, street, room, city, state, zip}}
@@ -258,7 +236,31 @@
                         </div>
                     {/each}                   
                 </div>                        
-            </div>          
+            </div> 
+            
+            <div class="flex place-content-center px-8">
+                <div class="w-full h-96">
+                    {#if browser}
+                    <div id="map" class="">
+                        <div class="w-full map-wrap">
+                            <Map
+                                accessToken="{key}"
+                                style='mapbox://styles/mapbox/light-v11'
+                                bind:this={mapComponent}
+                                on:drag={drag}
+                                bind:zoom
+                                on:recentre={recentre}
+                                options={{ scrollZoom: false }} 
+                            >
+                                <NavigationControl />
+                                <Marker lat={lat} lng={lng} />
+                            </Map>
+                            
+                        </div>
+                    </div>            
+                    {/if}
+                </div>
+            </div>         
         </div>
     </div>
 </div>
