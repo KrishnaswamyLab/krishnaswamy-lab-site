@@ -116,7 +116,7 @@
 <div class="hero h-full min-h-screen">
     <div class="hero-content text-center w-full">
         <div class="w-full">
-            <h1 class="my-5 text-5xl uppercase">
+            <h1 class="my-5 text-5xl uppercase break-all">
                 The Krishnaswamy Lab
             </h1>        
             <p class="py-8 text-3xl font-extralight">
@@ -237,7 +237,7 @@
                     {/each}                   
                 </div>                        
             </div> 
-            
+
             <div class="flex place-content-center px-8">
                 <div class="w-full h-96">
                     {#if browser}
