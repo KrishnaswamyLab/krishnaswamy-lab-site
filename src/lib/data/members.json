@@ -9,6 +9,38 @@
         "about": "Smita Krishnaswamy is an Associate Professor in the department of Genetics at the Yale School of Medicine and Department of Computer Science in the Yale School of Applied Science and Engineering and a core member of the Program in Applied Mathematics. She is also affiliated with the Yale Center for Biomedical Data Science, Yale Cancer Center, and Program in Interdisciplinary Neuroscience. Smita's research focuses on developing unsupervised machine learning methods (especially graph signal processing and deep-learning) to denoise, impute, visualize and extract structure, patterns and relationships from big, high throughput, high dimensional biomedical data. Her methods have been applied variety of datasets from many systems including embryoid body differentiation, zebrafish development, the epithelial-to-mesenchymal transition in breast cancer, lung cancer immunotherapy, infectious disease data, gut microbiome data and patient data.\nSmita teaches three courses: Machine Learning for Biology (Fall), Deep Learning Theory and applications (spring), Advanced Topics in Machine Learning & Data Mining (Spring). She completed her postdoctoral training at Columbia University in the systems biology department where she focused on learning computational models of cellular signaling from single-cell mass cytometry data. She was trained as a computer scientist with a Ph.D. from the University of Michigan's EECS department where her research focused on algorithms for automated synthesis and probabilistic verification of nanoscale logic circuits. Following her time in Michigan, Smita spent 2 years at IBM's TJ Watson Research  Center as a researcher in the systems division where she worked on automated bug finding and error correction in logic."
     },
     {
+        "name": "Scott Youlten",
+        "title": null,
+        "image": null,
+        "cv": null,
+        "isAlum": false,
+        "about": null
+    },
+    {
+        "name": "Edward De Brouwer",
+        "title": null,
+        "image": null,
+        "cv": null,
+        "isAlum": false,
+        "about": null
+    },
+    {
+        "name": "Xingzhi Sun",
+        "title": null,
+        "image": null,
+        "cv": null,
+        "isAlum": false,
+        "about": null
+    },
+    {
+        "name": "Holly Steach",
+        "title": "PhD",
+        "image": null,
+        "cv": null,
+        "isAlum": false,
+        "about": null
+    },
+    {
         "name": "Dami Fasina",
         "title": null,
         "image": "/images/members/dami_fasina.jpg",
@@ -121,7 +153,7 @@
         "image": "/images/members/andrew_benz.jpg",
         "website": "https://andrewbe.nz/",
         "cv": null,
-        "isAlum": false,
+        "isAlum": true,
         "about": "Andrew is pursuing a BS/MS degree in math at Yale and has been involved in the Krishnaswamy Lab since 2019. His research interests revolve around applying spectral graph theory to high-dimensional biological data. He spends his spare time reading and playing bass guitar."
     },
     {
@@ -130,7 +162,7 @@
         "image": "/images/members/kincaid_macdonald.jpg",
         "website": null,
         "cv": null,
-        "isAlum": false,
+        "isAlum": true,
         "about": "Kincaid is an undergraduate at Yale studying mathematics, computer science, philosophy, and exploring their practical intersection in artificial intelligence. He is particularly interested in developing mathematical tools to shine light into the \"black box\" of modern deep neural networks."
     },
     {
