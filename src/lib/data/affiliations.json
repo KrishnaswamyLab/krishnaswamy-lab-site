@@ -1,0 +1,39 @@
+[
+    {
+        "title": "Computer Science, Yale",
+        "href": "https://cpsc.yale.edu/people/smita-krishnaswamy",
+        "about": "Yale's Computer Science, trains tomorrow's innovators and conducts cutting-edge research to bring the transformative power of computing to society. "
+    },
+    {
+        "title": "Applied Mathematics, Yale",
+        "href": "https://applied.math.yale.edu/people/smita-krishnaswamy",
+        "about": "The Applied Math Program is designed in the interdisciplinary setting that provides an environment with activities occurring both within and at the boundaries of many different fields, using a variety of mathematical and computational tools."
+    },
+    {
+        "title": "Diversity and Equity Inclusion (DEI) Group",
+        "href": "https://medicine.yale.edu/genetics/diversity/committee-roster/",
+        "about": "The appointment of the VC, Diversity and advisory committee members permit a framework to scrutinize current practices and truly commit to change that enhances diversity. We are eager to promote diversity, equity, and inclusion including for URMs as well as intersectionality across all groups."
+   },
+    {
+        "title": "Wu Tsai Institute",
+        "href": "https://wti.yale.edu/profile/smita-krishnaswamy",
+        "about": "The Wu Tsai Institute is an interdisciplinary research endeavor at Yale University connecting neuroscience and data science to accelerate breakthroughs in understanding cognition."
+   },
+   {
+        "title": "Institute for Foundations of Data Science",
+        "href": "https://fds.yale.edu/smita-krishnaswamy",
+        "about": "Yale's new Institute for Foundations of Data Science will help faculty across dozens of disciplines infuse their research with next-generation insights.",
+        "quote": {
+            "text": "Let the dataset change your mindset",
+            "attributed": "Hans Rosling"
+        }
+    },
+
+   
+   {
+        "title": "Computational Biology and Bioinformatics (CBB), Yale",
+        "href": "https://cbb.yale.edu/people/faculty-labs",
+        "about": "Computational Biology and Biomedical informatics (CBB) is a rapidly developing interdisciplinary field. Our program has research foci at the interface of informatics and biomedicine, genomics, and computational modeling of biological systems."
+   }
+    
+]

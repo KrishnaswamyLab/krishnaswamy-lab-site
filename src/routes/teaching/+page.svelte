@@ -10,7 +10,7 @@ export let data;
             Selected Yale University Courses
         </div>
         {#each data?.courses as {title, about, professors, listings}}
-        <div>
+        <div class="mt-8">
             <h2 class="font-light text-4xl my-2">
                 {title}
             </h2>

@@ -72,3 +72,26 @@ export interface project {
     youtube?: string | null,
 }
 
+export interface projectExample {
+    text: string;
+    href: string;
+}
+
+export interface projectCategory {
+    title?: string;
+    about?: string;
+    image?: string;
+    examples?: projectExample[] | Array<member | member[]> | ArrayLike<member | member[]>;
+}
+
+export interface quote {
+    text:string;
+    attributed:string;
+}
+
+export interface affiliation {
+    title:string;
+    href:string;
+    about:string;
+    quote?:quote;
+}
