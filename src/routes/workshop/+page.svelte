@@ -350,23 +350,16 @@
         '/images/workshops/workshop_6.jpg',
         '/images/workshops/workshop_7.jpeg',
         '/images/workshops/workshop_8.jpg',
-    ]
-    
+    ]    
+
+    import Hero from '$lib/Layout/Hero.svelte';
 </script>
-<div class="hero h-[40rem] bg-base-200" style="background-image: url(/images/workshops/workshop_hero.png)">       
-    <div class="hero-overlay bg-opacity-60"></div>
-    
-    <div class="text-center text-neutral-content">
-        <div class="max-w-md">
-            <h1 class="mb-5 text-8xl font-extralight capitalize break-all">
-                Workshop
-            </h1>
-            <p class="mb-5 text-2xl uppercase font-extralight break-all">
-                Machine Learning for Single-Cell Analysis
-            </p>
-        </div>
-    </div>
-</div>
+<Hero 
+    backgroundImage="/images/workshops/workshop_hero.png"
+    subtitle="Machine Learning for Single-Cell Analysis"
+>
+    Workshop
+</Hero>
 
 <div class="flex mt-8 justify-center">
     <figure class="max-w-max w-5/6 md:w-1/2">

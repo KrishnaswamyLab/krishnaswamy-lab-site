@@ -1,29 +1,17 @@
 <script>
     /** @type {import('./$types').PageData} */
     export let data;
-
-	import { goto } from '$app/navigation';
-    import Twitter from "$lib/Icons/Twitter.svelte";
-
-    import {openUrlInNewTab, lipsum, LabTwitterLink} from '$lib/utils'
-    
-    const toTwitter = () => openUrlInNewTab(LabTwitterLink)
+    import FollowUsBtn from '$lib/Layout/FollowUsBtn.svelte';
+    import Hero from '$lib/Layout/Hero.svelte';
 </script>
 
-<div class="hero h-[40rem]" style="background-image: url(/images/lab_hero.jpg);">
-    <div class="hero-overlay bg-opacity-60"></div>
-    <div class="hero-content text-center text-neutral-content">
-      <div class="max-w-md">
-        <h1 class="mb-5 text-5xl font-bold uppercase break-all">
-            The Krishnaswamy Lab
-        </h1>        
-        <button class="btn gap-2 btn-outline text-accent-content uppercase" on:click={toTwitter}>
-            <Twitter class="h-6 w-6  stroke-sky-400 fill-sky-400" />
-            Follow us on Twitter
-        </button>
-      </div>
-    </div>
-</div>
+<Hero backgroundImage="/images/lab_hero.jpg">
+    <span class="uppercase">The Krishnaswamy Lab</span>
+    <svelte:fragment slot="tagline">
+        <FollowUsBtn />
+    </svelte:fragment>
+</Hero>
+
 
 <div class="py-8"></div> 
 <!-- <div class="divider divider-vertical py-8"></div>  -->

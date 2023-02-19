@@ -4,8 +4,10 @@ export let data;
 
 import JellyContainer from '$lib/Layout/JellyContainer.svelte';
 import TextHero from '$lib/Layout/TextHero.svelte';
+import Hero from '$lib/Layout/Hero.svelte';
 </script>
-<div class="bg-primary h-16"></div>
+<Hero></Hero>
+
 
 <div class="mt-8 flex justify-center">
     <div class="mx-8 w-5/6 md:w-[48rem]">

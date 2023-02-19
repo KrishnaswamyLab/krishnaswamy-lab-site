@@ -89,6 +89,7 @@
 
     const iconHover = ''//'m-2 transition-all duration-300 ease-in-out hover:w-12 hover:h-12 hover:m-0'
     
+import Hero from '$lib/Layout/Hero.svelte';
 </script>
 <style>
     /* this one not necessary */
@@ -113,9 +114,8 @@
     }
 
 </style>
+<Hero></Hero>
 
-
-<div class="bg-primary h-16"></div>
 
 
 <div class="hero h-full min-h-screen">

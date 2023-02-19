@@ -9,8 +9,12 @@
     
     $: past = data?.members.filter(({isAlum})=>isAlum)
     $: curr = data?.members.filter(({isAlum})=>!isAlum)
+
+    import Hero from '$lib/Layout/Hero.svelte';
+
 </script>
-<div class="bg-primary h-16"></div>
+<Hero></Hero>
+
 
 <JellyContainer>
     <TextHero>
