@@ -4,17 +4,27 @@
     import type { project as projectInterface } from '$lib/types';
     import { goto } from '$app/navigation';
     import ProjectInfo from '$lib/Projects/ProjectInfo.svelte';
-    import ProjectHero from '$lib/Projects/ProjectHero.svelte';
-
-    const routeTitle = (project: projectInterface) => {
+    // import ProjectHero from '$lib/Projects/ProjectHero.svelte';
+    import Hero from '$lib/Layout/Hero.svelte'
+    const handleProjectTitle = (project: projectInterface) => {
         const heroTitle = project?.projectAbbreviation 
                             ? project?.projectAbbreviation 
                             : project.projectTitle
         return heroTitle
     }
-</script>
 
-<ProjectHero project={data?.project} />
+    const routeTitle = (project: projectInterface) => {
+        return handleProjectTitle(project)
+    }
+
+    $: heroTitle = handleProjectTitle(data?.project)
+    $: backgroundImage = String(data?.project.heroImage)
+    $: subtitle = String(data?.project?.heroBlurb)
+</script>
+<Hero {backgroundImage} {subtitle}>
+    {heroTitle}
+</Hero>
+<!-- <ProjectHero project={data?.project} /> -->
 
 <div class="flex flex-col md:flex-row justify-center mt-8 mx-16">
     <div class="md:w-[72rem] block">   

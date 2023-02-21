@@ -31,12 +31,25 @@
     $: about = member?.about 
         ? member?.about.replace('\n', '<br/>')
         : null   
+
+    export let useStickyTextHero = false;
+    export let useStickyImages = true;
+    const stickyClasses = useStickyTextHero 
+        ? 'top-32 sm:top-28 z-50'
+        : 'top-0 z-50'
 </script>
 
 <div class="card {styleCardSide} ease-in-out duration-300 ">
     <!-- hover:shadow-2xl -->
+
     {#if member?.image}
-    <figure class="m-8">
+    
+    <figure class="m-8 flex-col bg-base-100 {useStickyImages ? 'sticky' : ''} {stickyClasses}">
+        <div class="card-body {styleCardWidth} py-2 lg:hidden">
+            <h2 class="card-title sticky">
+                {member?.name}{#if member?.title}, {member?.title}{/if}
+            </h2>
+        </div>        
         <div class="avatar inline-flex place-content-center place-items-start">
             <div class="w-48 mask mask-squircle">
                 <!-- min-w-max max-h-max h-48 inline-flex -->
@@ -49,11 +62,10 @@
     </figure>   
     {/if}         
     <div class="card-body {styleCardWidth}">
-        <h2 class="card-title sticky">
+        <h2 class="hidden lg:block card-title sticky">
             {member?.name}{#if member?.title}, {member?.title}{/if}
         </h2>
-        <div class="
-        ">
+        <div class="lg:max-h-48 lg:overflow-y-scroll">
             <!-- max-h-48 overflow-y-scroll -->
             {@html about}
         </div>

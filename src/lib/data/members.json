@@ -27,10 +27,10 @@
     {
         "name": "Xingzhi Sun",
         "title": null,
-        "image": null,
+        "image": "/images/members/xingzhi_sun.png",
         "cv": null,
         "isAlum": false,
-        "about": null
+        "about": "Xingzhi is a PhD student of Computer Science at Yale University. His interests lie in deep learning and signal processing for biological problems. He has done research on interpretable machine learning, single-cell label transfer, graph spectral denoising, and neural differential equations for EHR data. He obtained his master's in Statistics and Data Science from Yale and his undergraduate degree in Mathematics and Applied Mathematics from the University of Chinese Academy of Sciences. He also interned at Microsoft Research Asia."
     },
     {
         "name": "Holly Steach",

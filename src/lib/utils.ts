@@ -23,3 +23,18 @@ export const lipsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     auctor nibh ante, porttitor commodo felis faucibus eget. Donec purus nunc, sollicitudin sed pharetra 
     quis, posuere a leo. Integer pellentesque lorem eget lobortis auctor. Nullam in tellus ac risus 
     luctus pharetra. Nunc et scelerisque erat, at sodales mauris. `
+
+
+
+import type {
+    ComponentMap as ComponentMapInterface,    
+} from '$lib/types'
+import GitHub from "$lib/Shields/GitHub.svelte";
+import Colab from "$lib/Shields/Colab.svelte";
+import Forms from "$lib/Shields/Forms.svelte";
+
+export const COMPONENT_SHIELD_MAP: ComponentMapInterface = {
+    'GitHub': GitHub,
+    'Colab': Colab,
+    'Forms': Forms,
+}

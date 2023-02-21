@@ -87,109 +87,98 @@ const makeKeywordsString = (pub:publicationInterface) => {
 }
 
 import Hero from '$lib/Layout/Hero.svelte';
+import JellyContainer from '$lib/Layout/JellyContainer.svelte';
 </script>
 <Hero backgroundImage="/images/publications_hero.jpeg">
     Research
 </Hero>
-
-<div class="flex mt-8 justify-center">
-    <div class="max-w-max w-5/6 md:w-1/2">
-        <div class="flex flex-col place-items-center gap-8 mt-8">
-            <div class="w-full  md:w-[48rem] mx-8 flex flex-col gap-8 place-items-center">
-        
-                <div class="text-2xl font-light">
-                    You can access the lab's Google Scholar profile by clicking the link below:
-                </div>
-        
-                <a href="https://scholar.google.com/citations?user=l2Pr9m8AAAAJ&hl=en&oi=ao">
-                    <img class="h-12" src="/images/journals/google_scholar.jpeg" alt="">
-                </a>
-        
-                <div class="divider divider-vertical"></div>
-                
-                <div class="text-xl font-light">
-                    Our research at the Krishnaswamy Lab focuses on applying machine learning methods to high-throughput high dimensional biological data. Our research projects aim to study and develop algorithmic approaches to naturally process data, visualize it, understand progressions, find phenotypic diversity, and infer patterns.  Below are our key research areas and priorities, along with some relevant projects:    
-                </div>
-        
-                <div class="flex flex-col gap-8">
-                    {#each data?.categories as {category, links}}
-                    <div class="flex flex-row gap-2">
-                        <div class="font-bold flex-1 text-xl">
-                            {category}
-                        </div>
-                        <div class="flex-1">
-                            {#each links as {href, text}, i}
-                                {#if href !== null}
-                                <a {href} class="font-light text-xl link text-blue-500 visited:text-purple-600">
-                                    {text}
-                                </a>
-                                {:else}
-                                <span class="font-light text-xl">
-                                    {text}
-                                </span>
-                                {/if}{i < links.length-1 ? ', ': ''}
-        
-                            {/each}
-                        </div>
-                    </div>            
-                    {/each}
-                </div>
-        
-                <div class="divider divider-vertical"></div>
-        
-        
-                <div class="text-5xl font-light">
-                    Selected Publications
-                </div>
-        
-        
-                <div class="divider divider-vertical"></div>
-        
-        
-                <div class="text-5xl font-light">
-                    Publications
-                </div>
-        
-                <ul class="w-full">
-                    {#each data?.publications as pub}
-                        <li class="">
-                            <div class="
-                                card card-bordered m-4 bg-base-200
-                                hover:shadow-2xl transition-all ease-in-out
-                                duration-300 hover:-translate-y-2
-                            ">
-                                <div class="card-body">
-                                    <div class="card-title break-all">
-                                        {#if pub?.urls?.length}
-                                        <a class="link" href={pub?.urls[0]?.href}>
-                                            {pub?.title}
-                                        </a>   
-                                        {:else}
-                                            {pub?.title}
-                                        {/if}
-                                    </div>
-                                    <span>
-                                        {@html makeAuthorString(pub?.authors)}                                
-                                    </span>
-                                    <span>
-                                        {@html makePublicationString(pub)}
-                                    </span>   
-                                    <!-- <span class="">
-                                        {#each pub?.keywords as kw}
-                                        <div class="mr-4 mt-1 p-3 badge badge-secondary badge-outline">
-                                            {kw}
-                                        </div>    
-                                        {/each}                                
-                                        {makeKeywordsString(pub)} 
-                                    </span>                     -->
-                                </div>
-                            </div>
-                        </li>
-                    {/each}
-        
-                </ul>
-        
-            </div>
+<JellyContainer>
+    <div class="flex flex-col place-items-center gap-8 mt-8">
+        <div class="text-2xl font-light">
+            You can access the lab's Google Scholar profile by clicking the link below:
         </div>
-    </div>
-</div>
+        <a href="https://scholar.google.com/citations?user=l2Pr9m8AAAAJ&hl=en&oi=ao">
+            <img class="h-12" src="/images/journals/google_scholar.jpeg" alt="">
+        </a>
+        <div class="divider divider-vertical"></div>
+        <div class="text-xl font-light">
+            Our research at the Krishnaswamy Lab focuses on applying machine learning methods to high-throughput high dimensional biological data. Our research projects aim to study and develop algorithmic approaches to naturally process data, visualize it, understand progressions, find phenotypic diversity, and infer patterns.  Below are our key research areas and priorities, along with some relevant projects:    
+        </div>
+        <div class="flex flex-col gap-8">
+            {#each data?.categories as {category, links}}
+            <div class="flex flex-row gap-2">
+                <div class="font-bold flex-1 text-xl">
+                    {category}
+                </div>
+                <div class="flex-1">
+                    {#each links as {href, text}, i}
+                        {#if href !== null}
+                        <a {href} class="font-light text-xl link text-blue-500 visited:text-purple-600">
+                            {text}
+                        </a>
+                        {:else}
+                        <span class="font-light text-xl">
+                            {text}
+                        </span>
+                        {/if}{i < links.length-1 ? ', ': ''}
+
+                    {/each}
+                </div>
+            </div>            
+            {/each}
+        </div>
+
+        <div class="divider divider-vertical"></div>
+        
+        
+        <div class="text-5xl font-light">
+            Selected Publications
+        </div>
+
+        
+        <div class="divider divider-vertical"></div>
+
+        <div class="text-5xl font-light">
+            Publications
+        </div>
+
+        <ul class="w-full">
+            {#each data?.publications as pub}
+                <li class="">
+                    <div class="
+                        card card-bordered m-4 bg-base-200
+                        hover:shadow-2xl transition-all ease-in-out
+                        duration-300 hover:-translate-y-2
+                    ">
+                        <div class="card-body">
+                            <div class="card-title break-all">
+                                {#if pub?.urls?.length}
+                                <a class="link" href={pub?.urls[0]?.href}>
+                                    {pub?.title}
+                                </a>   
+                                {:else}
+                                    {pub?.title}
+                                {/if}
+                            </div>
+                            <span>
+                                {@html makeAuthorString(pub?.authors)}                                
+                            </span>
+                            <span>
+                                {@html makePublicationString(pub)}
+                            </span>   
+                            <!-- <span class="">
+                                {#each pub?.keywords as kw}
+                                <div class="mr-4 mt-1 p-3 badge badge-secondary badge-outline">
+                                    {kw}
+                                </div>    
+                                {/each}                                
+                                {makeKeywordsString(pub)} 
+                            </span>                     -->
+                        </div>
+                    </div>
+                </li>
+            {/each}
+
+        </ul>
+    </div>    
+</JellyContainer>
