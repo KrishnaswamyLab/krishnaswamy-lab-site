@@ -4,9 +4,8 @@
     } from '$lib/types'
     import { goto } from '$app/navigation';
     import GitHub from '$lib/Icons/GitHub.svelte';
-    import Youtube from "svelte-youtube-embed";
-    import ProjectHero from '$lib/Projects/ProjectHero.svelte';
-
+    import Youtube from "svelte-youtube-embed";    
+    import Hero from '$lib/Layout/Hero.svelte'
     export let project: projectInterface
     export let useProjectHero = true
     export let contentWidthClasses = ''
@@ -15,13 +14,6 @@
     $: heroTitle = project?.projectAbbreviation 
                             ? project?.projectAbbreviation 
                             : project.projectTitle
-    $: heroStyle = project?.heroImage 
-                            ? `background-image: url(${project?.heroImage}); ` 
-                            : ""
-    $: heroTextStyle = project?.heroImage 
-                            ? `text-neutral-content` 
-                            : "text-primary"
-
 
     $: hasBothGithubAndJournal = project?.githubLink && project?.publicationLink 
     $: hasOneOfGithubOrJournal = project?.githubLink || project?.publicationLink
@@ -37,9 +29,7 @@
         below
         `
     }
-
-    // publicationPoster?: string | null,        
-    // youtube?: string | null,
+    
     const youtubeId = project?.youtube
 
     import { browser } from '$app/environment';
@@ -51,7 +41,13 @@
 {:else}
 <div class="inline-block">
     {#if useProjectHero}
-        <ProjectHero {project} />    
+        <Hero 
+            backgroundImage={String(project.heroImage)}
+            subtitle={String(project?.heroBlurb)}
+        >
+            {heroTitle}
+        </Hero>
+
     {/if}
 
     <div class="flex justify-center  mx-4">

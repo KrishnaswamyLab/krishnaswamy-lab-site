@@ -95,3 +95,22 @@ export interface affiliation {
     about:string;
     quote?:quote;
 }
+
+export interface  ComponentMap {
+    [key: string]: any
+}
+
+export interface SyllabusDayItem {
+    col1: string;
+    href: string;
+    col2: any;
+    col3: string;
+}
+export type SyllabusDayItems = Array<SyllabusDayItem>
+
+export interface SyllabusDay {
+    day: string;
+    items: SyllabusDayItems
+}
+
+export type Syllabus = Array<SyllabusDay>

@@ -12,21 +12,11 @@
 	
     const toTwitter = () => openUrlInNewTab(LabTwitterLink)
     const toGitHub = () => openUrlInNewTab(LabGitHubLink)
-        
+    import Hero from '$lib/Layout/Hero.svelte';
 </script>
-
-<!-- <div class="bg-primary h-16"></div> -->
-<div class="hero h-[40rem]" style="background-image: url(/images/projects_hero.jpeg);">
-    <div class="hero-overlay bg-opacity-60"></div>
-    <div class="hero-content text-center text-neutral-content">
-      <div class="max-w-md">
-        <h1 class="mb-5 text-5xl md:text-8xl font-light capitalize">
-            Projects
-        </h1>
-      </div>
-    </div>
-</div>
-
+<Hero backgroundImage="/images/projects_hero.jpeg">
+    Projects
+</Hero>
 
 <div class="py-8"></div> 
 

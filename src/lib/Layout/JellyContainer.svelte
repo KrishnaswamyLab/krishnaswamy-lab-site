@@ -1,6 +1,8 @@
 <script lang="ts">
-    // w-[68rem]
-    export let width:string = 'w-[48rem]';
+    // Currently: w-[48rem]
+    // Maybe consider: w-[68rem]
+    // For larger screens: xl:w-[72rem]
+    // NOTE: xl:w-[72rem] makes reading content hard given how wide it is
 </script>
 <style>
 .jelly {
@@ -22,8 +24,8 @@
     max-width: 68rem;
 }
 </style>
-<div class="flex justify-center">
-    <div class="mx-8 w-5/6 xl:w-[72rem]">
+<div class="flex justify-center {$$props.class}">
+    <div class="mx-8 w-5/6 md:w-[48rem]">
         <slot>
 
         </slot>

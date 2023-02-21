@@ -9,34 +9,47 @@
     
     $: past = data?.members.filter(({isAlum})=>isAlum)
     $: curr = data?.members.filter(({isAlum})=>!isAlum)
+
+    import Hero from '$lib/Layout/Hero.svelte';
+    const useStickyTextHero = false;
+    const stickyClasses = 'sticky top-0 bg-base-100 z-[100] pb-8'
+
 </script>
-<div class="bg-primary h-16"></div>
+<Hero></Hero>
+
 
 <JellyContainer>
-    <TextHero>
-        Krishnaswamy Lab Members
-    </TextHero>
-    <div class="my-4 py-4">
-        {#each curr as member, i }
-            {#if member?.about}
-                <MemberInfo {member} />   
-                {#if i < curr.length -1 }
-                    <div class="divider divider-vertical h-8"></div>           
-                {/if}
-            {/if}        
-        {/each}
+    <div class="relative">
+        <TextHero class="{useStickyTextHero ? stickyClasses : ''}">
+            Krishnaswamy Lab Members
+        </TextHero>
+        <div class="my-4 py-4">
+            {#each curr as member, i }
+                {#if member?.about}
+                    <MemberInfo {member} {useStickyTextHero}/>   
+                    {#if i < curr.length -1 }
+                        <div class="divider divider-vertical h-8"></div>           
+                    {/if}
+                {/if}        
+            {/each}
+        </div>
     </div>
     
-    <TextHero>
+    
+    <TextHero class="{useStickyTextHero ? stickyClasses : ''}">
         Krishnaswamy Lab Alumni
     </TextHero>
     <div class="my-4 py-4">
         {#each past as member, i}
-            <MemberInfo {member} />    
+            <MemberInfo {member} {useStickyTextHero}/>    
             {#if i < past.length -1 }
                 <div class="divider divider-vertical h-8"></div>           
             {/if} 
         {/each}
+    </div>
+
+    <div class="py-48">
+
     </div>
     
 </JellyContainer>
