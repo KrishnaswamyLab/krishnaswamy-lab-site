@@ -2,60 +2,43 @@
 	/** @type {import('./$types').PageData} */
     export let data;
     import { goto } from '$app/navigation';
-    import {LabTwitterLink, LabGitHubLink, openUrlInNewTab} from '$lib/utils';
+    import {LabGitHubLink, openUrlInNewTab} from '$lib/utils';
 
     import ProjectListItem from '$lib/Projects/ProjectListItem.svelte';
     import ProjectInfo from '$lib/Projects/ProjectInfo.svelte';
-    import Twitter from "$lib/Icons/Twitter.svelte";
-    import GitHub from '$lib/Icons/GitHub.svelte';
-
-	
-    const toTwitter = () => openUrlInNewTab(LabTwitterLink)
+    
+    import GitHub from '$lib/Icons/GitHub.svelte';    
     const toGitHub = () => openUrlInNewTab(LabGitHubLink)
+    
     import Hero from '$lib/Layout/Hero.svelte';
+    import JellyContainer from "$lib/Layout/JellyContainer.svelte";
 </script>
 <Hero backgroundImage="/images/projects_hero.jpeg">
     Projects
 </Hero>
-
-<div class="py-8"></div> 
-
-<div class="flex mx-2">
-    <div class="w-full text-center">
-        <div class="text-2xl font-light">
-            You can access the Lab's Github Repository by clicking the link below
-        </div>        
-        <div class="inline-flex justify-center pt-8">
-            <GitHub on:click={toGitHub} class="h-16 w-16 "/>
-        </div>
+<JellyContainer class="pt-16">   
+    <div class="text-2xl font-light text-center">
+        You can access the Lab's Github Repository by clicking the link below
+    </div>        
+    
+    <div class="flex justify-center pt-8">
+        <GitHub on:click={toGitHub} class="h-16 w-16 "/>
     </div>
-</div>
-
-<div class="flex justify-center py-8  mx-2">
-    <div class="max-w-fit w-[42rem] ">
-        <div class="divider divider-vertical"></div>
+    
+    <div class="divider divider-vertical py-8"></div>
+    
+    <div class="text-center font-bold text-4xl">
+        Lab Projects
     </div>
-</div>
-
-
-
-<div class="px-8 flex justify-center">
-    <div class="max-w-fit w-[42rem]">
-        <div class="text-center font-bold text-4xl">
-            Lab Projects
-        </div>
-        <ol class="mt-4 list-inside list-decimal text-lg ">
-            {#each data.projects as project}
-                <ProjectListItem {project} />
-            {/each}           
-        </ol>        
-    </div>
-</div>
+    <ol class="mt-4 list-inside list-decimal text-lg ">
+        {#each data.projects as project}
+            <ProjectListItem {project} />
+        {/each}           
+    </ol>
+</JellyContainer>
 
 <div class="mt-8 flex flex-col justify-center">
     {#each data.projects as project, i}
-            <ProjectInfo {project} class="mt-8" contentWidthClasses={"md:w-[36rem] lg:w-[48rem]"}/>    
-    {/each}   
-    
+        <ProjectInfo {project} class="mt-8" contentWidthClasses={"md:w-[36rem] lg:w-[48rem]"}/>    
+    {/each}       
 </div>
-
