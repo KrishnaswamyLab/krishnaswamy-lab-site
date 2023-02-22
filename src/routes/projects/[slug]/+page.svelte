@@ -68,7 +68,7 @@
                 <ProjectInfo  
                     useProjectHero="{false}" 
                     project={data?.project} 
-                    contentWidthClasses={"md:w-[28rem] lg:w-[36rem]"}
+                    
                 />
             </div>
         </div>            
