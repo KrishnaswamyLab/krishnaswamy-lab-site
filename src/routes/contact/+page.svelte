@@ -12,60 +12,42 @@
     import ContactSquare from '$lib/Layout/ContactSquare.svelte';
 
 
-    const key = 'pk.eyJ1IjoiZHNtNzIiLCJhIjoiY2w5OGxyd3BqMHRmOTQxbXZxdnc5ZDFneiJ9.nSwC10Ves0TE5xZYWUEwww'
-    import { browser } from '$app/environment';
-    import { onMount } from 'svelte';
-
-    import { Map, Geocoder, Marker, controls } from '@beyonk/svelte-mapbox'
-    const { GeolocateControl, NavigationControl } = controls
-    let mapComponent
-    const lat = 41.303190
-    const lng = -72.933910
-    $: center = {lat, lng}
-    let zoom = 14
-
-    function recentre ({ detail }) {
-        center = detail.center
-    }
-    function drag ({ detail }) {
-        marker = detail.center
-    }
-    
-    onMount(async () => {
-        if (browser) {
-            mapComponent.setCenter([lng,lat], zoom) // zoom is optional
-            mapComponent.flyTo({center:[lng,lat]}, zoom)        
+    const contactSquares = [
+        {
+            what: 'Follow Us',
+            icon: Twitter,
+            href: LabTwitterLink,
+            fill: 'fill-sky-400',
+            text: 'text-sky-400',
+            how: '@KrishnaswamyLab'
+        },
+        {
+            what: 'Fork Us',
+            icon: GitHub,
+            href: LabGitHubLink,
+            fill: '',
+            text: 'text-slate-900',
+            how: '@KrishnaswamyLab'
+        },
+        {
+            what: 'Email Us',
+            icon: Mail,
+            href: 'mailto:smita.krishnaswamy@yale.edu',
+            fill: 'fill-slate-900',
+            text: 'text-slate-900',
+            how: 'smita.krishnaswamy@yale.edu'
+        },
+        {
+            what: 'Call Us',
+            icon: Phone,
+            href: 'tel:203.785.7833',
+            fill: 'fill-green-400',
+            text: 'text-green-500',
+            how: '203.785.7833'
         }
-    })
-    
 
-    const contactInfos = [
-        {
-            bold: 'Follow us',
-            pref: 'on',
-            link: LabTwitterLink,
-            text: 'Twitter',
-        },
-        {
-            bold: 'Access',
-            pref: 'on',
-            link: LabGitHubLink,
-            text: 'GitHub',
-        },
-        {
-            bold: 'Call us',
-            pref: 'at',
-            link: 'tel:203.785.7833',
-            text: '203.785.7833',
-        },
-        {
-            bold: 'Email',
-            pref: 'at',
-            link: 'mailto:smita.krishnaswamy@yale.edu',
-            text: 'smita.krishnaswamy@yale.edu',
-        },
     ]
-
+    
     const departments = [
         {
             dept: 'Genetics Department',
@@ -87,169 +69,81 @@
         },
     ]
 
-    const iconHover = ''//'m-2 transition-all duration-300 ease-in-out hover:w-12 hover:h-12 hover:m-0'
-    
-import Hero from '$lib/Layout/Hero.svelte';
+    import Hero from '$lib/Layout/Hero.svelte';
+import MapBox from '$lib/Contact/MapBox.svelte';
 </script>
-<style>
-    /* this one not necessary */
-    :global(.mapboxgl-map) {
-        height: 24rem; /* 320px tailwindcss h-80 */
-    }
-    /* this one necessary */
-    .map-wrap {        
-        height: 24rem; /* tailwindcss h-96 */
-    }
-    :global(#logo svg) {
-        fill: white;
-        height: 60px;
-    }
-    .slogan {
-        margin-top: 14px;
-    }
-    
-    .action-buttons {
-        display: flex;
-        justify-content: space-between;
-    }
 
-</style>
 <Hero></Hero>
 
-
-
-<div class="hero h-full min-h-screen">
-    <div class="hero-content text-center w-full">
-        <div class="w-full">
-            <h1 class="my-5 text-5xl uppercase break-all">
-                The Krishnaswamy Lab
-            </h1>        
-            <p class="py-8 text-3xl font-extralight">
+<JellyContainer>
+    <div class="text-center">
+        <Hero>
+            The Krishnaswamy Lab
+            <div slot="tagline">
                 Smita Krishnaswamy, Ph.D
-            </p>
-
-            <div class="w-72 inline-block place-items-center">
-                <div class="divider divider-veritcal"></div>
             </div>
-
-            <p class="py-8 text-3xl font-extralight">
-                Get in touch
-            </p>
-
-            <div class="py-8 grid grid-cols-2 md:grid-cols-4 justify-evenly  gap-4">
-                <ContactSquare href="{LabTwitterLink}" howClass="text-sky-400">
+        </Hero>            
+        
+        <div class="divider divider-veritcal"></div>
+    
+        <p class="py-8 text-2xl md:text-3xl font-extralight">
+            Get in touch
+        </p>
+    
+        <div class="py-8 grid grid-cols-1 md:grid-cols-2 justify-evenly  gap-4">
+            {#each contactSquares as square}
+                <ContactSquare href="{square.href}" howClass="{square.text}">
                     <span slot="what">
-                        Follow Us
+                        {square.what}
                     </span>
                     <span slot="icon">
-                        <Twitter class="w-8 h-8 fill-sky-400  {iconHover}"/>
+                        <svelte:component 
+                            this={square.icon}
+                            class="w-8 h-8 {square.fill}"
+                        />                            
                     </span>
                     <span slot="how">
-                        @KrishnaswamyLab
+                        {square.how}
                     </span>
                 </ContactSquare>
+            {/each}                        
+        </div>
     
-                <ContactSquare href="{LabGitHubLink}" howClass="text-slate-900">
-                    <span slot="what">
-                        Fork Us
-                    </span>
-                    <span slot="icon">
-                        <GitHub class="w-8 h-8 {iconHover}"/>
-                    </span>
-                    <span slot="how">
-                        @KrishnaswamyLab
-                    </span>
-                </ContactSquare>
-    
-                <ContactSquare href="mailto:smita.krishnaswamy@yale.edu" howClass="text-slate-900">
-                    <span slot="what">
-                        Email us
-                    </span>
-                    <span slot="icon">
-                        <Mail class="w-8 h-8 fill-slate-400  {iconHover}"/>
-                    </span>
-                    <span slot="how">
-                        smita.krishnaswamy@yale.edu
-                    </span>
-                </ContactSquare>
-    
-                <ContactSquare href="tel:203.785.7833" howClass="text-green-500">
-                    <span slot="what">
-                        Call us
-                    </span>
-                    <span slot="icon">
-                        <Phone class="w-8 h-8 fill-green-400  {iconHover}" />
-                    </span>
-                    <span slot="how">
-                        203.785.7833
-                    </span>
-                </ContactSquare>            
-            </div>
+        <p class="py-8 text-2xl md:text-3xl font-extralight">
+            Meet in person
+        </p>
 
-            <!-- <div class="w-72 inline-block place-items-center">
-                <div class="divider divider-veritcal"></div>
-            </div> -->
+        <div class="py-8 inline-flex place-content-center w-full">
+            <div class="grid grid-cols-1 md:grid-cols-2  w-full gap-8">
+                {#each departments as {dept, school, street, room, city, state, zip}}
+                    <div class="
+                        card card-compact card-bordered border-base-300
+                        bg-base-200                            
+                        hover:shadow-2xl transition-all ease-in-out
+                        duration-300 hover:-translate-y-2
+                    ">
+                        <div class="card-body">
+                            <div class="card-title text-center inline-block">
+                                {dept} <br/> 
+                                <span class="font-light">
+                                    {school}
+                                </span>
+                            </div>
 
-            
-            
-
-            <p class="py-8 text-3xl font-extralight">
-                Meet in person
-            </p>
-
-            <div class="p-8 inline-flex place-content-center w-full">
-                <div class="grid grid-cols-1 md:grid-cols-2  w-full gap-8">
-                    {#each departments as {dept, school, street, room, city, state, zip}}
-                        <div class="
-                            card card-compact card-bordered border-base-300
-                            bg-base-200                            
-                            hover:shadow-2xl transition-all ease-in-out
-                            duration-300 hover:-translate-y-2
-                        ">
-                            <div class="card-body">
-                                <div class="card-title text-center inline-block">
-                                    {dept} <br/> 
-                                    <span class="font-light">
-                                        {school}
-                                    </span>
-                                </div>
-
-                                <div class="text-md">
-                                    <span>{street}</span>
-                                    <br/>
-                                    <span>{room}</span>
-                                    <br/>
-                                    <span>{city}, {state} {zip}</span>
-                                </div>
+                            <div class="text-md">
+                                <span>{street}</span>
+                                <br/>
+                                <span>{room}</span>
+                                <br/>
+                                <span>{city}, {state} {zip}</span>
                             </div>
                         </div>
-                    {/each}                   
-                </div>                        
-            </div> 
+                    </div>
+                {/each}                   
+            </div>                        
+        </div> 
 
-            <div class="flex place-content-center px-8">
-                <div class="w-full h-96">
-                    {#if browser}
-                    <div id="map" class="">
-                        <div class="w-full map-wrap">
-                            <Map
-                                accessToken="{key}"
-                                style='mapbox://styles/mapbox/light-v11'
-                                bind:this={mapComponent}
-                                on:drag={drag}
-                                bind:zoom
-                                on:recentre={recentre}
-                                options={{ scrollZoom: false }} 
-                            >
-                                <NavigationControl />
-                                <Marker lat={lat} lng={lng} />
-                            </Map>
-                            
-                        </div>
-                    </div>            
-                    {/if}
-                </div>
-            </div>         
-        </div>
+        <MapBox/>
+        
     </div>
-</div>
+</JellyContainer>

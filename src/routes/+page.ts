@@ -5,7 +5,7 @@ import type {
 } from '$lib/types'
 
 
-import categories from '$lib/data/project_categories.json'
+import categories from '$lib/data/research_topics.json'
 import affiliations from '$lib/data/affiliations.json'
 
 export function load({ }) {

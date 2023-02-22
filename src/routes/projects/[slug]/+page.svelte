@@ -24,7 +24,6 @@
 <Hero {backgroundImage} {subtitle}>
     {heroTitle}
 </Hero>
-<!-- <ProjectHero project={data?.project} /> -->
 
 <div class="flex flex-col md:flex-row justify-center mt-8 mx-16">
     <div class="md:w-[72rem] block">   

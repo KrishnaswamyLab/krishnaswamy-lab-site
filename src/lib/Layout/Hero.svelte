@@ -17,11 +17,26 @@
         </svelte:fragment> 
     </ImageHero>  
 {:else if $$slots.default}
+    {#if $$slots.tagline}
     <TextHero>
         <slot>
 
-        </slot>
+        </slot>        
+        <svelte:fragment slot="tagline">
+            <slot name="tagline">
+
+            </slot>
+        </svelte:fragment> 
     </TextHero>
+    {:else}
+    <TextHero>
+        <slot>
+
+        </slot>        
+    </TextHero>
+    {/if}
+    
+
 {:else}
   <div class="bg-primary h-16"></div>
 {/if}

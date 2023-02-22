@@ -2,10 +2,17 @@
     import type {
         project as projectInterface
     } from '$lib/types'
+    
     import { goto } from '$app/navigation';
+    import { browser } from '$app/environment';
+
+    import Hero from '$lib/Layout/Hero.svelte'
+    import JellyContainer from "$lib/Layout/JellyContainer.svelte";
+
     import GitHub from '$lib/Icons/GitHub.svelte';
     import Youtube from "svelte-youtube-embed";    
-    import Hero from '$lib/Layout/Hero.svelte'
+    
+
     export let project: projectInterface
     export let useProjectHero = true
     export let contentWidthClasses = ''
@@ -32,7 +39,7 @@
     
     const youtubeId = project?.youtube
 
-    import { browser } from '$app/environment';
+    
 
 </script>
 
