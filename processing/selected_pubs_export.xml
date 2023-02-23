@@ -6,6 +6,70 @@
       <contributors>
         <authors>
           <author>
+            Huguet, Guillaume
+          </author>
+          <author>
+            Magruder, D. S.
+          </author>
+          <author>
+            Tong, Alexander
+          </author>
+          <author>
+            Fasina, Oluwadamilola
+          </author>
+          <author>
+            Kuchroo, Manik
+          </author>
+          <author>
+            Wolf, Guy
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Manifold Interpolating Optimal-Transport Flows for Trajectory Inference</title>
+      </titles>
+      <dates>
+        <year>2022</year>
+          <pub-dates>
+            <date>6</date>
+          </pub-dates>
+      </dates>
+      <electronic-resource-num>10.48550&#x2F;arxiv.2206.14928</electronic-resource-num>
+      <abstract>We present a method called Manifold Interpolating Optimal-Transport Flow
+(MIOFlow) that learns stochastic, continuous population dynamics from static
+snapshot samples taken at sporadic timepoints. MIOFlow combines dynamic models,
+manifold learning, and optimal transport by training neural ordinary
+differential equations (Neural ODE) to interpolate between static population
+snapshots as penalized by optimal transport with manifold ground distance.
+Further, we ensure that the flow follows the geometry by operating in the
+latent space of an autoencoder that we call a geodesic autoencoder (GAE). In
+GAE the latent space distance between points is regularized to match a novel
+multiscale geodesic distance on the data manifold that we define. We show that
+this method is superior to normalizing flows, Schr\&quot;odinger bridges and other
+generative models that are designed to flow from noise to data in terms of
+interpolating between populations. Theoretically, we link these trajectories
+with dynamic optimal transport. We evaluate our method on simulated data with
+bifurcations and merges, as well as scRNA-seq data from embryoid body
+differentiation, and acute myeloid leukemia treatment.</abstract>
+      <periodical><full-title>NeurIPS</full-title></periodical>
+      <keywords>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2206.14928v2</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
             van Dijk, David
           </author>
           <author>
@@ -80,6 +144,7 @@
       </keywords>
       <urls>
         <related-urls>
+          <url>https:&#x2F;&#x2F;www.sciencedirect.com&#x2F;science&#x2F;article&#x2F;pii&#x2F;S0092867418307244</url>
         </related-urls>
       </urls>
     </record>
@@ -116,6 +181,7 @@
       </keywords>
       <urls>
         <related-urls>
+          <url>https:&#x2F;&#x2F;papers.nips.cc&#x2F;paper&#x2F;2018&#x2F;hash&#x2F;c8ed21db4f678f3b13b9d5ee16489088-Abstract.html</url>
         </related-urls>
       </urls>
     </record>
@@ -878,6 +944,7 @@ topological activity between adults and children watching the same movie.</abstr
       </keywords>
       <urls>
         <related-urls>
+          <url>https:&#x2F;&#x2F;ieeexplore.ieee.org&#x2F;document&#x2F;9596214</url>
         </related-urls>
       </urls>
     </record>
@@ -1758,53 +1825,6 @@ goal-directed drug synthesis.</abstract>
       </urls>
     </record>
     <record>
-      <ref-type name="generic"></ref-type>
-      <contributors>
-        <authors>
-          <author>
-            Huguet, Guillaume
-          </author>
-          <author>
-            Magruder, Daniel Sumner
-          </author>
-          <author>
-            Tong, Alexander
-          </author>
-          <author>
-            Fasina, Oluwadamilola
-          </author>
-          <author>
-            Kuchroo, Manik
-          </author>
-          <author>
-            Wolf, Guy
-          </author>
-          <author>
-            Krishnaswamy, Smita
-          </author>
-        </authors>
-        <secondary-authors>
-        </secondary-authors>
-      </contributors>
-      <titles>
-        <title>Manifold Interpolating Optimal-Transport Flows for Trajectory Inference</title>
-      </titles>
-      <dates>
-        <year>2022</year>
-          <pub-dates>
-            <date>10</date>
-          </pub-dates>
-      </dates>
-      <abstract>We present a method called Manifold Interpolating Optimal-Transport Flow (MIOFlow) that learns stochastic, continuous population dynamics from static snapshot samples taken at sporadic timepoints. MIOFlow combines dynamic models,  manifold learning, and optimal transport by training neural ordinary differential equations (Neural ODE) to interpolate between static population snapshots as penalized by optimal transport with manifold ground distance. Further, we ensure that the flow follows the geometry by operating in the latent space of an autoencoder that we call a geodesic autoencoder (GAE). In GAE the latent space distance between points is regularized to match a novel multiscale geodesic distance on the data manifold that we define. We show that this method is superior to normalizing flows, Schr\&quot;odinger bridges and other generative models that are designed to flow from noise to data in terms of interpolating between populations. Theoretically, we link these trajectories with dynamic optimal transport. We evaluate our method on simulated data with bifurcations and merges, as well as scRNA-seq data from embryoid body differentiation, and acute myeloid leukemia treatment.</abstract>
-      <keywords>
-      </keywords>
-      <urls>
-        <related-urls>
-          <url>https:&#x2F;&#x2F;github.com&#x2F;KrishnaswamyLab&#x2F;MIOFlow</url>
-        </related-urls>
-      </urls>
-    </record>
-    <record>
       <ref-type name="Journal Article"></ref-type>
       <contributors>
         <authors>
@@ -1960,6 +1980,7 @@ provides a link between topological and geometric data analysis.</abstract>
       </keywords>
       <urls>
         <related-urls>
+          <url>https:&#x2F;&#x2F;iovs.arvojournals.org&#x2F;article.aspx?articleid&#x3D;2780446</url>
         </related-urls>
       </urls>
     </record>
