@@ -48,7 +48,7 @@
         {/each}
     </div>
 
-    <div class="py-48">
+    <div class="hidden py-48">
 
     </div>
     
