@@ -726,9 +726,11 @@ topological activity between adults and children watching the same movie.</abstr
             <date>7</date>
           </pub-dates>
       </dates>
+      <volume>139</volume>
       <pages>10336-10346</pages>
       <abstract>We propose a new fast method of measuring distances between large numbers of related high dimensional datasets called the Diffusion Earth Mover&#39;s Distance (EMD). We model the datasets as distributions supported on common data graph that is derived from the affinity matrix computed on the combined data. In such cases where the graph is a discretization of an underlying Rieman-nian closed manifold, we prove that Diffusion EMD is topologically equivalent to the standard EMD with a geodesic ground distance. Diffusion EMD can be computed iñ O(n) time and is more accurate than similarly fast algorithms such as tree-based EMDs. We also show Diffusion EMD is fully differentiable, making it amenable to future uses in gradient-descent frameworks such as deep neural networks. Finally, we demonstrate an application of Diffusion EMD to single cell data collected from 210 COVID-19 patient samples at Yale New Haven Hospital. Here, Diffusion EMD can derive distances between patients on the manifold of cells at least two orders of magnitude faster than equally accurate methods. This distance matrix between patients can be embedded into a higher level patient manifold which uncovers structure and heterogeneity in patients. More generally, Diffusion EMD is applicable to all datasets that are massively collected in parallel in many medical and biological systems.</abstract>
       <publisher>PMLR</publisher>
+      <periodical><full-title>Proceedings of Machine Learning Research</full-title></periodical>
       <keywords>
         <keyword>ICML</keyword>
         <keyword>Machine Learning</keyword>
@@ -1744,6 +1746,7 @@ curvature notion to an entire quadratic form using neural network estimations
 based on the diffusion map of point-cloud data. We show applications of both
 estimations on toy data, single-cell data, and on estimating local Hessian
 matrices of neural network loss landscapes.</abstract>
+      <periodical><full-title>NeurIPS</full-title></periodical>
       <keywords>
       </keywords>
       <urls>
@@ -1889,6 +1892,7 @@ data changes over diffusion time. We demonstrate both types of topological
 information in well-understood toy examples. Our work gives theoretical
 insights into the convergence of diffusion condensation, and shows that it
 provides a link between topological and geometric data analysis.</abstract>
+      <periodical><full-title>arXiv</full-title></periodical>
       <keywords>
         <keyword>37B25</keyword>
         <keyword>57R40</keyword>

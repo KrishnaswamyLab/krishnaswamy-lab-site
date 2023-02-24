@@ -18,11 +18,9 @@ S. Horoi, J. Huang, B. Rieck, G. Lajoie, G. Wolf, S. Krishnaswamy*. Exploring th
 
 M. Kuchroo, J. Huang, P. Wong, J.C. Grenier, D. Shung, A. Tong,  C. Lucas., J. Klein, Gamache I., Poujol R., Burkhardt D.B., Gigante S., Godavarthi A., Rieck B., Israelow B., Simonov M., Mao T., Eun Oh J., Silva J., Pesaranghader A., Takahashi T. Odio C.D., Casanovas-Massana A., Fournier J., Yale IMPACT Team, Farhadian S., Dela Cruz C.S., Ko A.I., Wilson F.P., Hussin J., Wolf G., A.S. Iwasaki*., S. Krishnaswamy*. “Multiscale PHATE Exploration of SARS-CoV-2 Data Reveals Multimodal Signatures of Disease.’ Nature Biotechnology. March 2022, https://www.nature.com/articles/s41587-021-01186-x
 
-
 A. Tong,G.  Wolf, & S. Krishnaswamy, Fixing Bias in Reconstruction-based Anomaly Detection with Lipschitz Discriminators. Journal of Signal Processing Systems (2021). doi:10.1007/s11265-021-01715-6
 
 D. Shung, M. Gerasimiuk, G. Wolf, S. Krishnaswamy,*. (2021, December). MURAL: An Unsupervised Random Forest-Based Embedding for Electronic Health Record Data. In 2021 IEEE International Conference on Big Data (Big Data) (pp. 4694-4704). 
-
 
 M. Kuchroo, A. Godavarthi, A. Tong, G. Wolf, & S. Krishnaswamy*. (2021, October). Multimodal Data Visualization and Denoising with Integrated Diffusion. In 2021 IEEE 31st International Workshop on Machine Learning for Signal Processing (MLSP) (pp. 1-6). IEEE.  (Nominated for Best Paper Award)
 
@@ -42,16 +40,12 @@ J.S. Stanley III, S. Gigante, G. Wolf, and S. Krishnaswamy*. "Harmonic Alignment
 
 W. S. Chen, N. Zivanovic, D. van Dijk, G. Wolf, B. Bodenmiller, Smita Krishnaswamy*, “Uncovering axes of variation among single cell cancer Specimens,” Nature Methods 2020, https://doi.org/10.1038/s41592-019-0689-z
 
-
 K.R. Moon, D. van Dijk, Z. Wang, W. Chen, M.J. Hirn, R. R. Coifman, N.B. Ivanova, G. Wolf, and S. Krishnaswamy,* “Visualizing structure and transitions in high-dimensional biological data,” Nature Biotechnology 2019, vol. 37, n. 12, pp. 1482-1492, doi: 10.1038/s41587-019-0395-5.
 
 M. Amodio, D. van Dijk, K. Srinivasan, W. S. Chen, K. R. Moon, A. Campbell, Y. Zhao, X. Wang, M. Venkataswamy, A. Desai, V. Ravi, P. Kumar, R. Montgomery, G. Wolf, and S. Krishnaswamy,* “Exploring single-cell data with multitasking deep neural networks,” Nature Methods 2019, vol. 16, pp. 1139–1145, doi:10.1038/s41592-019-0576-7.
 
-
-
 M. Amodio and S. Krishnaswamy,* “TraVeLGAN: Image-to-image Translation by Transformation Vector Learning.” Proceedings of Computer Vision and Pattern Recognition (CVPR) 2019, pp. 8983-8992.
 
 O. Lindenbaum, J. S. Stanley III, G. Wolf, and S. Krishnaswamy,* Geometry-Based Data Generation. In proceedings of the 32nd Annual Conference on Neural Information Processing Systems (NeurIPS) 2018, pp. 1407-1418.
-
 
 van Dijk, D,. Sharma, R. Nainys, J., Yim, K., Kathail, P., Carr, A., Burdziak, C., Moon, K. R., Chaffer, C. L., Pattabiraman, D., Bierie, B., Mazutis, L. and Wolf, Guy, S. Krishnaswamy*, D. Pe’er*, “Recovering Gene Interactions from Single-Cell Data Using Data Diffusion,” Cell 2018, no. 174(3), pp. 716 – 729 doi.org/10.2139/ssrn.3155779 
