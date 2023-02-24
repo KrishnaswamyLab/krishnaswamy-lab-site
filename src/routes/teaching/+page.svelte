@@ -8,21 +8,21 @@ import Hero from '$lib/Layout/Hero.svelte';
 </script>
 <Hero></Hero>
 <JellyContainer class="mt-8">
-    <div class="font-extralight text-7xl text-center mb-8">
+    <Hero>
         Selected Yale University Courses
-    </div>
+    </Hero>    
     {#each data?.courses as {title, about, professors, listings}}
     <div class="mt-8">
-        <h2 class="font-light text-4xl my-2">
+        <h2 class="font-light text-2xl md:text-4xl my-2">
             {title}
         </h2>
         <div>
-            <h3 class="font-extralight text-2xl my-2">
+            <h3 class="font-extralight text-xl md:text-2xl my-2">
                 {#each professors as professor, i}
                     {professor}{i < professors.length - 1 ? " & " : ''}
                 {/each}
             </h3>
-            <span class="font-semibold text-lg my-2">
+            <span class="font-semibold text-md md:text-lg my-2">
                 {#each listings as listing, i}
                     {listing}{i < listings.length - 1 ? "/" : ''}
                 {/each}

@@ -1,0 +1,1992 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <records>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Huguet, Guillaume
+          </author>
+          <author>
+            Magruder, D. S.
+          </author>
+          <author>
+            Tong, Alexander
+          </author>
+          <author>
+            Fasina, Oluwadamilola
+          </author>
+          <author>
+            Kuchroo, Manik
+          </author>
+          <author>
+            Wolf, Guy
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Manifold Interpolating Optimal-Transport Flows for Trajectory Inference</title>
+      </titles>
+      <dates>
+        <year>2022</year>
+          <pub-dates>
+            <date>6</date>
+          </pub-dates>
+      </dates>
+      <electronic-resource-num>10.48550&#x2F;arxiv.2206.14928</electronic-resource-num>
+      <abstract>We present a method called Manifold Interpolating Optimal-Transport Flow
+(MIOFlow) that learns stochastic, continuous population dynamics from static
+snapshot samples taken at sporadic timepoints. MIOFlow combines dynamic models,
+manifold learning, and optimal transport by training neural ordinary
+differential equations (Neural ODE) to interpolate between static population
+snapshots as penalized by optimal transport with manifold ground distance.
+Further, we ensure that the flow follows the geometry by operating in the
+latent space of an autoencoder that we call a geodesic autoencoder (GAE). In
+GAE the latent space distance between points is regularized to match a novel
+multiscale geodesic distance on the data manifold that we define. We show that
+this method is superior to normalizing flows, Schr\&quot;odinger bridges and other
+generative models that are designed to flow from noise to data in terms of
+interpolating between populations. Theoretically, we link these trajectories
+with dynamic optimal transport. We evaluate our method on simulated data with
+bifurcations and merges, as well as scRNA-seq data from embryoid body
+differentiation, and acute myeloid leukemia treatment.</abstract>
+      <periodical><full-title>NeurIPS</full-title></periodical>
+      <keywords>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2206.14928v2</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            van Dijk, David
+          </author>
+          <author>
+            Sharma, Roshan
+          </author>
+          <author>
+            Nainys, Juozas
+          </author>
+          <author>
+            Yim, Kristina
+          </author>
+          <author>
+            Kathail, Pooja
+          </author>
+          <author>
+            Carr, Ambrose J.
+          </author>
+          <author>
+            Burdziak, Cassandra
+          </author>
+          <author>
+            Moon, Kevin R.
+          </author>
+          <author>
+            Chaffer, Christine L.
+          </author>
+          <author>
+            Pattabiraman, Diwakar
+          </author>
+          <author>
+            Bierie, Brian
+          </author>
+          <author>
+            Mazutis, Linas
+          </author>
+          <author>
+            Wolf, Guy
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+          <author>
+            Pe&#39;er, Dana
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Recovering Gene Interactions from Single-Cell Data Using Data Diffusion</title>
+      </titles>
+      <dates>
+        <year>2018</year>
+          <pub-dates>
+            <date>7</date>
+          </pub-dates>
+      </dates>
+      <volume>174</volume>
+      <pages>716-729.e27</pages>
+      <issue>3</issue>
+      <accession-num>29961576</accession-num>
+      <electronic-resource-num>10.1016&#x2F;J.CELL.2018.05.061</electronic-resource-num>
+      <abstract>Single-cell RNA sequencing technologies suffer from many sources of technical noise, including under-sampling of mRNA molecules, often termed “dropout,” which can severely obscure important gene-gene relationships. To address this, we developed MAGIC (Markov affinity-based graph imputation of cells), a method that shares information across similar cells, via data diffusion, to denoise the cell count matrix and fill in missing transcripts. We validate MAGIC on several biological systems and find it effective at recovering gene-gene relationships and additional structures. Applied to the epithilial to mesenchymal transition, MAGIC reveals a phenotypic continuum, with the majority of cells residing in intermediate states that display stem-like signatures, and infers known and previously uncharacterized regulatory interactions, demonstrating that our approach can successfully uncover regulatory relations without perturbations. A new algorithm overcomes limitations of data loss in single-cell sequencing experiments.</abstract>
+      <publisher>Cell Press</publisher>
+      <periodical><full-title>Cell</full-title></periodical>
+      <keywords>
+        <keyword>EMT</keyword>
+        <keyword>imputation</keyword>
+        <keyword>manifold learning</keyword>
+        <keyword>regulatory networks</keyword>
+        <keyword>single-cell RNA sequencing</keyword>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;www.sciencedirect.com&#x2F;science&#x2F;article&#x2F;pii&#x2F;S0092867418307244</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Lindenbaum, Ofir
+          </author>
+          <author>
+            Stanley, Jay S
+          </author>
+          <author>
+            Wolf, Guy
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Geometry Based Data Generation</title>
+      </titles>
+      <dates>
+        <year>2018</year>
+      </dates>
+      <volume>31</volume>
+      <abstract>We propose a new type of generative model for high-dimensional data that learns a manifold geometry of the data, rather than density, and can generate points evenly along this manifold. This is in contrast to existing generative models that represent data density, and are strongly affected by noise and other artifacts of data collection. We demonstrate how this approach corrects sampling biases and artifacts, thus improves several downstream data analysis tasks, such as clustering and classification. Finally, we demonstrate that this approach is especially useful in biology where, despite the advent of single-cell technologies, rare subpopulations and gene-interaction relationships are affected by biased sampling. We show that SUGAR can generate hypothetical populations, and it is able to reveal intrinsic patterns and mutual-information relationships between genes on a single-cell RNA sequencing dataset of hematopoiesis.</abstract>
+      <periodical><full-title>Advances in Neural Information Processing Systems</full-title></periodical>
+      <keywords>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;papers.nips.cc&#x2F;paper&#x2F;2018&#x2F;hash&#x2F;c8ed21db4f678f3b13b9d5ee16489088-Abstract.html</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Amodio, Matthew
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>TraVeLGAN: Image-to-image Translation by Transformation Vector Learning</title>
+      </titles>
+      <dates>
+        <year>2019</year>
+          <pub-dates>
+            <date>2</date>
+          </pub-dates>
+      </dates>
+      <volume>2019-June</volume>
+      <pages>8975-8984</pages>
+      <isbn>9781728132938</isbn>
+      <electronic-resource-num>10.48550&#x2F;arxiv.1902.09631</electronic-resource-num>
+      <abstract>Interest in image-to-image translation has grown substantially in recent
+years with the success of unsupervised models based on the cycle-consistency
+assumption. The achievements of these models have been limited to a particular
+subset of domains where this assumption yields good results, namely homogeneous
+domains that are characterized by style or texture differences. We tackle the
+challenging problem of image-to-image translation where the domains are defined
+by high-level shapes and contexts, as well as including significant clutter and
+heterogeneity. For this purpose, we introduce a novel GAN based on preserving
+intra-domain vector transformations in a latent space learned by a siamese
+network. The traditional GAN system introduced a discriminator network to guide
+the generator into generating images in the target domain. To this two-network
+system we add a third: a siamese network that guides the generator so that each
+original image shares semantics with its generated version. With this new
+three-network system, we no longer need to constrain the generators with the
+ubiquitous cycle-consistency restraint. As a result, the generators can learn
+mappings between more complex domains that differ from each other by large
+differences - not just style or texture.</abstract>
+      <publisher>IEEE Computer Society</publisher>
+      <periodical><full-title>Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition</full-title></periodical>
+      <keywords>
+        <keyword>Deep Learning</keyword>
+        <keyword>Image and Video Synthesis</keyword>
+        <keyword>Others</keyword>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;1902.09631v1</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Amodio, Matthew
+          </author>
+          <author>
+            van Dijk, David
+          </author>
+          <author>
+            Srinivasan, Krishnan
+          </author>
+          <author>
+            Chen, William S.
+          </author>
+          <author>
+            Mohsen, Hussein
+          </author>
+          <author>
+            Moon, Kevin R.
+          </author>
+          <author>
+            Campbell, Allison
+          </author>
+          <author>
+            Zhao, Yujiao
+          </author>
+          <author>
+            Wang, Xiaomei
+          </author>
+          <author>
+            Venkataswamy, Manjunatha
+          </author>
+          <author>
+            Desai, Anita
+          </author>
+          <author>
+            Ravi, V.
+          </author>
+          <author>
+            Kumar, Priti
+          </author>
+          <author>
+            Montgomery, Ruth
+          </author>
+          <author>
+            Wolf, Guy
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Exploring single-cell data with deep multitasking neural networks</title>
+      </titles>
+      <dates>
+        <year>2019</year>
+          <pub-dates>
+            <date>10</date>
+          </pub-dates>
+      </dates>
+      <volume>16</volume>
+      <pages>1139-1145</pages>
+      <issue>11</issue>
+      <accession-num>31591579</accession-num>
+      <electronic-resource-num>10.1038&#x2F;s41592-019-0576-7</electronic-resource-num>
+      <abstract>It is currently challenging to analyze single-cell data consisting of many cells and samples, and to address variations arising from batch effects and different sample preparations. For this purpose, we present SAUCIE, a deep neural network that combines parallelization and scalability offered by neural networks, with the deep representation of data that can be learned by them to perform many single-cell data analysis tasks. Our regularizations (penalties) render features learned in hidden layers of the neural network interpretable. On large, multi-patient datasets, SAUCIE’s various hidden layers contain denoised and batch-corrected data, a low-dimensional visualization and unsupervised clustering, as well as other information that can be used to explore the data. We analyze a 180-sample dataset consisting of 11 million T cells from dengue patients in India, measured with mass cytometry. SAUCIE can batch correct and identify cluster-based signatures of acute dengue infection and create a patient manifold, stratifying immune response to dengue. SAUCIE, a deep learning platform to analyze single-cell data across samples and platforms, allows information to be obtained from the internal layers of the network, which provides additional mechanistic understanding that can be used to further tune data analysis.</abstract>
+      <publisher>Nature Publishing Group</publisher>
+      <periodical><full-title>Nature Methods 2019 16:11</full-title></periodical>
+      <keywords>
+        <keyword>Computational biology and bioinformatics</keyword>
+        <keyword>Computational models</keyword>
+        <keyword>Gene expression</keyword>
+        <keyword>Machine learning</keyword>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;www.nature.com&#x2F;articles&#x2F;s41592-019-0576-7</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Moon, Kevin R.
+          </author>
+          <author>
+            van Dijk, David
+          </author>
+          <author>
+            Wang, Zheng
+          </author>
+          <author>
+            Gigante, Scott
+          </author>
+          <author>
+            Burkhardt, Daniel B.
+          </author>
+          <author>
+            Chen, William S.
+          </author>
+          <author>
+            Yim, Kristina
+          </author>
+          <author>
+            Elzen, Antonia van den
+          </author>
+          <author>
+            Hirn, Matthew J.
+          </author>
+          <author>
+            Coifman, Ronald R.
+          </author>
+          <author>
+            Ivanova, Natalia B.
+          </author>
+          <author>
+            Wolf, Guy
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Visualizing structure and transitions in high-dimensional biological data</title>
+      </titles>
+      <dates>
+        <year>2019</year>
+          <pub-dates>
+            <date>12</date>
+          </pub-dates>
+      </dates>
+      <volume>37</volume>
+      <pages>1482-1492</pages>
+      <issue>12</issue>
+      <accession-num>31796933</accession-num>
+      <electronic-resource-num>10.1038&#x2F;s41587-019-0336-3</electronic-resource-num>
+      <abstract>The high-dimensional data created by high-throughput technologies require visualization tools that reveal data structure and patterns in an intuitive form. We present PHATE, a visualization method that captures both local and global nonlinear structure using an information-geometric distance between data points. We compare PHATE to other tools on a variety of artificial and biological datasets, and find that it consistently preserves a range of patterns in data, including continual progressions, branches and clusters, better than other tools. We define a manifold preservation metric, which we call denoised embedding manifold preservation (DEMaP), and show that PHATE produces lower-dimensional embeddings that are quantitatively better denoised as compared to existing visualization methods. An analysis of a newly generated single-cell RNA sequencing dataset on human germ-layer differentiation demonstrates how PHATE reveals unique biological insight into the main developmental branches, including identification of three previously undescribed subpopulations. We also show that PHATE is applicable to a wide variety of data types, including mass cytometry, single-cell RNA sequencing, Hi-C and gut microbiome data. PHATE, a new data visualization tool, better preserves patterns in high-dimensional data after dimensionality reduction.</abstract>
+      <publisher>Nature Publishing Group</publisher>
+      <periodical><full-title>Nature Biotechnology 2019 37:12</full-title></periodical>
+      <keywords>
+        <keyword>Data mining</keyword>
+        <keyword>Machine learning</keyword>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;www.nature.com&#x2F;articles&#x2F;s41587-019-0336-3</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Chen, William S.
+          </author>
+          <author>
+            Zivanovic, Nevena
+          </author>
+          <author>
+            van Dijk, David
+          </author>
+          <author>
+            Wolf, Guy
+          </author>
+          <author>
+            Bodenmiller, Bernd
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Uncovering axes of variation among single-cell cancer specimens</title>
+      </titles>
+      <dates>
+        <year>2020</year>
+          <pub-dates>
+            <date>1</date>
+          </pub-dates>
+      </dates>
+      <volume>17</volume>
+      <pages>302-310</pages>
+      <issue>3</issue>
+      <accession-num>31932777</accession-num>
+      <electronic-resource-num>10.1038&#x2F;s41592-019-0689-z</electronic-resource-num>
+      <abstract>While several tools have been developed to map axes of variation among individual cells, no analogous approaches exist for identifying axes of variation among multicellular biospecimens profiled at single-cell resolution. For this purpose, we developed ‘phenotypic earth mover’s distance’ (PhEMD). PhEMD is a general method for embedding a ‘manifold of manifolds’, in which each datapoint in the higher-level manifold (of biospecimens) represents a collection of points that span a lower-level manifold (of cells). We apply PhEMD to a newly generated drug-screen dataset and demonstrate that PhEMD uncovers axes of cell subpopulational variation among a large set of perturbation conditions. Moreover, we show that PhEMD can be used to infer the phenotypes of biospecimens not directly profiled. Applied to clinical datasets, PhEMD generates a map of the patient-state space that highlights sources of patient-to-patient variation. PhEMD is scalable, compatible with leading batch-effect correction techniques and generalizable to multiple experimental designs. Phenotypic earth mover’s distance (PhEMD) facilitates the comparison of single-cell experimental conditions, each of which is a high-dimensional dataset, and identifies axes of variation among multicellular biospecimens.</abstract>
+      <publisher>Nature Publishing Group</publisher>
+      <periodical><full-title>Nature Methods 2020 17:3</full-title></periodical>
+      <keywords>
+        <keyword>Cancer genomics</keyword>
+        <keyword>Computational models</keyword>
+        <keyword>Software</keyword>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;www.nature.com&#x2F;articles&#x2F;s41592-019-0689-z</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Stanley, Jay S.
+          </author>
+          <author>
+            Gigante, Scott
+          </author>
+          <author>
+            Wolf, Guy
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Harmonic Alignment</title>
+      </titles>
+      <dates>
+        <year>2018</year>
+          <pub-dates>
+            <date>9</date>
+          </pub-dates>
+      </dates>
+      <pages>316-324</pages>
+      <isbn>9781611976236</isbn>
+      <electronic-resource-num>10.48550&#x2F;arxiv.1810.00386</electronic-resource-num>
+      <abstract>We propose a novel framework for combining datasets via alignment of their
+intrinsic geometry. This alignment can be used to fuse data originating from
+disparate modalities, or to correct batch effects while preserving intrinsic
+data structure. Importantly, we do not assume any pointwise correspondence
+between datasets, but instead rely on correspondence between a (possibly
+unknown) subset of data features. We leverage this assumption to construct an
+isometric alignment between the data. This alignment is obtained by relating
+the expansion of data features in harmonics derived from diffusion operators
+defined over each dataset. These expansions encode each feature as a function
+of the data geometry. We use this to relate the diffusion coordinates of each
+dataset through our assumption of partial feature correspondence. Then, a
+unified diffusion geometry is constructed over the aligned data, which can also
+be used to correct the original data measurements. We demonstrate our method on
+several datasets, showing in particular its effectiveness in biological
+applications including fusion of single-cell RNA sequencing (scRNA-seq) and
+single-cell ATAC sequencing (scATAC-seq) data measured on the same population
+of cells, and removal of batch effect between biological samples.</abstract>
+      <publisher>Society for Industrial and Applied Mathematics Publications</publisher>
+      <periodical><full-title>Proceedings of the 2020 SIAM International Conference on Data Mining, SDM 2020</full-title></periodical>
+      <keywords>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;1810.00386v4</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Tong, Alexander
+          </author>
+          <author>
+            Huang, Jessie
+          </author>
+          <author>
+            Wolf, Guy
+          </author>
+          <author>
+            Dijk, David Van
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>TrajectoryNet: A Dynamic Optimal Transport Network for Modeling Cellular Dynamics</title>
+      </titles>
+      <dates>
+        <year>2020</year>
+      </dates>
+      <volume>119</volume>
+      <pages>9526</pages>
+      <isbn>9781713821120</isbn>
+      <accession-num>34337419</accession-num>
+      <abstract>It is increasingly common to encounter data from dynamic processes captured by static crosssectional measurements over time, particularly in biomedical settings. Recent attempts to model individual trajectories from this data use optimal transport to create pairwise matchings between time points. However, these methods cannot model continuous dynamics and non-linear paths that entities can take in these systems. To address this issue, we establish a link between continuous normalizing flows and dynamic optimal transport, that allows us to model the expected paths of points over time. Continuous normalizing flows are generally under constrained, as they are allowed to take an arbitrary path from the source to the target distribution. We present TrajectoryNet, which controls the continuous paths taken between distributions to produce dynamic optimal transport. We show how this is particularly applicable for studying cellular dynamics in data from single-cell RNA sequencing (scRNA-seq) technologies, and that TrajectoryNet improves upon recently proposed static optimal transport-based models that can be used for interpolating cellular distributions.</abstract>
+      <publisher>NIH Public Access</publisher>
+      <periodical><full-title>Proceedings of machine learning research</full-title></periodical>
+      <keywords>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>&#x2F;pmc&#x2F;articles&#x2F;PMC8320749&#x2F;</url>
+          <url>&#x2F;pmc&#x2F;articles&#x2F;PMC8320749&#x2F;?report&#x3D;abstract</url>
+          <url>https:&#x2F;&#x2F;www.ncbi.nlm.nih.gov&#x2F;pmc&#x2F;articles&#x2F;PMC8320749&#x2F;</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Tong, Alexander
+          </author>
+          <author>
+            van Dijk, David
+          </author>
+          <author>
+            Stanley, Jay S.
+          </author>
+          <author>
+            Amodio, Matthew
+          </author>
+          <author>
+            Yim, Kristina
+          </author>
+          <author>
+            Muhle, Rebecca
+          </author>
+          <author>
+            Noonan, James
+          </author>
+          <author>
+            Wolf, Guy
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Interpretable Neuron Structuring with Graph Spectral Regularization</title>
+      </titles>
+      <dates>
+        <year>2020</year>
+      </dates>
+      <volume>12080 LNCS</volume>
+      <pages>509-521</pages>
+      <isbn>9783030445836</isbn>
+      <electronic-resource-num>10.1007&#x2F;978-3-030-44584-3_40&#x2F;TABLES&#x2F;1</electronic-resource-num>
+      <abstract>While neural networks are powerful approximators used to classify or embed data into lower dimensional spaces, they are often regarded as black boxes with uninterpretable features. Here we propose Graph Spectral Regularization for making hidden layers more interpretable without significantly impacting performance on the primary task. Taking inspiration from spatial organization and localization of neuron activations in biological networks, we use a graph Laplacian penalty to structure the activations within a layer. This penalty encourages activations to be smooth either on a predetermined graph or on a feature-space graph learned from the data via co-activations of a hidden layer of the neural network. We show numerous uses for this additional structure including cluster indication and visualization in biological and image data sets.</abstract>
+      <publisher>Springer</publisher>
+      <periodical><full-title>Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)</full-title></periodical>
+      <keywords>
+        <keyword>Feature saliency</keyword>
+        <keyword>Graph learning</keyword>
+        <keyword>Neural Network Interpretability</keyword>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;link.springer.com&#x2F;chapter&#x2F;10.1007&#x2F;978-3-030-44584-3_40</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Rieck, Bastian
+          </author>
+          <author>
+            Yates, Tristan
+          </author>
+          <author>
+            Bock, Christian
+          </author>
+          <author>
+            Borgwardt, Karsten
+          </author>
+          <author>
+            Wolf, Guy
+          </author>
+          <author>
+            Turk-Browne, Nicholas
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Uncovering the Topology of Time-Varying fMRI Data using Cubical Persistence</title>
+      </titles>
+      <dates>
+        <year>2020</year>
+          <pub-dates>
+            <date>6</date>
+          </pub-dates>
+      </dates>
+      <volume>2020-December</volume>
+      <electronic-resource-num>10.48550&#x2F;arxiv.2006.07882</electronic-resource-num>
+      <abstract>Functional magnetic resonance imaging (fMRI) is a crucial technology for
+gaining insights into cognitive processes in humans. Data amassed from fMRI
+measurements result in volumetric data sets that vary over time. However,
+analysing such data presents a challenge due to the large degree of noise and
+person-to-person variation in how information is represented in the brain. To
+address this challenge, we present a novel topological approach that encodes
+each time point in an fMRI data set as a persistence diagram of topological
+features, i.e. high-dimensional voids present in the data. This representation
+naturally does not rely on voxel-by-voxel correspondence and is robust to
+noise. We show that these time-varying persistence diagrams can be clustered to
+find meaningful groupings between participants, and that they are also useful
+in studying within-subject brain state trajectories of subjects performing a
+particular task. Here, we apply both clustering and trajectory analysis
+techniques to a group of participants watching the movie &#39;Partly Cloudy&#39;. We
+observe significant differences in both brain state trajectories and overall
+topological activity between adults and children watching the same movie.</abstract>
+      <publisher>Neural information processing systems foundation</publisher>
+      <periodical><full-title>Advances in Neural Information Processing Systems</full-title></periodical>
+      <keywords>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2006.07882v2</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="generic"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Tong, Alexander Y
+          </author>
+          <author>
+            Huguet, Guillaume
+          </author>
+          <author>
+            Natik, Amine
+          </author>
+          <author>
+            Macdonald, Kincaid
+          </author>
+          <author>
+            Kuchroo, Manik
+          </author>
+          <author>
+            Coifman, Ronald
+          </author>
+          <author>
+            Wolf, Guy
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Diffusion Earth Mover’s Distance and Distribution Embeddings</title>
+      </titles>
+      <dates>
+        <year>2021</year>
+          <pub-dates>
+            <date>7</date>
+          </pub-dates>
+      </dates>
+      <volume>139</volume>
+      <pages>10336-10346</pages>
+      <abstract>We propose a new fast method of measuring distances between large numbers of related high dimensional datasets called the Diffusion Earth Mover&#39;s Distance (EMD). We model the datasets as distributions supported on common data graph that is derived from the affinity matrix computed on the combined data. In such cases where the graph is a discretization of an underlying Rieman-nian closed manifold, we prove that Diffusion EMD is topologically equivalent to the standard EMD with a geodesic ground distance. Diffusion EMD can be computed iñ O(n) time and is more accurate than similarly fast algorithms such as tree-based EMDs. We also show Diffusion EMD is fully differentiable, making it amenable to future uses in gradient-descent frameworks such as deep neural networks. Finally, we demonstrate an application of Diffusion EMD to single cell data collected from 210 COVID-19 patient samples at Yale New Haven Hospital. Here, Diffusion EMD can derive distances between patients on the manifold of cells at least two orders of magnitude faster than equally accurate methods. This distance matrix between patients can be embedded into a higher level patient manifold which uncovers structure and heterogeneity in patients. More generally, Diffusion EMD is applicable to all datasets that are massively collected in parallel in many medical and biological systems.</abstract>
+      <publisher>PMLR</publisher>
+      <periodical><full-title>Proceedings of Machine Learning Research</full-title></periodical>
+      <keywords>
+        <keyword>ICML</keyword>
+        <keyword>Machine Learning</keyword>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;proceedings.mlr.press&#x2F;v139&#x2F;tong21a.html</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Burkhardt, Daniel B.
+          </author>
+          <author>
+            Stanley, Jay S.
+          </author>
+          <author>
+            Tong, Alexander
+          </author>
+          <author>
+            Perdigoto, Ana Luisa
+          </author>
+          <author>
+            Gigante, Scott A.
+          </author>
+          <author>
+            Herold, Kevan C.
+          </author>
+          <author>
+            Wolf, Guy
+          </author>
+          <author>
+            Giraldez, Antonio J.
+          </author>
+          <author>
+            van Dijk, David
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Quantifying the effect of experimental perturbations at single-cell resolution</title>
+      </titles>
+      <dates>
+        <year>2021</year>
+          <pub-dates>
+            <date>5</date>
+          </pub-dates>
+      </dates>
+      <volume>39</volume>
+      <pages>619-629</pages>
+      <issue>5</issue>
+      <accession-num>33558698</accession-num>
+      <electronic-resource-num>10.1038&#x2F;S41587-020-00803-5</electronic-resource-num>
+      <abstract>Current methods for comparing single-cell RNA sequencing datasets collected in multiple conditions focus on discrete regions of the transcriptional state space, such as clusters of cells. Here we quantify the effects of perturbations at the single-cell level using a continuous measure of the effect of a perturbation across the transcriptomic space. We describe this space as a manifold and develop a relative likelihood estimate of observing each cell in each of the experimental conditions using graph signal processing. This likelihood estimate can be used to identify cell populations specifically affected by a perturbation. We also develop vertex frequency clustering to extract populations of affected cells at the level of granularity that matches the perturbation response. The accuracy of our algorithm at identifying clusters of cells that are enriched or depleted in each condition is, on average, 57% higher than the next-best-performing algorithm tested. Gene signatures derived from these clusters are more accurate than those of six alternative algorithms in ground truth comparisons.</abstract>
+      <publisher>Nat Biotechnol</publisher>
+      <periodical><full-title>Nature biotechnology</full-title></periodical>
+      <keywords>
+        <keyword>Algorithms</keyword>
+        <keyword>Cluster Analysis</keyword>
+        <keyword>Computational Biology*</keyword>
+        <keyword>Computer Simulation</keyword>
+        <keyword>Daniel B Burkhardt</keyword>
+        <keyword>Extramural</keyword>
+        <keyword>Humans</keyword>
+        <keyword>Jay S Stanley</keyword>
+        <keyword>Likelihood Functions</keyword>
+        <keyword>MEDLINE</keyword>
+        <keyword>N.I.H.</keyword>
+        <keyword>NCBI</keyword>
+        <keyword>NIH</keyword>
+        <keyword>NLM</keyword>
+        <keyword>National Center for Biotechnology Information</keyword>
+        <keyword>National Institutes of Health</keyword>
+        <keyword>National Library of Medicine</keyword>
+        <keyword>Non-U.S. Gov&#39;t</keyword>
+        <keyword>PMC8122059</keyword>
+        <keyword>PubMed Abstract</keyword>
+        <keyword>RNA &#x2F; trends*</keyword>
+        <keyword>Research Support</keyword>
+        <keyword>Sequence Analysis</keyword>
+        <keyword>Single-Cell Analysis &#x2F; trends*</keyword>
+        <keyword>Smita Krishnaswamy</keyword>
+        <keyword>Transcriptome &#x2F; genetics*</keyword>
+        <keyword>doi:10.1038&#x2F;s41587-020-00803-5</keyword>
+        <keyword>pmid:33558698</keyword>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;pubmed.ncbi.nlm.nih.gov&#x2F;33558698&#x2F;</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Amodio, Matthew
+          </author>
+          <author>
+            Shung, Dennis
+          </author>
+          <author>
+            Burkhardt, Daniel B.
+          </author>
+          <author>
+            Wong, Patrick
+          </author>
+          <author>
+            Simonov, Michael
+          </author>
+          <author>
+            Yamamoto, Yu
+          </author>
+          <author>
+            van Dijk, David
+          </author>
+          <author>
+            Wilson, Francis Perry
+          </author>
+          <author>
+            Iwasaki, Akiko
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Generating hard-to-obtain information from easy-to-obtain information: Applications in drug discovery and clinical inference</title>
+      </titles>
+      <dates>
+        <year>2021</year>
+          <pub-dates>
+            <date>7</date>
+          </pub-dates>
+      </dates>
+      <volume>2</volume>
+      <pages>100288</pages>
+      <issue>7</issue>
+      <accession-num>34286302</accession-num>
+      <electronic-resource-num>10.1016&#x2F;J.PATTER.2021.100288</electronic-resource-num>
+      <abstract>Often when biological entities are measured in multiple ways, there are distinct categories of information: some information is easy-to-obtain information (EI) and can be gathered on virtually every subject of interest, while other information is hard-to-obtain information (HI) and can only be gathered on some. We propose building a model to make probabilistic predictions of HI using EI. Our feature mapping GAN (FMGAN), based on the conditional GAN framework, uses an embedding network to process conditions as part of the conditional GAN training to create manifold structure when it is not readily present in the conditions. We experiment on generating RNA sequencing of cell lines perturbed with a drug conditioned on the drug&#39;s chemical structure and generating FACS data from clinical monitoring variables on a cohort of COVID-19 patients, effectively describing their immune response in great detail.</abstract>
+      <publisher>Elsevier</publisher>
+      <periodical><full-title>Patterns</full-title></periodical>
+      <keywords>
+        <keyword>DSML 2: Proof-of-concept: Data science output has been formulated, implemented, and tested for one domain&#x2F;problem</keyword>
+        <keyword>clinical data monitoring</keyword>
+        <keyword>conditional generative models</keyword>
+        <keyword>drug perturbations</keyword>
+        <keyword>generative adversarial networks</keyword>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>&#x2F;pmc&#x2F;articles&#x2F;PMC8276014&#x2F;</url>
+          <url>&#x2F;pmc&#x2F;articles&#x2F;PMC8276014&#x2F;?report&#x3D;abstract</url>
+          <url>https:&#x2F;&#x2F;www.ncbi.nlm.nih.gov&#x2F;pmc&#x2F;articles&#x2F;PMC8276014&#x2F;</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Kuchroo, Manik
+          </author>
+          <author>
+            Godavarthi, Abhinav
+          </author>
+          <author>
+            Tong, Alexander
+          </author>
+          <author>
+            Wolf, Guy
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Multimodal Data Visualization and Denoising with Integrated Diffusion</title>
+      </titles>
+      <dates>
+        <year>2021</year>
+      </dates>
+      <volume>2021-October</volume>
+      <isbn>9781728163383</isbn>
+      <electronic-resource-num>10.1109&#x2F;MLSP52302.2021.9596214</electronic-resource-num>
+      <abstract>We propose a method called integrated diffusion for combining multimodal data, gathered via different sensors on the same system, to create a integrated data diffusion operator. As real world data suffers from both local and global noise, we introduce mechanisms to optimally calculate a diffusion operator that reflects the combined information in data by maintaining low frequency eigenvectors of each modality both globally and locally. We show the utility of this integrated operator in denoising and visualizing multimodal toy data as well as multi-omic data generated from blood cells, measuring both gene expression and chromatin accessibility. Our approach better visualizes the geometry of the integrated data and captures known cross-modality associations. More generally, integrated diffusion is broadly applicable to multimodal datasets generated by noisy sensors collected in a variety of fields.</abstract>
+      <publisher>IEEE Computer Society</publisher>
+      <periodical><full-title>IEEE International Workshop on Machine Learning for Signal Processing, MLSP</full-title></periodical>
+      <keywords>
+        <keyword>data denoising</keyword>
+        <keyword>data diffusion</keyword>
+        <keyword>dimensionality reduction</keyword>
+        <keyword>manifold learning</keyword>
+        <keyword>multimodal data</keyword>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;ieeexplore.ieee.org&#x2F;document&#x2F;9596214</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Gerasimiuk, Michal
+          </author>
+          <author>
+            Shung, Dennis
+          </author>
+          <author>
+            Tong, Alexander
+          </author>
+          <author>
+            Stanley, Adrian
+          </author>
+          <author>
+            Schultz, Michael
+          </author>
+          <author>
+            Ngu, Jeffrey
+          </author>
+          <author>
+            Laine, Loren
+          </author>
+          <author>
+            Wolf, Guy
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>MURAL: An Unsupervised Random Forest-Based Embedding for Electronic Health Record Data</title>
+      </titles>
+      <dates>
+        <year>2021</year>
+          <pub-dates>
+            <date>11</date>
+          </pub-dates>
+      </dates>
+      <pages>4694-4704</pages>
+      <isbn>9781665439022</isbn>
+      <electronic-resource-num>10.48550&#x2F;arxiv.2111.10452</electronic-resource-num>
+      <abstract>A major challenge in embedding or visualizing clinical patient data is the
+heterogeneity of variable types including continuous lab values, categorical
+diagnostic codes, as well as missing or incomplete data. In particular, in EHR
+data, some variables are {\em missing not at random (MNAR)} but deliberately
+not collected and thus are a source of information. For example, lab tests may
+be deemed necessary for some patients on the basis of suspected diagnosis, but
+not for others. Here we present the MURAL forest -- an unsupervised random
+forest for representing data with disparate variable types (e.g., categorical,
+continuous, MNAR). MURAL forests consist of a set of decision trees where
+node-splitting variables are chosen at random, such that the marginal entropy
+of all other variables is minimized by the split. This allows us to also split
+on MNAR variables and discrete variables in a way that is consistent with the
+continuous variables. The end goal is to learn the MURAL embedding of patients
+using average tree distances between those patients. These distances can be fed
+to nonlinear dimensionality reduction method like PHATE to derive visualizable
+embeddings. While such methods are ubiquitous in continuous-valued datasets
+(like single cell RNA-sequencing) they have not been used extensively in mixed
+variable data. We showcase the use of our method on one artificial and two
+clinical datasets. We show that using our approach, we can visualize and
+classify data more accurately than competing approaches. Finally, we show that
+MURAL can also be used to compare cohorts of patients via the recently proposed
+tree-sliced Wasserstein distances.</abstract>
+      <publisher>Institute of Electrical and Electronics Engineers Inc.</publisher>
+      <periodical><full-title>Proceedings - 2021 IEEE International Conference on Big Data, Big Data 2021</full-title></periodical>
+      <keywords>
+        <keyword>data analysis</keyword>
+        <keyword>electronic medical records</keyword>
+        <keyword>random forests</keyword>
+        <keyword>unsupervised learning</keyword>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2111.10452v1</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Tong, Alexander
+          </author>
+          <author>
+            Wolf, Guy
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Fixing Bias in Reconstruction-based Anomaly Detection with Lipschitz Discriminators</title>
+      </titles>
+      <dates>
+        <year>2019</year>
+          <pub-dates>
+            <date>5</date>
+          </pub-dates>
+      </dates>
+      <volume>94</volume>
+      <pages>229-243</pages>
+      <issue>2</issue>
+      <isbn>9781728166629</isbn>
+      <electronic-resource-num>10.48550&#x2F;arxiv.1905.10710</electronic-resource-num>
+      <abstract>Anomaly detection is of great interest in fields where abnormalities need to
+be identified and corrected (e.g., medicine and finance). Deep learning methods
+for this task often rely on autoencoder reconstruction error, sometimes in
+conjunction with other errors. We show that this approach exhibits intrinsic
+biases that lead to undesirable results. Reconstruction-based methods are
+sensitive to training-data outliers and simple-to-reconstruct points. Instead,
+we introduce a new unsupervised Lipschitz anomaly discriminator that does not
+suffer from these biases. Our anomaly discriminator is trained, similar to the
+ones used in GANs, to detect the difference between the training data and
+corruptions of the training data. We show that this procedure successfully
+detects unseen anomalies with guarantees on those that have a certain
+Wasserstein distance from the data or corrupted training set. These additions
+allow us to show improved performance on MNIST, CIFAR10, and health record
+data.</abstract>
+      <publisher>Springer</publisher>
+      <periodical><full-title>Journal of Signal Processing Systems</full-title></periodical>
+      <keywords>
+        <keyword>Anomaly detection</keyword>
+        <keyword>Integral probability measures</keyword>
+        <keyword>Lipschitz neural networks</keyword>
+        <keyword>Optimal transport</keyword>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;1905.10710v3</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Kuchroo, Manik
+          </author>
+          <author>
+            Huang, Jessie
+          </author>
+          <author>
+            Wong, Patrick
+          </author>
+          <author>
+            Grenier, Jean Christophe
+          </author>
+          <author>
+            Shung, Dennis
+          </author>
+          <author>
+            Tong, Alexander
+          </author>
+          <author>
+            Lucas, Carolina
+          </author>
+          <author>
+            Klein, Jon
+          </author>
+          <author>
+            Burkhardt, Daniel B.
+          </author>
+          <author>
+            Gigante, Scott
+          </author>
+          <author>
+            Godavarthi, Abhinav
+          </author>
+          <author>
+            Rieck, Bastian
+          </author>
+          <author>
+            Israelow, Benjamin
+          </author>
+          <author>
+            Simonov, Michael
+          </author>
+          <author>
+            Mao, Tianyang
+          </author>
+          <author>
+            Oh, Ji Eun
+          </author>
+          <author>
+            Silva, Julio
+          </author>
+          <author>
+            Takahashi, Takehiro
+          </author>
+          <author>
+            Odio, Camila D.
+          </author>
+          <author>
+            Casanovas-Massana, Arnau
+          </author>
+          <author>
+            Fournier, John
+          </author>
+          <author>
+            Obaid, Abeer
+          </author>
+          <author>
+            Moore, Adam
+          </author>
+          <author>
+            Lu-Culligan, Alice
+          </author>
+          <author>
+            Nelson, Allison
+          </author>
+          <author>
+            Brito, Anderson
+          </author>
+          <author>
+            Nunez, Angela
+          </author>
+          <author>
+            Martin, Anjelica
+          </author>
+          <author>
+            Wyllie, Anne L.
+          </author>
+          <author>
+            Watkins, Annie
+          </author>
+          <author>
+            Park, Annsea
+          </author>
+          <author>
+            Venkataraman, Arvind
+          </author>
+          <author>
+            Geng, Bertie
+          </author>
+          <author>
+            Kalinich, Chaney
+          </author>
+          <author>
+            Vogels, Chantal B.F.
+          </author>
+          <author>
+            Harden, Christina
+          </author>
+          <author>
+            Todeasa, Codruta
+          </author>
+          <author>
+            Jensen, Cole
+          </author>
+          <author>
+            Kim, Daniel
+          </author>
+          <author>
+            McDonald, David
+          </author>
+          <author>
+            Shepard, Denise
+          </author>
+          <author>
+            Courchaine, Edward
+          </author>
+          <author>
+            White, Elizabeth B.
+          </author>
+          <author>
+            Song, Eric
+          </author>
+          <author>
+            Silva, Erin
+          </author>
+          <author>
+            Kudo, Eriko
+          </author>
+          <author>
+            DeIuliis, Giuseppe
+          </author>
+          <author>
+            Wang, Haowei
+          </author>
+          <author>
+            Rahming, Harold
+          </author>
+          <author>
+            Park, Hong Jai
+          </author>
+          <author>
+            Matos, Irene
+          </author>
+          <author>
+            Ott, Isabel M.
+          </author>
+          <author>
+            Nouws, Jessica
+          </author>
+          <author>
+            Valdez, Jordan
+          </author>
+          <author>
+            Fauver, Joseph
+          </author>
+          <author>
+            Lim, Joseph
+          </author>
+          <author>
+            Rose, Kadi Ann
+          </author>
+          <author>
+            Anastasio, Kelly
+          </author>
+          <author>
+            Brower, Kristina
+          </author>
+          <author>
+            Glick, Laura
+          </author>
+          <author>
+            Sharma, Lokesh
+          </author>
+          <author>
+            Sewanan, Lorenzo
+          </author>
+          <author>
+            Knaggs, Lynda
+          </author>
+          <author>
+            Minasyan, Maksym
+          </author>
+          <author>
+            Batsu, Maria
+          </author>
+          <author>
+            Tokuyama, Maria
+          </author>
+          <author>
+            Muenker, M. Cate
+          </author>
+          <author>
+            Petrone, Mary
+          </author>
+          <author>
+            Kuang, Maxine
+          </author>
+          <author>
+            Nakahata, Maura
+          </author>
+          <author>
+            Campbell, Melissa
+          </author>
+          <author>
+            Linehan, Melissa
+          </author>
+          <author>
+            Askenase, Michael H.
+          </author>
+          <author>
+            Simonov, Michael
+          </author>
+          <author>
+            Smolgovsky, Mikhail
+          </author>
+          <author>
+            Grubaugh, Nathan D.
+          </author>
+          <author>
+            Sonnert, Nicole
+          </author>
+          <author>
+            Naushad, Nida
+          </author>
+          <author>
+            Vijayakumar, Pavithra
+          </author>
+          <author>
+            Lu, Peiwen
+          </author>
+          <author>
+            Earnest, Rebecca
+          </author>
+          <author>
+            Martinello, Rick
+          </author>
+          <author>
+            Herbst, Roy
+          </author>
+          <author>
+            Datta, Rupak
+          </author>
+          <author>
+            Handoko, Ryan
+          </author>
+          <author>
+            Bermejo, Santos
+          </author>
+          <author>
+            Lapidus, Sarah
+          </author>
+          <author>
+            Prophet, Sarah
+          </author>
+          <author>
+            Bickerton, Sean
+          </author>
+          <author>
+            Velazquez, Sofia
+          </author>
+          <author>
+            Mohanty, Subhasis
+          </author>
+          <author>
+            Alpert, Tara
+          </author>
+          <author>
+            Rice, Tyler
+          </author>
+          <author>
+            Schulz, Wade
+          </author>
+          <author>
+            Khoury-Hanold, William
+          </author>
+          <author>
+            Peng, Xiaohua
+          </author>
+          <author>
+            Yang, Yexin
+          </author>
+          <author>
+            Cao, Yiyun
+          </author>
+          <author>
+            Strong, Yvette
+          </author>
+          <author>
+            Farhadian, Shelli
+          </author>
+          <author>
+            Dela Cruz, Charles S.
+          </author>
+          <author>
+            Ko, Albert I.
+          </author>
+          <author>
+            Hirn, Matthew J.
+          </author>
+          <author>
+            Wilson, F. Perry
+          </author>
+          <author>
+            Hussin, Julie G.
+          </author>
+          <author>
+            Wolf, Guy
+          </author>
+          <author>
+            Iwasaki, Akiko
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Multiscale PHATE identifies multimodal signatures of COVID-19</title>
+      </titles>
+      <dates>
+        <year>2022</year>
+          <pub-dates>
+            <date>2</date>
+          </pub-dates>
+      </dates>
+      <volume>40</volume>
+      <pages>681-691</pages>
+      <issue>5</issue>
+      <accession-num>35228707</accession-num>
+      <electronic-resource-num>10.1038&#x2F;s41587-021-01186-x</electronic-resource-num>
+      <abstract>As the biomedical community produces datasets that are increasingly complex and high dimensional, there is a need for more sophisticated computational tools to extract biological insights. We present Multiscale PHATE, a method that sweeps through all levels of data granularity to learn abstracted biological features directly predictive of disease outcome. Built on a coarse-graining process called diffusion condensation, Multiscale PHATE learns a data topology that can be analyzed at coarse resolutions for high-level summarizations of data and at fine resolutions for detailed representations of subsets. We apply Multiscale PHATE to a coronavirus disease 2019 (COVID-19) dataset with 54 million cells from 168 hospitalized patients and find that patients who die show CD16hiCD66blo neutrophil and IFN-γ+ granzyme B+ Th17 cell responses. We also show that population groupings from Multiscale PHATE directly fed into a classifier predict disease outcome more accurately than naive featurizations of the data. Multiscale PHATE is broadly generalizable to different data types, including flow cytometry, single-cell RNA sequencing (scRNA-seq), single-cell sequencing assay for transposase-accessible chromatin (scATAC-seq), and clinical variables. Disease signatures in high-dimensional biomedical data are detected with a visualization algorithm.</abstract>
+      <publisher>Nature Publishing Group</publisher>
+      <periodical><full-title>Nature Biotechnology 2022 40:5</full-title></periodical>
+      <keywords>
+        <keyword>Computational models</keyword>
+        <keyword>Machine learning</keyword>
+        <keyword>Viral infection</keyword>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;www.nature.com&#x2F;articles&#x2F;s41587-021-01186-x</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Horoi, Stefan
+          </author>
+          <author>
+            Huang, Jessie
+          </author>
+          <author>
+            Rieck, Bastian
+          </author>
+          <author>
+            Lajoie, Guillaume
+          </author>
+          <author>
+            Wolf, Guy
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Exploring the Geometry and Topology of Neural Network Loss Landscapes</title>
+      </titles>
+      <dates>
+        <year>2021</year>
+          <pub-dates>
+            <date>1</date>
+          </pub-dates>
+      </dates>
+      <volume>13205 LNCS</volume>
+      <pages>171-184</pages>
+      <isbn>9783031013324</isbn>
+      <electronic-resource-num>10.48550&#x2F;arxiv.2102.00485</electronic-resource-num>
+      <abstract>Recent work has established clear links between the generalization
+performance of trained neural networks and the geometry of their loss landscape
+near the local minima to which they converge. This suggests that qualitative
+and quantitative examination of the loss landscape geometry could yield
+insights about neural network generalization performance during training. To
+this end, researchers have proposed visualizing the loss landscape through the
+use of simple dimensionality reduction techniques. However, such visualization
+methods have been limited by their linear nature and only capture features in
+one or two dimensions, thus restricting sampling of the loss landscape to lines
+or planes. Here, we expand and improve upon these in three ways. First, we
+present a novel &quot;jump and retrain&quot; procedure for sampling relevant portions of
+the loss landscape. We show that the resulting sampled data holds more
+meaningful information about the network&#39;s ability to generalize. Next, we show
+that non-linear dimensionality reduction of the jump and retrain trajectories
+via PHATE, a trajectory and manifold-preserving method, allows us to visualize
+differences between networks that are generalizing well vs poorly. Finally, we
+combine PHATE trajectories with a computational homology characterization to
+quantify trajectory differences.</abstract>
+      <publisher>Springer Science and Business Media Deutschland GmbH</publisher>
+      <periodical><full-title>Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)</full-title></periodical>
+      <keywords>
+        <keyword>3</keyword>
+        <keyword>3[0000−0002−5297−3563]</keyword>
+        <keyword>5</keyword>
+        <keyword>6[0000−0001−5823−1985] Keywords: Artificial neural network loss landscape · Non-linear dimen-sionality reduction · Topological data analysis</keyword>
+        <keyword>Artificial neural network loss landscape</keyword>
+        <keyword>Bastian Rieck 4[0000−0003−4335−0302]</keyword>
+        <keyword>Guillaume Lajoie 1</keyword>
+        <keyword>Guy Wolf †</keyword>
+        <keyword>Jessie Huang</keyword>
+        <keyword>Non-linear dimensionality reduction</keyword>
+        <keyword>Topological data analysis</keyword>
+        <keyword>[0000−0003−2951−2600]</keyword>
+        <keyword>and Smita Krishnaswamy †</keyword>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2102.00485v2</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Burkhardt, Daniel B.
+          </author>
+          <author>
+            San Juan, Beatriz P.
+          </author>
+          <author>
+            Lock, John G.
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+          <author>
+            Chaffer, Christine L.
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Mapping Phenotypic Plasticity upon the Cancer Cell State Landscape Using Manifold Learning</title>
+      </titles>
+      <dates>
+        <year>2022</year>
+          <pub-dates>
+            <date>8</date>
+          </pub-dates>
+      </dates>
+      <volume>12</volume>
+      <pages>1847-1859</pages>
+      <issue>8</issue>
+      <accession-num>35736000</accession-num>
+      <electronic-resource-num>10.1158&#x2F;2159-8290.CD-21-0282&#x2F;705079&#x2F;P&#x2F;MAPPING-PHENOTYPIC-PLASTICITY-UPON-THE-CANCER-CELL</electronic-resource-num>
+      <abstract>Phenotypic plasticity describes the ability of cancer cells to undergo dynamic, nongenetic cell state changes that amplify cancer heterogeneity to promote metastasis and therapy evasion. Thus, cancer cells occupy a continuous spectrum of phenotypic states connected by trajectories defining dynamic transitions upon a cancer cell state landscape. With technologies proliferating to systematically record molecular mechanisms at single-cell resolution, we illuminate manifold learning techniques as emerging computational tools to effectively model cell state dynamics in a way that mimics our understanding of the cell state landscape. We anticipate that “state-gating” therapies targeting phenotypic plasticity will limit cancer heterogeneity, metastasis, and therapy resistance. Significance: Nongenetic mechanisms underlying phenotypic plasticity have emerged as significant drivers of tumor heterogeneity, metastasis, and therapy resistance. Herein, we discuss new experimental and computational techniques to define phenotypic plasticity as a scaffold to guide accelerated progress in uncovering new vulnerabilities for therapeutic exploitation.</abstract>
+      <publisher>American Association for Cancer Research Inc.</publisher>
+      <periodical><full-title>Cancer Discovery</full-title></periodical>
+      <keywords>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;aacrjournals.org&#x2F;cancerdiscovery&#x2F;article&#x2F;12&#x2F;8&#x2F;1847&#x2F;707250&#x2F;Mapping-Phenotypic-Plasticity-upon-the-Cancer-Cell</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Castro, Egbert
+          </author>
+          <author>
+            Godavarthi, Abhinav
+          </author>
+          <author>
+            Rubinfien, Julian
+          </author>
+          <author>
+            Givechian, Kevin
+          </author>
+          <author>
+            Bhaskar, Dhananjay
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Transformer-based protein generation with regularized latent space optimization</title>
+      </titles>
+      <dates>
+        <year>2022</year>
+          <pub-dates>
+            <date>9</date>
+          </pub-dates>
+      </dates>
+      <volume>4</volume>
+      <pages>840-851</pages>
+      <issue>10</issue>
+      <electronic-resource-num>10.1038&#x2F;s42256-022-00532-1</electronic-resource-num>
+      <abstract>The development of powerful natural language models has improved the ability to learn meaningful representations of protein sequences. In addition, advances in high-throughput mutagenesis, directed evolution and next-generation sequencing have allowed for the accumulation of large amounts of labelled fitness data. Leveraging these two trends, we introduce Regularized Latent Space Optimization (ReLSO), a deep transformer-based autoencoder, which features a highly structured latent space that is trained to jointly generate sequences as well as predict fitness. Through regularized prediction heads, ReLSO introduces a powerful protein sequence encoder and a novel approach for efficient fitness landscape traversal. Using ReLSO, we explicitly model the sequence–function landscape of large labelled datasets and generate new molecules by optimizing within the latent space using gradient-based methods. We evaluate this approach on several publicly available protein datasets, including variant sets of anti-ranibizumab and green fluorescent protein. We observe a greater sequence optimization efficiency (increase in fitness per optimization step) using ReLSO compared with other approaches, where ReLSO more robustly generates high-fitness sequences. Furthermore, the attention-based relationships learned by the jointly trained ReLSO models provide a potential avenue towards sequence-level fitness attribution information. The space of possible proteins is vast, and optimizing proteins for specific target properties computationally is an ongoing challenge, even with large amounts of data. Castro and colleagues combine a transformer-based model with regularized prediction heads to form a smooth and pseudoconvex latent space that allows for easier navigation and more efficient optimization of proteins.</abstract>
+      <publisher>Nature Publishing Group</publisher>
+      <periodical><full-title>Nature Machine Intelligence 2022 4:10</full-title></periodical>
+      <keywords>
+        <keyword>Machine learning</keyword>
+        <keyword>Protein design</keyword>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;www.nature.com&#x2F;articles&#x2F;s42256-022-00532-1</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Amodio, Matthew
+          </author>
+          <author>
+            Youlten, Scott E.
+          </author>
+          <author>
+            Venkat, Aarthi
+          </author>
+          <author>
+            San Juan, Beatriz P.
+          </author>
+          <author>
+            Chaffer, Christine L.
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Single-cell multi-modal GAN reveals spatial patterns in single-cell data from triple-negative breast cancer</title>
+      </titles>
+      <dates>
+        <year>2022</year>
+          <pub-dates>
+            <date>9</date>
+          </pub-dates>
+      </dates>
+      <volume>3</volume>
+      <pages>100577</pages>
+      <issue>9</issue>
+      <accession-num>36124302</accession-num>
+      <electronic-resource-num>10.1016&#x2F;J.PATTER.2022.100577</electronic-resource-num>
+      <abstract>Summary Exciting advances in technologies to measure biological systems are currently at the forefront of research. The ability to gather data along an increasing number of omic dimensions has created a need for tools to analyze all of this information together, rather than siloing each technology into separate analysis pipelines. To advance this goal, we introduce a framework called the single-cell multi-modal generative adversarial network (scMMGAN) that integrates data from multiple modalities into a unified representation in the ambient data space for downstream analysis using a combination of adversarial learning and data geometry techniques. The framework&#39;s key improvement is an additional diffusion geometry loss with a new kernel that constrains the otherwise over-parameterized GAN. We demonstrate scMMGAN&#39;s ability to produce more meaningful alignments than alternative methods on a wide variety of data modalities and that its output can be used to draw conclusions from real-world biological experimental data.</abstract>
+      <publisher>Patterns (N Y)</publisher>
+      <periodical><full-title>Patterns (New York, N.Y.)</full-title></periodical>
+      <keywords>
+        <keyword>MEDLINE</keyword>
+        <keyword>Matthew Amodio</keyword>
+        <keyword>NCBI</keyword>
+        <keyword>NIH</keyword>
+        <keyword>NLM</keyword>
+        <keyword>National Center for Biotechnology Information</keyword>
+        <keyword>National Institutes of Health</keyword>
+        <keyword>National Library of Medicine</keyword>
+        <keyword>PMC9481959</keyword>
+        <keyword>PubMed Abstract</keyword>
+        <keyword>Scott E Youlten</keyword>
+        <keyword>Smita Krishnaswamy</keyword>
+        <keyword>doi:10.1016&#x2F;j.patter.2022.100577</keyword>
+        <keyword>pmid:36124302</keyword>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;pubmed.ncbi.nlm.nih.gov&#x2F;36124302&#x2F;</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Bhaskar, Dhananjay
+          </author>
+          <author>
+            MacDonald, Kincaid
+          </author>
+          <author>
+            Fasina, Oluwadamilola
+          </author>
+          <author>
+            Thomas, Dawson
+          </author>
+          <author>
+            Rieck, Bastian
+          </author>
+          <author>
+            Adelstein, Ian
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Diffusion Curvature for Estimating Local Curvature in High Dimensional Data</title>
+      </titles>
+      <dates>
+        <year>2022</year>
+          <pub-dates>
+            <date>6</date>
+          </pub-dates>
+      </dates>
+      <electronic-resource-num>10.48550&#x2F;arxiv.2206.03977</electronic-resource-num>
+      <abstract>We introduce a new intrinsic measure of local curvature on point-cloud data
+called diffusion curvature. Our measure uses the framework of diffusion maps,
+including the data diffusion operator, to structure point cloud data and define
+local curvature based on the laziness of a random walk starting at a point or
+region of the data. We show that this laziness directly relates to volume
+comparison results from Riemannian geometry. We then extend this scalar
+curvature notion to an entire quadratic form using neural network estimations
+based on the diffusion map of point-cloud data. We show applications of both
+estimations on toy data, single-cell data, and on estimating local Hessian
+matrices of neural network loss landscapes.</abstract>
+      <periodical><full-title>NeurIPS</full-title></periodical>
+      <keywords>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2206.03977v1</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Bhaskar, Dhananjay
+          </author>
+          <author>
+            Grady, Jackson
+          </author>
+          <author>
+            Castro, Egbert
+          </author>
+          <author>
+            Perlmutter, Michael
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Molecular Graph Generation via Geometric Scattering</title>
+      </titles>
+      <dates>
+        <year>2021</year>
+          <pub-dates>
+            <date>10</date>
+          </pub-dates>
+      </dates>
+      <volume>2022-August</volume>
+      <isbn>9781665485470</isbn>
+      <electronic-resource-num>10.48550&#x2F;arxiv.2110.06241</electronic-resource-num>
+      <abstract>Graph neural networks (GNNs) have been used extensively for addressing
+problems in drug design and discovery. Both ligand and target molecules are
+represented as graphs with node and edge features encoding information about
+atomic elements and bonds respectively. Although existing deep learning models
+perform remarkably well at predicting physicochemical properties and binding
+affinities, the generation of new molecules with optimized properties remains
+challenging. Inherently, most GNNs perform poorly in whole-graph representation
+due to the limitations of the message-passing paradigm. Furthermore,
+step-by-step graph generation frameworks that use reinforcement learning or
+other sequential processing can be slow and result in a high proportion of
+invalid molecules with substantial post-processing needed in order to satisfy
+the principles of stoichiometry. To address these issues, we propose a
+representation-first approach to molecular graph generation. We guide the
+latent representation of an autoencoder by capturing graph structure
+information with the geometric scattering transform and apply penalties that
+structure the representation also by molecular properties. We show that this
+highly structured latent space can be directly used for molecular graph
+generation by the use of a GAN. We demonstrate that our architecture learns
+meaningful representations of drug datasets and provides a platform for
+goal-directed drug synthesis.</abstract>
+      <publisher>IEEE Computer Society</publisher>
+      <periodical><full-title>IEEE International Workshop on Machine Learning for Signal Processing, MLSP</full-title></periodical>
+      <keywords>
+        <keyword>Drug Discovery</keyword>
+        <keyword>Geometric</keyword>
+        <keyword>Geometric Scattering</keyword>
+        <keyword>Graph</keyword>
+        <keyword>Molecular</keyword>
+        <keyword>Molecular Graph Generation</keyword>
+        <keyword>Scattering</keyword>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2110.06241v1</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Huguet, Guillaume
+          </author>
+          <author>
+            Tong, Alexander
+          </author>
+          <author>
+            Rieck, Bastian
+          </author>
+          <author>
+            Huang, Jessie
+          </author>
+          <author>
+            Kuchroo, Manik
+          </author>
+          <author>
+            Hirn, Matthew
+          </author>
+          <author>
+            Wolf, Guy
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Time-inhomogeneous diffusion geometry and topology</title>
+      </titles>
+      <dates>
+        <year>2022</year>
+          <pub-dates>
+            <date>3</date>
+          </pub-dates>
+      </dates>
+      <electronic-resource-num>10.48550&#x2F;arxiv.2203.14860</electronic-resource-num>
+      <abstract>Diffusion condensation is a dynamic process that yields a sequence of
+multiscale data representations that aim to encode meaningful abstractions. It
+has proven effective for manifold learning, denoising, clustering, and
+visualization of high-dimensional data. Diffusion condensation is constructed
+as a time-inhomogeneous process where each step first computes and then applies
+a diffusion operator to the data. We theoretically analyze the convergence and
+evolution of this process from geometric, spectral, and topological
+perspectives. From a geometric perspective, we obtain convergence bounds based
+on the smallest transition probability and the radius of the data, whereas from
+a spectral perspective, our bounds are based on the eigenspectrum of the
+diffusion kernel. Our spectral results are of particular interest since most of
+the literature on data diffusion is focused on homogeneous processes. From a
+topological perspective, we show diffusion condensation generalizes
+centroid-based hierarchical clustering. We use this perspective to obtain a
+bound based on the number of data points, independent of their location. To
+understand the evolution of the data geometry beyond convergence, we use
+topological data analysis. We show that the condensation process itself defines
+an intrinsic condensation homology. We use this intrinsic topology as well as
+the ambient persistent homology of the condensation process to study how the
+data changes over diffusion time. We demonstrate both types of topological
+information in well-understood toy examples. Our work gives theoretical
+insights into the convergence of diffusion condensation, and shows that it
+provides a link between topological and geometric data analysis.</abstract>
+      <periodical><full-title>arXiv</full-title></periodical>
+      <keywords>
+        <keyword>37B25</keyword>
+        <keyword>57R40</keyword>
+        <keyword>62R40</keyword>
+        <keyword>68xxx</keyword>
+        <keyword>diffusion</keyword>
+        <keyword>hierarchical clustering AMS subject classifications 57M50</keyword>
+        <keyword>persistent homology</keyword>
+        <keyword>time-inhomogeneous process</keyword>
+        <keyword>topological data analysis</keyword>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2203.14860v2</url>
+        </related-urls>
+      </urls>
+    </record>
+    <record>
+      <ref-type name="Journal Article"></ref-type>
+      <contributors>
+        <authors>
+          <author>
+            Hafler, Brian Palmer
+          </author>
+          <author>
+            Kuchroo, Manik
+          </author>
+          <author>
+            DiStasio, Marcello
+          </author>
+          <author>
+            Song, Eric
+          </author>
+          <author>
+            Zhang, Le
+          </author>
+          <author>
+            Ige, Maryam
+          </author>
+          <author>
+            Sheth, Amar
+          </author>
+          <author>
+            Menon, Madhvi
+          </author>
+          <author>
+            Tong, Alexander
+          </author>
+          <author>
+            Xing, Yu
+          </author>
+          <author>
+            Gigante, Scott
+          </author>
+          <author>
+            Huang, Jessie
+          </author>
+          <author>
+            Mourgkos, George
+          </author>
+          <author>
+            Krishnaswamy, Smita
+          </author>
+          <author>
+            Dhodapkar, Rahul
+          </author>
+          <author>
+            Wolf, Guy
+          </author>
+        </authors>
+        <secondary-authors>
+        </secondary-authors>
+      </contributors>
+      <titles>
+        <title>Topological analysis of single-cell hierarchy reveals inflammatory glial landscape of macular degeneration</title>
+      </titles>
+      <dates>
+        <year>2022</year>
+          <pub-dates>
+            <date>6</date>
+          </pub-dates>
+      </dates>
+      <volume>63</volume>
+      <pages>2314-2314</pages>
+      <issue>7</issue>
+      <publisher>The Association for Research in Vision and Ophthalmology</publisher>
+      <periodical><full-title>Investigative Ophthalmology &amp; Visual Science</full-title></periodical>
+      <keywords>
+      </keywords>
+      <urls>
+        <related-urls>
+          <url>https:&#x2F;&#x2F;iovs.arvojournals.org&#x2F;article.aspx?articleid&#x3D;2780446</url>
+        </related-urls>
+      </urls>
+    </record>
+  </records>
+</xml>

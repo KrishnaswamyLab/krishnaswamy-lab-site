@@ -24,7 +24,6 @@
 <Hero {backgroundImage} {subtitle}>
     {heroTitle}
 </Hero>
-<!-- <ProjectHero project={data?.project} /> -->
 
 <div class="flex flex-col md:flex-row justify-center mt-8 mx-16">
     <div class="md:w-[72rem] block">   
@@ -65,7 +64,11 @@
             </div> 
             
             <div class="md:ml-16 w-full">
-                <ProjectInfo  useProjectHero="{false}" project={data?.project} />
+                <ProjectInfo  
+                    useProjectHero="{false}" 
+                    project={data?.project} 
+                    
+                />
             </div>
         </div>            
     </div>

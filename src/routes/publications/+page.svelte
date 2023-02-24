@@ -136,14 +136,14 @@ import JellyContainer from '$lib/Layout/JellyContainer.svelte';
         </div>
 
         
-        <div class="divider divider-vertical"></div>
+        <!-- <div class="divider divider-vertical"></div>
 
         <div class="text-5xl font-light">
             Publications
-        </div>
+        </div> -->
 
         <ul class="w-full">
-            {#each data?.publications as pub}
+            {#each data?.selectedPublications as pub}
                 <li class="">
                     <div class="
                         card card-bordered m-4 bg-base-200

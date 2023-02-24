@@ -33,6 +33,7 @@ export interface publication {
     google_scholar_url:string;
     journal_source:string;
     cites:string|number|null;
+    selected?: boolean;
 }
 
 export interface project {
