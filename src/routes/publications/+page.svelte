@@ -151,7 +151,7 @@ import JellyContainer from '$lib/Layout/JellyContainer.svelte';
                         duration-300 hover:-translate-y-2
                     ">
                         <div class="card-body">
-                            <div class="card-title break-all">
+                            <div class="card-title break-word">
                                 {#if pub?.urls?.length}
                                 <a class="link" href={pub?.urls[0]?.href}>
                                     {pub?.title}
