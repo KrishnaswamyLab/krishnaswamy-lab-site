@@ -47,7 +47,11 @@
     <figure class="m-8 flex-col bg-base-100 {useStickyImages ? 'sticky' : ''} {stickyClasses}">
         <div class="card-body {styleCardWidth} py-2 lg:hidden">
             <h2 class="card-title sticky">
-                {member?.name}{#if member?.title}, {member?.title}{/if}
+                {#if typeof member.name === 'object'}
+                    {member.name_str}
+                {:else}
+                    {member?.name}{#if member?.title}, {member?.title}{/if}
+                {/if}
             </h2>
         </div>        
         <div class="avatar inline-flex place-content-center place-items-start">

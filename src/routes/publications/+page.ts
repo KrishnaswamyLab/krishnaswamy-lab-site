@@ -7,6 +7,7 @@ import publicationsCategories from '$lib/data/publication_categories.json'
 
 const yearSort = (a:publicationInterface, b:publicationInterface) => a?.year < b?.year
 publications.sort(yearSort)
+selectedPublications.sort(yearSort)
 export function load({ }) {
     return {
         publications: publications.map(e=>e as publicationInterface),
