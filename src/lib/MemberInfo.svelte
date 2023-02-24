@@ -63,7 +63,12 @@
     {/if}         
     <div class="card-body {styleCardWidth}">
         <h2 class="hidden lg:block card-title sticky">
-            {member?.name}{#if member?.title}, {member?.title}{/if}
+            {#if typeof member.name === 'object'}
+                {member.name_str}
+            {:else}
+                {member?.name}{#if member?.title}, {member?.title}{/if}
+            {/if}
+            
         </h2>
         <div class="lg:max-h-48 lg:overflow-y-scroll">
             <!-- max-h-48 overflow-y-scroll -->
