@@ -1,11 +1,19 @@
+export interface name {
+    first: string;
+    middle: string|null;
+    last:string;
+    preferred?: string;
+}
+
 export interface member {
-    name: string;
+    name: string | name;
     title?: string;
     about?: string;
     cv?: string|null;
     image?: string|null;
     website?: string|null;
     isAlum?: boolean;
+    name_str?: string;
 }
 
 export interface href {
