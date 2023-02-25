@@ -44,6 +44,8 @@ export interface publication {
     selected?: boolean;
 }
 
+export type publications = publication[] | Array<publication>
+
 export interface project {
     // link to project specific page on website
     projectUrl?: string | null,
@@ -81,16 +83,17 @@ export interface project {
     youtube?: string | null,
 }
 
-export interface projectExample {
+export interface ResearchExample {
     text: string;
     href: string;
 }
+export type ResearchExamples = ResearchExample[] | Array<member | member[]> | ArrayLike<member | member[]>;
 
-export interface projectCategory {
-    title?: string;
-    about?: string;
-    image?: string;
-    examples?: projectExample[] | Array<member | member[]> | ArrayLike<member | member[]>;
+export interface ResearchCategory {
+    title: string;
+    about: string;
+    image: string;
+    examples?: ResearchExamples;
 }
 
 export interface quote {

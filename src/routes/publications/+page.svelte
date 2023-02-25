@@ -4,8 +4,11 @@ export let data;
 
 import type {
     author as authorInterface,
-    publication as publicationInterface
+    publication as publicationInterface,
+    publications
 } from '$lib/types'
+
+import { onMount } from 'svelte';
 
 const makeAuthorString = (authors:authorInterface[]) => {
     let a = authors.map(({name}) => name.join(" "))
@@ -88,7 +91,30 @@ const makeKeywordsString = (pub:publicationInterface) => {
 
 import Hero from '$lib/Layout/Hero.svelte';
 import JellyContainer from '$lib/Layout/JellyContainer.svelte';
+import D3Graph from '$lib/D3Graph.svelte';
+
+interface res {
+        [key: string]: publications;
+    }
+
+$: years = {} as res
+
+$: data?.selectedPublications.forEach((pub:publicationInterface) => {
+    let year = String(pub?.year as number)
+    
+    if (!(year in years)) {
+        years[year] = [] as publications;
+    }
+    
+    years[year].push(pub)
+            
+});
+
+
+
 </script>
+
+
 <Hero backgroundImage="/images/publications_hero.jpeg">
     Research
 </Hero>
@@ -131,16 +157,49 @@ import JellyContainer from '$lib/Layout/JellyContainer.svelte';
         <div class="divider divider-vertical"></div>
         
         
-        <div class="text-5xl font-light">
+        <div class="text-5xl font-light text-center">
             Selected Publications
         </div>
 
+        <div class="w-full">
+            <D3Graph graph={data?.selectedGraph}/>    
+        </div>
         
-        <!-- <div class="divider divider-vertical"></div>
+        <div class="">            
+            {#each Object.entries(years).reverse() as [year, pubs]}
+            <div>
+                <div class="grid grid-flow-col auto-cols-auto py-4">
+                    <div class="text-4xl font-extralight col-auto">
+                        <div class="sticky top-0 ">
+                            {year}
+                        </div>                        
+                    </div>
+                    <div class="ml-16 col-auto">
+                        {#each pubs as pub}
+                        <div class="pb-4">
+                            <div class="card-title break-word">
+                                {#if pub?.urls?.length}
+                                <a class="link" href={pub?.urls[0]?.href}>
+                                    {pub?.title}
+                                </a>   
+                                {:else}
+                                    {pub?.title}
+                                {/if}
+                            </div>
+                            <span>
+                                {@html makeAuthorString(pub?.authors)}                                
+                            </span>
+                            <span>
+                                {@html makePublicationString(pub)}
+                            </span>   
+                        </div>
+                        {/each}
+                    </div>  
+                </div>
+            </div>
+            {/each}
+        </div>
 
-        <div class="text-5xl font-light">
-            Publications
-        </div> -->
 
         <ul class="w-full">
             {#each data?.selectedPublications as pub}

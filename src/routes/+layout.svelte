@@ -11,6 +11,7 @@
 		{text: 'publications', href: '/publications'},
 		{text: 'teaching', href: '/teaching'},
 		{text: 'members', href: '/members'},
+		{text: 'join', href: '/join'},
 		{text: 'contact', href: '/contact'},		
 	]
 
@@ -110,7 +111,7 @@
 			<div class="flex flex-col place-content-center place-items-center">
 				<span class="footer-title">Social</span> 
 				<div class="grid grid-flow-col gap-4 ">
-					<a href="{twitterLink}" class="inline-block">
+					<a href="{twitterLink}" class="inline-block" target="_blank" rel="noreferrer">
 						<div class="inline-flex gap-2" >
 							<Twitter class="h-6 w-6 stroke-sky-400 fill-sky-400"/>
 							Follow us on Twitter

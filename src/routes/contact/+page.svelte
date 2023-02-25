@@ -84,7 +84,7 @@ import MapBox from '$lib/Contact/MapBox.svelte';
             </div>
         </Hero>            
         
-        <div class="divider divider-veritcal"></div>
+        <div class="divider divider-vertical"></div>
     
         <p class="py-8 text-2xl md:text-3xl font-extralight">
             Get in touch
@@ -142,8 +142,6 @@ import MapBox from '$lib/Contact/MapBox.svelte';
                 {/each}                   
             </div>                        
         </div> 
-
         <MapBox/>
-        
     </div>
 </JellyContainer>

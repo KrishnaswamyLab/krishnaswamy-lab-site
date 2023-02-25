@@ -1,16 +1,16 @@
 /** @type {import('./$types').PageLoad} */
 import type {
-    projectCategory as projectCategoryInterface,
+    ResearchCategory as ResearchCategoryInterface,
     affiliation as affiliationInterface
 } from '$lib/types'
 
 
-import categories from '$lib/data/research_topics.json'
+import categories from '$lib/data/research_categories.json'
 import affiliations from '$lib/data/affiliations.json'
 
 export function load({ }) {
     return {
-        categories: categories.map(e=>e as projectCategoryInterface),
+        categories: categories.map(e=>e as ResearchCategoryInterface),
         affiliations: affiliations.map(e=>e as affiliationInterface)
     };
   }
