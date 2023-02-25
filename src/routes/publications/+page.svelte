@@ -165,7 +165,7 @@ $: data?.selectedPublications.forEach((pub:publicationInterface) => {
             <D3Graph graph={data?.selectedGraph}/>    
         </div> -->
         
-        <div class="">            
+        <!-- <div class="">            
             {#each Object.entries(years).reverse() as [year, pubs]}
             <div>
                 <div class="grid grid-flow-col auto-cols-auto py-4">
@@ -198,7 +198,7 @@ $: data?.selectedPublications.forEach((pub:publicationInterface) => {
                 </div>
             </div>
             {/each}
-        </div>
+        </div> -->
 
 
         <ul class="w-full">
