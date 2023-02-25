@@ -5,8 +5,8 @@ export let affiliation: affiliationInterface;
 
 <div class="
     card card-bordered bg-base-200 border-base-300
-    basis-2/3 md:basis-1/3 lg:basis-1/3 
-    xl:basis-2/6 2xl:basis-2/12
+    basis-2/3 md:basis-1/3 lg:basis-2/6 
+    xl:basis-1/3 2xl:basis-4/12 3xl:basis-3/12
     hover:shadow-2xl transition-all ease-in-out
     duration-300 hover:-translate-y-2 prose
     "
