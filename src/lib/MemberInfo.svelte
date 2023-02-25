@@ -15,8 +15,10 @@
         about: lipsum
     }
 
-    $: styleCardSide = member.image ? "lg:card-side" : ""
-    $: styleCardWidth = member.image ? "lg:min-w-min lg:w-1/2" : ""
+    $: img = true // member.image
+
+    $: styleCardSide = img ? "lg:card-side" : ""
+    $: styleCardWidth = img ? "lg:min-w-min lg:w-1/2" : ""
 
     const toCv = () => {
         let url = String(member?.cv)
@@ -42,7 +44,7 @@
 <div class="card {styleCardSide} ease-in-out duration-300 ">
     <!-- hover:shadow-2xl -->
 
-    {#if member?.image}
+    <!-- {#if member?.image} -->
     
     <figure class="m-8 flex-col bg-base-100 {useStickyImages ? 'sticky' : ''} {stickyClasses}">
         <div class="card-body {styleCardWidth} py-2 lg:hidden">
@@ -55,16 +57,24 @@
             </h2>
         </div>        
         <div class="avatar inline-flex place-content-center place-items-start">
-            <div class="w-48 mask mask-squircle">
+            <div class="
+                w-48 mask mask-squircle 
+                bg-gradient-to-r from-cyan-500 to-blue-500
+                {member?.image ? '' : 'animate-pulse'}
+                "
+            >
                 <!-- min-w-max max-h-max h-48 inline-flex -->
+                {#if member?.image}
                 <img 
                     src={member?.image} 
-                    alt="{`${member?.name} profile image`}"
+                    alt="{`${member?.name_str} profile image`}"
                 />
+                {/if}
             </div>
         </div>            
     </figure>   
-    {/if}         
+    <!-- {/if}      -->
+
     <div class="card-body {styleCardWidth}">
         <h2 class="hidden lg:block card-title sticky">
             {#if typeof member.name === 'object'}
