@@ -91,7 +91,7 @@ const makeKeywordsString = (pub:publicationInterface) => {
 
 import Hero from '$lib/Layout/Hero.svelte';
 import JellyContainer from '$lib/Layout/JellyContainer.svelte';
-import D3Graph from '$lib/D3Graph.svelte';
+// import D3Graph from '$lib/D3Graph.svelte';
 
 interface res {
         [key: string]: publications;
@@ -127,7 +127,7 @@ $: data?.selectedPublications.forEach((pub:publicationInterface) => {
             <img class="h-12" src="/images/journals/google_scholar.jpeg" alt="">
         </a>
         <div class="divider divider-vertical"></div>
-        <div class="text-xl font-light">
+        <!-- <div class="text-xl font-light">
             Our research at the Krishnaswamy Lab focuses on applying machine learning methods to high-throughput high dimensional biological data. Our research projects aim to study and develop algorithmic approaches to naturally process data, visualize it, understand progressions, find phenotypic diversity, and infer patterns.  Below are our key research areas and priorities, along with some relevant projects:    
         </div>
         <div class="flex flex-col gap-8">
@@ -154,16 +154,16 @@ $: data?.selectedPublications.forEach((pub:publicationInterface) => {
             {/each}
         </div>
 
-        <div class="divider divider-vertical"></div>
+        <div class="divider divider-vertical"></div> -->
         
         
         <div class="text-5xl font-light text-center">
             Selected Publications
         </div>
 
-        <div class="w-full">
+        <!-- <div class="w-full">
             <D3Graph graph={data?.selectedGraph}/>    
-        </div>
+        </div> -->
         
         <div class="">            
             {#each Object.entries(years).reverse() as [year, pubs]}

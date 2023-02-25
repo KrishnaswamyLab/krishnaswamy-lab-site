@@ -78,6 +78,21 @@
   },
   {
     "name": {
+      "preferred": "Siddharth",
+      "first": "Siddharth",
+      "last": "Viswanath",
+      "middle": null
+    },
+    "title": null,
+    "image": null,
+    "cv": null,
+    "isAlum": false,
+    "about": null,
+    "publications": [],
+    "name_str": "Siddharth Viswanath"
+  },
+  {
+    "name": {
       "preferred": "Xingzhi",
       "first": "Xingzhi",
       "last": "Sun",
@@ -409,7 +424,7 @@
     "image": "/images/members/michał_gerasimiuk.jpg",
     "website": null,
     "cv": null,
-    "isAlum": false,
+    "isAlum": true,
     "about": "Michał is an undergraduate at Yale studying computer science. His work in the lab includes building unsupervised learning models that handle electronic health records data and exploring deep neural networks as components of brain-computer interfaces. When not in class, you can find him playing in chess tournaments, reading, or practicing taekwondo.",
     "publications": [
       "MURAL: An Unsupervised Random Forest-Based Embedding for Electronic Health Record Data"
@@ -443,7 +458,7 @@
     "image": "/images/members/tom_wallenstein.jpeg",
     "website": "https://tomwallenstein.com/",
     "cv": null,
-    "isAlum": false,
+    "isAlum": true,
     "about": "om is an undergraduate at Yale majoring in Computer Science and joined the lab to work on his senior project. He is generally interested in machine learning, specifically reinforcement learning. Outside of his studies, he is a goalkeeper of Yale men's soccer team.",
     "publications": [],
     "name_str": "Tom Wallenstein"
