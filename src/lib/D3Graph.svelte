@@ -172,7 +172,7 @@
             <text
                 class="label  text-xl text-slate-500"                
                 
-                
+                pointer-events="none"
                 x={point.x}
                 y={point.y}
                 text-anchor="middle"
