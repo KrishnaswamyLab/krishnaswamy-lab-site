@@ -35,4 +35,4 @@
 	<slot></slot>
 	<div class="flex-1 py-8"></div>	
 	<Footer/>
-</div>>
+</div>
