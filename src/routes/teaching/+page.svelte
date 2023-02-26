@@ -16,9 +16,10 @@ let backgroundImage = "/images/heroes/teaching_hero.jpg"
     <Hero class="break-keep">
         Selected Yale<wbr> Uni<wbr>versity Courses
     </Hero>
-    <div class="mt-8 flex flex-col place-content-center place-items-center">
+    <!-- <div class="mt-8 flex flex-col place-content-center place-items-center"> -->
         {#each data?.courses as {title, about, professors, listings}}
-        <div class="mt-8 prose">
+        <div class="mt-8">
+            <!-- prose -->
             <h2 class="font-light text-2xl md:text-4xl my-2">
                 {title}
             </h2>
@@ -39,6 +40,6 @@ let backgroundImage = "/images/heroes/teaching_hero.jpg"
             </p>
         </div>        
         {/each}
-    </div>    
+    <!-- </div>     -->
     
 </JellyContainer>
