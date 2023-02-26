@@ -40,7 +40,8 @@ export type Hrefs = Href[] | Array<Href> | ArrayLike<Href>
 export interface Author {
     name: string[] | Array<string>
 }
-export type Authors = Author[] | Array<Author> | ArrayLike<Author>
+
+export type Authors = Author[] | Array<Author> 
 
 export interface Publication {
     title?: string;
@@ -53,20 +54,27 @@ export interface Publication {
     volume?: string|number;
     issue?: string|number;
     publisher:string;
-    periodical:string|null;
+    periodical:string;
     keywords: string[] | Array<string>;
     urls: Hrefs;
-    
     google_scholar_url?: string;
     journal_source: string;
     // Number of citations (if using Publish or Perish's Google Scholar results)
     cites?: string|number;
-
     // Whether or not a selected publication
     selected?: boolean;
+
+    makeAuthorString: () => string;
+    makeDateString: () => string;
+    makeVolumeIssueString: () => string;
+    makePublicationString: () => string;
+    makeKeywordsString: () => string;
+
 }
 
-export type Publications = Publication[] | Array<Publication> | ArrayLike<Publication>
+export type Publications = Publication[] 
+    | Array<Publication> 
+    // | ArrayLike<Publication>
 export interface PublicationsGroupedByYear {
     [key: string]: Publications;
 }
@@ -106,8 +114,16 @@ export interface Project {
     publicationYear?: number | null;
     // link to youtube
     youtube?: string | null,
+
+    heroTitle: () => string | null | undefined;
+    hasBothGithubAndJournal: () => string | null | undefined;
+    hasOneOfGithubOrJournal: () => string | null | undefined;
+    makeTextAboutLinks: () => string;
+
 }
-export type Projects = Project[] | Array<Project> | ArrayLike<Project>
+export type Projects = Project[] 
+    | Array<Project> 
+    // | ArrayLike<Project>
 
 
 export interface ResearchExample {

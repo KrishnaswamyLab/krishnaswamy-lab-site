@@ -30,23 +30,36 @@ export const lipsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 
 
 
-import type {ComponentMap,} from '$lib/types'
+import type {ComponentMap as ComponentMapInterface} from '$lib/types'
 
 import ShieldColab from "$lib/Shields/Colab.svelte";
 import ShieldForms from "$lib/Shields/Forms.svelte";
 import ShieldGitHub from "$lib/Shields/GitHub.svelte";
 
-export const ShieldComponentMap: ComponentMap = {    
+export const ShieldComponentMap: ComponentMapInterface = {    
     'Colab': ShieldColab,
     'Forms': ShieldForms,
     'GitHub': ShieldGitHub,
 }
 
-import type {Publication} from '$lib/types'
+import type {
+    Publication as PublicationInterface,
+} from '$lib/types'
+
 export const SortPublicationsByYear = (
-    pubA: Publication, pubB: Publication
+    pubA: PublicationInterface, pubB: PublicationInterface
 ) => {
     let yearA = pubA?.year as number
     let yearB = pubB?.year as number
     return yearB - yearA
+}
+
+import type {
+    Project as ProjectInterface,
+} from '$lib/types'
+
+export const SortProjectByYear = (a:ProjectInterface, b:ProjectInterface) => {
+    let ay = a?.publicationYear as number
+    let by = b?.publicationYear as number
+    return by - ay
 }

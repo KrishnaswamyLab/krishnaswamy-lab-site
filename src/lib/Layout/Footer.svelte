@@ -7,8 +7,7 @@
 		<div class="flex flex-col place-content-center place-items-center">
 			<div class="rounded-full bg-base-300 h-16 w-16 ">
 				<img src="/favicon.ico" alt="lab-icon"/>
-			</div>
-			
+			</div>			
 			<p>
 				The Krishnaswamy Lab at Yale University.
 				<br/>

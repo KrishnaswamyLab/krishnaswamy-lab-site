@@ -8,6 +8,7 @@
     {viewBox}    
     class={$$props.class}
     aria-hidden="true"
+    {...$$props}
 >
     <title>
         <slot></slot>

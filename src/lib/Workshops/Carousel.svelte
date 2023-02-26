@@ -1,5 +1,4 @@
 <script lang="ts">
-// export let images []string;
 export let images:string[] = [];
 
 const basename = (img:string) => {

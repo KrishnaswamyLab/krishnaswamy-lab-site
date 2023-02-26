@@ -1,17 +1,18 @@
 <script lang="ts">
-import type {Publication, Publications, PublicationsGroupedByYear} from '$lib/types'
-
-import {makeAuthorString, makePublicationString} from '$lib/Publications/utils'
-
-export let publications: Publications;
+import type {
+    Publication as PublicationInterface, 
+    Publications as PublicationsInterface, 
+    PublicationsGroupedByYear
+} from '$lib/types'
+export let publications: PublicationsInterface;
 
 $: years = {} as PublicationsGroupedByYear
 
-$: publications.forEach((pub:Publication) => {
+$: publications.forEach((pub:PublicationInterface) => {
     let year = String(pub?.year as number)
     
     if (!(year in years)) {
-        years[year] = [] as Publications;
+        years[year] = [] as PublicationsInterface;
     }
     
     years[year].push(pub)
@@ -41,10 +42,10 @@ $: publications.forEach((pub:Publication) => {
                         {/if}
                     </div>
                     <span>
-                        {@html makeAuthorString(pub?.authors)}                                
+                        {@html pub.makeAuthorString()}                                
                     </span>
                     <span>
-                        {@html makePublicationString(pub)}
+                        {@html pub.makePublicationString()}
                     </span>   
                 </div>
                 {/each}

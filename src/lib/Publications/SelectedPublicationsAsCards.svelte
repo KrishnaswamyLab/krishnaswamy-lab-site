@@ -1,12 +1,6 @@
 <script lang="ts">
-import type {Publications} from '$lib/types'
-
-import {
-    makeAuthorString, makeDateString, makeVolumeIssueString, 
-    makePublicationString, makeKeywordsString
-} from '$lib/Publications/utils'
-
-export let publications: Publications; 
+import type {Publications as PublicationsInterface} from '$lib/types'
+export let publications: PublicationsInterface; 
 export let showKeywords: boolean = false;   
 </script>
 
@@ -29,10 +23,10 @@ export let showKeywords: boolean = false;
                         {/if}
                     </div>
                     <span>
-                        {@html makeAuthorString(pub?.authors)}                                
+                        {@html pub.makeAuthorString()}                                
                     </span>
                     <span>
-                        {@html makePublicationString(pub)}
+                        {@html pub.makePublicationString()}
                     </span>   
                     {#if showKeywords}
                     <span class="">
@@ -41,7 +35,7 @@ export let showKeywords: boolean = false;
                             {kw}
                         </div>    
                         {/each}                                
-                        {makeKeywordsString(pub)} 
+                        {pub.makeKeywordsString()} 
                     </span>                    
                     {/if}
                 </div>

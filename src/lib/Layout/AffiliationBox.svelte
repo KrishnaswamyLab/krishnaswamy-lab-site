@@ -1,6 +1,6 @@
 <script lang="ts">
-import type {affiliation as affiliationInterface} from '$lib/types'
-export let affiliation: affiliationInterface;
+import type {Affiliation} from '$lib/types'
+export let affiliation: Affiliation;
 </script>
 
 <div class="

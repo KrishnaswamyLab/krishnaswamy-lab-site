@@ -1,16 +1,16 @@
 /** @type {import('./$types').PageLoad} */
-import type {Project} from '$lib/types'
+import type {
+    Project as ProjectInterface,
+    Projects as ProjectsInterface
+} from '$lib/types'
+import {Project as ProjectClass} from '$lib/classes'
+import {SortProjectByYear} from '$lib/utils'
+
 import projects from '$lib/data/projects.json'
 
-const yearSort = (a:Project, b:Project) => {
-    let ay = a?.publicationYear as number
-    let by = b?.publicationYear as number
-    return by - ay
-}
-
-projects.sort(yearSort)
+(projects as ProjectsInterface).sort(SortProjectByYear)
 export function load({ }) {
     return {
-        projects: projects.map(e=>e as Project)
+        projects: projects.map(e=> new ProjectClass(e as ProjectInterface))
     };
   }

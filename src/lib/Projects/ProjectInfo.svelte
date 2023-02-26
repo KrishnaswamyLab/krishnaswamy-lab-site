@@ -1,46 +1,21 @@
 <script lang="ts">
     import type {
-        Project
+        Project as ProjectInterface
     } from '$lib/types'
     
     import { goto } from '$app/navigation';
     import { browser } from '$app/environment';
 
     import Hero from '$lib/Layout/Hero/Hero.svelte'
-    import JellyContainer from "$lib/Layout/JellyContainer.svelte";
 
     import GitHub from '$lib/Icons/GitHub.svelte';
     import Youtube from "svelte-youtube-embed";    
     
-
-    export let project: Project
+    export let project: ProjectInterface
     export let useProjectHero = true
     export let contentWidthClasses = ''
     
-    
-    $: heroTitle = project?.projectAbbreviation 
-                            ? project?.projectAbbreviation 
-                            : project.projectTitle
-
-    $: hasBothGithubAndJournal = project?.githubLink && project?.publicationLink 
-    $: hasOneOfGithubOrJournal = project?.githubLink || project?.publicationLink
-
-    const makeTextAboutLinks = (project:Project) => {
-        return `
-        You can access 
-        ${heroTitle}'s
-        ${project?.githubLink ? 'Github repository' : ''}
-        ${hasBothGithubAndJournal ? 'and' : ''}
-        ${project?.publicationLink  ? 'article page' : ''}
-        by clicking the link${hasBothGithubAndJournal ? 's' : ''}
-        below
-        `
-    }
-    
     const youtubeId = project?.youtube
-
-    
-
 </script>
 
 {#if project?.publicationTitle === null}
@@ -49,12 +24,11 @@
 <div class="inline-block">
     {#if useProjectHero}
         <Hero 
-            backgroundImage={String(project.heroImage)}
+            backgroundImage={project.heroImage ? project.heroImage : ''}
             subtitle={String(project?.heroBlurb)}
         >
-            {heroTitle}
+            {project.heroTitle()}
         </Hero>
-
     {/if}
 
     <div class="flex justify-center  mx-4">
@@ -75,9 +49,9 @@
                 {/each}                        
             </div>  
 
-            {#if hasOneOfGithubOrJournal}
+            {#if project.hasOneOfGithubOrJournal()}
                 <div class="text-center my-4">
-                    {makeTextAboutLinks(project)}
+                    {project.makeTextAboutLinks()}
                 </div> 
                 
                 <div class="flex place-content-evenly place-items-center my-4">

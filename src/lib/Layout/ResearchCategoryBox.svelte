@@ -1,7 +1,10 @@
 <script lang="ts">
+    import type {Links} from '$lib/types'
 export let about: string;
 export let title: string;
 export let image: string;
+export let examples: Links;
+export let showExamples: boolean = false;
 </script>
 
 <div 
@@ -46,16 +49,17 @@ export let image: string;
         <h2 class="card-title break-words text-2xl">{title}</h2>
         <div><p class="text-lg">{about}</p></div>
         
-        <!-- 
-        <div class="divider divider-vertical py-1 before:bg-white after:bg-white"></div>                     
-        <div class="flex flex-row justify-evenly text-secondary-content">
-            {#each examples as example}
-            <a href="{example.href}">
-                <span class="badge badge-outline text-secondary-content badge-lg p-4">
-                    {example.text}
-                </span>
-            </a>                            
-            {/each}                        
-        </div> -->
+        {#if showExamples && examples}
+            <div class="divider divider-vertical py-1 before:bg-white after:bg-white"></div>                     
+            <div class="flex flex-row justify-evenly text-secondary-content">
+                {#each examples as example}
+                <a href="{example.href}">
+                    <span class="badge badge-outline text-secondary-content badge-lg p-4">
+                        {example.text}
+                    </span>
+                </a>                            
+                {/each}                        
+            </div>
+        {/if}
     </div>                                
 </div>

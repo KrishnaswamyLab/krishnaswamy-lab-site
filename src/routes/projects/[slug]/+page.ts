@@ -1,9 +1,21 @@
 import { error } from '@sveltejs/kit';
 
 /** @type {import('./$types').PageLoad} */
-import type {Project} from '$lib/types'
+import type {Project as ProjectInterface} from '$lib/types'
+import {Project as ProjectClass} from '$lib/classes'
 
 import projects from '$lib/data/projects.json'
+
+interface data {
+    project: ProjectInterface;
+    routes: {
+        projectTitle: string;
+        projectAbbreviation: string | null;
+        projectUrl: string | null;
+    }[];
+    slug: string;
+}
+
 export function load({ params }) {
     const slug = params.slug
     const matches = projects.filter(({projectUrl}) => projectUrl === slug)
@@ -15,8 +27,7 @@ export function load({ params }) {
     if (matches.length !== 1) {
         throw error(404, `Project with slug=${slug} not found`);
     }
-    const project = matches[0] as Project    
-    return {
-        project, routes, slug
-    };
+    const project = new ProjectClass(matches[0] as ProjectInterface)  
+    const data = {project, routes, slug} as data  
+    return data;
   }

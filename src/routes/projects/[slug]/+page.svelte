@@ -1,14 +1,14 @@
 <script lang="ts">
     /** @type {import('./$types').PageData} */
     export let data;
-    import type { Project } from '$lib/types';
     import { goto } from '$app/navigation';
+
+    import type { Project } from '$lib/types';
+    import { Project as ProjectClass } from '$lib/classes';
     import ProjectInfo from '$lib/Projects/ProjectInfo.svelte';    
     import Hero from '$lib/Layout/Hero/Hero.svelte'
     const handleProjectTitle = (project: Project) => {
-        const heroTitle = project?.projectAbbreviation 
-                            ? project?.projectAbbreviation 
-                            : project.projectTitle
+        const heroTitle = new ProjectClass(project).heroTitle()
         return heroTitle
     }
 
@@ -65,8 +65,7 @@
             <div class="md:ml-16 w-full">
                 <ProjectInfo  
                     useProjectHero="{false}" 
-                    project={data?.project} 
-                    
+                    project={data?.project}                     
                 />
             </div>
         </div>            
