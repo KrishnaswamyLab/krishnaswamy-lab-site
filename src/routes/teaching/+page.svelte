@@ -8,8 +8,8 @@ import Hero from '$lib/Layout/Hero/Hero.svelte';
 </script>
 <Hero></Hero>
 <JellyContainer class="mt-8">
-    <Hero>
-        Selected Yale University Courses
+    <Hero class="break-keep">
+        Selected Yale<wbr> Uni<wbr>versity Courses
     </Hero>    
     {#each data?.courses as {title, about, professors, listings}}
     <div class="mt-8">

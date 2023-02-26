@@ -43,13 +43,13 @@
 				{/each}
 			</ul>
 		</div>
-		<div class="lg:hidden dropdown dropdown-end">
-			<label tabindex="0" for="hamburger" class="btn btn-square btn-ghost">
+		<div class="lg:hidden dropdown dropdown-end z-[100]">
+			<label tabindex="-1" for="hamburger" class="btn btn-square btn-ghost">
 				<button id="hamburger" class="btn btn-square btn-ghost">
 					<Hamburger id="hamburger" class="inline-block w-5 h-5"/>			
 				</button>
 			</label>	
-			<ul tabindex="0" class="
+			<ul tabindex="-1" class="
 				menu menu-compact dropdown-content 				
 				mt-3 p-2 shadow rounded-box
 				text-right uppercase text-lg

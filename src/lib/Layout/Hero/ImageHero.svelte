@@ -16,8 +16,8 @@
           </slot>
       </h1>              
       {#if subtitle}
-        <p class="mb-5 text-2xl uppercase font-extralight break-all">
-          {subtitle}
+        <p class="mb-5 text-2xl uppercase font-extralight break-keep">
+          {@html subtitle}
         </p>
       {/if}  
       <slot name="tagline"></slot>        

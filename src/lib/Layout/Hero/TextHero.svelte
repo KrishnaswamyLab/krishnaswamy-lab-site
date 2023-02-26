@@ -2,7 +2,7 @@
 </script>
 
 <div class="pt-8 text-center {$$props.class}">
-    <h1 class="text-4xl md:text-6xl font-extralight break-all md:break-normal">
+    <h1 class="text-4xl md:text-6xl font-extralight break-keep md:break-normal">
         <slot>
         </slot>        
     </h1>

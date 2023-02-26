@@ -19,10 +19,12 @@
 </script>
 <Hero 
     backgroundImage="/images/workshops/workshop_hero.png"
-    subtitle="Machine Learning for Single-Cell Analysis"
+    class="break-keep"
+    subtitle="Machine Learning for Single<wbr>-<wbr>Cell Analysis"
 >
     Workshop
 </Hero>
+
 <JellyContainer>
 <div class="flex justify-center">        
     <div class="mt-8 text-left prose">

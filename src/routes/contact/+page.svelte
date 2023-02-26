@@ -4,11 +4,9 @@
     import GitHub from '$lib/Icons/GitHub.svelte';
     import Twitter from '$lib/Icons/Twitter.svelte';
     import Mail from '$lib/Icons/Mail.svelte';
-    import AcademicCap from '$lib/Icons/AcademicCap.svelte';
     import Phone from '$lib/Icons/Phone.svelte';
 
     import JellyContainer from '$lib/Layout/JellyContainer.svelte';
-    import TextHero from '$lib/Layout/Hero/TextHero.svelte';
     import ContactSquare from '$lib/Layout/ContactSquare.svelte';
 
 
@@ -70,7 +68,7 @@
     ]
 
     import Hero from '$lib/Layout/Hero/Hero.svelte';
-import MapBox from '$lib/Contact/MapBox.svelte';
+    import MapBox from '$lib/Contact/MapBox.svelte';
 </script>
 
 <Hero></Hero>
@@ -78,7 +76,7 @@ import MapBox from '$lib/Contact/MapBox.svelte';
 <JellyContainer>
     <div class="text-center">
         <Hero>
-            The Krishnaswamy Lab
+            The Krishna<wbr>swamy Lab
             <div slot="tagline">
                 Smita Krishnaswamy, Ph.D
             </div>
