@@ -3,10 +3,15 @@
 export let data;
 
 import JellyContainer from '$lib/Layout/JellyContainer.svelte';
-import TextHero from '$lib/Layout/Hero/TextHero.svelte';
 import Hero from '$lib/Layout/Hero/Hero.svelte';
+
+let backgroundImage = "/images/heroes/teaching_hero.jpg"
 </script>
+<!-- <Hero {backgroundImage}>
+    Teaching
+</Hero> -->
 <Hero></Hero>
+
 <JellyContainer class="mt-8">
     <Hero class="break-keep">
         Selected Yale<wbr> Uni<wbr>versity Courses

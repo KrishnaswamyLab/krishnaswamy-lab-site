@@ -1,11 +1,11 @@
-export interface link {
+export interface Link {
     href: string;
     text: string;
 }
-export type links = link[] | Array<link> | ArrayLike<link>
+export type Links = Link[] | Array<Link> | ArrayLike<Link>
 export interface PublicationCategory {
     category: string;
-    links: links;
+    links: Links;
 }
 export type PublicationCategories = PublicationCategory[] | 
     Array<PublicationCategory> | 
@@ -32,10 +32,10 @@ export interface Member {
 }
 export type Members = Member[] | Array<Member> | ArrayLike<Member>
 
-export interface href {
+export interface Href {
     href: string
 }
-export type hrefs = href[] | Array<href> | ArrayLike<href>
+export type Hrefs = Href[] | Array<Href> | ArrayLike<Href>
 
 export interface Author {
     name: string[] | Array<string>
@@ -55,7 +55,7 @@ export interface Publication {
     publisher:string;
     periodical:string|null;
     keywords: string[] | Array<string>;
-    urls: hrefs;
+    urls: Hrefs;
     
     google_scholar_url?: string;
     journal_source: string;
@@ -130,24 +130,29 @@ export interface quote {
     attributed:string;
 }
 
-export interface affiliation {
+export interface Affiliation {
     title:string;
     href:string;
     about:string;
     quote?:quote;
 }
 
+
+import type {ComponentType, SvelteComponentTyped} from 'svelte'
+
 export interface  ComponentMap {
-    [key: string]: any
+    [key: string]: ComponentType | SvelteComponentTyped
 }
 
 export interface SyllabusDayItem {
     col1: string;
     href: string;
-    col2: any;
+    col2: any | ComponentType | SvelteComponentTyped;
     col3: string;
 }
-export type SyllabusDayItems = SyllabusDayItem[] | Array<SyllabusDayItem> | ArrayLike<SyllabusDayItem>
+export type SyllabusDayItems = SyllabusDayItem[] 
+    | Array<SyllabusDayItem> 
+    | ArrayLike<SyllabusDayItem>
 
 export interface SyllabusDay {
     day: string;

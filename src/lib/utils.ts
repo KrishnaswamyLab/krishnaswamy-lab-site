@@ -17,6 +17,10 @@ export const openUrlInNewTab = (url:string) => {
 export const LabTwitterLink = 'https://twitter.com/KrishnaswamyLab'
 export const LabGitHubLink = 'https://github.com/KrishnaswamyLab'
 
+export const toTwitter = () => openUrlInNewTab(LabTwitterLink)
+export const toGitHub = () => openUrlInNewTab(LabGitHubLink)
+
+
 export const lipsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere 
     lectus libero, non feugiat odio finibus sed. Lorem ipsum dolor sit amet, consectetur adipiscing 
     elit. Ut sollicitudin interdum metus sit amet pretium. In hac habitasse platea dictumst. Fusce 
@@ -26,15 +30,23 @@ export const lipsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 
 
 
-import type {
-    ComponentMap as ComponentMapInterface,    
-} from '$lib/types'
-import GitHub from "$lib/Shields/GitHub.svelte";
-import Colab from "$lib/Shields/Colab.svelte";
-import Forms from "$lib/Shields/Forms.svelte";
+import type {ComponentMap,} from '$lib/types'
 
-export const COMPONENT_SHIELD_MAP: ComponentMapInterface = {
-    'GitHub': GitHub,
-    'Colab': Colab,
-    'Forms': Forms,
+import ShieldColab from "$lib/Shields/Colab.svelte";
+import ShieldForms from "$lib/Shields/Forms.svelte";
+import ShieldGitHub from "$lib/Shields/GitHub.svelte";
+
+export const ShieldComponentMap: ComponentMap = {    
+    'Colab': ShieldColab,
+    'Forms': ShieldForms,
+    'GitHub': ShieldGitHub,
+}
+
+import type {Publication} from '$lib/types'
+export const SortPublicationsByYear = (
+    pubA: Publication, pubB: Publication
+) => {
+    let yearA = pubA?.year as number
+    let yearB = pubB?.year as number
+    return yearB - yearA
 }

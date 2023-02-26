@@ -1,16 +1,11 @@
 <script>
-    import {LabTwitterLink, LabGitHubLink} from '$lib/utils';
-    import Mail from '$lib/Icons/Mail.svelte';
-
-    import JellyContainer from '$lib/Layout/JellyContainer.svelte';
-    import ContactSquare from '$lib/Layout/ContactSquare.svelte';
     import Hero from '$lib/Layout/Hero/Hero.svelte';
+    import JellyContainer from '$lib/Layout/JellyContainer.svelte';    
     
+    let backgroundImage = '/images/heroes/join_hero.jpg'
     
 </script>
-
 <Hero></Hero>
-
 <JellyContainer>
     <div>
         <Hero>
