@@ -10,7 +10,7 @@
     import GitHub from '$lib/Icons/GitHub.svelte';    
     const toGitHub = () => openUrlInNewTab(LabGitHubLink)
     
-    import Hero from '$lib/Layout/Hero.svelte';
+    import Hero from '$lib/Layout/Hero/Hero.svelte';
     import JellyContainer from "$lib/Layout/JellyContainer.svelte";
 </script>
 <Hero backgroundImage="/images/projects_hero.jpeg">

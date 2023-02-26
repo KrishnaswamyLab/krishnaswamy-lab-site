@@ -4,7 +4,7 @@
 
 </script>
 
-<div class="hero h-[40rem] bg-base-200" style="background-image: url({backgroundImage});">
+<div class="hero h-[40rem] bg-base-200 {$$props.class}" style="background-image: url({backgroundImage});">
   {#if backgroundImage}
         <div class="hero-overlay bg-opacity-60"></div>
   {/if}   

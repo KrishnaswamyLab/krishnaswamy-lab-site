@@ -6,7 +6,7 @@
     import { goto } from '$app/navigation';
     import { browser } from '$app/environment';
 
-    import Hero from '$lib/Layout/Hero.svelte'
+    import Hero from '$lib/Layout/Hero/Hero.svelte'
     import JellyContainer from "$lib/Layout/JellyContainer.svelte";
 
     import GitHub from '$lib/Icons/GitHub.svelte';

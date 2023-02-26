@@ -2,7 +2,7 @@
 /** @type {import('./$types').PageData} */
 export let data;
 
-import Hero from '$lib/Layout/Hero.svelte';
+import Hero from '$lib/Layout/Hero/Hero.svelte';
 import JellyContainer from '$lib/Layout/JellyContainer.svelte';
 import PublicationCategories from '$lib/Publications/PublicationCategories.svelte';
 import SelectedPublicationsAsCards from '$lib/Publications/SelectedPublicationsAsCards.svelte';

@@ -4,7 +4,7 @@
     import type { Project } from '$lib/types';
     import { goto } from '$app/navigation';
     import ProjectInfo from '$lib/Projects/ProjectInfo.svelte';    
-    import Hero from '$lib/Layout/Hero.svelte'
+    import Hero from '$lib/Layout/Hero/Hero.svelte'
     const handleProjectTitle = (project: Project) => {
         const heroTitle = project?.projectAbbreviation 
                             ? project?.projectAbbreviation 

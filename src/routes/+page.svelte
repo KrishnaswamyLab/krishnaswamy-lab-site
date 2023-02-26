@@ -1,15 +1,18 @@
 <script>
     /** @type {import('./$types').PageData} */
     export let data;
+    
+    import Hero from '$lib/Layout/Hero/Hero.svelte';
     import FollowUsBtn from '$lib/Layout/FollowUsBtn.svelte';
-    import Hero from '$lib/Layout/Hero.svelte';
     import JellyContainer from '$lib/Layout/JellyContainer.svelte';
     import ResearchCategoryBox from '$lib/Layout/ResearchCategoryBox.svelte';
     import AffiliationBox from '$lib/Layout/AffiliationBox.svelte';
 </script>
 
-<Hero backgroundImage="/images/lab_hero.jpg">
-    <span class="uppercase">The Krishnaswamy Lab</span>
+<Hero backgroundImage="/images/lab_hero.jpg" class=''>
+    <span class="uppercase break-keep text-5xl md:text-7xl">
+        The<wbr> Krishna<wbr>swamy Lab
+    </span>
     <svelte:fragment slot="tagline">
         <FollowUsBtn />
     </svelte:fragment>
@@ -36,15 +39,13 @@
     {/each}
 </div>
 
-<!-- <JellyContainer> -->
-    <div class="divider divider-vertical py-8"></div> 
-<!-- </JellyContainer> -->
+
+<div class="divider divider-vertical py-8"></div> 
+
 
 <div class="flex flex-col">    
-    <h1 class="mb-8 text-6xl text-black text-center font-light">
-        Affiliations
-    </h1>   
-    <div class="flex flex-row flex-wrap justify-evenly gap-4">
+    <Hero>Affiliations</Hero>    
+    <div class="mt-8 flex flex-row flex-wrap justify-evenly gap-4">
         {#each data?.affiliations as affiliation }
             <AffiliationBox {affiliation}/>        
         {/each}            

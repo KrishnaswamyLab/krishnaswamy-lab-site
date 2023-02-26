@@ -8,7 +8,7 @@
     import Phone from '$lib/Icons/Phone.svelte';
 
     import JellyContainer from '$lib/Layout/JellyContainer.svelte';
-    import TextHero from '$lib/Layout/TextHero.svelte';
+    import TextHero from '$lib/Layout/Hero/TextHero.svelte';
     import ContactSquare from '$lib/Layout/ContactSquare.svelte';
 
 
@@ -69,7 +69,7 @@
         },
     ]
 
-    import Hero from '$lib/Layout/Hero.svelte';
+    import Hero from '$lib/Layout/Hero/Hero.svelte';
 import MapBox from '$lib/Contact/MapBox.svelte';
 </script>
 

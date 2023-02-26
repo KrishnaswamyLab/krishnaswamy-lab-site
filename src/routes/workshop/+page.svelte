@@ -14,7 +14,7 @@
         '/images/workshops/workshop_8.jpg',
     ]    
 
-    import Hero from '$lib/Layout/Hero.svelte';
+    import Hero from '$lib/Layout/Hero/Hero.svelte';
     import JellyContainer from "$lib/Layout/JellyContainer.svelte";
 </script>
 <Hero 

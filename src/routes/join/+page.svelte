@@ -4,7 +4,7 @@
 
     import JellyContainer from '$lib/Layout/JellyContainer.svelte';
     import ContactSquare from '$lib/Layout/ContactSquare.svelte';
-    import Hero from '$lib/Layout/Hero.svelte';
+    import Hero from '$lib/Layout/Hero/Hero.svelte';
     
     
 </script>

@@ -5,12 +5,12 @@
     import MemberInfo from '$lib/MemberInfo.svelte';  
 
     import JellyContainer from '$lib/Layout/JellyContainer.svelte';
-    import TextHero from '$lib/Layout/TextHero.svelte';
+    import TextHero from '$lib/Layout/Hero/TextHero.svelte';
     
     $: past = data?.members.filter(({isAlum})=>isAlum)
     $: curr = data?.members.filter(({isAlum})=>!isAlum)
 
-    import Hero from '$lib/Layout/Hero.svelte';
+    import Hero from '$lib/Layout/Hero/Hero.svelte';
     const useStickyTextHero = false;
     const stickyClasses = 'sticky top-0 bg-base-100 z-[100] pb-8'
 

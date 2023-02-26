@@ -3,8 +3,8 @@
 export let data;
 
 import JellyContainer from '$lib/Layout/JellyContainer.svelte';
-import TextHero from '$lib/Layout/TextHero.svelte';
-import Hero from '$lib/Layout/Hero.svelte';
+import TextHero from '$lib/Layout/Hero/TextHero.svelte';
+import Hero from '$lib/Layout/Hero/Hero.svelte';
 </script>
 <Hero></Hero>
 <JellyContainer class="mt-8">
