@@ -78,21 +78,6 @@
   },
   {
     "name": {
-      "preferred": "Siddharth",
-      "first": "Siddharth",
-      "last": "Viswanath",
-      "middle": null
-    },
-    "title": null,
-    "image": null,
-    "cv": null,
-    "isAlum": false,
-    "about": null,
-    "publications": [],
-    "name_str": "Siddharth Viswanath"
-  },
-  {
-    "name": {
       "preferred": "Xingzhi",
       "first": "Xingzhi",
       "last": "Sun",
@@ -171,6 +156,21 @@
     "website": null,
     "publications": [],
     "name_str": "Danqi Liao"
+  },
+  {
+    "name": {
+      "preferred": "Siddharth",
+      "first": "Siddharth",
+      "last": "Viswanath",
+      "middle": null
+    },
+    "title": null,
+    "image": "/images/members/siddharth_viswanath.jpeg",
+    "cv": null,
+    "isAlum": false,
+    "about": "I am Siddharth, an undergraduate student at UC Irvine studying Computer Science and a prospective CS PhD student at Yale. I work on directed graph methods to model metabolic networks and work on geometric scattering methods in the lab. In my free time, I play the guitar, cricket and daydream.",
+    "publications": [],
+    "name_str": "Siddharth Viswanath"
   },
   {
     "name": {
