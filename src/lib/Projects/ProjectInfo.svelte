@@ -1,6 +1,6 @@
 <script lang="ts">
     import type {
-        project as projectInterface
+        Project
     } from '$lib/types'
     
     import { goto } from '$app/navigation';
@@ -13,7 +13,7 @@
     import Youtube from "svelte-youtube-embed";    
     
 
-    export let project: projectInterface
+    export let project: Project
     export let useProjectHero = true
     export let contentWidthClasses = ''
     
@@ -25,7 +25,7 @@
     $: hasBothGithubAndJournal = project?.githubLink && project?.publicationLink 
     $: hasOneOfGithubOrJournal = project?.githubLink || project?.publicationLink
 
-    const makeTextAboutLinks = (project:projectInterface) => {
+    const makeTextAboutLinks = (project:Project) => {
         return `
         You can access 
         ${heroTitle}'s

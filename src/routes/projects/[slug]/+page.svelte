@@ -1,19 +1,18 @@
 <script lang="ts">
     /** @type {import('./$types').PageData} */
     export let data;
-    import type { project as projectInterface } from '$lib/types';
+    import type { Project } from '$lib/types';
     import { goto } from '$app/navigation';
-    import ProjectInfo from '$lib/Projects/ProjectInfo.svelte';
-    // import ProjectHero from '$lib/Projects/ProjectHero.svelte';
+    import ProjectInfo from '$lib/Projects/ProjectInfo.svelte';    
     import Hero from '$lib/Layout/Hero.svelte'
-    const handleProjectTitle = (project: projectInterface) => {
+    const handleProjectTitle = (project: Project) => {
         const heroTitle = project?.projectAbbreviation 
                             ? project?.projectAbbreviation 
                             : project.projectTitle
         return heroTitle
     }
 
-    const routeTitle = (project: projectInterface) => {
+    const routeTitle = (project: Project) => {
         return handleProjectTitle(project)
     }
 

@@ -1,6 +1,6 @@
 <script lang="ts">
-    import type {project as projectInterface} from '$lib/types'
-    export let project: projectInterface
+    import type {Project} from '$lib/types'
+    export let project: Project
 </script>
 
 

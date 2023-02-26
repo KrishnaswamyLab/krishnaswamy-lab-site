@@ -1,7 +1,7 @@
 import { error } from '@sveltejs/kit';
 
 /** @type {import('./$types').PageLoad} */
-import type {project as projectInterface} from '$lib/types'
+import type {Project} from '$lib/types'
 
 import projects from '$lib/data/projects.json'
 export function load({ params }) {
@@ -15,7 +15,7 @@ export function load({ params }) {
     if (matches.length !== 1) {
         throw error(404, `Project with slug=${slug} not found`);
     }
-    const project = matches[0] as projectInterface    
+    const project = matches[0] as Project    
     return {
         project, routes, slug
     };

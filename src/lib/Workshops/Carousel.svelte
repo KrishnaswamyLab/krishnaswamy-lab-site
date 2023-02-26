@@ -1,7 +1,4 @@
 <script lang="ts">
-    import { stringify } from "postcss";
-
-
 // export let images []string;
 export let images:string[] = [];
 
