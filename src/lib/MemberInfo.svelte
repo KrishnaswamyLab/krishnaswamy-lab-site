@@ -1,11 +1,11 @@
 <script lang="ts">
     import { goto } from '$app/navigation';
     import { browser } from '$app/environment';
-    import type {member as memberInterface} from '$lib/types'
+    import type {Member as MemberInterface} from '$lib/types'
 
     import {openUrlInNewTab, lipsum} from '$lib/utils'
         
-    export let member: memberInterface = {
+    export let member: MemberInterface = {
         name: 'Lab Member',
         title: 'PhD',
         image: null,
@@ -59,10 +59,10 @@
         <div class="avatar inline-flex place-content-center place-items-start">
             <div class="
                 w-48 mask mask-squircle 
-                bg-gradient-to-r from-cyan-500 to-blue-500
-                {member?.image ? '' : 'animate-pulse'}
+                bg-gradient-to-r from-cyan-500 to-blue-500                
                 "
             >
+                <!-- {member?.image ? '' : 'animate-pulse'} -->
                 <!-- min-w-max max-h-max h-48 inline-flex -->
                 {#if member?.image}
                 <img 
