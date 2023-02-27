@@ -49,16 +49,16 @@ export interface Publication {
     authors: Authors;
     year?: string|number|null;
     month?: string|number|null;
-    pages?: string;
-    abstract?: string;
-    volume?: string|number;
-    issue?: string|number;
-    publisher:string;
-    periodical:string;
+    pages?: string|null;
+    abstract?: string | null;    
+    publisher:string|null;
+    periodical:string|null;
     keywords: string[] | Array<string>;
     urls: Hrefs;
+    volume?: string | number | null;
+    issue?: string | number | null;
     google_scholar_url?: string;
-    journal_source: string;
+    journal_source?: string;
     // Number of citations (if using Publish or Perish's Google Scholar results)
     cites?: string|number;
     // Whether or not a selected publication

@@ -1,5 +1,8 @@
 /** @type {import('./$types').PageLoad} */
-import type {Publication as PublicationInterface, Publications} from '$lib/types'
+import type {
+    Publication as PublicationInterface, 
+    Publications as PublicationsInterface
+} from '$lib/types'
 import {SortPublicationsByYear} from '$lib/utils'
 import {Publication as PublicationClass} from '$lib/classes'
 
@@ -10,9 +13,10 @@ import publicationsCategories from '$lib/data/publication_categories.json'
 
 export function load({ }) {
     return {        
-        selectedPublications: selectedPublications
-            .map(e => new PublicationClass(e as PublicationInterface))
-            .sort(SortPublicationsByYear),
+        selectedPublications: 
+            (selectedPublications as PublicationsInterface)
+                .map(e => new PublicationClass(e))
+                .sort(SortPublicationsByYear),
 
         categories: publicationsCategories,
     };
