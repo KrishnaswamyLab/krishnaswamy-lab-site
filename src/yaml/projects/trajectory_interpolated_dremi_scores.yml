@@ -1,0 +1,33 @@
+authors:
+- name: Smita Krishnaswamy
+- name: Nevena Zivanovic
+- name: Roshan Sharma
+- name: Dana Pe'er
+- name: Bernd Bodenmiller
+githubLink: null
+heroBlurb: Learning time-varying information flow form single-cell epithelial to mesenchymal
+  transition data.
+heroImage: null
+journal: PLOS ONE
+journalImage: /images/journals/plos_one.png
+projectAbbreviation: TIDES
+projectListDescription: Learning time-varying information flow form single-cell epithelial
+  to mesenchymal transition data
+projectTitle: Trajectory Interpolated DREMI Scores
+projectUrl: tides
+publicationAbstract: TIDES or ( Trajectory Interpolated DREMI Scores) is an extension
+  of our earlier Density Resampled Estimate of Mutual Information which quantifies  time-varying
+  edge behavior over a developmental trajectory. In particular it tracks times during
+  development in which a regulatory relationship is strong (high mutual information)
+  vs times when regulatory relationships are inactive (low mutual information) due  to
+  regulatory network rewiring that underlies differentiation.  We also predict an
+  overall metric of edge dynamism, which combined with TIDES allows us to predict
+  the effect of drug perturbations on the Epithelial-to-Mesenchymal transition in
+  breast cancer cells.
+publicationImage: /images/projects/tides_image.png
+publicationLink: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0203389
+publicationPoster: null
+publicationTitle: 'TIDES: Learning time-varying information flow from single-cell
+  epithelial to mesenchymal transition data'
+publicationYear: null
+youtube: null

@@ -1,0 +1,35 @@
+authors:
+- name: Ofir Lindenbaum
+- name: Jay S Stanley
+- name: Guy Wolf
+- name: Smita Krishnaswamy
+githubLink: null
+heroBlurb: Geometry-Based Data Generation
+heroImage: /images/projects/sugar_hero.jpg
+journal: arXiv
+journalImage: /images/journals/arxiv.png
+projectAbbreviation: SUGAR
+projectListDescription: A new kind of data generation algorithm that generates of
+  data geometry rather than density and is able to generate data in sparse regions
+  and predicts hypothetical data points.
+projectTitle: Synthesis Using Geometrically Aligned Random-walks
+projectUrl: sugar
+publicationAbstract: 'Many generative models attempt to replicate the density of their
+  input data. However, this approach is often undesirable, since data density is highly
+  affected by sampling biases, noise, and artifacts. We propose a method called SUGAR
+  (Synthesis Using Geometrically Aligned Random-walks) that uses a diffusion process
+  to learn a manifold geometry from the data. Then, it generates new points evenly
+  along the manifold by pulling randomly generated points into its intrinsic structure
+  using a diffusion kernel.
+
+  SUGAR equalizes the density along the manifold by selectively generating points
+  in sparse areas of the manifold. We demonstrate how the approach corrects sampling
+  biases and artifacts, while also revealing intrinsic patterns (e.g. progression)
+  and relations in the data. The method is applicable for correcting missing data,
+  finding hypothetical data points, and learning relationships between data features.'
+publicationImage: /images/projects/sugar_image.png
+publicationLink: https://arxiv.org/abs/1802.04927
+publicationPoster: https://static1.squarespace.com/static/58fba552f7e0ab0af45cd6fb/t/5bf8ebb64ae237e15d457661/1543039928671/SUGAR_poster.pdf
+publicationTitle: 'SUGAR: Geometry-Based Data Generation'
+publicationYear: null
+youtube: VAbUs_nXbs0

@@ -1,0 +1,28 @@
+about: Daniel earned his B.S. in Microbiology at the University of Massachusetts,
+  Amherst in 2015. He studied the effects of simulated climate warming on soil microbial
+  communities with Dr. Kristen DeAngelis, and this work became the focus of his senior
+  thesis. Daniel joined the PhD program in Genetics at Yale University in 2015. Under
+  the mentorship of Smita Krishnaswamy, Daniel has worked on developing unsupervised
+  machine learning algorithms for analysis of high dimensional biomedical data. Previous
+  projects include manifold learning methods for dimensionality reduction and analysis
+  of experimental perturbations and a neural network for archetypal analysis.
+cv: null
+image: ''
+isAlum: true
+name:
+  first: Daniel
+  last: Burkhardt
+  middle: B.
+  preferred: Daniel
+  preferred_name: Daniel
+name_str: Daniel B. Burkhardt
+publications:
+- Visualizing structure and transitions in high-dimensional biological data
+- Quantifying the effect of experimental perturbations at single-cell resolution
+- 'Generating hard-to-obtain information from easy-to-obtain information: Applications
+  in drug discovery and clinical inference'
+- Multiscale PHATE identifies multimodal signatures of COVID-19
+- Mapping Phenotypic Plasticity upon the Cancer Cell State Landscape Using Manifold
+  Learning
+title: null
+website: null

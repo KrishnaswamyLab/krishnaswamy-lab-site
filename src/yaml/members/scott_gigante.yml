@@ -1,0 +1,32 @@
+about: 'Scott was a PhD student in Computational Biology and Bioinformatics, and jointly
+  advised by Smita Krishnaswamy and Ronald Coifman. His research interests include
+  deep learning and graph-based methods for the analysis of single-cell genomics data.
+
+  Scott completed his Bachelor of Science in Mathematics & Statistics at the University
+  of Melbourne, Australia. Before coming to Yale, Scott was a research technician
+  at the Walter and Eliza Hall Institute of Medical Research, where he developed computational
+  methods for detecting and analysing epigenetic modifications to DNA in nanopore
+  sequencing.
+
+  Scott is passionate about open, reproducible science and open source software. In
+  his spare time, Scott enjoys singing with the Yale Camerata and cycling with the
+  Yale Cycling Team.'
+cv: null
+image: ''
+isAlum: true
+name:
+  first: Scott
+  last: Gigante
+  middle: A.
+  preferred: Scott
+  preferred_name: Scott
+name_str: Scott A. Gigante
+publications:
+- Visualizing structure and transitions in high-dimensional biological data
+- Harmonic Alignment
+- Quantifying the effect of experimental perturbations at single-cell resolution
+- Multiscale PHATE identifies multimodal signatures of COVID-19
+- Topological analysis of single-cell hierarchy reveals inflammatory glial landscape
+  of macular degeneration
+title: null
+website: null

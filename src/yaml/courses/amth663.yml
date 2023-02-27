@@ -1,0 +1,19 @@
+about: Deep neural networks have gained immense popularity within the last decade
+  due to their success in many important machine learning tasks such as image recognition,
+  speech recognition, and natural language processing. This course will provide a
+  principled and hands-on approach to deep learning with neural networks. By the end
+  of the course, students will have mastered the principles and practices underlying
+  neural networks including modern methods of deep learning, and will have applied
+  deep learning methods to real-world problems including image recognition, natural
+  language processing, and biomedical applications. The course will be based on homework,
+  a final exam, and a final project (either group or individual, depending on the
+  total number enrolled). The project will include both a written and oral (i.e. presentation)
+  component. Students' grades will be based on their homework scores and the quality
+  of the written and oral component of their projects. The course assumes basic prior
+  knowledge in linear algebra and probability.
+listings:
+- CPSC663
+- AMTH663
+professors:
+- Smita Krishnaswamy
+title: 'Deep Learning: Theory and Applications'

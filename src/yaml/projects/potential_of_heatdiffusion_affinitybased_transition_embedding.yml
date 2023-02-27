@@ -1,0 +1,41 @@
+authors:
+- name: Kevin R Moon
+- name: David van Dijk
+- name: Zheng Wang
+- name: Daniel B Burkhardt
+- name: William S Chen
+- name: Antonia van den Elzen
+- name: Matthew J Hirn
+- name: Ronald R Coifman
+- name: Natalia B Ivanova
+- name: Smita Krishnaswamy
+githubLink: https://github.com/KrishnaswamyLab/PHATE
+heroBlurb: Visualizing Transitions and Structure for Biological Data Exploration
+heroImage: /images/projects/phate_hero.jpg
+journal: Nature Biotechnology
+journalImage: /images/journals/nature_biotech.jpg
+projectAbbreviation: PHATE
+projectListDescription: a visualization and dimensionality reduction technique that
+  is sensitive to local and global relationships and successfully preserves structures
+  of interest in biological data including cluster structure and branching trajectory
+  structure.
+projectTitle: Potential of Heat-diffusion Affinity-based Transition Embedding
+projectUrl: phate
+publicationAbstract: 'In the era of ''Big Data'' there is a pressing need for tools
+  that provide human interpretable visualizations of emergent patterns in high-throughput
+  high-dimensional data. Further, to enable insightful data exploration, such visualizations
+  should faithfully capture and emphasize emergent structures and patterns without
+  enforcing prior assumptions on the shape or form of the data.
+
+  In this paper, we present PHATE (Potential of Heat-diffusion for Affinity-based
+  Transition Embedding) - an unsupervised low-dimensional embedding for visualization
+  of data that is aimed at solving these issues. Unlike previous methods that are
+  commonly used for visualization, such as PCA and tSNE, PHATE is able to capture
+  and highlight both local and global structure in the data.'
+publicationImage: /images/projects/phate_image.png
+publicationLink: https://www.nature.com/articles/s41587-019-0336-3
+publicationPoster: null
+publicationTitle: 'PHATE: Visualizing Transitions and Structure for Biological Data
+  Exploration'
+publicationYear: null
+youtube: null

@@ -1,0 +1,24 @@
+about: 'Danqi Liao is a Ph.D. student in the Computer Science department at Yale University.
+  Her research interests include geometric, manifold learning, and deep learning.
+  Specifically, she is interested in studying the characteristics that make expressive
+  and generalizable embeddings and developing efficient and principled methods to
+  achieve such representations.
+
+  Danqi graduated Magna Cum Laude from Northwestern University and obtained her master''s
+  degree from Princeton University. While at Princeton, she worked on computer perception
+  and video recognition in Dr. Olga Russakovsky''s lab. Before graduate school, she
+  worked as a machine learning engineer at Meta for two years. Outside of research,
+  she is a big fan of soccer, tennis, and video games. Her favorite video game series
+  is The Last of Us.'
+cv: null
+image: /images/members/danqi_liao.png
+isAlum: false
+name:
+  first: Danqi
+  last: Liao
+  middle: null
+  preferred: Danqi
+name_str: Danqi Liao
+publications: []
+title: null
+website: null

@@ -1,0 +1,11 @@
+about: Combining all our prior efforts - understanding data topology, producing useful
+  data embeddings, characterizing data dynamics - we produce state-of-the-art pipelines
+  for biological insight. Whether it's cancers, immunology, or developmental biology
+  we continue to unravel mysteries of biological systems.
+examples:
+- href: /projects/phemd
+  text: PhEMD
+- href: /projects/meld
+  text: MELD
+image: /images/heroes/karyotype.png
+title: Biomedical Systems Applications

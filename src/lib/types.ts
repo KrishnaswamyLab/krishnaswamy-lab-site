@@ -1,3 +1,4 @@
+export type GlobResults = Record<string, ()=>Promise<unknown>>
 export interface Link {
     href: string;
     text: string;
@@ -30,7 +31,9 @@ export interface Member {
     isAlum?: boolean;
     name_str?: string;
 }
-export type Members = Member[] | Array<Member> | ArrayLike<Member>
+export type Members = Member[] 
+    | Array<Member> 
+    // | ArrayLike<Member>
 
 export interface Href {
     href: string

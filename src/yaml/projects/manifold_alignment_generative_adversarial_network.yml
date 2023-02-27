@@ -1,0 +1,35 @@
+authors:
+- name: Matthew Amodio
+- name: Smita Krishnaswamy
+githubLink: null
+heroBlurb: Aligning Biological Manifolds
+heroImage: /images/projects/magan_hero.jpeg
+journal: PMLR
+journalImage: /images/journals/pmlr.png
+projectAbbreviation: MAGAN
+projectListDescription: a dual GAN (generative adversarial network) framework that
+  can find correspondences between two data modalities measuring the same system to
+  create an integrated dataset
+projectTitle: Manifold Alignment Generative Adversarial Network
+projectUrl: magan
+publicationAbstract: 'It is increasingly common in many types of natural and physical
+  systems (especially biological systems) to have different types of measurements  performed
+  on the same underlying system. In such settings, it is important to align the manifolds
+  arising from each measurement in order  to integrate such data and gain an improved
+  picture of the system; we tackle this problem using generative adversarial networks
+  (GANs). Recent attempts to use GANs to find correspondences between sets of samples
+  do not explicitly perform proper alignment of manifolds.
+
+  We present the new Manifold Aligning GAN (MAGAN) that aligns two manifolds such
+  that related points in each measurement space are aligned. We demonstrate  applications
+  of MAGAN in single-cell biology in integrating two different measurement types together:
+  cells from the same tissue are measured with both genomic (single-cell RNA-sequencing)
+  and proteomic (mass cytometry) technologies. We show that MAGAN successfully aligns
+  manifolds such that known correlations between measured markers are improved compared
+  to other recently proposed models.'
+publicationImage: /images/projects/magan_image.png
+publicationLink: http://proceedings.mlr.press/v80/amodio18a.html
+publicationPoster: null
+publicationTitle: 'MAGAN: Aligning Biological Manifolds'
+publicationYear: null
+youtube: null

@@ -6,6 +6,12 @@ import type {
 
 import syllabus from '$lib/data/workshop_syllabus_2021.json'
 import {ShieldComponentMap} from '$lib/utils'
+import {LoadGlobsAllAtOnces} from '$lib/utils'
+const yamls = import.meta.glob(
+    '/src/yaml/workshops/2021/syllabus.yml', 
+    {import: 'default'}
+)
+
 
 
 syllabus.forEach((el) => {    

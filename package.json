@@ -38,6 +38,7 @@
 		"d3-selection": "^3.0.0",
 		"d3-zoom": "^3.0.0",
 		"daisyui": "^2.50.0",
-		"svelte-youtube-embed": "^0.1.8"
+		"svelte-youtube-embed": "^0.1.8",
+		"vite-plugin-yaml2": "^1.1.5"
 	}
 }

@@ -1,0 +1,18 @@
+about: Jackson is an undergrad at Yale studying Computer Science. In the lab, he is
+  interested in thinking about low-dimensional encodings of complex data, and how
+  they can be transformed to generate new data. In his free time, Jackson enjoys singing
+  and cooking!
+cv: null
+image: /images/members/jackson_grady.jpg
+isAlum: true
+name:
+  first: Jackson
+  last: Grady
+  middle: null
+  preferred: Jackson
+  preferred_name: Jackson
+name_str: Jackson Grady
+publications:
+- Molecular Graph Generation via Geometric Scattering
+title: null
+website: null

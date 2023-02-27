@@ -1,0 +1,30 @@
+about: 'Dennis is a board-certified physician trained in Internal Medicine and  Gastroenterology.
+  He is working on applying unsupervised machine  learning techniques to electronic
+  health record data.
+
+  Dennis grew up in Plano, Texas and attended Rice University and Baylor College of
+  Medicine prior to his Internal Medicine residency training at Yale-New Haven Hospital.
+  He is currently completing his clinical fellowship in Gastroenterology & Hepatology
+  with a Master''s of Health Science in Clinical Informatics at Yale; in this capacity,
+  he is developing machine learning models for predicting outcomes in acute  gastrointestinal
+  bleeding. His long-term goal is to become a physician data scientist who creates,
+  validates, and tests integrated machine learning models to improve risk stratification
+  for patients.'
+cv: null
+image: /images/members/dennis_shung.jpeg
+isAlum: true
+name:
+  first: Dennis
+  last: Shung
+  middle: null
+  preferred: Dennis
+  preferred_name: Dennis
+name_str: Dennis Shung
+publications:
+- 'Generating hard-to-obtain information from easy-to-obtain information: Applications
+  in drug discovery and clinical inference'
+- 'MURAL: An Unsupervised Random Forest-Based Embedding for Electronic Health Record
+  Data'
+- Multiscale PHATE identifies multimodal signatures of COVID-19
+title: null
+website: null

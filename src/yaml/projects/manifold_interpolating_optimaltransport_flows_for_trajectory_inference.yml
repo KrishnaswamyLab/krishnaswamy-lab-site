@@ -1,0 +1,40 @@
+authors:
+- name: Guillaume Huguet
+- name: Sumner Magruder
+- name: Alexander Tong
+- name: Oluwadamilola Fasina
+- name: Manik Kuchroo
+- name: Guy Wolf
+- name: Smita Krishnaswamy
+githubLink: https://github.com/KrishnaswamyLab/MIOFlow
+heroBlurb: Continuous Population Dynamics from Static Snapshots
+heroImage: /images/projects/mioflow_hero_1.jpg
+journal: arXiv
+journalImage: /images/journals/arxiv.png
+projectAbbreviation: MIOFlow
+projectListDescription: a neural ODE to interpolates between static population snapshots,
+  penalized by optimal transport with manifold ground distance. MIOFlow has theoretical
+  links with dynamic optimal transport.
+projectTitle: Manifold Interpolating Optimal-Transport Flows for Trajectory Inference
+projectUrl: mioflow
+publicationAbstract: "We present a method called Manifold Interpolating Optimal-Transport
+  Flow (MIOFlow) that learns stochastic, continuous population dynamics from static
+  snapshot samples taken at sporadic timepoints. MIOFlow combines dynamic models,
+  manifold learning, and optimal transport by training neural ordinary differential
+  equations (Neural ODE) to interpolate between static population snapshots as penalized
+  by optimal transport with manifold ground distance. Further, we ensure that the
+  flow follows the geometry by operating in the latent space of an autoencoder that
+  we call a geodesic autoencoder (GAE). In GAE the latent space distance between points
+  is regularized to match a novel multiscale geodesic distance on the data manifold
+  that we define. We show that this method is superior to normalizing flows, Schr\xF6dinger
+  bridges and other generative models that are designed to flow from noise to data
+  in terms of interpolating between populations. Theoretically, we link these trajectories
+  with dynamic optimal transport. We evaluate our method on simulated data with bifurcations
+  and merges, as well as scRNA-seq data from embryoid body differentiation, and acute
+  myeloid leukemia treatment."
+publicationImage: /images/projects/mioflow_image.png
+publicationLink: https://arxiv.org/pdf/2206.14928.pdf
+publicationPoster: /images/projects/mioflow_poster.png
+publicationTitle: Manifold Interpolating Optimal-Transport Flows for Trajectory Inference
+publicationYear: 2022
+youtube: null

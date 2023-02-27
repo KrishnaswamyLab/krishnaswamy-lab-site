@@ -1,0 +1,55 @@
+authors:
+- name: William S Chen
+- name: Nevena Zivanovic
+- name: David van Dijk
+- name: Guy Wolf
+- name: Bernd Bodenmiller
+- name: Smita Krishnaswamy
+githubLink: null
+heroBlurb: Single cell analysis of drug perturbations
+heroImage: /images/projects/phemd_hero.jpg
+journal: bioRxiv
+journalImage: /images/journals/bioarchives.png
+projectAbbreviation: PhEMD
+projectListDescription: a computational method to quantify relationships between drug
+  perturbations on dozens to hundreds of single cell samples.
+projectTitle: Phenotypic Earth Mover's Distance
+projectUrl: phemd
+publicationAbstract: 'Previously, the effect of a drug on a cell population was measured
+  based on simple metrics such as cell viability. However, as single-cell technologies
+  are becoming more advanced, drug screen experiments can now be conducted with more
+  complex readouts such as gene expression profiles of individual cells. The increasing
+  complexity of measurements from these multi-sample experiments calls for more sophisticated
+  analytical approaches than are currently available.
+
+  We develop a novel method called PhEMD (Phenotypic Earth Mover''s Distance) and
+  show that it can be used to embed the space of drug perturbations on the basis of
+  the drugs'' effects on cell populations. When testing PhEMD on a newly-generated,
+  300-sample CyTOF kinase inhibition screen experiment, we find that the state space
+  of the perturbation conditions is surprisingly low-dimensional and that the network
+  of drugs demonstrates manifold structure.
+
+  We show that because of the fairly simple manifold geometry of the 300 samples,
+  we can accurately capture the full range of drug effects using a dictionary of only
+  30 experimental conditions. We also show that new drugs can be added to our PhEMD
+  embedding using similarities inferred from other characterizations of drugs using
+  a technique called Nystrom extension.
+
+  Our findings suggest that large-scale drug screens can be conducted by measuring
+  only a small fraction of the drugs using the most expensive high-throughput single-cell
+  technologies -- the effects of other drugs may be inferred by mapping and extending
+  the perturbation space. We additionally show that PhEMD can be useful for analyzing
+  other types of single-cell samples, such as patient tumor biopsies, by mapping the
+  patient state space in a similar way as the drug state space.
+
+  We demonstrate that PhEMD is highly scalable, compatible with leading batch effect
+  correction techniques, and generalizable to multiple experimental designs. Altogether,
+  our analyses suggest that PhEMD may facilitate drug discovery efforts and help uncover
+  the network geometry of a collection of single-cell samples.'
+publicationImage: /images/projects/phemd_image.png
+publicationLink: https://www.biorxiv.org/content/early/2018/12/31/455436
+publicationPoster: null
+publicationTitle: 'PhEMD: comparing drug perturbations by their effect on single cell
+  populations'
+publicationYear: null
+youtube: null

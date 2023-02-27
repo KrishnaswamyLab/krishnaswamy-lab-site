@@ -1,0 +1,15 @@
+about: null
+cv: null
+image: null
+isAlum: false
+name:
+  first: Scott
+  last: Youlten
+  middle: E.
+  preferred: Scott
+  preferred_name: Scott
+name_str: Scott E. Youlten
+publications:
+- Single-cell multi-modal GAN reveals spatial patterns in single-cell data from triple-negative
+  breast cancer
+title: null

@@ -63,3 +63,32 @@ export const SortProjectByYear = (a:ProjectInterface, b:ProjectInterface) => {
     let by = b?.publicationYear as number
     return by - ay
 }
+
+
+
+
+import type {GlobResults} from '$lib/types'
+
+export const LoadGlobsOneByOne = async (globs: GlobResults) => {
+    let results = []
+    for (const path in globs) {
+        let data = await globs[path]()
+        results.push(data)
+    }
+    return results
+}
+
+export const LoadGlobsAllAtOnces = async (globs: GlobResults) => {
+    let results = await Promise.all(Object.values(globs).map(fn=>fn()))
+    return results
+}
+
+
+
+import type {Member as MemberInterface} from '$lib/types'
+export const SortMemberByImage = (a:MemberInterface, b:MemberInterface) => {
+    let doesAHaveImage = a?.image ? 0 : -1
+    let doesBHaveImage = b?.image ? 1 : 0
+    let tmp = doesBHaveImage - doesAHaveImage
+    return tmp + (b?.cv !== null ? 2 : -1)  
+}

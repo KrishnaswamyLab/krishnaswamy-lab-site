@@ -1,0 +1,9 @@
+about: Construction of and learning from data graphs are core component of truly understanding
+  "Big Data". We leverage a swath of techniques from signal processing to optimal
+  transport to know how our data thoroughly inside and out so that we can denoise,
+  impute, and study our data.
+examples:
+- href: /projects/magic
+  text: MAGIC
+image: /images/heroes/data.png
+title: Learning on Graphs
