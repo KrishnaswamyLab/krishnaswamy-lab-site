@@ -1,13 +1,6 @@
-about: Daniel earned his B.S. in Microbiology at the University of Massachusetts,
-  Amherst in 2015. He studied the effects of simulated climate warming on soil microbial
-  communities with Dr. Kristen DeAngelis, and this work became the focus of his senior
-  thesis. Daniel joined the PhD program in Genetics at Yale University in 2015. Under
-  the mentorship of Smita Krishnaswamy, Daniel has worked on developing unsupervised
-  machine learning algorithms for analysis of high dimensional biomedical data. Previous
-  projects include manifold learning methods for dimensionality reduction and analysis
-  of experimental perturbations and a neural network for archetypal analysis.
+about: Daniel completed his PhD in Genetics at Yale University in 2021 under the mentorship of Smita Krishnaswamy. Daniel worked on developing unsupervised machine learning algorithms for analysis of high dimensional biomedical data. After graduating, he joined Cellarity as a Machine Learning Scientist.
 cv: null
-image: ''
+image: /images/members/daniel_burkhardt.jpeg
 isAlum: true
 name:
   first: Daniel
