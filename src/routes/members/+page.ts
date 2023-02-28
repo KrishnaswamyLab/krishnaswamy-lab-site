@@ -11,6 +11,8 @@ import members from '$lib/data/members.json'
 export async function load({ }) {   
     // let members = (await LoadGlobsAllAtOnces(yamls) as Members)
     //     .sort(SortMemberByImage)
+
+    let sorted = (members as Members).sort(SortMemberByImage)
         
-    return { members };
+    return { members: sorted };
   }
