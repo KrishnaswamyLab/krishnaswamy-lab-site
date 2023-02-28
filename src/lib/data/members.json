@@ -52,10 +52,10 @@
       "preferred": "Scott"
     },
     "title": null,
-    "image": null,
+    "image": "/images/members/scott_youlten.png",
     "cv": null,
     "isAlum": false,
-    "about": null,
+    "about": "I am a computational biologist from a lab based molecular biology background. I am motivated by the thrill of biological discovery and my fascination with finding coherent patterns within complex data. The tenets of my career are integrity, enjoyment and discovery. I love the challenge of communicating science in a way that can connect with the intellect of people from outside my field.",
     "publications": [
       "Single-cell multi-modal GAN reveals spatial patterns in single-cell data from triple-negative breast cancer"
     ],
@@ -459,7 +459,7 @@
     "website": "https://tomwallenstein.com/",
     "cv": null,
     "isAlum": true,
-    "about": "om is an undergraduate at Yale majoring in Computer Science and joined the lab to work on his senior project. He is generally interested in machine learning, specifically reinforcement learning. Outside of his studies, he is a goalkeeper of Yale men's soccer team.",
+    "about": "Tom is an undergraduate at Yale majoring in Computer Science and joined the lab to work on his senior project. He is generally interested in machine learning, specifically reinforcement learning. Outside of his studies, he is a goalkeeper of Yale men's soccer team.",
     "publications": [],
     "name_str": "Tom Wallenstein"
   },
