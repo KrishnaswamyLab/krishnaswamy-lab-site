@@ -22,7 +22,7 @@
             Krishnaswamy Lab Members
         </TextHero>
         <div class="my-4 py-4">
-            {#await data?.members}
+            <!-- {#await data?.members}
                 Loading...
             {:then results}
                 {#each results as member, i }
@@ -35,7 +35,7 @@
                 {/each}
             {:catch error}
                 {error.message}
-            {/await}
+            {/await} -->
             {#each curr as member, i }
                 {#if member?.about}
                     <MemberInfo {member} {useStickyTextHero}/>   
