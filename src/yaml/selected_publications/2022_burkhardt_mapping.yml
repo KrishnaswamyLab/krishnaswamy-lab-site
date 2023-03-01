@@ -14,28 +14,15 @@ abstract: "Phenotypic plasticity describes the ability of cancer cells to underg
   to guide accelerated progress in uncovering new vulnerabilities for therapeutic
   exploitation."
 authors:
-- name:
-  - Daniel
-  - B.
-  - Burkhardt
-- name:
-  - Beatriz
-  - P.
-  - San Juan
-- name:
-  - John
-  - G.
-  - Lock
-- name:
-  - Smita
-  - Krishnaswamy
-- name:
-  - Christine
-  - L.
-  - Chaffer
-issue: '8'
+- Daniel B. Burkhardt
+- Beatriz P. San Juan
+- John G. Lock
+- Smita Krishnaswamy
+- Christine L. Chaffer
+href: https://aacrjournals.org/cancerdiscovery/article/12/8/1847/707250/Mapping-Phenotypic-Plasticity-upon-the-Cancer-Cell
+issue: 8
 keywords: []
-month: '8'
+month: 8
 pages: 1847-1859
 periodical: Cancer Discovery
 publisher: American Association for Cancer Research Inc.
@@ -43,7 +30,4 @@ selected: true
 title: Mapping Phenotypic Plasticity upon the Cancer Cell State Landscape Using Manifold
   Learning
 type: Journal Article
-urls:
-- href: https://aacrjournals.org/cancerdiscovery/article/12/8/1847/707250/Mapping-Phenotypic-Plasticity-upon-the-Cancer-Cell
-volume: null
-year: '2022'
+year: 2022

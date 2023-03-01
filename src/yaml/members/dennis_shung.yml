@@ -10,15 +10,12 @@ about: 'Dennis is a board-certified physician trained in Internal Medicine and  
   bleeding. His long-term goal is to become a physician data scientist who creates,
   validates, and tests integrated machine learning models to improve risk stratification
   for patients.'
-cv: null
 image: /images/members/dennis_shung.jpeg
 isAlum: true
 name:
   first: Dennis
   last: Shung
-  middle: null
   preferred: Dennis
-  preferred_name: Dennis
 name_str: Dennis Shung
 publications:
 - 'Generating hard-to-obtain information from easy-to-obtain information: Applications
@@ -26,5 +23,3 @@ publications:
 - 'MURAL: An Unsupervised Random Forest-Based Embedding for Electronic Health Record
   Data'
 - Multiscale PHATE identifies multimodal signatures of COVID-19
-title: null
-website: null

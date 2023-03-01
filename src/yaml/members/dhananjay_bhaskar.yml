@@ -9,19 +9,14 @@ about: Dhananjay Bhaskar is a postdoc in Genetics at the School of Medicine and 
   Brown, he studied Computer Science and Applied Mathematics at the University of
   British Columbia. When he is not busy transforming coffee beans into code, Dhananjay
   enjoys hiking, swimming, and playing badminton.
-cv: null
 image: /images/members/dhananjay_bhaskar.jpg
-isAlum: false
 name:
   first: Dhananjay
   last: Bhaskar
-  middle: null
   preferred: Dhananjay
-  preferred_name: Dhananjay
 name_str: Dhananjay Bhaskar
 publications:
 - Transformer-based protein generation with regularized latent space optimization
 - Diffusion Curvature for Estimating Local Curvature in High Dimensional Data
 - Molecular Graph Generation via Geometric Scattering
 title: PhD
-website: null

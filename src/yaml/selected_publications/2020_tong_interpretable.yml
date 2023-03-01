@@ -10,42 +10,20 @@ abstract: While neural networks are powerful approximators used to classify or e
   uses for this additional structure including cluster indication and visualization
   in biological and image data sets.
 authors:
-- name:
-  - Alexander
-  - Y.
-  - Tong
-- name:
-  - David
-  - van
-  - Dijk
-- name:
-  - Jay
-  - S.
-  - Stanley
-- name:
-  - Matthew
-  - Amodio
-- name:
-  - Kristina
-  - Yim
-- name:
-  - Rebecca
-  - Muhle
-- name:
-  - James
-  - Noonan
-- name:
-  - Guy
-  - Wolf
-- name:
-  - Smita
-  - Krishnaswamy
-issue: null
+- Alexander Y. Tong
+- David van Dijk
+- Jay S. Stanley
+- Matthew Amodio
+- Kristina Yim
+- Rebecca Muhle
+- James Noonan
+- Guy Wolf
+- Smita Krishnaswamy
+href: https://link.springer.com/chapter/10.1007/978-3-030-44584-3_40
 keywords:
 - Feature saliency
 - Graph learning
 - Neural Network Interpretability
-month: null
 pages: 509-521
 periodical: Lecture Notes in Computer Science (including subseries Lecture Notes in
   Artificial Intelligence and Lecture Notes in Bioinformatics)
@@ -53,7 +31,4 @@ publisher: Springer
 selected: true
 title: Interpretable Neuron Structuring with Graph Spectral Regularization
 type: Journal Article
-urls:
-- href: https://link.springer.com/chapter/10.1007/978-3-030-44584-3_40
-volume: null
-year: '2020'
+year: 2020

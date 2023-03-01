@@ -13,45 +13,18 @@ abstract: Current methods for comparing single-cell RNA sequencing datasets coll
   from these clusters are more accurate than those of six alternative algorithms in
   ground truth comparisons.
 authors:
-- name:
-  - Daniel
-  - B.
-  - Burkhardt
-- name:
-  - Jay
-  - S.
-  - Stanley
-- name:
-  - Alexander
-  - Y.
-  - Tong
-- name:
-  - Ana
-  - Luisa
-  - Perdigoto
-- name:
-  - Scott
-  - A.
-  - Gigante
-- name:
-  - Kevan
-  - C.
-  - Herold
-- name:
-  - Guy
-  - Wolf
-- name:
-  - Antonio
-  - J.
-  - Giraldez
-- name:
-  - David
-  - van
-  - Dijk
-- name:
-  - Smita
-  - Krishnaswamy
-issue: '5'
+- Daniel B. Burkhardt
+- Jay S. Stanley
+- Alexander Y. Tong
+- Ana Luisa Perdigoto
+- Scott A. Gigante
+- Kevan C. Herold
+- Guy Wolf
+- Antonio J. Giraldez
+- David van Dijk
+- Smita Krishnaswamy
+href: https://pubmed.ncbi.nlm.nih.gov/33558698/
+issue: 5
 keywords:
 - Algorithms
 - Cluster Analysis
@@ -81,14 +54,11 @@ keywords:
 - Transcriptome / genetics*
 - doi:10.1038/s41587-020-00803-5
 - pmid:33558698
-month: '5'
+month: 5
 pages: 619-629
 periodical: Nature biotechnology
-publisher: Nat Biotechnol
+publisher: Nature Publishing Group
 selected: true
 title: Quantifying the effect of experimental perturbations at single-cell resolution
 type: Journal Article
-urls:
-- href: https://pubmed.ncbi.nlm.nih.gov/33558698/
-volume: null
-year: '2021'
+year: 2021

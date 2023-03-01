@@ -16,44 +16,23 @@ abstract: "We propose a new fast method of measuring distances between large num
   Diffusion EMD is applicable to all datasets that are massively collected in parallel
   in many medical and biological systems."
 authors:
-- name:
-  - Alexander
-  - Y.
-  - Tong
-- name:
-  - Guillaume
-  - Huguet
-- name:
-  - Amine
-  - Natik
-- name:
-  - Kincaid
-  - MacDonald
-- name:
-  - Manik
-  - Kuchroo
-- name:
-  - Ronald
-  - R.
-  - Coifman
-- name:
-  - Guy
-  - Wolf
-- name:
-  - Smita
-  - Krishnaswamy
-issue: null
+- Alexander Y. Tong
+- Guillaume Huguet
+- Amine Natik
+- Kincaid MacDonald
+- Manik Kuchroo
+- Ronald R. Coifman
+- Guy Wolf
+- Smita Krishnaswamy
+href: https://proceedings.mlr.press/v139/tong21a.html
 keywords:
 - ICML
 - Machine Learning
-month: '7'
+month: 7
 pages: 10336-10346
 periodical: Proceedings of Machine Learning Research
 publisher: PMLR
 selected: true
-title: "Diffusion Earth Mover\u2019s Distance and Distribution Embeddings"
+title: Diffusion Earth Mover's Distance and Distribution Embeddings
 type: generic
-urls:
-- href: https://proceedings.mlr.press/v139/tong21a.html
-volume: null
-year: '2021'
+year: 2021

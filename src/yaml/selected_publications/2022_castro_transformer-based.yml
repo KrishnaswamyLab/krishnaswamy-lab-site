@@ -21,36 +21,22 @@ abstract: "The development of powerful natural language models has improved the 
   model with regularized prediction heads to form a smooth and pseudoconvex latent
   space that allows for easier navigation and more efficient optimization of proteins."
 authors:
-- name:
-  - Egbert
-  - Castro
-- name:
-  - Abhinav
-  - Godavarthi
-- name:
-  - Julian
-  - Rubinfien
-- name:
-  - Kevin
-  - Givechian
-- name:
-  - Dhananjay
-  - Bhaskar
-- name:
-  - Smita
-  - Krishnaswamy
-issue: '10'
+- Egbert Castro
+- Abhinav Godavarthi
+- Julian Rubinfien
+- Kevin Givechian
+- Dhananjay Bhaskar
+- Smita Krishnaswamy
+href: https://www.nature.com/articles/s42256-022-00532-1
+issue: 10
 keywords:
 - Machine learning
 - Protein design
-month: '9'
+month: 9
 pages: 840-851
-periodical: 'Nature Machine Intelligence '
+periodical: Nature Machine Intelligence
 publisher: Nature Publishing Group
 selected: true
 title: Transformer-based protein generation with regularized latent space optimization
 type: Journal Article
-urls:
-- href: https://www.nature.com/articles/s42256-022-00532-1
-volume: null
-year: '2022'
+year: 2022

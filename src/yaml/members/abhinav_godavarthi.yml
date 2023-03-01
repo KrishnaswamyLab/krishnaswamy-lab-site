@@ -2,19 +2,13 @@ about: Abhi is an undergrad studying applied math and chemistry. In the lab he f
   on unsupervised and deep learning methods for multiomics, protein function prediction,
   and molecular simulation. In his free time he enjoys singing, playing the cello,
   and losing at ping pong.
-cv: null
 image: /images/members/abhinav_godavarthi.jpeg
-isAlum: false
 name:
   first: Abhinav
   last: Godavarthi
-  middle: null
   preferred: Abhinav
-  preferred_name: Abhinav
 name_str: Abhinav Godavarthi
 publications:
 - Multimodal Data Visualization and Denoising with Integrated Diffusion
 - Multiscale PHATE identifies multimodal signatures of COVID-19
 - Transformer-based protein generation with regularized latent space optimization
-title: null
-website: null

@@ -1,15 +1,18 @@
-about: I am an Associate Research Scientist at Yale University in the Krishnaswamy Lab and Giraldez Lab. As a computational biologist from a molecular biology lab background, my role bridges computational and biological domains, developing and applying novel tools for biomedical data analysis. I am motivated by the thrill of biological discovery and my fascination with finding coherent patterns within complex data. I love the challenge of communicating science in a way that can connect with the intellect of people from outside my field. The tenets of my career are integrity, enjoyment and discovery.
-cv: null
+about: I am an Associate Research Scientist at Yale University in the Krishnaswamy
+  Lab and Giraldez Lab. As a computational biologist from a molecular biology lab
+  background, my role bridges computational and biological domains, developing and
+  applying novel tools for biomedical data analysis. I am motivated by the thrill
+  of biological discovery and my fascination with finding coherent patterns within
+  complex data. I love the challenge of communicating science in a way that can connect
+  with the intellect of people from outside my field. The tenets of my career are
+  integrity, enjoyment and discovery.
 image: /images/members/scott_youlten.png
-isAlum: false
 name:
   first: Scott
   last: Youlten
   middle: E.
   preferred: Scott
-  preferred_name: Scott
 name_str: Scott E. Youlten
 publications:
 - Single-cell multi-modal GAN reveals spatial patterns in single-cell data from triple-negative
   breast cancer
-title: null

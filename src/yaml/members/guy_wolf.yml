@@ -9,15 +9,12 @@ about: "Guy Wolf received the M.Sc. and Ph.D. degrees in computer science from T
   sciences, especially in Big Data applications. His research interests include exploratory
   & high-dimensional data analysis, manifold learning, diffusion geometries, machine
   learning, and deep learning. He now has his own lab at the University of Montreal."
-cv: null
 image: ''
 isAlum: true
 name:
   first: Guy
   last: Wolf
-  middle: null
   preferred: Guy
-  preferred_name: Guy
 name_str: Guy Wolf
 publications:
 - Manifold Interpolating Optimal-Transport Flows for Trajectory Inference
@@ -42,4 +39,3 @@ publications:
 - Topological analysis of single-cell hierarchy reveals inflammatory glial landscape
   of macular degeneration
 title: PhD
-website: null

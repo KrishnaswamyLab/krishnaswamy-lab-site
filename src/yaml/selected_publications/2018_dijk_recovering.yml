@@ -12,70 +12,34 @@ abstract: "Single-cell RNA sequencing technologies suffer from many sources of t
   regulatory relations without perturbations. A new algorithm overcomes limitations
   of data loss in single-cell sequencing experiments."
 authors:
-- name:
-  - David
-  - van
-  - Dijk
-- name:
-  - Roshan
-  - Sharma
-- name:
-  - Juozas
-  - Nainys
-- name:
-  - Kristina
-  - Yim
-- name:
-  - Pooja
-  - Kathail
-- name:
-  - Ambrose
-  - J.
-  - Carr
-- name:
-  - Cassandra
-  - Burdziak
-- name:
-  - Kevin
-  - R.
-  - Moon
-- name:
-  - Christine
-  - L.
-  - Chaffer
-- name:
-  - Diwakar
-  - Pattabiraman
-- name:
-  - Brian
-  - Bierie
-- name:
-  - Linas
-  - Mazutis
-- name:
-  - Guy
-  - Wolf
-- name:
-  - Smita
-  - Krishnaswamy
-- name:
-  - Dana
-  - Pe'er
-issue: '3'
+- David van Dijk
+- Roshan Sharma
+- Juozas Nainys
+- Kristina Yim
+- Pooja Kathail
+- Ambrose J. Carr
+- Cassandra Burdziak
+- Kevin R. Moon
+- Christine L. Chaffer
+- Diwakar Pattabiraman
+- Brian Bierie
+- Linas Mazutis
+- Guy Wolf
+- Smita Krishnaswamy
+- Dana Pe'er
+href: https://www.sciencedirect.com/science/article/pii/S0092867418307244
+issue: 3
 keywords:
 - EMT
 - imputation
 - manifold learning
 - regulatory networks
 - single-cell RNA sequencing
-month: '7'
+month: 7
 pages: 716-729.e27
 periodical: Cell
 publisher: Cell Press
 selected: true
 title: Recovering Gene Interactions from Single-Cell Data Using Data Diffusion
 type: Journal Article
-urls:
-- href: https://www.sciencedirect.com/science/article/pii/S0092867418307244
-volume: null
-year: '2018'
+year: 2018

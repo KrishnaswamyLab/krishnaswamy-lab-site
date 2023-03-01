@@ -2,7 +2,6 @@ about: Previously, David was a postdoc in the Krishnaswamy lab where he develope
   new machine learning tools for biomedical data analysis. David co-developed tools
   such as MAGIC, PHATE, and SAUCIE. David is now an Assistant Professor and started
   his own lab at Yale.
-cv: null
 image: ''
 isAlum: true
 name:
@@ -10,7 +9,6 @@ name:
   last: Dijk
   middle: van
   preferred: David
-  preferred_name: David
 name_str: David van Dijk
 publications:
 - Recovering Gene Interactions from Single-Cell Data Using Data Diffusion
@@ -23,4 +21,3 @@ publications:
 - 'Generating hard-to-obtain information from easy-to-obtain information: Applications
   in drug discovery and clinical inference'
 title: PhD
-website: null

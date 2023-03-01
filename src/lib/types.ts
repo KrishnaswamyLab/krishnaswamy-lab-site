@@ -24,10 +24,13 @@ export type MemberNames = MemberName[] | Array<MemberName> | ArrayLike<MemberNam
 export interface Member {
     name: MemberName;
     title?: string;
+    
     about?: string;
-    cv?: string|null;
-    image?: string|null;
-    website?: string|null;
+    image?: string;
+
+    cv?: string;
+    website?: string;
+    
     isAlum?: boolean;
     name_str?: string;
     makeNameStr: () => string;
@@ -48,26 +51,23 @@ export interface Author {
 export type Authors = Author[] | Array<Author> 
 
 export interface Publication {
-    title?: string;
-    type?: string;
+    title: string;
+    type: string;
     authors: Authors;
-    year?: string|number|null;
-    month?: string|number|null;
-    pages?: string|null;
-    abstract?: string | null;    
-    publisher:string|null;
-    periodical:string|null;
-    keywords: string[] | Array<string>;
-    urls: Hrefs;
-    volume?: string | number | null;
-    issue?: string | number | null;
-    google_scholar_url?: string;
-    journal_source?: string;
-    // Number of citations (if using Publish or Perish's Google Scholar results)
-    cites?: string|number;
-    // Whether or not a selected publication
-    selected?: boolean;
+    year: number;
 
+    abstract: string;       
+    periodical:string;    
+    keywords: string[];
+    selected?: boolean;
+    href: string;
+
+    month?: number;
+    publisher?: string;
+    pages?: string;
+    issue?: number;
+    volume?: number;
+    
     makeAuthorString: () => string;
     makeDateString: () => string;
     makeVolumeIssueString: () => string;
@@ -97,7 +97,7 @@ export interface Project {
     // hero image
     heroImage?: string | null,
     // list of authors / lab members
-    authors: Members;
+    authors: Members | string[];
     // name of journal
     journal?: string | null,
     // image of the journal to use in a link
@@ -165,7 +165,7 @@ export interface  ComponentMap {
 }
 
 export interface SyllabusDayItem {
-    col1: string;
+    col1?: string | null;
     href: string;
     col2: any | ComponentType | SvelteComponentTyped;
     col3: string;

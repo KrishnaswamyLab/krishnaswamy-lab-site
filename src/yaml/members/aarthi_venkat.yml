@@ -9,18 +9,12 @@ about: 'Aarthi is a PhD student in Computational Biology and Bioinformatics at Y
   variation. Over the summers, Aarthi interned at Auris Health and Regeneron, where
   she further grew her skillset in synergistic approaches to computer science and
   biological discovery.'
-cv: null
 image: /images/members/aarthi_venkat.jpg
-isAlum: false
 name:
   first: Aarthi
   last: Venkat
-  middle: null
   preferred: Aarthi
-  preferred_name: Aarthi
 name_str: Aarthi Venkat
 publications:
 - Single-cell multi-modal GAN reveals spatial patterns in single-cell data from triple-negative
   breast cancer
-title: null
-website: null

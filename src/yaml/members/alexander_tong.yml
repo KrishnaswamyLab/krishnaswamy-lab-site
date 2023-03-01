@@ -6,7 +6,6 @@ about: 'Alex, now at MILA, was a computer science PhD student at Yale University
   Alex grew up in Seattle, Washington. He completed B.S. and M.S. degrees in computer
   science from Tufts University in 2017. He splits his spare time between racing sailboats
   and trail running.'
-cv: null
 image: /images/members/alex_tong.jpg
 isAlum: true
 name:
@@ -14,7 +13,6 @@ name:
   last: Tong
   middle: Y.
   preferred: Alexander
-  preferred_name: Alexander
 name_str: Alexander Y. Tong
 publications:
 - Manifold Interpolating Optimal-Transport Flows for Trajectory Inference
@@ -30,5 +28,4 @@ publications:
 - Time-inhomogeneous diffusion geometry and topology
 - Topological analysis of single-cell hierarchy reveals inflammatory glial landscape
   of macular degeneration
-title: null
 website: https://alextong.net/

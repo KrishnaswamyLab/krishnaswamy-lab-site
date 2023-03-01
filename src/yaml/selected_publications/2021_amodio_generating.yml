@@ -10,40 +10,18 @@ abstract: 'Often when biological entities are measured in multiple ways, there a
   structure and generating FACS data from clinical monitoring variables on a cohort
   of COVID-19 patients, effectively describing their immune response in great detail.'
 authors:
-- name:
-  - Matthew
-  - Amodio
-- name:
-  - Dennis
-  - Shung
-- name:
-  - Daniel
-  - B.
-  - Burkhardt
-- name:
-  - Patrick
-  - Wong
-- name:
-  - Michael
-  - Simonov
-- name:
-  - Yu
-  - Yamamoto
-- name:
-  - David
-  - van
-  - Dijk
-- name:
-  - Francis
-  - Perry
-  - Wilson
-- name:
-  - Akiko
-  - Iwasaki
-- name:
-  - Smita
-  - Krishnaswamy
-issue: '7'
+- Matthew Amodio
+- Dennis Shung
+- Daniel B. Burkhardt
+- Patrick Wong
+- Michael Simonov
+- Yu Yamamoto
+- David van Dijk
+- Francis Perry Wilson
+- Akiko Iwasaki
+- Smita Krishnaswamy
+href: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8276014/
+issue: 7
 keywords:
 - 'DSML 2: Proof-of-concept: Data science output has been formulated, implemented,
   and tested for one domain/problem'
@@ -51,7 +29,7 @@ keywords:
 - conditional generative models
 - drug perturbations
 - generative adversarial networks
-month: '7'
+month: 7
 pages: '100288'
 periodical: Patterns
 publisher: Elsevier
@@ -59,9 +37,4 @@ selected: true
 title: 'Generating hard-to-obtain information from easy-to-obtain information: Applications
   in drug discovery and clinical inference'
 type: Journal Article
-urls:
-- href: /pmc/articles/PMC8276014/
-- href: /pmc/articles/PMC8276014/?report=abstract
-- href: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8276014/
-volume: null
-year: '2021'
+year: 2021

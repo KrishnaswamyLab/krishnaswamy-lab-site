@@ -5,7 +5,6 @@ about: 'Jay Stanley was born in Arkansas. He graduated with his BA in Biology fr
   fellowship at Yale University.
 
   Jay is an avid music enthusiast, rock climber, and whitewater kayaker.'
-cv: null
 image: ''
 isAlum: true
 name:
@@ -13,7 +12,6 @@ name:
   last: Stanley
   middle: S.
   preferred: Jay
-  preferred_name: Jay
 name_str: Jay S. Stanley
 publications:
 - Geometry Based Data Generation
@@ -21,4 +19,3 @@ publications:
 - Interpretable Neuron Structuring with Graph Spectral Regularization
 - Quantifying the effect of experimental perturbations at single-cell resolution
 title: PhD
-website: null

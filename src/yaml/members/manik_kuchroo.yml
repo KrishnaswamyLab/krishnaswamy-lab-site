@@ -13,15 +13,12 @@ about: 'Manik Kuchroo is an MD candidate at Yale School of Medicine and is inter
 
   While not in the lab or in the hospital, Manik loves playing cricket and watching
   TV shows.'
-cv: null
 image: /images/members/manik_kuchroo.png
 isAlum: true
 name:
   first: Manik
   last: Kuchroo
-  middle: null
   preferred: Manik
-  preferred_name: Manik
 name_str: Manik Kuchroo
 publications:
 - Manifold Interpolating Optimal-Transport Flows for Trajectory Inference
@@ -31,5 +28,3 @@ publications:
 - Time-inhomogeneous diffusion geometry and topology
 - Topological analysis of single-cell hierarchy reveals inflammatory glial landscape
   of macular degeneration
-title: null
-website: null

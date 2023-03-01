@@ -23,13 +23,10 @@ about: 'Smita Krishnaswamy is an Associate Professor in the department of Geneti
   she worked on automated bug finding and error correction in logic.'
 cv: https://docs.google.com/document/d/1pDm0GNMrXCTxD4E3tDDkYCGE3WUn0V5YPVpVCcAU6cU/edit?usp=sharing
 image: /images/members/smita_krishnaswamy.jpeg
-isAlum: false
 name:
   first: Smita
   last: Krishnaswamy
-  middle: null
   preferred: Smita
-  preferred_name: Smita
 name_str: Smita Krishnaswamy
 publications:
 - Manifold Interpolating Optimal-Transport Flows for Trajectory Inference

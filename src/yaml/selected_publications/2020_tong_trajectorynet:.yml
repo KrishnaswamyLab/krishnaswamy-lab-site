@@ -13,35 +13,17 @@ abstract: It is increasingly common to encounter data from dynamic processes cap
   technologies, and that TrajectoryNet improves upon recently proposed static optimal
   transport-based models that can be used for interpolating cellular distributions.
 authors:
-- name:
-  - Alexander
-  - Y.
-  - Tong
-- name:
-  - Jessie
-  - Huang
-- name:
-  - Guy
-  - Wolf
-- name:
-  - David
-  - van
-  - Dijk
-- name:
-  - Smita
-  - Krishnaswamy
-issue: null
+- Alexander Y. Tong
+- Jessie Huang
+- Guy Wolf
+- David van Dijk
+- Smita Krishnaswamy
+href: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8320749/
 keywords: []
-month: null
 pages: '9526'
 periodical: Proceedings of machine learning research
 publisher: NIH Public Access
 selected: true
 title: 'TrajectoryNet: A Dynamic Optimal Transport Network for Modeling Cellular Dynamics'
 type: Journal Article
-urls:
-- href: /pmc/articles/PMC8320749/
-- href: /pmc/articles/PMC8320749/?report=abstract
-- href: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8320749/
-volume: null
-year: '2020'
+year: 2020

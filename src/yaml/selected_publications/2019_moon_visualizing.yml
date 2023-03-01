@@ -16,66 +16,29 @@ abstract: The high-dimensional data created by high-throughput technologies requ
   a new data visualization tool, better preserves patterns in high-dimensional data
   after dimensionality reduction.
 authors:
-- name:
-  - Kevin
-  - R.
-  - Moon
-- name:
-  - David
-  - van
-  - Dijk
-- name:
-  - Zheng
-  - Wang
-- name:
-  - Scott
-  - A.
-  - Gigante
-- name:
-  - Daniel
-  - B.
-  - Burkhardt
-- name:
-  - William
-  - S.
-  - Chen
-- name:
-  - Kristina
-  - Yim
-- name:
-  - Antonia
-  - van den
-  - Elzen
-- name:
-  - Matthew
-  - J.
-  - Hirn
-- name:
-  - Ronald
-  - R.
-  - Coifman
-- name:
-  - Natalia
-  - B.
-  - Ivanova
-- name:
-  - Guy
-  - Wolf
-- name:
-  - Smita
-  - Krishnaswamy
-issue: '12'
+- Kevin R. Moon
+- David van Dijk
+- Zheng Wang
+- Scott A. Gigante
+- Daniel B. Burkhardt
+- William S. Chen
+- Kristina Yim
+- Antonia van den Elzen
+- Matthew J. Hirn
+- Ronald R. Coifman
+- Natalia B. Ivanova
+- Guy Wolf
+- Smita Krishnaswamy
+href: https://www.nature.com/articles/s41587-019-0336-3
+issue: 12
 keywords:
 - Data mining
 - Machine learning
-month: '12'
+month: 12
 pages: 1482-1492
-periodical: 'Nature Biotechnology '
+periodical: Nature Biotechnology
 publisher: Nature Publishing Group
 selected: true
 title: Visualizing structure and transitions in high-dimensional biological data
 type: Journal Article
-urls:
-- href: https://www.nature.com/articles/s41587-019-0336-3
-volume: null
-year: '2019'
+year: 2019

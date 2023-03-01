@@ -1,0 +1,48 @@
+abstract: It is currently challenging to analyze single-cell data consisting of many
+  cells and samples, and to address variations arising from batch effects and different
+  sample preparations. For this purpose, we present SAUCIE, a deep neural network
+  that combines parallelization and scalability offered by neural networks, with the
+  deep representation of data that can be learned by them to perform many single-cell
+  data analysis tasks. Our regularizations (penalties) render features learned in
+  hidden layers of the neural network interpretable. On large, multi-patient datasets,
+  SAUCIE's various hidden layers contain denoised and batch-corrected data, a low-dimensional
+  visualization and unsupervised clustering, as well as other information that can
+  be used to explore the data. We analyze a 180-sample dataset consisting of 11 million
+  T cells from dengue patients in India, measured with mass cytometry. SAUCIE can
+  batch correct and identify cluster-based signatures of acute dengue infection and
+  create a patient manifold, stratifying immune response to dengue. SAUCIE, a deep
+  learning platform to analyze single-cell data across samples and platforms, allows
+  information to be obtained from the internal layers of the network, which provides
+  additional mechanistic understanding that can be used to further tune data analysis.
+authors:
+- Matthew Amodio
+- David van Dijk
+- Krishnan Srinivasan
+- William S. Chen
+- Hussein Mohsen
+- Kevin R. Moon
+- Allison Campbell
+- Yujiao Zhao
+- Xiaomei Wang
+- Manjunatha Venkataswamy
+- Anita Desai
+- V. Ravi
+- Priti Kumar
+- Ruth Montgomery
+- Guy Wolf
+- Smita Krishnaswamy
+href: https://www.nature.com/articles/s41592-019-0576-7
+issue: 11
+keywords:
+- Computational biology and bioinformatics
+- Computational models
+- Gene expression
+- Machine learning
+month: 10
+pages: 1139-1145
+periodical: Nature Methods
+publisher: Nature Publishing Group
+selected: true
+title: Exploring single-cell data with deep multitasking neural networks
+type: Journal Article
+year: 2019

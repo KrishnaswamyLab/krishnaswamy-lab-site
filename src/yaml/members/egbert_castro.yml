@@ -9,18 +9,12 @@ about: 'Egbert Castro is a PhD student in the Computational Biology and Bioinfor
   Amaro applying molecular dynamics and Brownian dynamics in drug discovery. After
   graduating, he interned at Genentech applying machine learning to chemical property
   prediction tasks'
-cv: null
 image: /images/members/egbert_castro.jpeg
-isAlum: false
 name:
   first: Egbert
   last: Castro
-  middle: null
   preferred: Egbert
-  preferred_name: Egbert
 name_str: Egbert Castro
 publications:
 - Transformer-based protein generation with regularized latent space optimization
 - Molecular Graph Generation via Geometric Scattering
-title: null
-website: null

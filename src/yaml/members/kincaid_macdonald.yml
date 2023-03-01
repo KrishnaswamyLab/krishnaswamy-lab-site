@@ -2,18 +2,13 @@ about: Kincaid is an undergraduate at Yale studying mathematics, computer scienc
   philosophy, and exploring their practical intersection in artificial intelligence.
   He is particularly interested in developing mathematical tools to shine light into
   the "black box" of modern deep neural networks.
-cv: null
 image: /images/members/kincaid_macdonald.jpg
 isAlum: true
 name:
   first: Kincaid
   last: MacDonald
-  middle: null
   preferred: Kincaid
-  preferred_name: Kincaid
 name_str: Kincaid MacDonald
 publications:
 - "Diffusion Earth Mover\u2019s Distance and Distribution Embeddings"
 - Diffusion Curvature for Estimating Local Curvature in High Dimensional Data
-title: null
-website: null

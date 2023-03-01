@@ -10,15 +10,12 @@ about: 'Jessie Huang is a postdoc in the department of computer science at Yale.
   bay area for two years before moving to Montreal. Before machine learning, she studied
   fracture mechanics and statistics and how to utilize the natural failure of materials
   to develop micro-scale tools for biomedical applications'
-cv: null
 image: /images/members/jessie_huang.jpg
 isAlum: true
 name:
   first: Jessie
   last: Huang
-  middle: null
   preferred: Jessie
-  preferred_name: Jessie
 name_str: Jessie Huang
 publications:
 - 'TrajectoryNet: A Dynamic Optimal Transport Network for Modeling Cellular Dynamics'
@@ -28,4 +25,3 @@ publications:
 - Topological analysis of single-cell hierarchy reveals inflammatory glial landscape
   of macular degeneration
 title: PhD
-website: null

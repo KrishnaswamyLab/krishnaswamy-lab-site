@@ -12,28 +12,14 @@ abstract: Summary Exciting advances in technologies to measure biological system
   on a wide variety of data modalities and that its output can be used to draw conclusions
   from real-world biological experimental data.
 authors:
-- name:
-  - Matthew
-  - Amodio
-- name:
-  - Scott
-  - E.
-  - Youlten
-- name:
-  - Aarthi
-  - Venkat
-- name:
-  - Beatriz
-  - P.
-  - San Juan
-- name:
-  - Christine
-  - L.
-  - Chaffer
-- name:
-  - Smita
-  - Krishnaswamy
-issue: '9'
+- Matthew Amodio
+- Scott E. Youlten
+- Aarthi Venkat
+- Beatriz P. San Juan
+- Christine L. Chaffer
+- Smita Krishnaswamy
+href: https://pubmed.ncbi.nlm.nih.gov/36124302/
+issue: 9
 keywords:
 - MEDLINE
 - Matthew Amodio
@@ -49,7 +35,7 @@ keywords:
 - Smita Krishnaswamy
 - doi:10.1016/j.patter.2022.100577
 - pmid:36124302
-month: '9'
+month: 9
 pages: '100577'
 periodical: Patterns (New York, N.Y.)
 publisher: Patterns (N Y)
@@ -57,7 +43,4 @@ selected: true
 title: Single-cell multi-modal GAN reveals spatial patterns in single-cell data from
   triple-negative breast cancer
 type: Journal Article
-urls:
-- href: https://pubmed.ncbi.nlm.nih.gov/36124302/
-volume: null
-year: '2022'
+year: 2022

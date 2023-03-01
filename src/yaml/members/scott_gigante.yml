@@ -11,7 +11,6 @@ about: 'Scott was a PhD student in Computational Biology and Bioinformatics, and
   Scott is passionate about open, reproducible science and open source software. In
   his spare time, Scott enjoys singing with the Yale Camerata and cycling with the
   Yale Cycling Team.'
-cv: null
 image: ''
 isAlum: true
 name:
@@ -19,7 +18,6 @@ name:
   last: Gigante
   middle: A.
   preferred: Scott
-  preferred_name: Scott
 name_str: Scott A. Gigante
 publications:
 - Visualizing structure and transitions in high-dimensional biological data
@@ -28,5 +26,3 @@ publications:
 - Multiscale PHATE identifies multimodal signatures of COVID-19
 - Topological analysis of single-cell hierarchy reveals inflammatory glial landscape
   of macular degeneration
-title: null
-website: null

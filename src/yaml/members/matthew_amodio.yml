@@ -7,15 +7,12 @@ about: 'Matt Amodio is currently a doctoral candidate at Yale University in the 
   Matt grew up in a suburb of Cleveland, Ohio. He completed his undergraduate studies
   at the Ohio State University before working in D.C. for two years. He is an ardent
   baseball fan as well as a trivia enthusiast.'
-cv: null
 image: /images/members/matt_amodio.png
 isAlum: true
 name:
   first: Matthew
   last: Amodio
-  middle: null
   preferred: Matt
-  preferred_name: Matt
 name_str: Matt Amodio
 publications:
 - 'TraVeLGAN: Image-to-image Translation by Transformation Vector Learning'
@@ -26,4 +23,3 @@ publications:
 - Single-cell multi-modal GAN reveals spatial patterns in single-cell data from triple-negative
   breast cancer
 title: PhD
-website: null
