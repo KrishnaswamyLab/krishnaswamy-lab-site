@@ -3,7 +3,10 @@ export interface Link {
     href: string;
     text: string;
 }
-export type Links = Link[] | Array<Link> | ArrayLike<Link>
+export type Links = Link[] 
+    | Array<Link> 
+    | ArrayLike<Link>
+
 export interface PublicationCategory {
     category: string;
     links: Links;
@@ -30,7 +33,7 @@ export interface Member {
 
     cv?: string;
     website?: string;
-    
+
     isAlum?: boolean;
     name_str?: string;
     makeNameStr: () => string;
@@ -39,101 +42,91 @@ export type Members = Member[]
     | Array<Member> 
     // | ArrayLike<Member>
 
-export interface Href {
-    href: string
+export interface ImageHero {
+    title: string;
+    image: string;
+    blurb?: string;
 }
-export type Hrefs = Href[] | Array<Href> | ArrayLike<Href>
-
-export interface Author {
-    name: string[] | Array<string>
-}
-
-export type Authors = Author[] | Array<Author> 
 
 export interface Publication {
-    title: string;
     type: string;
-    authors: Authors;
+    href: string;    
     year: number;
-
-    abstract: string;       
+    title: string;
+    authors: string[];    
+    abstract: string;        
+    // Nature Biotechnology   
     periodical:string;    
-    keywords: string[];
-    selected?: boolean;
-    href: string;
-
-    month?: number;
+    // Nature Publishing Group
     publisher?: string;
+    // periodical <-- journal
+    periodicalImage?: string;
+    
+    github?: string;
+    poster?: string;    
+    youtube?: string;
+    keyImage?: string;
+
+    keywords?: string[];
+    selected?: boolean;
+    month?: number;
     pages?: string;
     issue?: number;
     volume?: number;
-    
+
     makeAuthorString: () => string;
     makeDateString: () => string;
     makeVolumeIssueString: () => string;
     makePublicationString: () => string;
     makeKeywordsString: () => string;
-
+    hasBothGithubAndJournal: () => boolean;
+    hasOneOfGithubOrJournal: () => boolean;
 }
 
 export type Publications = Publication[] 
     | Array<Publication> 
     // | ArrayLike<Publication>
+
 export interface PublicationsGroupedByYear {
     [key: string]: Publications;
 }
+export interface Project {    
+    // link to project specific page
+    href:string;
 
-export interface Project {
-    // link to project specific page on website
-    projectUrl?: string | null,
-    // title to use in the list at top of /projects page
-    projectTitle?: string | null,
+    // title of project
+    title: string;    
     // abbreviation if a method, e.g. MAGIC
-    projectAbbreviation?: string | null,
+    abbreviation?: string;        
     // description to use in list at top of /projects page
-    projectListDescription?: string | null,
-    // short blurb to use inside hero section on /projects page
-    heroBlurb?: string | null,
-    // hero image
-    heroImage?: string | null,
-    // list of authors / lab members
-    authors: Members | string[];
-    // name of journal
-    journal?: string | null,
-    // image of the journal to use in a link
-    journalImage?: string | null,
-    // link to github repo
-    githubLink?: string | null,
-    // link to paper
-    publicationLink?: string | null,
-    // link to a single image (under /static) to show at bottom of project section    
-    publicationImage?: string | null,
-    // FULL title of the publication
-    publicationTitle?: string | null,
-    // publication abstract
-    publicationAbstract?: string | null,
-    // poster if availble
-    publicationPoster?: string | null,
-    // when it was publish
-    publicationYear?: number | null;
-    // link to youtube
-    youtube?: string | null,
+    description?: string;
 
-    heroTitle: () => string | null | undefined;
-    hasBothGithubAndJournal: () => string | null | undefined;
-    hasOneOfGithubOrJournal: () => string | null | undefined;
+    hero: ImageHero;
+        // title <-- abrev // title
+        // blurb
+        // image
+    
+    publication: Publication;
+        // title <--- publicationTitle
+        // authors <-- authors
+        // year <-- publicationYear
+        // abstract <-- publicationAbstract
+        // periodical <-- journal
+        // periodicalImage <-- journalImage
+        // href <-- publicationLink
+        // github <-- githubLink
+        // poster <-- publicationPoster
+        // keyImage <-- publicationImage
+        // youtube <-- youtube    
     makeTextAboutLinks: () => string;
-
 }
+
 export type Projects = Project[] 
     | Array<Project> 
     // | ArrayLike<Project>
 
+export type ResearchExample = Link
 
-export interface ResearchExample {
-    text: string;
-    href: string;
-}
 export type ResearchExamples = ResearchExample[] 
     | Array<ResearchExample> 
     | ArrayLike<ResearchExample>

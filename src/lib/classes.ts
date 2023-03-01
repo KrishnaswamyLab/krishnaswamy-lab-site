@@ -7,10 +7,13 @@ import type {
 export class Member implements MemberInterface {
     name;
     title;
+
     about;
-    cv;
     image;
+    
+    cv;    
     website;
+
     isAlum;
     name_str;
 
@@ -41,47 +44,53 @@ export class Member implements MemberInterface {
 }
 
 export class Publication implements PublicationInterface {
-    title;
     type;
-    authors;
+    href;
     year;
+    title;    
+    authors;
+    abstract;
+    periodical;
+    publisher;
+    periodicalImage;
+    github;
+    poster;
+    youtube;
+    keyImage;
+    keywords;
+    selected;
     month;
     pages;
-    abstract;
-    volume;
     issue;
-    publisher;
-    periodical;
-    keywords;
-    urls;
-    google_scholar_url;
-    journal_source;
-    cites;
-    selected;
-
-    constructor(publication:PublicationInterface) {
-        this.title = publication.title
+    volume;
+    
+    constructor(publication:PublicationInterface) {        
         this.type = publication.type
-        this.authors = publication.authors
+        this.href = publication.href
         this.year = publication.year
+        this.title = publication.title
+        this.authors = publication.authors
+        this.abstract = publication.abstract
+        this.periodical = publication.periodical
+        this.publisher = publication.publisher
+
+        this.periodicalImage = publication.periodicalImage
+        
+        this.github = publication.github
+        this.poster = publication.poster
+        this.youtube = publication.youtube
+        this.keyImage = publication.keyImage
+
+        this.keywords = publication.keywords
+        this.selected = publication.selected
         this.month = publication.month
         this.pages = publication.pages
-        this.abstract = publication.abstract
-        this.volume = publication.volume
         this.issue = publication.issue
-        this.publisher = publication.publisher
-        this.periodical = publication.periodical
-        this.keywords = publication.keywords
-        this.urls = publication.urls
-        this.google_scholar_url = publication.google_scholar_url
-        this.journal_source = publication.journal_source
-        this.cites = publication.cites
-        this.selected = publication.selected
+        this.volume = publication.volume
     }
 
-    
     makeAuthorString() {
-        let a = this.authors.map(({name}) => name.join(" "))
+        let a = this.authors
         if (a.length > 10) {
             a = [...a.slice(0, 7), '...',...a.slice(-3, -1)]
         }
@@ -126,7 +135,7 @@ export class Publication implements PublicationInterface {
             return ''
         }
         if (this?.pages) {
-            if (this?.pages.indexOf((this?.volume as string)) >= 0) {
+            if (this?.pages.indexOf((String(this?.volume))) >= 0) {
                 return s
             } else {
                 s += ` ${this?.pages}`
@@ -140,89 +149,58 @@ export class Publication implements PublicationInterface {
         s += `${this.makeDateString()}`
         s += ` ${this.makeVolumeIssueString()}`
 
-        let p = this?.periodical 
-            ? this?.periodical 
-            : ''
+        let p = this.periodical
 
         p = p.replace(':', '')
-        p = p.replace(this?.volume as string, '')
-        p = p.replace(this?.issue as string, '')
-        p = p.replace(this?.month as string, '')
-        p = p.replace(this?.year as string, '')
+        p = p.replace(String(this?.volume), '')
+        p = p.replace(String(this?.issue), '')
+        p = p.replace(String(this.month), '')
+        p = p.replace(String(this.year), '')
         p = p.replace('|', '')
         s += ` ${p}`
         return s
     }
 
-    makeKeywordsString() {
-        let kws = this?.keywords
-        if (!kws) return ''
-        return (kws as string[]).join(', ') 
+    makeKeywordsString() {        
+        if (!this.keywords) return ''
+        return this.keywords.join(', ') 
+    }
+
+    hasBothGithubAndJournal() {
+        return this?.github !== undefined && this?.href !== undefined
+    }
+
+    hasOneOfGithubOrJournal() {
+        return this?.github !== undefined || this?.href !== undefined
     }
 }
 
 
 export class Project implements ProjectInterface {
-    projectUrl
-    projectTitle
-    projectAbbreviation
-    projectListDescription
-    heroBlurb
-    heroImage
-    authors
-    journal
-    journalImage
-    githubLink
-    publicationLink
-    publicationImage
-    publicationTitle
-    publicationAbstract
-    publicationPoster
-    publicationYear
-    youtube
+    href;
+    title;
+    abbreviation;
+    description;
+    hero;
+    publication;
 
     constructor(project:ProjectInterface) {
-        this.projectUrl = project.projectUrl
-        this.projectTitle = project.projectTitle
-        this.projectAbbreviation = project.projectAbbreviation
-        this.projectListDescription = project.projectListDescription
-        this.heroBlurb = project.heroBlurb
-        this.heroImage = project.heroImage
-        this.authors = project.authors
-        this.journal = project.journal
-        this.journalImage = project.journalImage
-        this.githubLink = project.githubLink
-        this.publicationLink = project.publicationLink
-        this.publicationImage = project.publicationImage
-        this.publicationTitle = project.publicationTitle
-        this.publicationAbstract = project.publicationAbstract
-        this.publicationPoster = project.publicationPoster
-        this.publicationYear = project.publicationYear
-        this.youtube = project.youtube
+        this.href = project.href
+        this.title = project.title
+        this.abbreviation = project.abbreviation
+        this.description = project.description
+        this.hero = project.hero
+        this.publication = new Publication(project.publication)
     }
 
-    heroTitle() {
-        return this?.projectAbbreviation 
-            ? this?.projectAbbreviation 
-            : this.projectTitle
-    } 
-
-    hasBothGithubAndJournal() {
-        return this?.githubLink && this?.publicationLink 
-    }
-
-    hasOneOfGithubOrJournal() {
-        return this?.githubLink || this?.publicationLink
-    }
-
-    makeTextAboutLinks() {
+    makeTextAboutLinks() {        
         return `
         You can access 
-        ${this.heroTitle()}'s
-        ${this?.githubLink ? 'Github repository' : ''}
-        ${this.hasBothGithubAndJournal() ? 'and' : ''}
-        ${this?.publicationLink  ? 'article page' : ''}
-        by clicking the link${this.hasBothGithubAndJournal() ? 's' : ''}
+        ${this.hero.title}'s
+        ${this?.publication?.github ? 'Github repository' : ''}
+        ${this.publication.hasBothGithubAndJournal() ? 'and' : ''}
+        ${this?.publication?.href  ? 'article page' : ''}
+        by clicking the link${this.publication.hasBothGithubAndJournal() ? 's' : ''}
         below
         `
     }

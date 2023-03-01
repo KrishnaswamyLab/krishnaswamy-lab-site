@@ -6,25 +6,25 @@
 
 <li class="py-2">
     <span>
-        {#if project?.publicationTitle === null}
+        {#if project?.publication.title === null}
             <span class="font-bold">
-                {#if project?.projectAbbreviation !== null}
-                    {project?.projectAbbreviation} ({project?.projectTitle})
+                {#if project?.abbreviation !== undefined}
+                    {project?.abbreviation} ({project?.title})
                 {:else}
-                    {project?.projectTitle}
+                    {project?.title}
                 {/if}
             </span>
         {:else}
-            <a href="/projects/{project?.projectUrl}" class="link font-bold text-blue-600 visited:text-purple-600">
-                {#if project?.projectAbbreviation !== null}
-                    {project?.projectAbbreviation} ({project?.projectTitle})
+            <a href="/projects/{project?.href}" class="link font-bold text-blue-600 visited:text-purple-600">
+                {#if project?.abbreviation !== undefined}
+                    {project?.abbreviation} ({project?.title})
                 {:else}
-                    {project?.projectTitle}
+                    {project?.title}
                 {/if}
             </a>
         {/if}
     </span>                    
     <span class="text-slate-700">
-        {project?.projectListDescription}
+        {project?.description}
     </span>
 </li>    

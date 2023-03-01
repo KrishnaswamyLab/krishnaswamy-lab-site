@@ -8,17 +8,17 @@
     import ProjectInfo from '$lib/Projects/ProjectInfo.svelte';    
     import Hero from '$lib/Layout/Hero/Hero.svelte'
     const handleProjectTitle = (project: Project) => {
-        const heroTitle = new ProjectClass(project).heroTitle()
+        const heroTitle = project.hero.title
         return heroTitle
     }
 
     const routeTitle = (project: Project) => {
-        return handleProjectTitle(project)
+        return project.abbreviation ? project.abbreviation : project.title
     }
 
     $: heroTitle = handleProjectTitle(data?.project)
-    $: backgroundImage = String(data?.project.heroImage)
-    $: subtitle = String(data?.project?.heroBlurb)
+    $: backgroundImage = String(data?.project.hero.image)
+    $: subtitle = String(data?.project?.hero.blurb)
 </script>
 <Hero {backgroundImage} {subtitle}>
     {heroTitle}
@@ -39,8 +39,8 @@
                             {#each data?.routes as route}
                             <li class="link font-thin">
                                 <a 
-                                    href="/projects/{route?.projectUrl}" 
-                                    on:click={()=>goto(`/projects/${route?.projectUrl}`)} 
+                                    href="/projects/{route?.href}" 
+                                    on:click={()=>goto(`/projects/${route?.href}`)} 
                                     class="
                                     hover:text-slate-900
                                     visited:hover:text-purple-800

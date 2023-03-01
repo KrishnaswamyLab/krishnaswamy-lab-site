@@ -59,8 +59,8 @@ import type {
 } from '$lib/types'
 
 export const SortProjectByYear = (a:ProjectInterface, b:ProjectInterface) => {
-    let ay = a?.publicationYear as number
-    let by = b?.publicationYear as number
+    let ay = a?.publication.year as number
+    let by = b?.publication.year as number
     return by - ay
 }
 
@@ -88,16 +88,19 @@ export const LoadGlobsAllAtOnces = async (globs: GlobResults) => {
 import type {Member as MemberInterface} from '$lib/types'
 import {Member} from '$lib/classes'
 
+export const SortMemberByPI = (a:MemberInterface, b:MemberInterface) => {   
+    if (b.name.first === 'Smita') return 5
+    return -1
+}
 export const SortMemberByName = (a:MemberInterface, b:MemberInterface) => {   
-    if (a.name.first === 'Smita Krishnaswamy') return 5    
+    let v = SortMemberByPI(a, b)  
     a = new Member(a)
     b = new Member(b)
-    return a.makeNameStr() > b.makeNameStr() ? -1 : 1
+    return v + (a.makeNameStr() < b.makeNameStr() ? -1 : 0)
 }
 export const SortMemberByImage = (a:MemberInterface, b:MemberInterface) => {
     let doesAHaveImage = a?.image ? 1 : -1
     let doesBHaveImage = b?.image ? 1 : 0
-    let imageFirst = doesAHaveImage - doesBHaveImage  
-    let hasCV = b?.cv !== null ? 1 : -1
-    return hasCV - imageFirst
+    let imageFirst = doesBHaveImage - doesAHaveImage      
+    return imageFirst
 }

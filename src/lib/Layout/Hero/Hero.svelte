@@ -43,4 +43,4 @@
 
   <div class="bg-primary h-16 {$$props.class}"></div>
 
-  {/if}
+{/if}

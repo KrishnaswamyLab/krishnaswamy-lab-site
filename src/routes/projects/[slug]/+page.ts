@@ -1,33 +1,40 @@
-import { error } from '@sveltejs/kit';
-
 /** @type {import('./$types').PageLoad} */
-import type {Project as ProjectInterface} from '$lib/types'
-import {Project as ProjectClass} from '$lib/classes'
-
-import projects from '$lib/data/projects.json'
+import { error } from '@sveltejs/kit';
+import type {Publications, Projects, Project as ProjectInterface} from '$lib/types'
+import {Publication, Project} from '$lib/classes'
+import {SortProjectByYear, LoadGlobsAllAtOnces} from '$lib/utils'
 
 interface data {
     project: ProjectInterface;
     routes: {
-        projectTitle: string;
-        projectAbbreviation: string | null;
-        projectUrl: string | null;
+        title: string;
+        abbreviation: string | null;
+        href: string | null;
     }[];
     slug: string;
 }
 
-export function load({ params }) {
-    const slug = params.slug
-    const matches = projects.filter(({projectUrl}) => projectUrl === slug)
-    const routes = projects
-        .filter(({projectUrl, publicationTitle}) => projectUrl !== null && publicationTitle !== null)
-        .map(({projectTitle, projectAbbreviation, projectUrl}) => {
-            return {projectTitle, projectAbbreviation, projectUrl}
-        })
-    if (matches.length !== 1) {
-        throw error(404, `Project with slug=${slug} not found`);
-    }
-    const project = new ProjectClass(matches[0] as ProjectInterface)  
-    const data = {project, routes, slug} as data  
-    return data;
+import projects from '$lib/data/projects.json'
+const yamls = import.meta.glob('/src/yaml/projects/*.yml', {import: 'default'})
+
+export async function load({ params }) {     
+  let projects = (await LoadGlobsAllAtOnces(yamls) as Projects)
+  let sorted = projects.map(e => new Project(e)).sort(SortProjectByYear)
+  
+  const slug = params.slug
+  const matches = projects.filter(({href}) => href === slug)
+  if (matches.length !== 1) {
+    throw error(404, `Project with slug=${slug} not found`);
   }
+  
+  const routes = sorted
+    .filter(({href, publication:{title}}) => !!href && !!title)
+    .map(({title, abbreviation, href}) => {
+        console.log(title, abbreviation, href)
+        return {title, abbreviation, href}
+    })
+    
+  const project = new Project(matches[0] as ProjectInterface)  
+  const data = {project, routes, slug} as data  
+  return data;
+}

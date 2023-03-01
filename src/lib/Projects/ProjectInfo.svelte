@@ -15,19 +15,19 @@
     export let useProjectHero = true
     export let contentWidthClasses = ''
     
-    const youtubeId = project?.youtube
+    const youtubeId = project?.publication?.youtube
 </script>
 
-{#if project?.publicationTitle === null}
+{#if project?.title === null}
     <!--  -->
 {:else}
 <div class="inline-block">
     {#if useProjectHero}
         <Hero 
-            backgroundImage={project.heroImage ? project.heroImage : ''}
-            subtitle={String(project?.heroBlurb)}
+            backgroundImage={project.hero?.image ? project.hero.image : ''}
+            subtitle={String(project?.hero?.blurb)}
         >
-            {project.heroTitle()}
+            {project.hero.title}
         </Hero>
     {/if}
 
@@ -35,58 +35,60 @@
         <div class="max-w-full my-4 {contentWidthClasses}">
             <!-- md:w-[36rem] lg:w-[48rem]  -->
             <div class="text-4xl font-light text-center">
-                {project?.publicationTitle}
-                {#if project?.publicationYear}
-                    {project?.publicationYear}
+                {project?.title}
+                {#if project?.publication.year}
+                    {project?.publication.year}
                 {/if}
-            </div>        
-
+            </div>  
+                  
+            {#if project?.publication?.authors}
             <div class="text-center my-4">
-                {#each project?.authors as author, i}
+                {#each project?.publication?.authors as author, i}
                     <span>
-                        {author?.name}{i<project?.authors.length-1 ? ',' : ''}
+                        {author}{i < project?.publication?.authors?.length - 1 ? ',' : ''}
                     </span>                            
                 {/each}                        
             </div>  
+            {/if}
 
-            {#if project.hasOneOfGithubOrJournal()}
+            {#if project.publication.hasOneOfGithubOrJournal()}
                 <div class="text-center my-4">
                     {project.makeTextAboutLinks()}
                 </div> 
                 
                 <div class="flex place-content-evenly place-items-center my-4">
-                    {#if project?.githubLink}
+                    {#if project?.publication.github}
                         <a 
-                            href="{project?.githubLink}" 
+                            href="{project?.publication.github}" 
                             target="_blank"
                             rel="noreferrer"
                         >
                             <GitHub 
-                                on:click={()=>goto(String(project?.githubLink))} 
+                                on:click={()=>goto(String(project?.publication.github))} 
                                 class="h-12 w-12"
                             />
                         </a>
                     {/if}
 
-                    {#if project?.publicationLink}
-                        {#if project?.journalImage}
+                    {#if project?.publication.href}
+                        {#if project?.publication?.periodicalImage}
                             <a 
-                                href="{project?.publicationLink}" 
+                                href="{project?.publication.href}" 
                                 target="_blank"
                                 rel="noreferrer"
                             >
                                 <figure>
                                     <img 
                                         class="h-12 max-h-min" 
-                                        src={project?.journalImage} 
-                                        alt="{project?.journal} image"
+                                        src={project?.publication?.periodicalImage} 
+                                        alt="{project?.publication.periodical} image"
                                     >
                                 </figure>
                             </a>
                         {:else}
                             <button class="btn btn-link btn-primary btn-outline btn-ghost">
-                                <a href="{project?.publicationLink}">
-                                    {project?.journal}
+                                <a href="{project?.publication.href}">
+                                    {project?.publication.periodical}
                                 </a>
                             </button>                                    
                         {/if}
@@ -94,9 +96,9 @@
                 </div>
             {/if}
 
-            {#if project?.publicationAbstract}
+            {#if project?.publication.abstract}
                 <div class="inline-block text-slate-700 text-xl">
-                    {#each project?.publicationAbstract.split("\n") as paragraph}
+                    {#each project?.publication.abstract.split("\n") as paragraph}
                         <p class="first:pt-0 pt-4">
                             {paragraph}
                         </p>    
@@ -107,11 +109,11 @@
     </div>    
 
     <div class="flex justify-center">
-        {#if project?.publicationImage}
+        {#if project?.publication?.keyImage}
             <figure class="p-16">
                 <img                             
-                    src={project?.publicationImage} 
-                    alt="{project?.publicationTitle} image"
+                    src={project?.publication?.keyImage} 
+                    alt="{project?.publication.title} image"
                 >
             </figure>
         {/if} 

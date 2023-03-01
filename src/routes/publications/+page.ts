@@ -1,23 +1,13 @@
 /** @type {import('./$types').PageLoad} */
-import type {
-    Publication as PublicationInterface, 
-    Publications as PublicationsInterface
-} from '$lib/types'
-import {SortPublicationsByYear} from '$lib/utils'
-import {Publication as PublicationClass} from '$lib/classes'
+import type {Publications} from '$lib/types'
+import {Publication} from '$lib/classes'
+import {SortPublicationsByYear, LoadGlobsAllAtOnces} from '$lib/utils'
 
-import citations from '$lib/data/citations.json'
 import selectedPublications from '$lib/data/selected_publications.json'
-import publicationsCategories from '$lib/data/publication_categories.json'
+const yamls = import.meta.glob('/src/yaml/selected_publications/*.yml', {import: 'default'})
 
-
-export function load({ }) {
-    return {        
-        selectedPublications: 
-            (selectedPublications as PublicationsInterface)
-                .map(e => new PublicationClass(e))
-                .sort(SortPublicationsByYear),
-
-        categories: publicationsCategories,
-    };
-  }
+export async function load({ }) {     
+  let publications = (await LoadGlobsAllAtOnces(yamls) as Publications)
+  let sorted = publications.map(e=>new Publication(e)).sort(SortPublicationsByYear)
+  return { selectedPublications: sorted };
+}
