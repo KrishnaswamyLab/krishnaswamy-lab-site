@@ -59,8 +59,10 @@ import type {
 } from '$lib/types'
 
 export const SortProjectByYear = (a:ProjectInterface, b:ProjectInterface) => {
-    let ay = a?.publication.year as number
-    let by = b?.publication.year as number
+    let ay = Number(a?.publication?.year)
+    let by = Number(b?.publication?.year)
+    ay = ay ? ay : 0
+    by = by ? by : 0 
     return by - ay
 }
 

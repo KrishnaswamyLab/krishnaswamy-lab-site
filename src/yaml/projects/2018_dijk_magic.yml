@@ -47,4 +47,8 @@ publication:
   periodicalImage: /images/journals/cell_press.png
   title: 'MAGIC: Recovering Gene Interactions from Single-Cell Data Using Data Diffusion'
   type: Journal Article
+  year: 2018
+  issue: 3
+  volume: 174
+  month: 7
 title: Markov Affinity-based Graph Imputation of Cells

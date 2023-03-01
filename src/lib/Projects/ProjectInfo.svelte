@@ -18,7 +18,7 @@
     const youtubeId = project?.publication?.youtube
 </script>
 
-{#if project?.title === null}
+{#if project?.publication.title === undefined}
     <!--  -->
 {:else}
 <div class="inline-block">

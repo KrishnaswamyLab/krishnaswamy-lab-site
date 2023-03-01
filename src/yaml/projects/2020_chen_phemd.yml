@@ -45,10 +45,11 @@ publication:
   - Guy Wolf
   - Bernd Bodenmiller
   - Smita Krishnaswamy
-  href: https://www.biorxiv.org/content/early/2018/12/31/455436
+  href: https://www.nature.com/articles/s41592-019-0689-z
   keyImage: /images/projects/phemd_image.png
-  periodical: bioRxiv
-  periodicalImage: /images/journals/bioarchives.png
+  periodical: Nature Methods
+  periodicalImage: /images/journals/nature_methods.jpg
   title: 'PhEMD: comparing drug perturbations by their effect on single cell populations'
   type: Journal Article
+  year: 2020
 title: Phenotypic Earth Mover's Distance

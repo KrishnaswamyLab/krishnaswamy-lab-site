@@ -44,10 +44,11 @@ publication:
   - Guy Wolf
   - Smita Krishnaswamy
   github: https://github.com/KrishnaswamyLab/SAUCIE
-  href: https://www.biorxiv.org/content/early/2018/08/27/237065.1
+  href: https://www.nature.com/articles/s41592-019-0576-7
   keyImage: /images/projects/saucie_image.jpg
-  periodical: bioRxiv
-  periodicalImage: /images/journals/bioarchives.png
+  periodical: Nature Methods
+  periodicalImage: /images/journals/nature_methods.jpg
   title: 'SAUCIE: Exploring Single-Cell Data with Deep Multitasking Neural Networks'
   type: Journal Article
+  year: 2019
 title: Sparse AutoEncoders for Clustering Imputation and Embedding

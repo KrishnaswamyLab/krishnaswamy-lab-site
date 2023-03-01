@@ -6,7 +6,7 @@
 
 <li class="py-2">
     <span>
-        {#if project?.publication.title === null}
+        {#if project?.publication.title === undefined}
             <span class="font-bold">
                 {#if project?.abbreviation !== undefined}
                     {project?.abbreviation} ({project?.title})

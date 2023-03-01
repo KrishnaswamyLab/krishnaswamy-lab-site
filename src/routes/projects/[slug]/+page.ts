@@ -29,8 +29,7 @@ export async function load({ params }) {
   
   const routes = sorted
     .filter(({href, publication:{title}}) => !!href && !!title)
-    .map(({title, abbreviation, href}) => {
-        console.log(title, abbreviation, href)
+    .map(({title, abbreviation, href}) => {        
         return {title, abbreviation, href}
     })
     

@@ -37,4 +37,7 @@ publication:
   periodicalImage: /images/journals/nature_biotech.jpg
   title: 'PHATE: Visualizing Transitions and Structure for Biological Data Exploration'
   type: Journal Article
+  year: 2019
+  month: 12
+  volume: 37
 title: Potential of Heat-diffusion Affinity-based Transition Embedding
