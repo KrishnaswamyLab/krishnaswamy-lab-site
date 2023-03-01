@@ -1,8 +1,8 @@
 /** @type {import('./$types').PageLoad} */
-import courses from '$lib/data/courses.json'
-
 import {LoadGlobsAllAtOnces} from '$lib/utils'
 import type {Course, Courses} from '$lib/types'
+
+// import courses from '$lib/data/courses.json'
 const yamls = import.meta.glob('/src/yaml/courses/*.yml', {import: 'default'})
 
 export async function load({ }) {     

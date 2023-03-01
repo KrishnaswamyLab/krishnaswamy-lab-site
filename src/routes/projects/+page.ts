@@ -6,7 +6,7 @@ import type {Publications, Projects} from '$lib/types'
 import {Publication, Project} from '$lib/classes'
 import {SortProjectByYear, LoadGlobsAllAtOnces} from '$lib/utils'
 
-import projects from '$lib/data/projects.json'
+// import projects from '$lib/data/projects.json'
 const yamls = import.meta.glob('/src/yaml/projects/*.yml', {import: 'default'})
 
 export async function load({ }) {     

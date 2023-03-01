@@ -6,7 +6,7 @@ import {
   SortMemberByPI
 } from '$lib/utils'
 
-import members from '$lib/data/members.json'
+// import members from '$lib/data/members.json'
 const yamls = import.meta.glob('/src/yaml/members/*.yml', {import: 'default'})
 
 export async function load({ }) {   

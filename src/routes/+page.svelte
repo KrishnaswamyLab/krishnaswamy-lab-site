@@ -1,7 +1,8 @@
 <script>
     /** @type {import('./$types').PageData} */
     export let data;
-    
+    import { fly, fade } from 'svelte/transition';
+    import { flip } from 'svelte/animate';
     import Hero from '$lib/Layout/Hero/Hero.svelte';
     import FollowUsBtn from '$lib/Layout/FollowUsBtn.svelte';
     import JellyContainer from '$lib/Layout/JellyContainer.svelte';
@@ -29,14 +30,22 @@
     </div>
 </JellyContainer>
 
+
+{#await data?.categories}
+
+{:then categories } 
 <div class="divider divider-vertical py-8"></div> 
 
-
 <div class="flex flex-row flex-wrap justify-evenly gap-4 ">
-    {#each data?.categories as {title, about, examples, image}, i}
-        <ResearchCategoryBox {title} {about} {image}/>
+    {#each categories as {title, about, examples, image}, i (i)}
+        <ResearchCategoryBox                 
+            {title} {about} {image}
+            delay={i * 100}
+        />        
     {/each}
 </div>
+{/await}
+
 
 
 <div class="divider divider-vertical py-8"></div> 

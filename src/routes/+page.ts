@@ -16,7 +16,7 @@ const cat_yamls = import.meta.glob('/src/yaml/research_categories/*.yml', {impor
 const categories = (await LoadGlobsAllAtOnces(cat_yamls) as ResearchCategories)
 const affiliations = (await LoadGlobsAllAtOnces(aff_yamls) as Affiliations)
 
-export function load({ }) {
+export async function load({ }) {
     return {
         categories: categories.sort((a,b) => {
             let an = Number(a?.sort) as number

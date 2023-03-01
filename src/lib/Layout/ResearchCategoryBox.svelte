@@ -1,13 +1,26 @@
 <script lang="ts">
-    import type {Links} from '$lib/types'
+import { onMount } from 'svelte'
+import { fly, fade } from 'svelte/transition';
+import { flip } from 'svelte/animate';
+
+import type {Links} from '$lib/types'
 export let about: string;
 export let title: string;
 export let image: string;
-export let examples: Links;
+export let examples: Links = [];
 export let showExamples: boolean = false;
+export let delay:number = 0
+
+let animate = false
+onMount(() => {
+    animate = true
+})
 </script>
 
+{#if animate}
 <div 
+    in:fly={{y:200, delay: delay, duration: 1500}} 
+    out:fly={{y:200, delay: delay, duration: 1500}}
     class="
         card relative z-10 
         grid card-compact card-bordered 
@@ -21,7 +34,7 @@ export let showExamples: boolean = false;
         basis-2/3 md:basis-1/3 lg:basis-1/3 
         xl:basis-2/6 2xl:basis-2/12            
     "
->
+    >
     <div class="
         relative bg-black flex place-content-center 
         justify-center row-span-full col-span-full
@@ -43,8 +56,8 @@ export let showExamples: boolean = false;
             />
         </figure> 
     </div>
-    
-    
+
+
     <div class="card-body z-20 relative row-span-full col-span-full">
         <h2 class="card-title break-words text-2xl">{title}</h2>
         <div><p class="text-lg">{about}</p></div>
@@ -63,3 +76,4 @@ export let showExamples: boolean = false;
         {/if}
     </div>                                
 </div>
+{/if}
