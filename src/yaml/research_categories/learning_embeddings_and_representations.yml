@@ -12,3 +12,4 @@ examples:
   text: SAUCIE
 image: /images/heroes/geometric_5.png
 title: Learning Embeddings and Representations
+sort: 2

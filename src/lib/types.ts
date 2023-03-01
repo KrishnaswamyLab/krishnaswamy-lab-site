@@ -1,4 +1,14 @@
 export type GlobResults = Record<string, ()=>Promise<unknown>>
+
+export interface Course {
+    about: string;
+    listings: string[];
+    professors: string[];
+    title: string;
+}
+export type Courses = Course[]
+    | Array<Course>
+
 export interface Link {
     href: string;
     text: string;
@@ -136,8 +146,12 @@ export interface ResearchCategory {
     title: string;
     about: string;
     image: string;
+    sort?:number;
     examples?: ResearchExamples;
 }
+
+export type ResearchCategories = ResearchCategory[]
+    | Array<ResearchCategory>
 
 export interface quote {
     text:string;
@@ -149,7 +163,10 @@ export interface Affiliation {
     href:string;
     about:string;
     quote?:quote;
+    sort?:number;
 }
+export type Affiliations = Affiliation[]
+    | Array<Affiliation>
 
 
 import type {ComponentType, SvelteComponentTyped} from 'svelte'
@@ -166,11 +183,17 @@ export interface SyllabusDayItem {
 }
 export type SyllabusDayItems = SyllabusDayItem[] 
     | Array<SyllabusDayItem> 
-    | ArrayLike<SyllabusDayItem>
+    
 
 export interface SyllabusDay {
     day: string;
     items: SyllabusDayItems
 }
 
-export type Syllabus = SyllabusDay[] | Array<SyllabusDay> | ArrayLike<SyllabusDay>
+export type Syllabus = SyllabusDay[] 
+    | Array<SyllabusDay> 
+    
+
+export type Syllabi = Syllabus[] 
+    | Array<Syllabus> 
+    

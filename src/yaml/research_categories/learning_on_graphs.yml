@@ -7,3 +7,4 @@ examples:
   text: MAGIC
 image: /images/heroes/data.png
 title: Learning on Graphs
+sort: 4
