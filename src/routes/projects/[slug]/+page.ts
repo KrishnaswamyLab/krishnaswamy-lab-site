@@ -4,12 +4,12 @@ import type {Publications, Projects, Project as ProjectInterface} from '$lib/typ
 import {Publication, Project} from '$lib/classes'
 import {SortProjectByYear, LoadGlobsAllAtOnces} from '$lib/utils'
 
-interface data {
+export interface ProjectData {
     project: ProjectInterface;
     routes: {
         title: string;
-        abbreviation: string | null;
-        href: string | null;
+        abbreviation?: string;
+        href?: string;
     }[];
     slug: string;
 }
@@ -34,6 +34,6 @@ export async function load({ params }) {
     })
     
   const project = new Project(matches[0] as ProjectInterface)  
-  const data = {project, routes, slug} as data  
+  const data = {project, routes, slug} as ProjectData  
   return data;
 }

@@ -1,6 +1,7 @@
 <script lang="ts">
     /** @type {import('./$types').PageData} */
-    export let data;
+    import type {ProjectData} from './+page'
+    export let data: ProjectData;
     import { goto } from '$app/navigation';
 
     import type { Project } from '$lib/types';
@@ -12,7 +13,12 @@
         return heroTitle
     }
 
-    const routeTitle = (project: Project) => {
+    interface Route {
+        title:string;
+        href?:string;
+        abbreviation?:string;
+    }
+    const routeTitle = (project: Route) => {
         return project.abbreviation ? project.abbreviation : project.title
     }
 
@@ -45,7 +51,7 @@
                                     hover:text-slate-900
                                     visited:hover:text-purple-800
                                     {
-                                        route?.projectUrl === data?.slug 
+                                        route?.href === data?.slug 
                                             ? "text-slate-800 visited:text-purple-700" 
                                             : "text-slate-400 visited:text-purple-400"
                                     }
