@@ -22,7 +22,7 @@ export interface MemberName {
 export type MemberNames = MemberName[] | Array<MemberName> | ArrayLike<MemberName>
 
 export interface Member {
-    name: string | MemberName;
+    name: MemberName;
     title?: string;
     about?: string;
     cv?: string|null;
@@ -30,6 +30,7 @@ export interface Member {
     website?: string|null;
     isAlum?: boolean;
     name_str?: string;
+    makeNameStr: () => string;
 }
 export type Members = Member[] 
     | Array<Member> 

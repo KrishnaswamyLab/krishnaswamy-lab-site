@@ -1,7 +1,44 @@
 import type {
+    Member as MemberInterface,
     Publication as PublicationInterface,
     Project as ProjectInterface
 } from '$lib/types'
+
+export class Member implements MemberInterface {
+    name;
+    title;
+    about;
+    cv;
+    image;
+    website;
+    isAlum;
+    name_str;
+
+    constructor(member:MemberInterface) {
+        this.name = member.name
+        this.title = member.title
+        this.about = member.about
+        this.cv = member.cv
+        this.image = member.image
+        this.website = member.website
+        this.isAlum = member.isAlum        
+        if (member?.name_str) {
+            this.name_str = this.makeNameStr()
+        } else {
+            this.name_str = member.name_str
+        }
+    }
+
+    makeNameStr() {        
+        let first = this.name?.preferred ? this.name.preferred : this.name.first
+        let nameStr = first
+        if (this.name?.middle) {
+            nameStr += ` ${this.name.middle} `
+        }
+        nameStr += ` ${this.name.last}`
+        return nameStr
+    };
+}
 
 export class Publication implements PublicationInterface {
     title;

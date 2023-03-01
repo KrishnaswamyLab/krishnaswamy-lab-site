@@ -86,9 +86,18 @@ export const LoadGlobsAllAtOnces = async (globs: GlobResults) => {
 
 
 import type {Member as MemberInterface} from '$lib/types'
+import {Member} from '$lib/classes'
+
+export const SortMemberByName = (a:MemberInterface, b:MemberInterface) => {   
+    if (a.name.first === 'Smita Krishnaswamy') return 5    
+    a = new Member(a)
+    b = new Member(b)
+    return a.makeNameStr() > b.makeNameStr() ? -1 : 1
+}
 export const SortMemberByImage = (a:MemberInterface, b:MemberInterface) => {
-    let doesAHaveImage = a?.image ? 0 : -1
+    let doesAHaveImage = a?.image ? 1 : -1
     let doesBHaveImage = b?.image ? 1 : 0
-    let tmp = doesBHaveImage - doesAHaveImage
-    return tmp + (b?.cv !== null ? 2 : -1)  
+    let imageFirst = doesAHaveImage - doesBHaveImage  
+    let hasCV = b?.cv !== null ? 1 : -1
+    return hasCV - imageFirst
 }
