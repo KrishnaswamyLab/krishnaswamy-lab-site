@@ -55,6 +55,7 @@ export class Publication implements PublicationInterface {
     periodicalImage;
     github;
     poster;
+    slides;
     youtube;
     keyImage;
     keywords;
@@ -78,6 +79,7 @@ export class Publication implements PublicationInterface {
         
         this.github = publication.github
         this.poster = publication.poster
+        this.slides = publication.slides
         this.youtube = publication.youtube
         this.keyImage = publication.keyImage
 

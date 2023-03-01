@@ -63,7 +63,8 @@ export interface Publication {
     periodicalImage?: string;
     
     github?: string;
-    poster?: string;    
+    poster?: string;   
+    slides?: string; 
     youtube?: string;
     keyImage?: string;
 

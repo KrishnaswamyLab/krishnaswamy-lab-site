@@ -37,6 +37,7 @@ publication:
   periodical: arXiv
   periodicalImage: /images/journals/arxiv.png
   poster: /images/projects/mioflow_poster.png
+  slides: https://slideslive.com/38991615/manifold-interpolating-optimaltransport-flows-for-trajectory-inference?ref=search-presentations-Guillaume+Huguet
   title: Manifold Interpolating Optimal-Transport Flows for Trajectory Inference
   type: Journal Article
   year: 2022
