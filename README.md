@@ -1,3 +1,6 @@
+# Krishnaswamy Lab Website
+The Krishnaswamy Lab website is built primarily with Svelte, DaisyUI, SvelteKit, Tailwindcss, and Typescript. Data is managed via static YAML files.
+
 # Contributing
 Are you a lab member trying to update information on the website? Then this is the section for you!
 
@@ -38,6 +41,12 @@ So what should you put in a record? Well that is dependant on its *type*. The en
 
 
 ## Courses
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| about | string | about the course |
+| listings | string[] | yale course codes |
+| professors | string[] | who teaches the course |
+| title | string | name of course |
 
 ## Members
 
@@ -67,28 +76,20 @@ So what should you put in a record? Well that is dependant on its *type*. The en
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
-| projectUrl | string | link to project specific page on website |
-| projectTitle | string | title to use in list on top of `/projects` page |
-| projectAbbreviation | string | project abbreviation if it is a method |
-| projectListDescription | string | description to use on top of `/projects` page |
-| heroBlurb | string | short blurb to use inside hero section |
-| heroImage | string | image to use with the hero section |
-| authors | string[] | list of members affiliated with the project |
-| journal | string | name of journal published in |
-| journalImage? | string | image of journal to use with journal link |
-| githubLink? | string | link to GitHub repository |
-| publicationLink | string | link to publication |
-| publicationImage? | string | sinlge image to show at bottom of prject |
-| publicationTitle | string | full title of publication |
-| publicationAbstract? | string | abstract of publication |
-| publicationPoster? | string | poster affiliated with project |
-| publicationYear | string|number | year when published |
-| youtube? | string | link to YouTube video |
+| href | string | relative url to project specific page `/project/<href>` |
+| title | string | name of project | 
+| abbreviation? | string | abbreviation if it is a method |
+| description? | string | description to use in list at top of `/projects` page |
+| hero | ImageHero | project hero image info |
+| publication | Publication | related publication |
 
-### Authors
+
+### ImageHero
 | Property | Type | Description |
 | -------- | ---- | ----------- |
-| title | string | name of research category |
+| title | string | hero title |
+| blurb? | string | tagline for blurb |
+| image | string | link to image |
 
 ## Research Categories
 | Property | Type | Description |
@@ -106,6 +107,29 @@ So what should you put in a record? Well that is dependant on its *type*. The en
 
 
 ## Selected Publications
+
+## Publication
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| type | string | type of publication |
+| href | string | link to publication |
+| year | number | year of publication |
+| title | string | title of publication |
+|authors | string[] | list of authors |
+| periodical | string | name of journal |
+| publisher? | string | publishing group of periodical |
+| periodicalImage? | string | image to use for periodical link |
+| github? | string | link to github repo |
+| poster? | string | link to poster |
+| slides? | string | link to slides |
+| youtube? | string | **ID** of youtube video |
+| keyImage? | string | link to key image of publication to highlight |
+| keywords? | string[] | keywords of publication |
+| selected? | boolean | whether or not a selected publication |
+| month? | number | month when published |
+| pages? | string | pages of publication |
+| issues? | number | issue of publication |
+| volume? | number | volume of publication |
 
 ## Workshops
 
