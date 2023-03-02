@@ -1,0 +1,13 @@
+about: Tom is an undergraduate at Yale majoring in Computer Science and joined the
+  lab to work on his senior project. He is generally interested in machine learning,
+  specifically reinforcement learning. Outside of his studies, he is a goalkeeper
+  of Yale men's soccer team.
+image: /images/members/tom_wallenstein.jpeg
+isAlum: true
+name:
+  first: Tom
+  last: Wallenstein
+  preferred: Tom
+name_str: Tom Wallenstein
+publications: []
+website: https://tomwallenstein.com/

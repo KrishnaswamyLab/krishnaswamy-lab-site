@@ -1,0 +1,44 @@
+abstract: The high-dimensional data created by high-throughput technologies require
+  visualization tools that reveal data structure and patterns in an intuitive form.
+  We present PHATE, a visualization method that captures both local and global nonlinear
+  structure using an information-geometric distance between data points. We compare
+  PHATE to other tools on a variety of artificial and biological datasets, and find
+  that it consistently preserves a range of patterns in data, including continual
+  progressions, branches and clusters, better than other tools. We define a manifold
+  preservation metric, which we call denoised embedding manifold preservation (DEMaP),
+  and show that PHATE produces lower-dimensional embeddings that are quantitatively
+  better denoised as compared to existing visualization methods. An analysis of a
+  newly generated single-cell RNA sequencing dataset on human germ-layer differentiation
+  demonstrates how PHATE reveals unique biological insight into the main developmental
+  branches, including identification of three previously undescribed subpopulations.
+  We also show that PHATE is applicable to a wide variety of data types, including
+  mass cytometry, single-cell RNA sequencing, Hi-C and gut microbiome data. PHATE,
+  a new data visualization tool, better preserves patterns in high-dimensional data
+  after dimensionality reduction.
+authors:
+- Kevin R. Moon
+- David van Dijk
+- Zheng Wang
+- Scott A. Gigante
+- Daniel B. Burkhardt
+- William S. Chen
+- Kristina Yim
+- Antonia van den Elzen
+- Matthew J. Hirn
+- Ronald R. Coifman
+- Natalia B. Ivanova
+- Guy Wolf
+- Smita Krishnaswamy
+href: https://www.nature.com/articles/s41587-019-0336-3
+issue: 12
+keywords:
+- Data mining
+- Machine learning
+month: 12
+pages: 1482-1492
+periodical: Nature Biotechnology
+publisher: Nature Publishing Group
+selected: true
+title: Visualizing structure and transitions in high-dimensional biological data
+type: Journal Article
+year: 2019

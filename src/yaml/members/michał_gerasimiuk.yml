@@ -1,0 +1,15 @@
+about: "Micha\u0142 is an undergraduate at Yale studying computer science. His work
+  in the lab includes building unsupervised learning models that handle electronic
+  health records data and exploring deep neural networks as components of brain-computer
+  interfaces. When not in class, you can find him playing in chess tournaments, reading,
+  or practicing taekwondo."
+image: "/images/members/micha\u0142_gerasimiuk.jpg"
+isAlum: true
+name:
+  first: "Micha\u0142"
+  last: Gerasimiuk
+  preferred: "Micha\u0142"
+name_str: "Micha\u0142 Gerasimiuk"
+publications:
+- 'MURAL: An Unsupervised Random Forest-Based Embedding for Electronic Health Record
+  Data'

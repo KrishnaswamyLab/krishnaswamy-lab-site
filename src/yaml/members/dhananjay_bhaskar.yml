@@ -1,0 +1,22 @@
+about: Dhananjay Bhaskar is a postdoc in Genetics at the School of Medicine and a
+  Yale-Boehringer Ingelheim Biomedical Data Science Fellow. His interdisciplinary
+  research combines topological data analysis, machine learning, and mathematical
+  modeling with applications in biophysics and biomedical research. Previously he
+  worked on quantitative analysis of pattern formation and phase transitions in active
+  matter, automated embryo selection for IVF, and unsupervised methods for analyzing
+  cell shape and motility in time-lapse microscopy.Dhananjay received his Ph.D. in
+  Biomedical Engineering and Sc.M. in Data Science from Brown University. Prior to
+  Brown, he studied Computer Science and Applied Mathematics at the University of
+  British Columbia. When he is not busy transforming coffee beans into code, Dhananjay
+  enjoys hiking, swimming, and playing badminton.
+image: /images/members/dhananjay_bhaskar.jpg
+name:
+  first: Dhananjay
+  last: Bhaskar
+  preferred: Dhananjay
+name_str: Dhananjay Bhaskar
+publications:
+- Transformer-based protein generation with regularized latent space optimization
+- Diffusion Curvature for Estimating Local Curvature in High Dimensional Data
+- Molecular Graph Generation via Geometric Scattering
+title: PhD

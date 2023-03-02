@@ -1,0 +1,15 @@
+about: Dami is a PhD student in applied mathematics at Yale University. He is broadly
+  interested in methods development in machine learning and numerical analysis to
+  solve problems in the physical sciences. He grew up in Auburn, Alabama and completed
+  his B.S. in Nuclear Engineering from NC State and M.S. in Medical Physics from Duke
+  before coming to Yale. In his free enjoys watching and playing soccer, chess, reading,
+  and travelling.
+image: /images/members/dami_fasina.jpg
+name:
+  first: Oluwadamilola
+  last: Fasina
+  preferred: Dami
+name_str: Dami Fasina
+publications:
+- Manifold Interpolating Optimal-Transport Flows for Trajectory Inference
+- Diffusion Curvature for Estimating Local Curvature in High Dimensional Data

@@ -1,0 +1,32 @@
+abstract: We propose a novel framework for combining datasets via alignment of their
+  intrinsic geometry. This alignment can be used to fuse data originating from disparate
+  modalities, or to correct batch effects while preserving intrinsic data structure.
+  Importantly, we do not assume any pointwise correspondence between datasets, but
+  instead rely on correspondence between a (possibly unknown) subset of data features.
+  We leverage this assumption to construct an isometric alignment between the data.
+  This alignment is obtained by relating the expansion of data features in harmonics
+  derived from diffusion operators defined over each dataset. These expansions encode
+  each feature as a function of the data geometry. We use this to relate the diffusion
+  coordinates of each dataset through our assumption of partial feature correspondence.
+  Then, a unified diffusion geometry is constructed over the aligned data, which can
+  also be used to correct the original data measurements. We demonstrate our method
+  on several datasets, showing in particular its effectiveness in biological applications
+  including fusion of single-cell RNA sequencing (scRNA-seq) and single-cell ATAC
+  sequencing (scATAC-seq) data measured on the same population of cells, and removal
+  of batch effect between biological samples.
+authors:
+- Jay S. Stanley
+- Scott A. Gigante
+- Guy Wolf
+- Smita Krishnaswamy
+href: https://arxiv.org/abs/1810.00386v4
+keywords: []
+month: 9
+pages: 316-324
+periodical: Proceedings of the 2020 SIAM International Conference on Data Mining,
+  SDM 2020
+publisher: Society for Industrial and Applied Mathematics Publications
+selected: true
+title: Harmonic Alignment
+type: Journal Article
+year: 2018

@@ -1,0 +1,21 @@
+about: 'Jay Stanley was born in Arkansas. He graduated with his BA in Biology from
+  Hendrix College in 2016. At Yale, Jay is working on his PhD in Computational Biology
+  and Bioinformatics. His research interests are Spectral Graph Theory, Signal Processing,
+  Dimensionality reduction, data visualization. Jay is currently pursing a postdoctoral
+  fellowship at Yale University.
+
+  Jay is an avid music enthusiast, rock climber, and whitewater kayaker.'
+image: ''
+isAlum: true
+name:
+  first: Jay
+  last: Stanley
+  middle: S.
+  preferred: Jay
+name_str: Jay S. Stanley
+publications:
+- Geometry Based Data Generation
+- Harmonic Alignment
+- Interpretable Neuron Structuring with Graph Spectral Regularization
+- Quantifying the effect of experimental perturbations at single-cell resolution
+title: PhD

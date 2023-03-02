@@ -1,0 +1,40 @@
+abstract: 'Often when biological entities are measured in multiple ways, there are
+  distinct categories of information: some information is easy-to-obtain information
+  (EI) and can be gathered on virtually every subject of interest, while other information
+  is hard-to-obtain information (HI) and can only be gathered on some. We propose
+  building a model to make probabilistic predictions of HI using EI. Our feature mapping
+  GAN (FMGAN), based on the conditional GAN framework, uses an embedding network to
+  process conditions as part of the conditional GAN training to create manifold structure
+  when it is not readily present in the conditions. We experiment on generating RNA
+  sequencing of cell lines perturbed with a drug conditioned on the drug''s chemical
+  structure and generating FACS data from clinical monitoring variables on a cohort
+  of COVID-19 patients, effectively describing their immune response in great detail.'
+authors:
+- Matthew Amodio
+- Dennis Shung
+- Daniel B. Burkhardt
+- Patrick Wong
+- Michael Simonov
+- Yu Yamamoto
+- David van Dijk
+- Francis Perry Wilson
+- Akiko Iwasaki
+- Smita Krishnaswamy
+href: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8276014/
+issue: 7
+keywords:
+- 'DSML 2: Proof-of-concept: Data science output has been formulated, implemented,
+  and tested for one domain/problem'
+- clinical data monitoring
+- conditional generative models
+- drug perturbations
+- generative adversarial networks
+month: 7
+pages: '100288'
+periodical: Patterns
+publisher: Elsevier
+selected: true
+title: 'Generating hard-to-obtain information from easy-to-obtain information: Applications
+  in drug discovery and clinical inference'
+type: Journal Article
+year: 2021

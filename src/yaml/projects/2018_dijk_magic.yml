@@ -1,0 +1,54 @@
+abbreviation: MAGIC
+description: an algorithm that uses graph signal processing for denoising and missing
+  transcript recovery in single cell RNA sequencing. MAGIC successfully recovers gene-gene
+  relationships from data and allows for the prediction of transcription targets.
+hero:
+  blurb: Recovering Gene Interactions from Single-Cell Data Using Data Diffusion
+  image: /images/projects/magic_hero.jpg
+  title: MAGIC
+href: magic
+publication:
+  abstract: 'Single-cell RNA-sequencing is fast becoming a major technology that is  revolutionizing
+    biological discovery in fields such as development, immunology and cancer. The
+    ability to simultaneously measure thousands of genes at single cell resolution
+    allows, among other prospects, for the possibility of learning gene regulatory
+    networks at large scales. However, scRNA-seq technologies suffer from many sources
+    of significant technical noise, the most prominent of which is dropout due to
+    inefficient mRNA capture. This results in data that has a high degree of sparsity,
+    with typically only 10% non-zero values.
+
+    To address this, we developed MAGIC (Markov Affinity-based Graph Imputation of
+    Cells), a method for imputing missing values, and restoring the structure of the
+    data. After MAGIC, we find that two- and three-dimensional gene interactions are
+    restored and that MAGIC is able to impute complex and non-linear shapes of interactions.
+    MAGIC also retains cluster structure, enhances cluster-specific gene interactions
+    and restores trajectories, as demonstrated in mouse retinal bipolar cells, hematopoiesis,
+    and our newly generated epithelial-to-mesenchymal transition dataset.'
+  authors:
+  - David van Dijk
+  - Roshan Sharma
+  - Juozas Nainys
+  - Kristina Yim
+  - Pooja Kathail
+  - Ambrose J. Carr
+  - Cassandra Burdziak
+  - Kevin R Moon
+  - Christine L. Chaffer
+  - Diwakar Pattabiraman
+  - Brian Bierie
+  - Linas Mazutis
+  - Guy Wolf
+  - Smita Krishnaswamy
+  - Dana Pe'er
+  github: https://github.com/KrishnaswamyLab/MAGIC
+  href: https://www.cell.com/cell/fulltext/S0092-8674(18)30724-4
+  keyImage: /images/projects/magic_image.jpg
+  periodical: Cell Press
+  periodicalImage: /images/journals/cell_press.png
+  title: 'MAGIC: Recovering Gene Interactions from Single-Cell Data Using Data Diffusion'
+  type: Journal Article
+  year: 2018
+  issue: 3
+  volume: 174
+  month: 7
+title: Markov Affinity-based Graph Imputation of Cells

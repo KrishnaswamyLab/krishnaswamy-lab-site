@@ -1,0 +1,240 @@
+@tailwind base;
+@layer base {
+	@font-face {
+		font-family: 'Quicksand';
+		src: local('Quicksand-Bold'), local('Quicksand Bold'), url('/fonts/Quicksand/static/Quicksand-Bold.ttf');
+		font-weight: bold;
+		font-display: swap;
+        font-style: normal;
+	}
+    @font-face {
+		font-family: 'Quicksand';
+		src: local('Quicksand Light'), local('Quicksand-Light'), url('/fonts/Quicksand/static/Quicksand-Light.ttf');
+		font-weight: 200;
+		font-display: swap;
+        font-style: normal;
+	}
+    @font-face {
+		font-family: 'Quicksand';
+		src: local('Quicksand-Medium'), local('Quicksand Medium'), url('/fonts/Quicksand/static/Quicksand-Medium.ttf');
+		font-weight: 500;
+		font-display: swap;
+        font-style: normal;
+	}
+    @font-face {
+		font-family: 'Quicksand';
+		src: local('Quicksand'), local('Quicksand-Regular'), local('Quicksand Regular'), url('/fonts/Quicksand/static/Quicksand-Regular.ttf');
+		font-weight: normal;
+		font-display: swap;
+        font-style: normal;
+	}
+    @font-face {
+		font-family: 'Quicksand';
+		src: local('Quicksand-SemiBold'), local('Quicksand-Semi-Bold'), 
+            local('Quicksand SemiBold'), local('Quicksand Semi Bold'), 
+            url('/fonts/Quicksand/static/Quicksand-SemiBold.ttf');
+		font-weight: 600;
+		font-display: swap;
+        font-style: normal;
+	}
+	@font-face {
+		font-family: 'SpaceMono';
+		src: local('SpaceMono'), local('Space Mono'), local('Space_Mono'),
+		    url('/fonts/Space_Mono/SpaceMono-Bold.ttf');
+		font-weight: bold;
+		font-display: swap;
+        font-style: normal;
+	}
+    @font-face {
+		font-family: 'SpaceMono';
+		src: local('SpaceMono-BoldItalic'), local('Space Mono Bold Italic'), local('Space_Mono_BoldItalic'),
+		    url('/fonts/Space_Mono/SpaceMono-BoldItalic.ttf');
+		font-weight: bold;
+		font-display: swap;
+        font-style: italic;
+	}
+    @font-face {
+		font-family: 'SpaceMono';
+		src: local('SpaceMono-Italic'), local('Space Mono Italic'), local('Space_Mono_Italic'),
+		    url('/fonts/Space_Mono/SpaceMono-Italic.ttf');
+		font-weight: normal;
+		font-display: swap;
+        font-style: italic;
+	}
+    @font-face {
+		font-family: 'SpaceMono';
+		src: local('SpaceMono'), local('SpaceMono-Regular'), local('Space Mono Regular'), local('Space_Mono_Regular'),
+		    url('/fonts/Space_Mono/SpaceMono-Regular.ttf');
+		font-weight: normal;
+		font-display: swap;
+        font-style: normal;
+	}
+
+    
+    @font-face {
+		font-family: 'Bellota';
+		src: local('Bellota'), local('Bellota-Regular'), local('Bellota Regular'), local('Bellota_Regular'),
+		    url('/fonts/Bellota/Bellota-Regular.ttf');
+		font-weight: normal;
+		font-display: swap;
+        font-style: normal;
+	}
+	@font-face {
+		font-family: 'Bellota';
+		src: local('Bellota-Light'), local('Bellota Light'), 
+		    url('/fonts/Bellota/Bellota-Light.ttf');
+		font-weight: 200;
+		font-display: swap;
+        font-style: normal;
+	}
+	@font-face {
+		font-family: 'Bellota';
+		src: local('Bellota-Italic'), local('Bellota Italic'),
+		    url('/fonts/Bellota/Bellota-Italic.ttf');
+		font-weight: normal;
+		font-display: swap;
+        font-style: italic;
+	}
+    @font-face {
+		font-family: 'Bellota';
+		src: local('Bellota-LightItalic'), local('Bellota LightItalic'),
+		    url('/fonts/Bellota/Bellota-LightItalic.ttf');
+		font-weight: 200;
+		font-display: swap;
+        font-style: italic;
+	}
+	@font-face {
+		font-family: 'Bellota';
+		src: local('Bellota-Bold'), local('Bellota Bold'),
+		    url('/fonts/Bellota/Bellota-Bold.ttf');
+		font-weight: bold;
+		font-display: swap;
+        font-style: normal;
+	}
+    @font-face {
+		font-family: 'Bellota';
+		src: local('Bellota-BoldItalic'), local('Bellota BoldItalic'), 
+		    url('/fonts/Bellota/Bellota-BoldItalic.ttf');
+		font-weight: bold;
+		font-display: swap;
+        font-style: italic;
+	}
+    
+
+    @font-face {
+		font-family: 'BellotaText';
+		src: local('BellotaText'), local('BellotaText-Regular'), local('BellotaText Regular'), local('BellotaText_Regular'),
+		    url('/fonts/Bellota_Text/BellotaText-Regular.ttf');
+		font-weight: normal;
+		font-display: swap;
+        font-style: normal;
+	}
+	@font-face {
+		font-family: 'BellotaText';
+		src: local('BellotaText-Italic'), local('BellotaText Italic'),
+		    url('/fonts/Bellota_Text/BellotaText-Italic.ttf');
+		font-weight: normal;
+		font-display: swap;
+        font-style: italic;
+	}
+	@font-face {
+		font-family: 'BellotaText';
+		src: local('BellotaText-Light'), local('BellotaText Light'), 
+		    url('/fonts/Bellota_Text/BellotaText-Light.ttf');
+		font-weight: 200;
+		font-display: swap;
+        font-style: normal;
+	}
+    @font-face {
+		font-family: 'BellotaText';
+		src: local('BellotaText-LightItalic'), local('BellotaText LightItalic'),
+		    url('/fonts/Bellota_Text/BellotaText-LightItalic.ttf');
+		font-weight: 200;
+		font-display: swap;
+        font-style: italic;
+	}
+	@font-face {
+		font-family: 'BellotaText';
+		src: local('BellotaText-Bold'), local('BellotaText Bold'),
+		    url('/fonts/Bellota_Text/BellotaText-Bold.ttf');
+		font-weight: bold;
+		font-display: swap;
+        font-style: normal;
+	}
+    @font-face {
+		font-family: 'BellotaText';
+		src: local('BellotaText-BoldItalic'), local('BellotaText BoldItalic'), 
+		    url('/fonts/Bellota_Text/BellotaText-BoldItalic.ttf');
+		font-weight: bold;
+		font-display: swap;
+        font-style: italic;
+	}
+    
+
+
+    @font-face {
+		font-family: 'Inconsolata';
+		src: local('Inconsolata'), local('Inconsolata-Regular'), local('Inconsolata Regular'), local('Inconsolata_Regular'),
+		    url('/fonts/Inconsolata/static/Inconsolata/Inconsolata-Regular.ttf');
+		font-weight: normal;
+		font-display: swap;
+        font-style: normal;
+	}
+    @font-face {
+		font-family: 'Inconsolata';
+		src: local('Inconsolata-Light'), local('Inconsolata Light'),
+		    url('/fonts/Inconsolata/static/Inconsolata/Inconsolata-Light.ttf');
+		font-weight: 200;
+		font-display: swap;
+        font-style: normal;
+	}
+    @font-face {
+		font-family: 'Inconsolata';
+		src: local('Inconsolata-ExtraLight'), local('Inconsolata ExtraLight'), 
+		    url('/fonts/Inconsolata/static/Inconsolata/Inconsolata-ExtraLight.ttf');
+		font-weight: 100;
+		font-display: swap;
+        font-style: normal;
+	}
+    @font-face {
+		font-family: 'Inconsolata';
+		src: local('Inconsolata-Medium'), local('Inconsolata Medium'),
+		    url('/fonts/Inconsolata/static/Inconsolata/Inconsolata-Medium.ttf');
+		font-weight: 500;
+		font-display: swap;
+        font-style: normal;
+	}
+    @font-face {
+		font-family: 'Inconsolata';
+		src: local('Inconsolata-Bold'), local('Inconsolata Bold'), 
+		    url('/fonts/Inconsolata/static/Inconsolata/Inconsolata-Bold.ttf');
+		font-weight: bold;
+		font-display: swap;
+        font-style: normal;
+	}
+    @font-face {
+		font-family: 'Inconsolata';
+		src: local('Inconsolata-ExtraBold'), local('Inconsolata ExtraBold')
+		    url('/fonts/Inconsolata/static/Inconsolata/Inconsolata-ExtraBold.ttf');
+		font-weight: 800;
+		font-display: swap;
+        font-style: normal;
+	}
+    @font-face {
+		font-family: 'Inconsolata';
+		src: local('Inconsolata-Black'), local('Inconsolata Black')
+		    url('/fonts/Inconsolata/static/Inconsolata/Inconsolata-Black.ttf');
+		font-weight: 900;
+		font-display: swap;
+        font-style: normal;
+	}
+    @font-face {
+		font-family: 'Inconsolata';
+		src: local('Inconsolata-SemiBold'), local('Inconsolata SemiBold')
+		    url('/fonts/Inconsolata/static/Inconsolata/Inconsolata-SemiBold.ttf');
+		font-weight: 600;
+		font-display: swap;
+        font-style: normal;
+	}
+	
+}

@@ -1,0 +1,18 @@
+about: 'Chen Liu joined the lab as a PhD student in Computer Science at Yale University
+  starting 2022. His research interest is machine learning for healthcare. He primarily
+  worked on radiological images in the past but also enjoys exploring new areas such
+  as computational biology and genomics. He is excited about developing generalizable
+  machine learning techniques that are widely applicable.
+
+  Chen grew up in Shanghai, China. He completed his B.S. and M.S. degrees at Bucknell
+  University and Columbia University respectively. Prior to joining Yale, he was a
+  senior Research Scientist at GE Healthcare, working on deep learning in X-ray and
+  MRI data.'
+image: /images/members/chen_liu.jpg
+name:
+  first: Chen
+  last: Liu
+  preferred: Chen
+name_str: Chen Liu
+publications: []
+website: https://www.chenliu1996.com/

@@ -1,0 +1,43 @@
+abbreviation: PHATE
+description: a visualization and dimensionality reduction technique that is sensitive
+  to local and global relationships and successfully preserves structures of interest
+  in biological data including cluster structure and branching trajectory structure.
+hero:
+  blurb: Visualizing Transitions and Structure for Biological Data Exploration
+  image: /images/projects/phate_hero.jpg
+  title: PHATE
+href: phate
+publication:
+  abstract: 'In the era of ''Big Data'' there is a pressing need for tools that provide
+    human interpretable visualizations of emergent patterns in high-throughput high-dimensional
+    data. Further, to enable insightful data exploration, such visualizations should
+    faithfully capture and emphasize emergent structures and patterns without enforcing
+    prior assumptions on the shape or form of the data.
+
+    In this paper, we present PHATE (Potential of Heat-diffusion for Affinity-based
+    Transition Embedding) - an unsupervised low-dimensional embedding for visualization
+    of data that is aimed at solving these issues. Unlike previous methods that are
+    commonly used for visualization, such as PCA and tSNE, PHATE is able to capture
+    and highlight both local and global structure in the data.'
+  authors:
+  - Kevin R Moon
+  - David van Dijk
+  - Zheng Wang
+  - Daniel B Burkhardt
+  - William S Chen
+  - Antonia van den Elzen
+  - Matthew J Hirn
+  - Ronald R Coifman
+  - Natalia B Ivanova
+  - Smita Krishnaswamy
+  github: https://github.com/KrishnaswamyLab/PHATE
+  href: https://www.nature.com/articles/s41587-019-0336-3
+  keyImage: /images/projects/phate_image.png
+  periodical: Nature Biotechnology
+  periodicalImage: /images/journals/nature_biotech.jpg
+  title: 'PHATE: Visualizing Transitions and Structure for Biological Data Exploration'
+  type: Journal Article
+  year: 2019
+  month: 12
+  volume: 37
+title: Potential of Heat-diffusion Affinity-based Transition Embedding

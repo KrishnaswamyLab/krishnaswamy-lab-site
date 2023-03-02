@@ -1,0 +1,37 @@
+abbreviation: GSAE
+description: Here we combine the flexibility of deep learning with the representational
+  power of graph scattering transforms to study thermodynamic landscapes within RNA
+  folding.
+hero:
+  blurb: Combining the flexibility of deep learning with the represenational power
+    of graph scattering transforms to study thermodynamic landscapes within RNA folding
+  image: /images/projects/gsae_hero.jpg
+  title: GSAE
+href: gsae
+publication:
+  abstract: Biomolecular graph analysis has recently gained much attention in the
+    emerging field of geometric deep learning. Here we focus on organizing biomolecular
+    graphs in ways that expose meaningful relations and variations between them. We
+    propose a geometric scattering autoencoder (GSAE) network for learning such graph
+    embeddings. Our embedding network first extracts rich graph features using the
+    recently proposed geometric scattering transform. Then, it leverages a semi-supervised
+    variational autoencoder to extract a low-dimensional embedding that retains the
+    information in these features that enable prediction of molecular properties as
+    well as characterize graphs. We show that GSAE organizes RNA graphs both by structure
+    and energy, accurately reflecting bistable RNA structures. Also, the model is
+    generative and can sample new folding trajectories.
+  authors:
+  - Egbert Castro
+  - Andrew Benz
+  - Alexander Tong
+  - Guy Wolf
+  - Smita Krishnaswamy
+  href: https://ieeexplore.ieee.org/document/9378305
+  keyImage: /images/projects/gsae_image.gif
+  periodical: IEEE
+  periodicalImage: /images/journals/ieee.jpeg
+  title: Uncovering the Folding Landscape of RNA Secondary Structure with Deep Graph
+    Embeddings
+  type: Journal Article
+  year: 2020
+title: Geometric Scattering Autoencoder

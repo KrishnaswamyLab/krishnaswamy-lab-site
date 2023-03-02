@@ -1,0 +1,42 @@
+abbreviation: MELD
+description: a graph signal processing tool to analyze multiple scRNA-seq samples
+  from two or more conditions.
+hero:
+  blurb: Quantifying the effect of perturbations in single cell RNA-sequencing data
+  image: /images/projects/meld_hero.png
+  title: MELD
+href: meld
+publication:
+  abstract: Current methods for comparing single-cell RNA sequencing datasets collected
+    in multiple conditions focus on discrete regions of the transcriptional state
+    space, such as clusters of cells. Here we quantify the effects of perturbations
+    at the single-cell level using a continuous measure of the effect of a perturbation
+    across the transcriptomic space. We describe this space as a manifold and develop
+    a relative likelihood estimate of observing each cell in each of the experimental
+    conditions using graph signal processing. This likelihood estimate can be used
+    to identify cell populations specifically affected by a perturbation. We also
+    develop vertex frequency clustering to extract populations of affected cells at
+    the level of granularity that matches the perturbation response. The accuracy
+    of our algorithm at identifying clusters of cells that are enriched or depleted
+    in each condition is, on average, 57% higher than the next-best-performing algorithm
+    tested. Gene signatures derived from these clusters are more accurate than those
+    of six alternative algorithms in ground truth comparisons.
+  authors:
+  - Daniel B Burkhardt
+  - Jay S Stanley
+  - Alexander Tong
+  - Ana Luisa Perdigoto
+  - Scott A Gigante
+  - Kevan C Herold
+  - Guy Wolf
+  - Antonio J Giraldez
+  - David van Dijk
+  - Smita Krishnaswamy
+  href: https://www.nature.com/articles/s41587-020-00803-5
+  periodical: Nature Biotechnology
+  periodicalImage: /images/journals/nature_biotech.jpg
+  title: 'MELD: Graph signal processing identifies cell populations affected by an
+    experimental treatment'
+  type: Journal Article
+  year: 2021
+title: Manifold Enhancement of Latent Dimensions

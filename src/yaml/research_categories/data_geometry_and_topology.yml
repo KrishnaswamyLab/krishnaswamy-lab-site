@@ -1,0 +1,11 @@
+about: "Following the manifold hypothesis we develop and employ methodologies \nfor
+  understanding the topology of high dimensional data in it's native space. Our techniques
+  span from the application of the diffusion operator to neural manifold learning"
+examples:
+- href: /projects/magic
+  text: MAGIC
+- href: /projects/magan
+  text: MAGAN
+image: /images/heroes/bio.png
+title: Data Geometry and Topology
+sort: 1

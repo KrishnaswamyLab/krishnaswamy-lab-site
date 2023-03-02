@@ -1,0 +1,140 @@
+abstract: "As the biomedical community produces datasets that are increasingly complex
+  and high dimensional, there is a need for more sophisticated computational tools
+  to extract biological insights. We present Multiscale PHATE, a method that sweeps
+  through all levels of data granularity to learn abstracted biological features directly
+  predictive of disease outcome. Built on a coarse-graining process called diffusion
+  condensation, Multiscale PHATE learns a data topology that can be analyzed at coarse
+  resolutions for high-level summarizations of data and at fine resolutions for detailed
+  representations of subsets. We apply Multiscale PHATE to a coronavirus disease 2019
+  (COVID-19) dataset with 54 million cells from 168 hospitalized patients and find
+  that patients who die show CD16hiCD66blo neutrophil and IFN-\u03B3+ granzyme B+
+  Th17 cell responses. We also show that population groupings from Multiscale PHATE
+  directly fed into a classifier predict disease outcome more accurately than naive
+  featurizations of the data. Multiscale PHATE is broadly generalizable to different
+  data types, including flow cytometry, single-cell RNA sequencing (scRNA-seq), single-cell
+  sequencing assay for transposase-accessible chromatin (scATAC-seq), and clinical
+  variables. Disease signatures in high-dimensional biomedical data are detected with
+  a visualization algorithm."
+authors:
+- Manik Kuchroo
+- Jessie Huang
+- Patrick Wong
+- Jean Christophe Grenier
+- Dennis Shung
+- Alexander Y. Tong
+- Carolina Lucas
+- Jon Klein
+- Daniel B. Burkhardt
+- Scott A. Gigante
+- Abhinav Godavarthi
+- Bastian Rieck
+- Benjamin Israelow
+- Michael Simonov
+- Tianyang Mao
+- Ji Eun Oh
+- Julio Silva
+- Takehiro Takahashi
+- Camila D. Odio
+- Arnau Casanovas-Massana
+- John Fournier
+- Abeer Obaid
+- Adam Moore
+- Alice Lu-Culligan
+- Allison Nelson
+- Anderson Brito
+- Angela Nunez
+- Anjelica Martin
+- Anne L. Wyllie
+- Annie Watkins
+- Annsea Park
+- Arvind Venkataraman
+- Bertie Geng
+- Chaney Kalinich
+- Chantal B.F. Vogels
+- Christina Harden
+- Codruta Todeasa
+- Cole Jensen
+- Daniel Kim
+- David McDonald
+- Denise Shepard
+- Edward Courchaine
+- Elizabeth B. White
+- Eric Song
+- Erin Silva
+- Eriko Kudo
+- Giuseppe DeIuliis
+- Haowei Wang
+- Harold Rahming
+- Hong Jai Park
+- Irene Matos
+- Isabel M. Ott
+- Jessica Nouws
+- Jordan Valdez
+- Joseph Fauver
+- Joseph Lim
+- Kadi Ann Rose
+- Kelly Anastasio
+- Kristina Brower
+- Laura Glick
+- Lokesh Sharma
+- Lorenzo Sewanan
+- Lynda Knaggs
+- Maksym Minasyan
+- Maria Batsu
+- Maria Tokuyama
+- M. Cate Muenker
+- Mary Petrone
+- Maxine Kuang
+- Maura Nakahata
+- Melissa Campbell
+- Melissa Linehan
+- Michael H. Askenase
+- Michael Simonov
+- Mikhail Smolgovsky
+- Nathan D. Grubaugh
+- Nicole Sonnert
+- Nida Naushad
+- Pavithra Vijayakumar
+- Peiwen Lu
+- Rebecca Earnest
+- Rick Martinello
+- Roy Herbst
+- Rupak Datta
+- Ryan Handoko
+- Santos Bermejo
+- Sarah Lapidus
+- Sarah Prophet
+- Sean Bickerton
+- Sofia Velazquez
+- Subhasis Mohanty
+- Tara Alpert
+- Tyler Rice
+- Wade Schulz
+- William Khoury-Hanold
+- Xiaohua Peng
+- Yexin Yang
+- Yiyun Cao
+- Yvette Strong
+- Shelli Farhadian
+- Charles S. Dela Cruz
+- Albert I. Ko
+- Matthew J. Hirn
+- Francis Perry Wilson
+- Julie G. Hussin
+- Guy Wolf
+- Akiko Iwasaki
+- Smita Krishnaswamy
+href: https://www.nature.com/articles/s41587-021-01186-x
+issue: 5
+keywords:
+- Computational models
+- Machine learning
+- Viral infection
+month: 2
+pages: 681-691
+periodical: Nature Biotechnology
+publisher: Nature Publishing Group
+selected: true
+title: Multiscale PHATE identifies multimodal signatures of COVID-19
+type: Journal Article
+year: 2022

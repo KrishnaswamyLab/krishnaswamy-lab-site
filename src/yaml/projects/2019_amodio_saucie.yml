@@ -1,0 +1,54 @@
+abbreviation: SAUCIE
+description: a deep autoencoder architecture that allows for unsupervised exploration
+  of data, and has novel regularizations that allow for data denoising, batch normalization,
+  clustering and visualization simultaneously  in various layers of the network.
+hero:
+  blurb: Exploring Single-Cell Data with Deep Multitasking Neural Networks
+  image: /images/projects/saucie_hero.jpg
+  title: SAUCIE
+href: saucie
+publication:
+  abstract: 'Handling the vast amounts of single-cell RNA-sequencing and CyTOF data,
+    which are now being generated in patient cohorts, presents a computational challenge
+    due to the noise, complexity, sparsity and batch effects present. Here, we propose
+    a unified deep neural network-based approach to automatically process and extract
+    structure from these massive datasets.
+
+    Our unsupervised architecture, called SAUCIE (Sparse Autoencoder for Unsupervised
+    Clustering, Imputation, and Embedding), simultaneously performs several key tasks
+    for single-cell data analysis including 1) clustering, 2) batch correction, 3)
+    visualization, and 4) denoising/imputation. SAUCIE is trained to recreate its
+    own input after reducing its dimensionality in a 2-D embedding layer which can
+    be used to visualize the data.
+
+    Additionally, SAUCIE uses two novel regularizations: (1) an information dimension
+    regularization to penalize entropy as computed on normalized activation values
+    of the layer, and thereby encourage binary-like encodings that are amenable to
+    clustering and (2) a Maximal Mean Discrepancy penalty to correct batch effects.
+    Thus SAUCIE has a single architecture that denoises, batch-corrects, visualizes
+    and clusters data using a unified representation. We show results on artificial
+    data where ground truth is known, as well as mass cytometry data from dengue patients,
+    and single-cell RNA-sequencing data from embryonic mouse brain.'
+  authors:
+  - Matthew Amodio
+  - Krishnan Srinivasan
+  - David van Dijk
+  - Hussein Mohsen
+  - Kristina Yim
+  - Rebecca Muhle
+  - Kevin R Moon
+  - Susan Kaech
+  - Ryan Sowell
+  - Ruth Montgomery
+  - James Noonan
+  - Guy Wolf
+  - Smita Krishnaswamy
+  github: https://github.com/KrishnaswamyLab/SAUCIE
+  href: https://www.nature.com/articles/s41592-019-0576-7
+  keyImage: /images/projects/saucie_image.jpg
+  periodical: Nature Methods
+  periodicalImage: /images/journals/nature_methods.jpg
+  title: 'SAUCIE: Exploring Single-Cell Data with Deep Multitasking Neural Networks'
+  type: Journal Article
+  year: 2019
+title: Sparse AutoEncoders for Clustering Imputation and Embedding

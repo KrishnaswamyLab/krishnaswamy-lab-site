@@ -1,0 +1,27 @@
+about: 'Jessie Huang is a postdoc in the department of computer science at Yale. She
+  is generally interested in machine learning and its applications in medical and
+  biological research. She was previously a postdoc in the Reasoning and Learning
+  Lab at McGill University in Montreal. Her research at McGill focused on developing
+  algorithms to learn robust policies with respect to misspecified rewards in reinforcement
+  learning.
+
+  Jessie received her PhD in Mechanical Engineering from the University of Michigan,
+  Ann Arbor. She worked as an engineering consultant at Exponent in the San Francisco
+  bay area for two years before moving to Montreal. Before machine learning, she studied
+  fracture mechanics and statistics and how to utilize the natural failure of materials
+  to develop micro-scale tools for biomedical applications'
+image: /images/members/jessie_huang.jpg
+isAlum: true
+name:
+  first: Jessie
+  last: Huang
+  preferred: Jessie
+name_str: Jessie Huang
+publications:
+- 'TrajectoryNet: A Dynamic Optimal Transport Network for Modeling Cellular Dynamics'
+- Multiscale PHATE identifies multimodal signatures of COVID-19
+- Exploring the Geometry and Topology of Neural Network Loss Landscapes
+- Time-inhomogeneous diffusion geometry and topology
+- Topological analysis of single-cell hierarchy reveals inflammatory glial landscape
+  of macular degeneration
+title: PhD

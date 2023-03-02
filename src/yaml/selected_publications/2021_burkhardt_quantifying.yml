@@ -1,0 +1,64 @@
+abstract: Current methods for comparing single-cell RNA sequencing datasets collected
+  in multiple conditions focus on discrete regions of the transcriptional state space,
+  such as clusters of cells. Here we quantify the effects of perturbations at the
+  single-cell level using a continuous measure of the effect of a perturbation across
+  the transcriptomic space. We describe this space as a manifold and develop a relative
+  likelihood estimate of observing each cell in each of the experimental conditions
+  using graph signal processing. This likelihood estimate can be used to identify
+  cell populations specifically affected by a perturbation. We also develop vertex
+  frequency clustering to extract populations of affected cells at the level of granularity
+  that matches the perturbation response. The accuracy of our algorithm at identifying
+  clusters of cells that are enriched or depleted in each condition is, on average,
+  57% higher than the next-best-performing algorithm tested. Gene signatures derived
+  from these clusters are more accurate than those of six alternative algorithms in
+  ground truth comparisons.
+authors:
+- Daniel B. Burkhardt
+- Jay S. Stanley
+- Alexander Y. Tong
+- Ana Luisa Perdigoto
+- Scott A. Gigante
+- Kevan C. Herold
+- Guy Wolf
+- Antonio J. Giraldez
+- David van Dijk
+- Smita Krishnaswamy
+href: https://pubmed.ncbi.nlm.nih.gov/33558698/
+issue: 5
+keywords:
+- Algorithms
+- Cluster Analysis
+- Computational Biology*
+- Computer Simulation
+- Daniel B Burkhardt
+- Extramural
+- Humans
+- Jay S Stanley
+- Likelihood Functions
+- MEDLINE
+- N.I.H.
+- NCBI
+- NIH
+- NLM
+- National Center for Biotechnology Information
+- National Institutes of Health
+- National Library of Medicine
+- Non-U.S. Gov't
+- PMC8122059
+- PubMed Abstract
+- RNA / trends*
+- Research Support
+- Sequence Analysis
+- Single-Cell Analysis / trends*
+- Smita Krishnaswamy
+- Transcriptome / genetics*
+- doi:10.1038/s41587-020-00803-5
+- pmid:33558698
+month: 5
+pages: 619-629
+periodical: Nature biotechnology
+publisher: Nature Publishing Group
+selected: true
+title: Quantifying the effect of experimental perturbations at single-cell resolution
+type: Journal Article
+year: 2021

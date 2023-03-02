@@ -1,0 +1,23 @@
+abstract: We propose a new type of generative model for high-dimensional data that
+  learns a manifold geometry of the data, rather than density, and can generate points
+  evenly along this manifold. This is in contrast to existing generative models that
+  represent data density, and are strongly affected by noise and other artifacts of
+  data collection. We demonstrate how this approach corrects sampling biases and artifacts,
+  thus improves several downstream data analysis tasks, such as clustering and classification.
+  Finally, we demonstrate that this approach is especially useful in biology where,
+  despite the advent of single-cell technologies, rare subpopulations and gene-interaction
+  relationships are affected by biased sampling. We show that SUGAR can generate hypothetical
+  populations, and it is able to reveal intrinsic patterns and mutual-information
+  relationships between genes on a single-cell RNA sequencing dataset of hematopoiesis.
+authors:
+- Ofir Lindenbaum
+- Jay S. Stanley
+- Guy Wolf
+- Smita Krishnaswamy
+href: https://papers.nips.cc/paper/2018/hash/c8ed21db4f678f3b13b9d5ee16489088-Abstract.html
+keywords: []
+periodical: Advances in Neural Information Processing Systems
+selected: true
+title: Geometry Based Data Generation
+type: Journal Article
+year: 2018

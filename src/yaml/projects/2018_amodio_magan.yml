@@ -1,0 +1,35 @@
+abbreviation: MAGAN
+description: a dual GAN (generative adversarial network) framework that can find correspondences
+  between two data modalities measuring the same system to create an integrated dataset
+hero:
+  blurb: Aligning Biological Manifolds
+  image: /images/projects/magan_hero.jpeg
+  title: MAGAN
+href: magan
+publication:
+  abstract: 'It is increasingly common in many types of natural and physical systems
+    (especially biological systems) to have different types of measurements  performed
+    on the same underlying system. In such settings, it is important to align the
+    manifolds arising from each measurement in order  to integrate such data and gain
+    an improved picture of the system; we tackle this problem using generative adversarial
+    networks (GANs). Recent attempts to use GANs to find correspondences between sets
+    of samples do not explicitly perform proper alignment of manifolds.
+
+    We present the new Manifold Aligning GAN (MAGAN) that aligns two manifolds such
+    that related points in each measurement space are aligned. We demonstrate  applications
+    of MAGAN in single-cell biology in integrating two different measurement types
+    together: cells from the same tissue are measured with both genomic (single-cell
+    RNA-sequencing) and proteomic (mass cytometry) technologies. We show that MAGAN
+    successfully aligns manifolds such that known correlations between measured markers
+    are improved compared to other recently proposed models.'
+  authors:
+  - Matthew Amodio
+  - Smita Krishnaswamy
+  href: http://proceedings.mlr.press/v80/amodio18a.html
+  keyImage: /images/projects/magan_image.png
+  periodical: PMLR
+  periodicalImage: /images/journals/pmlr.png
+  title: 'MAGAN: Aligning Biological Manifolds'
+  type: Journal Article
+  year: 2018
+title: Manifold Alignment Generative Adversarial Network

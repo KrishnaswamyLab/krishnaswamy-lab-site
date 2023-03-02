@@ -1,0 +1,41 @@
+about: "Guy Wolf received the M.Sc. and Ph.D. degrees in computer science from Tel
+  Aviv University in 2009 and 2014, respectively. During his M.Sc. studies he served
+  in the Israeli Defense Forces in software design and development roles. Between
+  the years 2013 and 2015 he was a post-doctoral researcher in the Computer Science
+  Department at \xC8cole Normale Sup\xE9rieure in Paris. Since 2015, he is a Gibbs
+  Assistant Professor in the Applied Math Program at Yale University. One of the main
+  goals of his current research at Yale is to create meaningful interaction between
+  data analysis aspects of machine learning, applied mathematics, and computational
+  sciences, especially in Big Data applications. His research interests include exploratory
+  & high-dimensional data analysis, manifold learning, diffusion geometries, machine
+  learning, and deep learning. He now has his own lab at the University of Montreal."
+image: ''
+isAlum: true
+name:
+  first: Guy
+  last: Wolf
+  preferred: Guy
+name_str: Guy Wolf
+publications:
+- Manifold Interpolating Optimal-Transport Flows for Trajectory Inference
+- Recovering Gene Interactions from Single-Cell Data Using Data Diffusion
+- Geometry Based Data Generation
+- Exploring single-cell data with deep multitasking neural networks
+- Visualizing structure and transitions in high-dimensional biological data
+- Uncovering axes of variation among single-cell cancer specimens
+- Harmonic Alignment
+- 'TrajectoryNet: A Dynamic Optimal Transport Network for Modeling Cellular Dynamics'
+- Interpretable Neuron Structuring with Graph Spectral Regularization
+- Uncovering the Topology of Time-Varying fMRI Data using Cubical Persistence
+- "Diffusion Earth Mover\u2019s Distance and Distribution Embeddings"
+- Quantifying the effect of experimental perturbations at single-cell resolution
+- Multimodal Data Visualization and Denoising with Integrated Diffusion
+- 'MURAL: An Unsupervised Random Forest-Based Embedding for Electronic Health Record
+  Data'
+- Fixing Bias in Reconstruction-based Anomaly Detection with Lipschitz Discriminators
+- Multiscale PHATE identifies multimodal signatures of COVID-19
+- Exploring the Geometry and Topology of Neural Network Loss Landscapes
+- Time-inhomogeneous diffusion geometry and topology
+- Topological analysis of single-cell hierarchy reveals inflammatory glial landscape
+  of macular degeneration
+title: PhD

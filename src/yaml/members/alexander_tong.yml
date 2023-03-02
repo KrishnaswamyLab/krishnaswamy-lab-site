@@ -1,0 +1,31 @@
+about: 'Alex, now at MILA, was a computer science PhD student at Yale University.  His
+  research interests are in machine learning and algorithms. Currently, he is working
+  on optimal transport methods for single-cell data using a combination of graph and
+  deep learning methods.
+
+  Alex grew up in Seattle, Washington. He completed B.S. and M.S. degrees in computer
+  science from Tufts University in 2017. He splits his spare time between racing sailboats
+  and trail running.'
+image: /images/members/alex_tong.jpg
+isAlum: true
+name:
+  first: Alexander
+  last: Tong
+  middle: Y.
+  preferred: Alexander
+name_str: Alexander Y. Tong
+publications:
+- Manifold Interpolating Optimal-Transport Flows for Trajectory Inference
+- 'TrajectoryNet: A Dynamic Optimal Transport Network for Modeling Cellular Dynamics'
+- Interpretable Neuron Structuring with Graph Spectral Regularization
+- "Diffusion Earth Mover\u2019s Distance and Distribution Embeddings"
+- Quantifying the effect of experimental perturbations at single-cell resolution
+- Multimodal Data Visualization and Denoising with Integrated Diffusion
+- 'MURAL: An Unsupervised Random Forest-Based Embedding for Electronic Health Record
+  Data'
+- Fixing Bias in Reconstruction-based Anomaly Detection with Lipschitz Discriminators
+- Multiscale PHATE identifies multimodal signatures of COVID-19
+- Time-inhomogeneous diffusion geometry and topology
+- Topological analysis of single-cell hierarchy reveals inflammatory glial landscape
+  of macular degeneration
+website: https://alextong.net/

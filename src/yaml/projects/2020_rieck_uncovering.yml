@@ -1,0 +1,43 @@
+description: A novel fMRI analysis method based on the concepts of cubical persistent
+  homology, which analyzes functions on structured data sets at different scales.
+hero:
+  blurb: Understanding the topology of fMRI activation functions for data analysis
+  title: Topological fMRI Analysis
+href: topological_fmri_analysis
+publication:
+  abstract: 'Functional magnetic resonance imaging (fMRI) is a crucial technology
+    for gaining insights into cognitive processes in humans. Data amassed from fMRI
+    measurements result in volumetric data sets that vary over time. However, analysing
+    such data presents a challenge due to the large degree of noise and person-to-person
+    variation in how information is represented in the brain.
+
+    To address this challenge, we present a novel topological approach that encodes
+    each time point in an fMRI data set as a persistence diagram of topological features,
+    i.e. high-dimensional voids present in the data. This representation naturally
+    does not rely on voxel-by-voxel correspondence and is robust towards noise. We
+    show that these time-varying persistence diagrams can be clustered to find meaningful
+    groupings between participants, and that they are also useful in studying within-subject
+    brain state trajectories of subjects performing a particular task.
+
+    In our preprint, we apply both clustering and trajectory analysis techniques to
+    a group of participants watching the movie ''Partly Cloudy''. We observe significant
+    differences in both brain state trajectories and overall topological activity
+    between adults and children watching the same movie.
+
+    See below for an overview of our workflow.'
+  authors:
+  - Bastian Rieck
+  - Tristan Yates
+  - Christian Bock
+  - Karsten Borgwardt
+  - Guy Wolf
+  - Nicholas Turk-Browne
+  - Smita Krishnaswamy
+  href: https://arxiv.org/abs/2006.07882
+  keyImage: /images/projects/topological_fmri_analysis_image.png
+  periodical: arXiv
+  periodicalImage: /images/journals/arxiv.png
+  title: Uncovering the Topology of Time-Varying fMRI Data using Cubical Persistence
+  type: Journal Article
+  year: 2020
+title: Topological fMRI Analysis

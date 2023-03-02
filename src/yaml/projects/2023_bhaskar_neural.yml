@@ -1,0 +1,20 @@
+abbreviation: NeuralFIM
+description: a network that imbues point cloud data with smooth manifold-intrinsic
+  geometric entities on high-dimensional data with fisher information metrics. Also
+  has connections to JSD-PHATE and other desirable information theoretic quantities.
+hero:
+  blurb: point cloud data with smooth manifold-intrinsic geometric entities
+  image: /images/projects/neural_fim_hero.jpg
+  title: NeuralFIM
+href: neural_fim
+publication:
+  authors:
+  - Dhananjay Bhaskar
+  - Oluwadamilola Fasina
+  - Guillaume Huguet
+  - Alexander Tong
+  - Ian Adelstein
+  - Smita Krishnaswamy
+  type: Journal Article
+  year: 2023
+title: Neural Fisher Information Metric

@@ -1,0 +1,41 @@
+abstract: Graph neural networks (GNNs) have been used extensively for addressing problems
+  in drug design and discovery. Both ligand and target molecules are represented as
+  graphs with node and edge features encoding information about atomic elements and
+  bonds respectively. Although existing deep learning models perform remarkably well
+  at predicting physicochemical properties and binding affinities, the generation
+  of new molecules with optimized properties remains challenging. Inherently, most
+  GNNs perform poorly in whole-graph representation due to the limitations of the
+  message-passing paradigm. Furthermore, step-by-step graph generation frameworks
+  that use reinforcement learning or other sequential processing can be slow and result
+  in a high proportion of invalid molecules with substantial post-processing needed
+  in order to satisfy the principles of stoichiometry. To address these issues, we
+  propose a representation-first approach to molecular graph generation. We guide
+  the latent representation of an autoencoder by capturing graph structure information
+  with the geometric scattering transform and apply penalties that structure the representation
+  also by molecular properties. We show that this highly structured latent space can
+  be directly used for molecular graph generation by the use of a GAN. We demonstrate
+  that our architecture learns meaningful representations of drug datasets and provides
+  a platform for goal-directed drug synthesis.
+authors:
+- Dhananjay Bhaskar
+- Jackson Grady
+- Egbert Castro
+- Michael Perlmutter
+- Smita Krishnaswamy
+href: https://arxiv.org/abs/2110.06241v1
+keywords:
+- Drug Discovery
+- Geometric
+- Geometric Scattering
+- Graph
+- Molecular
+- Molecular Graph Generation
+- Scattering
+month: 10
+periodical: IEEE International Workshop on Machine Learning for Signal Processing,
+  MLSP
+publisher: IEEE Computer Society
+selected: true
+title: Molecular Graph Generation via Geometric Scattering
+type: Journal Article
+year: 2021

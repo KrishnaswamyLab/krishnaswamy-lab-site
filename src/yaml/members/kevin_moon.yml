@@ -1,0 +1,17 @@
+about: Kevin completed a postdoctoral fellowship in the Krishnaswamy Lab from 2016
+  to 2018, and is now an Assistant Professor in the Department of Mathematics and
+  Statistics at Utah State University, where he focuses on the development of theory
+  and applications in machine learning.
+image: ''
+isAlum: true
+name:
+  first: Kevin
+  last: Moon
+  middle: R.
+  preferred: Kevin
+name_str: Kevin R. Moon
+publications:
+- Recovering Gene Interactions from Single-Cell Data Using Data Diffusion
+- Exploring single-cell data with deep multitasking neural networks
+- Visualizing structure and transitions in high-dimensional biological data
+title: PhD

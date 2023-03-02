@@ -1,0 +1,30 @@
+about: 'Manik Kuchroo is an MD candidate at Yale School of Medicine and is interested
+  in the intersection of genomics, immunology and oncology. His current projects in
+  the lab include developing a novel manifold based clustering algorithm for single
+  cell genomics data, understanding tumor infiltrating immune cells developmental
+  progression using deep learning and helping characterize interactions in the exoproteome
+  using phage and yeast display technologies in collaboration with the Ring lab.
+
+  Manik is originally from Newton, Massachusetts and graduated from Harvard College
+  with a BA in Neurobiology. Manik''s interest in the intersection of genomics and
+  immunology was piqued during his time in Aviv Regev''s Lab at the Broad Institute
+  and during his time with Phil De Jager and Nikolaos Patsopoulos at Harvard Medical
+  School.
+
+  While not in the lab or in the hospital, Manik loves playing cricket and watching
+  TV shows.'
+image: /images/members/manik_kuchroo.png
+isAlum: true
+name:
+  first: Manik
+  last: Kuchroo
+  preferred: Manik
+name_str: Manik Kuchroo
+publications:
+- Manifold Interpolating Optimal-Transport Flows for Trajectory Inference
+- "Diffusion Earth Mover\u2019s Distance and Distribution Embeddings"
+- Multimodal Data Visualization and Denoising with Integrated Diffusion
+- Multiscale PHATE identifies multimodal signatures of COVID-19
+- Time-inhomogeneous diffusion geometry and topology
+- Topological analysis of single-cell hierarchy reveals inflammatory glial landscape
+  of macular degeneration

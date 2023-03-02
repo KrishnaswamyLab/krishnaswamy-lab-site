@@ -1,0 +1,52 @@
+abbreviation: DyMoN
+description: A neural network framework for learning stochastic dynamics for generative
+  and embedding purposes. DyMoN serves as a deep model that itself embodies a dynamic
+  system such that the gene logic and features driving the system can be studied.
+hero:
+  blurb: Modeling Dynamics of Biological Systems with Deep Generative Neural Networks
+  image: /images/projects/dymon_hero.jpeg
+  title: DyMoN
+href: dymon
+publication:
+  abstract: 'Biological data often contains measurements of dynamic entities such
+    as cells or organisms in various states of progression. However, biological systems
+    are notoriously difficult to describe analytically due to their many interacting
+    components, and in many cases, the technical challenge of taking longitudinal
+    measurements.
+
+    This leads to difficulties in studying the features of the dynamics, for examples
+    the drivers of the transition. To address this problem, we present a deep neural
+    network framework we call Dynamics Modeling Network or DyMoN. DyMoN is a neural
+    network framework trained as a deep generative Markov model whose next state is
+    a probability distribution based on the current state.
+
+    DyMoN is well-suited to the idiosyncrasies of biological data, including noise,
+    sparsity, and the lack of longitudinal measurements in many types of systems.
+    Thus, DyMoN can be trained using probability distributions derived from the data
+    in any way, such as trajectories derived via dimensionality reduction methods,
+    and does not require longitudinal measurements.
+
+    We show the advantage of learning deep models over shallow models such as Kalman
+    filters and hidden Markov models that do not learn representations of the data,
+    both in terms of learning embeddings of the data and also in terms training efficiency,
+    accuracy and ability to multitask. We perform three case studies of applying DyMoN
+    to different types of biological systems and extracting features of the dynamics
+    in each case by examining the learned model.'
+  authors:
+  - David van Dijk
+  - Scott A Gigante
+  - Kevin R Moon
+  - Alexander Strzalkowski
+  - Katie Ferguson
+  - Jess Cardin
+  - Guy Wolf
+  - Smita Krishnaswamy
+  href: https://arxiv.org/abs/1802.03497
+  keyImage: /images/projects/dymon_image.png
+  periodical: arXiv
+  periodicalImage: /images/journals/arxiv.png
+  title: 'Dynamics Modeling Networks: Modeling Dynamics of Biological Systems with
+    Deep Generative Neural Networks'
+  type: Journal Article
+  year: 2018
+title: Dynamics Modeling Networks

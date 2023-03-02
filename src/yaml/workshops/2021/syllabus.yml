@@ -1,0 +1,228 @@
+- day: Monday, January 18th
+  items:
+  - col1: Lecture
+    col2: GitHub
+    col3: Introduction to scRNA-seq and Preprocessing
+    href: https://raw.githubusercontent.com/KrishnaswamyLab/SingleCellWorkshop/master/lectures/2021/Day1.Preprocessing_and_Intro/Day1.Preprocessing_and_IntroData.2021.pdf
+  - col1: Exercise
+    col2: Colab
+    col3: 1.0. Learning Graphs from Data
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Introduction_to_Manifold_Learning/notebooks/01_Learning_graphs.ipynb
+  - col1: null
+    col2: Colab
+    col3: 1.0. Learning Graphs from Data (Answer Key)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Introduction_to_Manifold_Learning/notebooks/01_Answers_Learning_graphs.ipynb
+  - col1: null
+    col2: Colab
+    col3: 1.1. Preprocessing Embryoid Body Data (Beginner)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Preprocessing/notebooks/00_Loading_and_preprocessing_scRNAseq_data.ipynb
+  - col1: null
+    col2: Colab
+    col3: 1.1. Preprocessing Embryoid Body Data (Advanced)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Preprocessing/notebooks/00_Advanced_Loading_and_preprocessing_scRNAseq_data.ipynb
+  - col1: null
+    col2: Colab
+    col3: 1.1. Preprocessing Embryoid Body Data (Answer Key)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Preprocessing/notebooks/00_Answers_Loading_and_preprocessing_scRNAseq_data.ipynb
+  - col1: null
+    col2: Colab
+    col3: 1.2. Loading and pre-processing your own data (optional)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Preprocessing/notebooks/01_Loading_and_preprocessing_your_own_data.ipynb
+  - col1: null
+    col2: Forms
+    col3: Day 1 Survey
+    href: https://forms.gle/yhs1ySK1E6fgJFXD8
+- day: Tuesday, January 19
+  items:
+  - col1: Lecture
+    col2: GitHub
+    col3: Manifold Learning and Dimensionality Reduction
+    href: https://raw.githubusercontent.com/KrishnaswamyLab/SingleCellWorkshop/master/lectures/2021/Day2.Visualization_and_Manifold_Learning/Day2.Visualization_and_Manifold_Learning.pdf
+  - col1: Exercise
+    col2: Colab
+    col3: 2.0. Plotting UCI Wine Data
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Introduction_to_Manifold_Learning/notebooks/00_Plotting_UCI_wine.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 2.0. Plotting UCI Wine Data (Answer Key)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Introduction_to_Manifold_Learning/notebooks/00_Answers_Plotting_UCI_wine.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 2.1. Visualizing UCI Wine Data
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Dimensionality_Reduction/00_Creating_metafeatures.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 2.1. Visualizing UCI Wine Data (Answer Key)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Dimensionality_Reduction/00_Answers_Creating_metafeatures.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 2.2. PCA on Retinal Bipolar Data
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Dimensionality_Reduction/01_Principal_components_analysis.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 2.2. PCA on Retinal Bipolar Data (Answer Key)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Dimensionality_Reduction/01_Answers_Principal_components_analysis.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 2.3. Visualizing Retinal Bipolar Data
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Dimensionality_Reduction/02_Nonlinear_dimensionality_reduction.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 2.3. Visualizing Retinal Bipolar Data (Answer Key)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Dimensionality_Reduction/02_Answers_Nonlinear_dimensionality_reduction.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 2.4. Visualizing Embryoid Body Data (Advanced)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Dimensionality_Reduction/03_Advanced_Dimensionality_reduction_EB_data.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 2.4. Visualizing Embryoid Body Data (Answer Key)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Dimensionality_Reduction/03_Answers_Dimensionality_reduction_EB_data.ipynb
+- day: Wednesday, January 20
+  items:
+  - col1: Lecture
+    col2: GitHub
+    col3: Data Denoising and Differential Abundance
+    href: https://raw.githubusercontent.com/KrishnaswamyLab/SingleCellWorkshop/master/lectures/2021/Day3.Denoising_batch_correction/Day3.Denoising_batch_correction.MELD.pdf
+  - col1: Exercise
+    col2: Colab
+    col3: 3.1 Clustering & Denoising Embryoid Body Data (Beginner)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Clustering/notebooks/01_Clustering_Embryoid_Body_Data.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 3.1 Clustering & Denoising Embryoid Body Data (Advanced)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Clustering/notebooks/01_Advanced_Clustering_Embryoid_Body_Data.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 3.1 Clustering & Denoising Embryoid Body Data (Answer Key)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Clustering/notebooks/01_Answers_Clustering_Embryoid_Body_Data.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 3.2 Batch correction in PBMCs
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/BatchCorrection/00_Batch_Correction_and_Gene_Visualization.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 3.2 Batch correction in PBMCs (Answer Key)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/BatchCorrection/00_Answers_Batch_Correction_and_Gene_Visualization.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 3.3 Perturbation analysis with MELD
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/DifferentialAbundance/Wagner2018_Chordin_Cas9_Mutagenesis.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 3.3 Perturbation analysis with MELD (Answer Key)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/DifferentialAbundance/Answers_Wagner2018_Chordin_Cas9_Mutagenesis.ipynb
+- day: Monday, January 25
+  items:
+  - col1: Lecture
+    col2: GitHub
+    col3: Clustering, Trajectory Inference, and Gene-Gene Relationships
+    href: https://github.com/KrishnaswamyLab/SingleCellWorkshop/blob/master/lectures/2021/Day4/Day4.Clustering_Trajectory_GeneGene.pdf?raw=true
+  - col1: Exercise
+    col2: Colab
+    col3: 4.0 Clustering Toy Data (Beginner)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Clustering/notebooks/00_Clustering_toy_data.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 4.0 Clustering Toy Data (Advanced)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Clustering/notebooks/00_Advanced_Clustering_toy_data.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 4.0 Clustering Toy Data (Answer Key)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Clustering/notebooks/00_Answers_Clustering_toy_data.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 4.1 Computing Diffusion Pseudotime
+    href: ''
+  - col1: ''
+    col2: Colab
+    col3: 4.1 Computing Diffusion Pseudotime (Advanced)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/TrajectoryInference/notebooks/00_Pseudotime_from_scratch.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 4.1 Computing Diffusion Pseudotime (Answer Key)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/TrajectoryInference/notebooks/00_Answers_Pseudotime_from_scratch.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 4.2 Trajectory Inference in Fibroblast Data
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/TrajectoryInference/notebooks/01_Treutlein_fibroblast_data.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 4.2 Trajectory Inference in Fibroblast Data (Advanced)
+    href: ''
+  - col1: ''
+    col2: Colab
+    col3: 4.2 Trajectory Inference in Fibroblast Data (Answer Key)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/TrajectoryInference/notebooks/01_Advanced_Treutlein_fibroblast_data.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 4.3 Identifying gene trends in Fibroblast Data
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/GeneRelationships/notebooks/00_Gene_Relationships_in_Treutlein_data.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 4.3 Identifying gene trends in Fibroblast Data (Answer Key)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/GeneRelationships/notebooks/00_Answers_Gene_Relationships_in_Treutlein_data.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 4.4 Gene regulatory inference during EMT
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/GeneRelationships/notebooks/01_Gene_Relationships_in_EMT_data.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 4.4 Gene regulatory inference during EMT (Answer Key)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/GeneRelationships/notebooks/01_Answers_Gene_Relationships_in_EMT_data.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 4.5 Identifying Trajectories in Embryoid Bodies (Advanced, optional)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/TrajectoryInference/notebooks/02_Embryoid_body_trajectory_inference.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 4.6 Calculating RNA velocity in Embryoid Bodies (Advanced, optional)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/TrajectoryInference/notebooks/03_RNA_velocity.ipynb
+- day: Tuesday, January 26
+  items:
+  - col1: Lecture
+    col2: GitHub
+    col3: Introduction to Neural Nets & Deep Learning
+    href: https://github.com/KrishnaswamyLab/SingleCellWorkshop/blob/master/lectures/2021/Day5.IntroToNeuralNetworks/Day5.IntroDeepLearning2021.pdf?raw=true
+  - col1: Exercise
+    col2: Colab
+    col3: 5.0 Classifying cell types with neural networks
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Deep_Learning/notebooks/00_Cell_type_classification_with_neural_networks.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 5.0 Classifying cell types with neural networks (Advanced)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Deep_Learning/notebooks/00_Advanced_Cell_type_classification_with_neural_networks.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 5.0 Classifying cell types with neural networks (Answer key)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Deep_Learning/notebooks/00_Answers_Cell_type_classification_with_neural_networks.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 5.1 Exploratory data analysis with autoencoders
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Deep_Learning/notebooks/01_Exploratory_data_analysis_with_autoencoder_networks.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 5.1 Exploratory data analysis with autoencoders (Answer Key)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Deep_Learning/notebooks/01_Answers_Exploratory_data_analysis_with_autoencoder_networks.ipynb
+- day: Wednesday, January 27
+  items:
+  - col1: Lecture
+    col2: GitHub
+    col3: Neural Networks for Single-Cell Analysis
+    href: https://github.com/KrishnaswamyLab/SingleCellWorkshop/blob/master/lectures/2021/Day6.DeepLearningApplications/Day6.DeepLearningApplications.pdf?raw=true
+  - col1: Exercise
+    col2: Colab
+    col3: 6.0 Exploratory analysis of single-cell data with SAUCIE
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Deep_Learning/notebooks/02_Exploratory_analysis_of_single_cell_data_with_SAUCIE.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 6.0 Exploratory analysis of single-cell data with SAUCIE (Answers)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Deep_Learning/notebooks/02_Answers_Exploratory_analysis_of_single_cell_data_with_SAUCIE.ipynb
+  - col1: ''
+    col2: Colab
+    col3: 6.1 Batch correction with MAGAN (Draft, optional)
+    href: https://colab.research.google.com/github/KrishnaswamyLab/SingleCellWorkshop/blob/master/exercises/Deep_Learning/notebooks/03_Batch_correction_with_MAGAN.ipynb
+  - col1: Survey
+    col2: Forms
+    col3: End of Course Survey
+    href: https://bit.ly/YaleML_Jan2021

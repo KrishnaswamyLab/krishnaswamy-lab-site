@@ -1,0 +1,25 @@
+about: 'Matt Amodio is currently a doctoral candidate at Yale University in the Department
+  of Computer Science. His research interest is in artificial intelligence, specifically
+  deep learning. He enjoys developing new statistical and information theoretical
+  techniques for use in neural networks, as well as practical optimization techniques
+  general to any learning task.
+
+  Matt grew up in a suburb of Cleveland, Ohio. He completed his undergraduate studies
+  at the Ohio State University before working in D.C. for two years. He is an ardent
+  baseball fan as well as a trivia enthusiast.'
+image: /images/members/matt_amodio.png
+isAlum: true
+name:
+  first: Matthew
+  last: Amodio
+  preferred: Matt
+name_str: Matt Amodio
+publications:
+- 'TraVeLGAN: Image-to-image Translation by Transformation Vector Learning'
+- Exploring single-cell data with deep multitasking neural networks
+- Interpretable Neuron Structuring with Graph Spectral Regularization
+- 'Generating hard-to-obtain information from easy-to-obtain information: Applications
+  in drug discovery and clinical inference'
+- Single-cell multi-modal GAN reveals spatial patterns in single-cell data from triple-negative
+  breast cancer
+title: PhD

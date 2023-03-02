@@ -1,0 +1,17 @@
+about: 'This course provides an introduction to geometric and topological methods
+  in data science. Our starting point is the manifold hypothesis: that high dimensional
+  data live on or near a much lower dimensional smooth manifold. We introduce tools
+  to study the geometric and topological properties of this manifold in order to reveal
+  relevant features and organization of the data. Topics include: metric space structures,
+  curvature, geodesics, diffusion maps, eigenmaps, geometric model spaces, gradient
+  descent, data embeddings and projections, and topological data analysis (TDA) in
+  the form of persistence homology and their associated "barcodes." We see applications
+  of these methods in a variety of data types.'
+listings:
+- CPSC644
+- MATH522
+- AMTH322
+professors:
+- Smita Krishnaswamy
+- Ian Adelstein
+title: Geometric and Topological Methods in Machine Learning

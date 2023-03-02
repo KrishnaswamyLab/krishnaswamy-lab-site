@@ -1,0 +1,42 @@
+abstract: "The development of powerful natural language models has improved the ability
+  to learn meaningful representations of protein sequences. In addition, advances
+  in high-throughput mutagenesis, directed evolution and next-generation sequencing
+  have allowed for the accumulation of large amounts of labelled fitness data. Leveraging
+  these two trends, we introduce Regularized Latent Space Optimization (ReLSO), a
+  deep transformer-based autoencoder, which features a highly structured latent space
+  that is trained to jointly generate sequences as well as predict fitness. Through
+  regularized prediction heads, ReLSO introduces a powerful protein sequence encoder
+  and a novel approach for efficient fitness landscape traversal. Using ReLSO, we
+  explicitly model the sequence\u2013function landscape of large labelled datasets
+  and generate new molecules by optimizing within the latent space using gradient-based
+  methods. We evaluate this approach on several publicly available protein datasets,
+  including variant sets of anti-ranibizumab and green fluorescent protein. We observe
+  a greater sequence optimization efficiency (increase in fitness per optimization
+  step) using ReLSO compared with other approaches, where ReLSO more robustly generates
+  high-fitness sequences. Furthermore, the attention-based relationships learned by
+  the jointly trained ReLSO models provide a potential avenue towards sequence-level
+  fitness attribution information. The space of possible proteins is vast, and optimizing
+  proteins for specific target properties computationally is an ongoing challenge,
+  even with large amounts of data. Castro and colleagues combine a transformer-based
+  model with regularized prediction heads to form a smooth and pseudoconvex latent
+  space that allows for easier navigation and more efficient optimization of proteins."
+authors:
+- Egbert Castro
+- Abhinav Godavarthi
+- Julian Rubinfien
+- Kevin Givechian
+- Dhananjay Bhaskar
+- Smita Krishnaswamy
+href: https://www.nature.com/articles/s42256-022-00532-1
+issue: 10
+keywords:
+- Machine learning
+- Protein design
+month: 9
+pages: 840-851
+periodical: Nature Machine Intelligence
+publisher: Nature Publishing Group
+selected: true
+title: Transformer-based protein generation with regularized latent space optimization
+type: Journal Article
+year: 2022

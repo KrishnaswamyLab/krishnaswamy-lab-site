@@ -1,0 +1,16 @@
+about: An overview of advances in the past decade in machine learning and automatic
+  data-mining approaches for dealing with the broad scope of modern data-analysis
+  challenges, including deep learning, kernel methods, dictionary learning, and bag
+  of words/features. This year, the focus is on a broad scope of biomedical data-analysis
+  tasks, such as single-cell RNA sequencing, single-cell signaling and proteomic analysis,
+  health care assessment, and medical diagnosis and treatment recommendations. The
+  seminar is based on student presentations and discussions of recent prominent publications
+  from leading journals and conferences in the field.
+listings:
+- CPSC745
+- AMTH745
+- CB&B745
+professors:
+- Smita Krishnaswamy
+- Guy Wolf
+title: Advanced Topics in Machine Learning and Data Mining

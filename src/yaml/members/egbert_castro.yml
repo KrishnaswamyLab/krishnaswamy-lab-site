@@ -1,0 +1,20 @@
+about: 'Egbert Castro is a PhD student in the Computational Biology and Bioinformatics
+  track at Yale University. He is interested in methods for learning informative and
+  useful representations of biomolecules. Currently his work in the Krishnaswamy lab
+  focuses on learning latent representations of graph-structured data such as miRNA
+  secondary structure ensembles.
+
+  Previously he majored in Pharmacological Chemistry with a minor in Mathematics at
+  UC San Diego. While at UC San Diego, he performed research in the lab of Dr. Rommie
+  Amaro applying molecular dynamics and Brownian dynamics in drug discovery. After
+  graduating, he interned at Genentech applying machine learning to chemical property
+  prediction tasks'
+image: /images/members/egbert_castro.jpeg
+name:
+  first: Egbert
+  last: Castro
+  preferred: Egbert
+name_str: Egbert Castro
+publications:
+- Transformer-based protein generation with regularized latent space optimization
+- Molecular Graph Generation via Geometric Scattering

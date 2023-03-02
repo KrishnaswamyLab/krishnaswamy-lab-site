@@ -1,0 +1,47 @@
+abbreviation: DREMI
+description: a computational method based on established statistical concepts, to
+  characterize signaling network relationships by quantifying the strengths of network
+  edges and deriving signaling response functions.
+hero:
+  blurb: Learning time-varying information flow from single-cell EMT data
+  image: /images/projects/dremi_hero.jpg
+  title: DREMI
+href: dremi
+publication:
+  abstract: "Cellular circuits sense the environment, process signals, and compute
+    decisions using networks of interacting proteins. To model such a system, the
+    abundance of each activated protein species can be described as a stochastic function
+    of the abundance of other proteins. High-dimensional single-cell technologies,
+    like mass cytometry, offer an opportunity to characterize signaling circuit-wide.
+    However, the challenge of developing and applying computational approaches to
+    interpret such complex data remains.\nHere, we developed computational methods,
+    based on established statistical concepts, to characterize signaling network relationships
+    by quantifying the strengths of network edges and deriving signaling response
+    functions. In comparing signaling between na\xEFve and antigen-exposed CD4+ T-lymphocytes,
+    we find that although these two cell subtypes had similarly-wired networks, na\xEFve
+    cells transmitted more information along a key signaling cascade than did antigen-exposed
+    cells.\nWe validated our characterization on mice lacking the extracellular-regulated
+    MAP kinase (ERK2), which showed stronger influence of pERK on pS6 (phosphorylated-ribosomal
+    protein S6), in na\xEFve cells compared to antigen-exposed cells, as predicted.
+    We demonstrate that by using cell-to-cell variation inherent in single cell data,
+    we can algorithmically derive response functions underlying molecular circuits
+    and drive the understanding of how cells process signals."
+  authors:
+  - Smita Krishnaswamy
+  - Matthew H Spitzer
+  - Michael Mingueneau
+  - Sean C Bendall
+  - Oren Litvin
+  - Erica Stone
+  - Dana Pe'er
+  - Garry P Nolan
+  github: https://github.com/KrishnaswamyLab/scprep/blob/master/python/scprep/stats.py#L82
+  href: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4334155/
+  keyImage: /images/projects/dremi_image.jpg
+  periodical: Science AAAS
+  periodicalImage: /images/journals/science_aaas.png
+  title: 'DREMI: Conditional Density-based Analysis of T cell Signaling in Single
+    Cell Data'
+  type: Journal Article
+  year: 2014
+title: conditional Density-based Resampled Estimate of Mutual Information
