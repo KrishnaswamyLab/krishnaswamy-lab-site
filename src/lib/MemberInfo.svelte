@@ -2,18 +2,16 @@
     import { goto } from '$app/navigation';
     import { browser } from '$app/environment';
     import type {Member as MemberInterface} from '$lib/types'
+    import {Member} from '$lib/classes'
 
     import {openUrlInNewTab, lipsum} from '$lib/utils'
         
-    export let member: MemberInterface = {
-        name: 'Lab Member',
+    export let member = new Member({
+        name: {first:'Lab', last:'Member'},
         title: 'PhD',
-        image: null,
-        website: null,
-        cv: null,
-        isAlum: false,
+        image: '',
         about: lipsum
-    }
+    } as MemberInterface)
 
     $: img = true // member.image
 
@@ -39,9 +37,24 @@
     const stickyClasses = useStickyTextHero 
         ? 'top-32 sm:top-28 z-50'
         : 'top-0 z-50'
-</script>
 
-<div class="card {styleCardSide} ease-in-out duration-300 ">
+    
+    import { onMount } from 'svelte'
+    import { fly, fade } from 'svelte/transition';
+    import { flip } from 'svelte/animate';
+    export let delay:number = 0 
+    export let showDivider:boolean = false
+    let animate = false
+    onMount(() => {
+        animate = true
+    })
+</script>
+{#if animate}
+<div in:fly={{y:200, delay: delay, duration: 1500}} >
+<div
+    
+    class="card {styleCardSide} ease-in-out duration-300 "
+>
     <!-- hover:shadow-2xl -->
 
     <!-- {#if member?.image} -->
@@ -102,3 +115,8 @@
         {/if}            
     </div>
 </div>   
+    {#if showDivider}
+        <div class="divider divider-vertical h-8"></div>
+    {/if}
+</div>
+{/if}

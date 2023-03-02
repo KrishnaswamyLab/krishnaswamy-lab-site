@@ -6,16 +6,16 @@ import type {
 
 export class Member implements MemberInterface {
     name;
-    title;
+    title?;
 
-    about;
-    image;
+    about?;
+    image?;
     
-    cv;    
-    website;
+    cv?;    
+    website?;
 
-    isAlum;
-    name_str;
+    isAlum?;
+    name_str?;
 
     constructor(member:MemberInterface) {
         this.name = member.name

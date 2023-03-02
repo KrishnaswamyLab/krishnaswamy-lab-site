@@ -14,7 +14,7 @@ export interface ProjectData {
     slug: string;
 }
 
-import projects from '$lib/data/projects.json'
+// import projects from '$lib/data/projects.json'
 const yamls = import.meta.glob('/src/yaml/projects/*.yml', {import: 'default'})
 
 export async function load({ params }) {     

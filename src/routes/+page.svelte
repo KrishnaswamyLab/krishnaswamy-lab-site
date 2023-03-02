@@ -2,12 +2,18 @@
     /** @type {import('./$types').PageData} */
     export let data;
     import { fly, fade } from 'svelte/transition';
-    import { flip } from 'svelte/animate';
     import Hero from '$lib/Layout/Hero/Hero.svelte';
     import FollowUsBtn from '$lib/Layout/FollowUsBtn.svelte';
     import JellyContainer from '$lib/Layout/JellyContainer.svelte';
     import ResearchCategoryBox from '$lib/Layout/ResearchCategoryBox.svelte';
     import AffiliationBox from '$lib/Layout/AffiliationBox.svelte';
+
+import { onMount } from 'svelte'
+
+let animate = false
+onMount(() => {
+    animate = true
+})
 </script>
 
 <Hero backgroundImage="/images/lab_hero.jpg" class=''>
@@ -47,22 +53,30 @@
 {/await}
 
 
+{#if animate}
+<div
+    in:fly={{y:200, delay: 100, duration: 1500}} 
+    class="divider divider-vertical pt-8">
+</div> 
 
-<div class="divider divider-vertical py-8"></div> 
-
-
-<div class="flex flex-col">    
+<div 
+    in:fly={{y:200, delay: 100, duration: 1500}} 
+    class="flex flex-col"
+>    
     <Hero>Affiliations</Hero>    
     <div class="mt-8 flex flex-row flex-wrap justify-evenly gap-4">
-        {#each data?.affiliations as affiliation }
-            <AffiliationBox {affiliation}/>        
+        {#each data?.affiliations as affiliation, i (i) }
+            <AffiliationBox {affiliation} delay={i * 100}/>        
         {/each}            
     </div>
 </div>
 
-<div class="divider divider-vertical pt-8"></div> 
+<div
+    in:fly={{y:200, delay: 200, duration: 1500}} 
+    class="divider divider-vertical pt-8">
+</div> 
 
-<div class="hero">
+<div class="hero" in:fly={{y:200, delay: 200, duration: 1500}} >
     <div class="hero-content text-center text-neutral-content">
         <div class="max-w-md">
             <h1 class="mb-5 text-2xl text-black font-light">
@@ -76,3 +90,4 @@
         </div>
     </div>
 </div>
+{/if}

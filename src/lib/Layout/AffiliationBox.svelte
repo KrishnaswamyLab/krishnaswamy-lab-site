@@ -1,9 +1,21 @@
 <script lang="ts">
 import type {Affiliation} from '$lib/types'
 export let affiliation: Affiliation;
-</script>
 
-<div class="
+import { onMount } from 'svelte'
+import { fly, fade } from 'svelte/transition';
+export let delay:number = 0
+
+let animate = false
+onMount(() => {
+    animate = true
+})
+</script>
+{#if animate}
+
+<div 
+    in:fly={{y:200, delay: delay, duration: 1500}} 
+    class="
     card card-bordered bg-base-200 border-base-300
     basis-2/3 md:basis-1/3 lg:basis-2/6 
     xl:basis-1/3 2xl:basis-4/12 3xl:basis-3/12
@@ -36,3 +48,4 @@ export let affiliation: Affiliation;
         </div>
     </div>
 </div>
+{/if}

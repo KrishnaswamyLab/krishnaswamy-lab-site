@@ -1,6 +1,11 @@
 <script lang="ts">
 	/** @type {import('./$types').PageData} */
-    export let data;
+    import type {Publications, Projects} from '$lib/types'
+    interface data {
+        projects:Projects    
+    }
+
+    export let data:data;
     import { goto } from '$app/navigation';
     import {LabGitHubLink, openUrlInNewTab} from '$lib/utils';
 

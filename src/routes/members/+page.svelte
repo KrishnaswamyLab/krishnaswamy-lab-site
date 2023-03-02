@@ -13,55 +13,69 @@
     const useStickyTextHero = false;
     const stickyClasses = 'sticky top-0 bg-base-100 z-[100] pb-8'
 
+
+import { onMount } from 'svelte'
+import { fly, fade } from 'svelte/transition';
+
+let animate = false
+onMount(() => {
+    animate = true
+})
 </script>
 <Hero></Hero>
 
+{#if animate}
 <JellyContainer>
-    <div class="relative">
-        <TextHero class="{useStickyTextHero ? stickyClasses : ''}">
-            Krishnaswamy Lab Members
-        </TextHero>
-        <div class="my-4 py-4">
-            <!-- {#await data?.members}
-                Loading...
-            {:then results}
-                {#each results as member, i }
-                    {#if member?.about}
-                        <MemberInfo {member} {useStickyTextHero}/>   
-                        {#if i < curr.length -1 }
-                            <div class="divider divider-vertical h-8"></div>           
-                        {/if}
-                    {/if}        
-                {/each}
-            {:catch error}
-                {error.message}
-            {/await} -->
-            {#each curr as member, i }
-                {#if member?.about}
-                    <MemberInfo {member} {useStickyTextHero}/>   
-                    {#if i < curr.length -1 }
-                        <div class="divider divider-vertical h-8"></div>           
-                    {/if}
-                {/if}        
-            {/each}
+    {#await curr}
+        Loading Members...
+    {:then members}
+        <div in:fly={{y:200, delay: 100, duration: 1500}} >
+            <TextHero 
+                class="{useStickyTextHero ? stickyClasses : ''}"
+            >
+                Krishnaswamy Lab Members
+            </TextHero>
         </div>
-    </div>
-    
-    
-    <TextHero class="{useStickyTextHero ? stickyClasses : ''}">
-        Krishnaswamy Lab Alumni
-    </TextHero>
-    <div class="my-4 py-4">
-        {#each past as member, i}
-            <MemberInfo {member} {useStickyTextHero}/>    
-            {#if i < past.length -1 }
-                <div class="divider divider-vertical h-8"></div>           
-            {/if} 
+        <div class="my-4 py-4">
+        {#each members as member, i }
+            {#if member?.about}
+                <MemberInfo 
+                    {member} {useStickyTextHero}
+                    delay={i * 100}
+                    showDivider={i < curr.length - 1}
+                />   
+            {/if}             
         {/each}
-    </div>
-
-    <div class="hidden py-48">
-
-    </div>
+        </div>
+    {:catch error}
+        {error.message}
+    {/await}       
     
+    
+    {#await past}
+        Loading Members...
+    {:then members}
+    
+        <div in:fly={{y:200, delay: 100, duration: 1500}} >
+            <TextHero 
+                class="{useStickyTextHero ? stickyClasses : ''}"
+            >
+                Krishnaswamy Lab Alumni
+            </TextHero>
+        </div>
+        <div class="my-4 py-4">
+        {#each members as member, i }
+            {#if member?.about}
+                <MemberInfo 
+                    {member} {useStickyTextHero}
+                    delay={i * 100}
+                    showDivider={i < curr.length - 1}
+                />   
+            {/if}             
+        {/each}
+        </div>
+    {:catch error}
+        {error.message}
+    {/await} 
 </JellyContainer>
+{/if}

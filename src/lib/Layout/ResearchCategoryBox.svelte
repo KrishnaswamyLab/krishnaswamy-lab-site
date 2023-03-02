@@ -1,7 +1,6 @@
 <script lang="ts">
 import { onMount } from 'svelte'
 import { fly, fade } from 'svelte/transition';
-import { flip } from 'svelte/animate';
 
 import type {Links} from '$lib/types'
 export let about: string;
@@ -20,7 +19,6 @@ onMount(() => {
 {#if animate}
 <div 
     in:fly={{y:200, delay: delay, duration: 1500}} 
-    out:fly={{y:200, delay: delay, duration: 1500}}
     class="
         card relative z-10 
         grid card-compact card-bordered 

@@ -1,9 +1,22 @@
 <script lang="ts">
     export let href: string;
     export let howClass:string = '';
+
+    
+import { onMount } from 'svelte'
+import { fly, fade } from 'svelte/transition';
+export let delay:number = 0
+
+let animate = false
+onMount(() => {
+    animate = true
+})
 </script>
 
-<div class="
+{#if animate}
+<div
+    in:fly={{y:200, delay: delay, duration: 1500}}  
+    class="
     card card-bordered border-slate-700 grid-cols-1
     hover:shadow-2xl transition-all ease-in-out
     duration-300 hover:-translate-y-2
@@ -32,3 +45,4 @@
         </a>
     </div>                    
 </div>
+{/if}

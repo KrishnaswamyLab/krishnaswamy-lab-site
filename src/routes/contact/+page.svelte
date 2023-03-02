@@ -69,6 +69,14 @@
 
     import Hero from '$lib/Layout/Hero/Hero.svelte';
     import MapBox from '$lib/Contact/MapBox.svelte';
+
+import { onMount } from 'svelte'
+import { fly, fade } from 'svelte/transition';
+
+let animate = false
+onMount(() => {
+    animate = true
+})
 </script>
 
 <Hero></Hero>
@@ -84,13 +92,20 @@
         
         <div class="divider divider-vertical"></div>
     
-        <p class="py-8 text-2xl md:text-3xl font-extralight">
+        {#if animate} 
+        <p 
+            in:fly={{y:200, delay: 100, duration: 1500}} 
+            class="py-8 text-2xl md:text-3xl font-extralight">
             Get in touch
         </p>
     
         <div class="py-8 grid grid-cols-1 md:grid-cols-2 justify-evenly  gap-4">
-            {#each contactSquares as square}
-                <ContactSquare href="{square.href}" howClass="{square.text}">
+            {#each contactSquares as square, i (i)}
+                <ContactSquare                 
+                    href="{square.href}" 
+                    howClass="{square.text}"
+                    delay={i*100}
+                >
                     <span slot="what">
                         {square.what}
                     </span>
@@ -106,15 +121,21 @@
                 </ContactSquare>
             {/each}                        
         </div>
-    
-        <p class="py-8 text-2xl md:text-3xl font-extralight">
+        {/if}
+        {#if animate}    
+        <p 
+            in:fly={{y:200, delay: 100, duration: 1500}} 
+
+            class="py-8 text-2xl md:text-3xl font-extralight">
             Meet in person
         </p>
 
         <div class="py-8 inline-flex place-content-center w-full">
             <div class="grid grid-cols-1 md:grid-cols-2  w-full gap-8">
-                {#each departments as {dept, school, street, room, city, state, zip}}
-                    <div class="
+                {#each departments as {dept, school, street, room, city, state, zip}, i (i)}
+                    <div
+                        in:fly={{y:200, delay: i*100, duration: 1500}} 
+                        class="
                         card card-compact card-bordered border-base-300
                         bg-base-200                            
                         hover:shadow-2xl transition-all ease-in-out
@@ -137,9 +158,10 @@
                             </div>
                         </div>
                     </div>
-                {/each}                   
+                {/each}   
             </div>                        
         </div> 
+        {/if}                
         <MapBox/>
     </div>
 </JellyContainer>

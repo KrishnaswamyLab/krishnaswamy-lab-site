@@ -33,8 +33,8 @@ $: publications.forEach((pub:PublicationInterface) => {
                 {#each pubs as pub}
                 <div class="pb-4">
                     <div class="card-title break-word">
-                        {#if pub?.urls?.length}
-                        <a class="link" href={pub?.urls[0]?.href}>
+                        {#if pub?.href}
+                        <a class="link" href={pub?.href}>
                             {pub?.title}
                         </a>   
                         {:else}

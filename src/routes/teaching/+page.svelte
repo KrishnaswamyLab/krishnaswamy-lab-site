@@ -7,10 +7,10 @@ import Hero from '$lib/Layout/Hero/Hero.svelte';
 
 let backgroundImage = "/images/heroes/teaching_hero.jpg"
 </script>
-<!-- <Hero {backgroundImage}>
+<Hero {backgroundImage}>
     Teaching
-</Hero> -->
-<Hero></Hero>
+</Hero>
+<!-- <Hero></Hero> -->
 
 <JellyContainer class="mt-8">
     <Hero class="break-keep">
