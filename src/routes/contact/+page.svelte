@@ -97,14 +97,14 @@ onMount(() => {
             in:fly={{y:200, delay: 100, duration: 1500}} 
             class="py-8 text-2xl md:text-3xl font-extralight">
             Get in touch
-        </p>
-    
+        </p>        
         <div class="py-8 grid grid-cols-1 md:grid-cols-2 justify-evenly  gap-4">
             {#each contactSquares as square, i (i)}
                 <ContactSquare                 
                     href="{square.href}" 
                     howClass="{square.text}"
-                    delay={i*100}
+                    delay={i*100+100}
+                    {animate}
                 >
                     <span slot="what">
                         {square.what}
@@ -121,8 +121,7 @@ onMount(() => {
                 </ContactSquare>
             {/each}                        
         </div>
-        {/if}
-        {#if animate}    
+        
         <p 
             in:fly={{y:200, delay: 100, duration: 1500}} 
 
@@ -134,7 +133,7 @@ onMount(() => {
             <div class="grid grid-cols-1 md:grid-cols-2  w-full gap-8">
                 {#each departments as {dept, school, street, room, city, state, zip}, i (i)}
                     <div
-                        in:fly={{y:200, delay: i*100, duration: 1500}} 
+                        in:fly={{y:200, delay: i*100 + 100, duration: 1500}} 
                         class="
                         card card-compact card-bordered border-base-300
                         bg-base-200                            

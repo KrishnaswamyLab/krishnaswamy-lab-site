@@ -7,7 +7,7 @@ import { onMount } from 'svelte'
 import { fly, fade } from 'svelte/transition';
 export let delay:number = 0
 
-let animate = false
+export let animate = false
 onMount(() => {
     animate = true
 })
