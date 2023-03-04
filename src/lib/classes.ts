@@ -91,13 +91,13 @@ export class Publication implements PublicationInterface {
         this.volume = publication.volume
     }
 
-    makeAuthorString() {
+    makeAuthorString() {        
         let a = this.authors
         if (a.length > 10) {
-            a = [...a.slice(0, 7), '...',...a.slice(-3, -1)]
+            a = [...a.slice(0, 7), '...',...a.slice(-3)]
         }
         let s = ''
-        for (let index = 0; index < a.length; index++) {
+        for (let index = 0; index < a.length; index++) {            
             const name = a[index];
             if (name === 'Smita Krishnaswamy') {
                 s += `<span class="font-bold">${name}</span>`

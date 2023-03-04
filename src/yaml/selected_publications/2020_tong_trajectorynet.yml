@@ -18,12 +18,13 @@ authors:
 - Guy Wolf
 - David van Dijk
 - Smita Krishnaswamy
-href: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8320749/
+href: https://icml.cc/Conferences/2020/ScheduleMultitrack?event=6491
 keywords: []
 pages: '9526'
-periodical: Proceedings of machine learning research
-publisher: NIH Public Access
+periodical: ICML
+publisher: PMLR
 selected: true
 title: 'TrajectoryNet: A Dynamic Optimal Transport Network for Modeling Cellular Dynamics'
 type: Journal Article
 year: 2020
+slides: https://icml.cc/media/icml-2020/Slides/6491_ntqEW8z.pdf

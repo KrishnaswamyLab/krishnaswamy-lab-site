@@ -1,34 +1,25 @@
-abstract: Age-related macular degeneration (AMD) is a neurodegenerative disease that
-  is among the leading causes of blindness worldwide. The molecular pathways that
-  lead to chronic inflammation and vision loss in AMD are not well understood. Our
-  hypothesis is that functional changes in glia influence neurodegeneration in AMD,
-  and these changes may be targeted to halt disease progression and preserve vision.
+abstract: Neurodegeneration occurs in a wide range of diseases, including age-related macular degeneration (AMD), Alzheimer’s disease (AD), and multiple sclerosis (MS), each with distinct inciting events. To determine whether glial transcriptional states are shared across phases of degeneration, we sequenced 50,498 nuclei from the retinas of seven AMD patients and six healthy controls, generating the first single-cell transcriptomic atlas of AMD. We identified groupings of cells implicated in disease pathogenesis by applying a novel topologically-inspired machine learning approach called ‘diffusion condensation.’ By calculating diffusion homology features and performing persistence analysis, diffusion condensation identified activated glial states enriched in the early phases of AMD, AD, and MS as well as an AMD-specific proangiogenic astrocyte state promoting pathogenic neovascularization in advanced AMD. Finally, by mapping the expression of disease-associated genes to glial states, we identified key signaling interactions creating hypotheses for therapeutic intervention. Our topological analysis identified an integrated disease-phase specific glial landscape that is shared across neurodegenerative conditions affecting the central nervous system.
 authors:
-- Brian Palmer Hafler
 - Manik Kuchroo
 - Marcello DiStasio
-- Eric Song
-- Le Zhang
+- Eda Calapkulu
 - Maryam Ige
-- Amar Sheth
+- Amar H. Sheth
 - Madhvi Menon
-- Alexander Y. Tong
 - Yu Xing
 - Scott A. Gigante
 - Jessie Huang
-- George Mourgkos
-- Smita Krishnaswamy
 - Rahul Dhodapkar
+- Bastian Rieck
 - Guy Wolf
-href: https://iovs.arvojournals.org/article.aspx?articleid=2780446
-issue: 7
+- Smita Krishnaswamy
+- Brian Palmer Hafler
+href: https://www.biorxiv.org/content/10.1101/2021.01.19.427286v1.full
 keywords: []
-month: 6
-pages: 2314-2314
-periodical: Investigative Ophthalmology & Visual Science
-publisher: The Association for Research in Vision and Ophthalmology
+month: 1
+periodical: bioRxiv
+publisher: Cold Spring Harbor Laboratory
 selected: true
-title: Topological analysis of single-cell hierarchy reveals inflammatory glial landscape
-  of macular degeneration
+title: Topological analysis of single-cell data reveals shared glial landscape of macular degeneration and neurodegenerative diseases
 type: Journal Article
-year: 2022
+year: 2021
