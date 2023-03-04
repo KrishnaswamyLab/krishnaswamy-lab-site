@@ -2,7 +2,10 @@ const { space } = require('svelte/internal')
 const defaultTheme = require('tailwindcss/defaultTheme')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
+  content: [
+    './src/**/*.{html,js,svelte,ts}',
+    "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}",
+  ],
   theme: {
     maxWidth: {
       '1/2': '50%',
@@ -88,5 +91,6 @@ module.exports = {
     require('@tailwindcss/container-queries'),
     require('@tailwindcss/line-clamp'),
     require("daisyui"),
+    require('flowbite/plugin')
   ],
 }
