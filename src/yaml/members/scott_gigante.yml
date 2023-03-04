@@ -6,12 +6,12 @@ about: 'Scott was a PhD student in Computational Biology and Bioinformatics, and
   of Melbourne, Australia. Before coming to Yale, Scott was a research technician
   at the Walter and Eliza Hall Institute of Medical Research, where he developed computational
   methods for detecting and analysing epigenetic modifications to DNA in nanopore
-  sequencing.
+  sequencing. He is now a senior machine learning scientist at Immunai.
 
   Scott is passionate about open, reproducible science and open source software. In
   his spare time, Scott enjoys singing with the Yale Camerata and cycling with the
   Yale Cycling Team.'
-image: ''
+image: '/images/members/scott_gigante.jpeg'
 isAlum: true
 name:
   first: Scott
