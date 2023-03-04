@@ -13,8 +13,11 @@
         '/images/yale/2005_09_30_13-33-58_School_of_Medicine_Michael_Marsland.jpg',
         '/images/yale/lab_members_2019.jpeg',
         '/images/yale/2012_10_16_16-55-33_DSC_0714a_Michael_Marsland.jpg',
+        '/images/yale/cold_spring_harbor_teaching_crew.png',
         '/images/yale/2015_04_21_15_53_1_Michael_Marsland.jpg',
-
+        '/images/yale/lab_hackathon.png',
+        '/images/yale/yale_innovation_summit.png',
+        '/images/yale/lab_meeting.png'
     ]
 
 import { onMount } from 'svelte'
@@ -36,7 +39,32 @@ onMount(() => {
 
 <div class="py-0"></div> 
 
+
+{#if animate}
+<!-- <div class="divider divider-vertical py-8"></div>  -->
+
 <JellyContainer>
+    <Hero>Where we work</Hero>
+    <div class="flex place-content-center py-8">
+        <div class="text-slate-700 leading-relaxed">
+            We work across the beautiful Yale campus in New Haven, Connecticut.                       
+        </div>
+    </div>
+    <BackgroundCarousel {images}/>
+    <div class="flex place-content-center py-8">
+        <div class="text-slate-700 leading-relaxed">
+            Images above courtesy of Yale University, taken by Michael Marsland and 
+            <a href="https://www.instagram.com/jflemingphoto/">James Fleming Photography</a>.           
+        </div>
+    </div>
+</JellyContainer>
+{/if}
+
+{#if animate}
+<div class="divider divider-vertical py-8"></div> 
+
+<JellyContainer>
+
     <Hero>What we work on</Hero>
     <div class="flex place-content-center pt-8">
         <div class="text-slate-700 leading-relaxed">
@@ -44,14 +72,14 @@ onMount(() => {
         </div>
     </div>
 </JellyContainer>
-
+{/if}
 
 {#await data?.categories}
 
 {:then categories } 
-<div class="divider divider-vertical py-8"></div> 
+<div class="divider divider-vertical py-16"></div> 
 
-<div class="flex flex-row flex-wrap justify-evenly gap-4 ">
+<div class="flex flex-row flex-wrap justify-evenly gap-4">
     {#each categories as {title, about, examples, image}, i (i)}
         <ResearchCategoryBox                 
             {title} {about} {image}
@@ -99,24 +127,4 @@ onMount(() => {
         </div>
     </div>
 </div>
-{/if}
-
-{#if animate}
-<div class="divider divider-vertical py-8"></div> 
-
-<JellyContainer>
-    <Hero>Where we work</Hero>
-    <div class="flex place-content-center py-8">
-        <div class="text-slate-700 leading-relaxed">
-            We work across the beautiful Yale campus in New Haven, Connecticut.                       
-        </div>
-    </div>
-    <BackgroundCarousel {images}/>
-    <div class="flex place-content-center py-8">
-        <div class="text-slate-700 leading-relaxed">
-            Images above courtesy of Yale University, taken by Michael Marsland and 
-            <a href="https://www.instagram.com/jflemingphoto/">James Fleming Photography</a>.           
-        </div>
-    </div>
-</JellyContainer>
 {/if}
