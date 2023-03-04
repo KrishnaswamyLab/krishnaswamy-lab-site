@@ -40,7 +40,7 @@ onMount(() => {
     <Hero>What we work on</Hero>
     <div class="flex place-content-center pt-8">
         <div class="text-slate-700 leading-relaxed">
-            We work at the intersection of computer science, applied math, computational biology, and signal processing to develop representation-learning and deep learning methods that enable exploratory analysis, scientific inference and prediction from big biomedical datasets. 
+            We work on developing foundational mathematical machine learning and deep learning methods that incorporate signal processing, data geometry and topology to enable exploratory analysis, scientific inference and prediction from big biomedical datasets.
         </div>
     </div>
 </JellyContainer>
