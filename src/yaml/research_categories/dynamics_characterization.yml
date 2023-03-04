@@ -1,8 +1,8 @@
-about: "How data is acquist often limits insights which can be gleaned. For example
+about: "The methodology employed for data acquisition can itself limit insights that be gleaned. For example
   the\nstatic snapshots of data for an otherwise continuous process. We specialize
   in \ncharacterizing data representations to provide more holistic analyses e.g.
   constructing a singular representation of these static snapshots that temporally
-  respects the entire process.\n            "
+  respects the entire process.\n"
 examples:
 - href: /projects/mioflow
   text: MIOFlow
