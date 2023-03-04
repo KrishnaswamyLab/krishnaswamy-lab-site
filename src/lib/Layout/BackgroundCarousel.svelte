@@ -12,9 +12,8 @@ const basename = (img:string) => {
 <div class="{$$props.class}">
     <div class="carousel carousel-end w-full rounded-box place-items-center">                    
         {#each images as image, i}
-        <div class="carousel-item w-full relative bg-cover" id="{basename(image)}">            
-            <img src={image} alt="{basename(image)}" class="w-full"/>
-
+        <div class="carousel-item w-full relative" id="{basename(image)}">
+            <div class="bg-cover bg-no-repeat bg-center w-full h-96" style="background-image: url({image})"></div>
             <div class="
                 absolute flex justify-between 
                 transform -translate-y-1/2 left-5 right-5 
