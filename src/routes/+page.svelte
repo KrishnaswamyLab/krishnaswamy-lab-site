@@ -115,7 +115,8 @@ onMount(() => {
     <BackgroundCarousel {images}/>
     <div class="flex place-content-center py-8">
         <div class="text-slate-700 leading-relaxed">
-            Images above courtesy of Yale University, taken by Michael Marsland            
+            Images above courtesy of Yale University, taken by Michael Marsland and 
+            <a href="https://www.instagram.com/jflemingphoto/">James Fleming Photography</a>.           
         </div>
     </div>
 </JellyContainer>
