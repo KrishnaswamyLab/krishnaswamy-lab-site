@@ -69,7 +69,7 @@ onMount(() => {
                 <MemberInfo 
                     {member} {useStickyTextHero}
                     delay={i * 100}
-                    showDivider={i < curr.length - 1}
+                    showDivider={i < past.length - 1}
                 />   
             {/if}             
         {/each}
