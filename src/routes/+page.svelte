@@ -108,8 +108,7 @@ onMount(() => {
     <Hero>Where we work</Hero>
     <div class="flex place-content-center py-8">
         <div class="text-slate-700 leading-relaxed">
-            We work across the beautiful Yale campus in New Haven, Connecticut. 
-            Currently we are primarily located in the Sterling Hall of Medicine.            
+            We work across the beautiful Yale campus in New Haven, Connecticut.                       
         </div>
     </div>
     <BackgroundCarousel {images}/>
