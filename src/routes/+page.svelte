@@ -9,6 +9,8 @@
     import AffiliationBox from '$lib/Layout/AffiliationBox.svelte';
 
     import BackgroundCarousel from '$lib/Layout/BackgroundCarousel.svelte';
+    import BackgroundCarouselNoBtns from '$lib/Layout/BackgroundCarouselNoBtns.svelte';
+
     const images = [
         '/images/yale/2005_09_30_13-33-58_School_of_Medicine_Michael_Marsland.jpg',
         '/images/yale/lab_members_2019.jpeg',
@@ -26,42 +28,64 @@ let animate = false
 onMount(() => {
     animate = true
 })
+
+const backgroundImage="/images/lab_hero.jpg"
 </script>
 
-<Hero backgroundImage="/images/lab_hero.jpg" class=''>
-    <span class="uppercase break-keep text-5xl md:text-7xl">
-        The<wbr> Krishna<wbr>swamy Lab
-    </span>
+<Hero {backgroundImage} class="md:hidden">
     <svelte:fragment slot="tagline">
-        <FollowUsBtn />
+        <FollowUsBtn />  
     </svelte:fragment>
 </Hero>
+<Hero class="hidden md:block"></Hero>
+
+<div class="hidden md:flex flex-row">    
+    <div class="hero w-1/2 h-[36rem] bg-base-200 {$$props.class}" style="background-image: url({backgroundImage});">
+        {#if backgroundImage}
+              <div class="hero-overlay bg-opacity-60"></div>
+        {/if}   
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl md:text-7xl font-light capitalize break-all">
+                <span class="uppercase break-keep text-5xl md:text-7xl">
+                    The<wbr> Krishna<wbr>swamy Lab
+                </span>
+            </h1>              
+            <FollowUsBtn />     
+          </div>
+        </div>
+    </div>
+    <div class="hero w-1/2 h-[36rem] bg-base-200 {$$props.class}">
+        <BackgroundCarouselNoBtns {images}/>
+    </div>
+</div>
+
+
 
 <div class="py-0"></div> 
-
-
 {#if animate}
-<!-- <div class="divider divider-vertical py-8"></div>  -->
+<div class="hidden 2xl:block">
+    <JellyContainer class="hidden xl:flex">
+        <Hero>Where we work</Hero>
+        <div class="flex place-content-center py-8">
+            <div class="text-slate-700 leading-relaxed">
+                We work across the beautiful Yale campus in New Haven, Connecticut.                       
+            </div>
+        </div>
+        <BackgroundCarousel {images}/>
+        <div class="flex place-content-center py-8">
+            <div class="text-slate-700 leading-relaxed">
+                Images above courtesy of Yale University, taken by Michael Marsland and 
+                <a href="https://www.instagram.com/jflemingphoto/">James Fleming Photography</a>.           
+            </div>
+        </div>
+    </JellyContainer>
+</div>
 
-<JellyContainer>
-    <Hero>Where we work</Hero>
-    <div class="flex place-content-center py-8">
-        <div class="text-slate-700 leading-relaxed">
-            We work across the beautiful Yale campus in New Haven, Connecticut.                       
-        </div>
-    </div>
-    <BackgroundCarousel {images}/>
-    <div class="flex place-content-center py-8">
-        <div class="text-slate-700 leading-relaxed">
-            Images above courtesy of Yale University, taken by Michael Marsland and 
-            <a href="https://www.instagram.com/jflemingphoto/">James Fleming Photography</a>.           
-        </div>
-    </div>
-</JellyContainer>
 {/if}
 
 {#if animate}
-<div class="divider divider-vertical py-8"></div> 
+<div class="hidden 2xl:divider divider-vertical py-8"></div> 
 
 <JellyContainer>
 
