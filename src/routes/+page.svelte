@@ -8,6 +8,15 @@
     import ResearchCategoryBox from '$lib/Layout/ResearchCategoryBox.svelte';
     import AffiliationBox from '$lib/Layout/AffiliationBox.svelte';
 
+    import BackgroundCarousel from '$lib/Layout/BackgroundCarousel.svelte';
+    const images = [
+        '/images/yale/2005_09_30_13-33-58_School_of_Medicine_Michael_Marsland.jpg',
+        '/images/yale/lab_members_2019.jpeg',
+        '/images/yale/2012_10_16_16-55-33_DSC_0714a_Michael_Marsland.jpg',
+        '/images/yale/2015_04_21_15_53_1_Michael_Marsland.jpg',
+
+    ]
+
 import { onMount } from 'svelte'
 
 let animate = false
@@ -73,7 +82,7 @@ onMount(() => {
 
 <div
     in:fly={{y:200, delay: 200, duration: 1500}} 
-    class="divider divider-vertical pt-8">
+    class="divider divider-vertical py-8">
 </div> 
 
 <div class="hero" in:fly={{y:200, delay: 200, duration: 1500}} >
@@ -90,4 +99,24 @@ onMount(() => {
         </div>
     </div>
 </div>
+{/if}
+
+{#if animate}
+<div class="divider divider-vertical py-8"></div> 
+
+<JellyContainer>
+    <Hero>Where we work</Hero>
+    <div class="flex place-content-center py-8">
+        <div class="text-slate-700 leading-relaxed">
+            We work across the beautiful Yale campus in New Haven, Connecticut. 
+            Currently we are primarily located in the Sterling Hall of Medicine.            
+        </div>
+    </div>
+    <BackgroundCarousel {images}/>
+    <div class="flex place-content-center py-8">
+        <div class="text-slate-700 leading-relaxed">
+            Images above courtesy of Yale University, taken by Michael Marsland            
+        </div>
+    </div>
+</JellyContainer>
 {/if}
