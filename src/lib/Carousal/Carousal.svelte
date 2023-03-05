@@ -44,7 +44,7 @@ const toGivenImage = (index:number) => {
 
 if (loop) {
     setInterval(()=>{
-        toNextImage()
+        // toNextImage()
     }, duration)
 }
 
@@ -70,6 +70,10 @@ const multiple = (node: HTMLElement, params: any) => {
           return fade(node, params);
       }
     };
+
+    import LeftArrow from '$lib/Icons/LeftArrow.svelte';
+import RightArrow from '$lib/Icons/RightArrow.svelte';
+
 </script>
 
 <div class="bg-base-100 h-full w-full flex flex-col">    
@@ -77,7 +81,8 @@ const multiple = (node: HTMLElement, params: any) => {
         <PrevNextBtns
             on:prev={toPrevImage}
             on:next={toNextImage}
-        />
+        ></PrevNextBtns>
+        
 
         <div class="h-[28rem] max-h-[36rem]">
         {#each images as { id, url, name, attribution }, i}
@@ -88,7 +93,7 @@ const multiple = (node: HTMLElement, params: any) => {
                 >
             {/if}
         {/each}
-        </div>
+        </div>        
     </div>
 
     {#if showThumbnails}

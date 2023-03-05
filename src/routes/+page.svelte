@@ -63,11 +63,9 @@ const backgroundImage="/images/lab_hero.jpg"
     </Hero>    
 
     <div class="w-1/2 h-[36rem]">
-        <Carousel
-            showIndicators={false}
+        <Carousel            
             images={myImages}
-            showCaptions={false} 
-            showThumbs={true}
+            showCaptions={false}             
         />
     </div>
 </div>
@@ -83,11 +81,9 @@ const backgroundImage="/images/lab_hero.jpg"
             </div>
         </div>
         <div class="h-[36rem]">
-            <Carousel
-                showIndicators={false}
+            <Carousel                
                 images={myImages}
                 showCaptions={false} 
-                showThumbs={true}
             />
         </div>        
         <!-- <BackgroundCarousel {images}/> -->

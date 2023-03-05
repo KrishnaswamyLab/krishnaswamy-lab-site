@@ -91,6 +91,7 @@ module.exports = {
     require('@tailwindcss/container-queries'),
     require('@tailwindcss/line-clamp'),
     require("daisyui"),
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
+    // require('autoprefixer')
   ],
 }

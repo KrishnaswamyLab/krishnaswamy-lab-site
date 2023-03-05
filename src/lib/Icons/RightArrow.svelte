@@ -1,6 +1,6 @@
 <svg
     aria-hidden="true"
-    class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-300"
+    class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-300 z-30 "
     fill="none"
     stroke="currentColor"
     viewBox="0 0 24 24"

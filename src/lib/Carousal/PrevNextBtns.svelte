@@ -15,28 +15,43 @@ function next() {
 }
 </script>
 
+<style>
+/* span, svg, button {
+    -webkit-appearance: none
+}     */
+</style>
 <div class="
-    relative
-    inset-y-1/2
-    
-">
+        relative
+        inset-y-1/2
+        z-30
+        
+    "
+>
     <div class="
-        absolute
-        inline-block inset-x-0 top-1/2
-        place-content-between
-    ">
+            absolute
+            inline-block inset-x-0 top-1/2
+            place-content-between
+            z-30             
+        "
+    >
         <button
             on:click={prev}
             type="button"
             class="         
-            absolute left-0
-            z-30 px-4 h-full 
-            cursor-pointer group focus:outline-none
+                absolute left-0
+                z-30 px-4  flex        
+                cursor-pointer group focus:outline-none
+                h-full
             "
-            data-carousel-prev
+            
         >
             <span
-                class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                class="                    
+                    z-30 inline-flex justify-center items-center w-8 h-8 rounded-full
+                    sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 
+                    dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white 
+                    dark:group-focus:ring-gray-800/70 group-focus:outline-none
+                "
             >
                 <LeftArrow/>
             </span>
@@ -46,15 +61,21 @@ function next() {
             on:click={next}
             type="button"
             class="
-            absolute
-            right-0
-            z-30 px-4 h-full 
-            cursor-pointer group focus:outline-none
+                absolute
+                right-0
+                z-30 px-4 h-full flex
+                cursor-pointer group focus:outline-none
+                
             "
-            data-carousel-next
+            
         >
             <span
-                class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                class="
+                    z-30 inline-flex justify-center items-center w-8 h-8 rounded-full 
+                    sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 
+                    dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white 
+                    dark:group-focus:ring-gray-800/70 group-focus:outline-none
+                "
             >
                 <RightArrow/>
             </span>
