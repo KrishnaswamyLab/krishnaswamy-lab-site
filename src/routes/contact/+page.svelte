@@ -33,7 +33,7 @@
             href: 'mailto:smita.krishnaswamy@yale.edu',
             fill: 'fill-slate-900',
             text: 'text-slate-900',
-            how: 'smita.krishnaswamy@yale.edu'
+            how: 'smita<wbr>.<wbr>krish<wbr>naswamy<wbr>@yale<wbr>.edu'
         },
         // {
         //     what: 'Call Us',
@@ -97,10 +97,10 @@ onMount(() => {
             class="py-8 text-2xl md:text-3xl font-extralight">
             Get in touch
         </p>        
-        <div class="py-8 flex flex-row place-content-evenly gap-4 flex-wrap">
+        <div class="py-8 flex flex-row place-content-between gap-4 flex-wrap">
             {#each contactSquares as square, i (i)}
                 <ContactSquare          
-                    class="basis-full sm:basis-1/3 md:basis-1/3"       
+                    class="basis-full md:flex-1"       
                     href="{square.href}" 
                     howClass="{square.text}"
                     delay={i*100+100}
@@ -116,7 +116,7 @@ onMount(() => {
                         />                            
                     </span>
                     <span slot="how">
-                        {square.how}
+                        {@html square.how}
                     </span>
                 </ContactSquare>
             {/each}                        

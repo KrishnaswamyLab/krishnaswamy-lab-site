@@ -23,7 +23,7 @@ onMount(() => {
     {$$props.class}
     "
 >
-    <div class="card-body place-items-center">
+    <div class="card-body place-items-center px-0">
         <div class="card-title">
             <span class="capitalize">
                 <slot name="what">
