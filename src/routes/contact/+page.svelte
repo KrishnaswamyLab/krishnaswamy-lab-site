@@ -33,17 +33,16 @@
             href: 'mailto:smita.krishnaswamy@yale.edu',
             fill: 'fill-slate-900',
             text: 'text-slate-900',
-            how: 'smita.krishnaswamy@yale.edu'
+            how: 'smita<wbr>.<wbr>krish<wbr>naswamy<wbr>@yale<wbr>.edu'
         },
-        {
-            what: 'Call Us',
-            icon: Phone,
-            href: 'tel:203.785.7833',
-            fill: 'fill-green-400',
-            text: 'text-green-500',
-            how: '203.785.7833'
-        }
-
+        // {
+        //     what: 'Call Us',
+        //     icon: Phone,
+        //     href: 'tel:203.785.7833',
+        //     fill: 'fill-green-400',
+        //     text: 'text-green-500',
+        //     how: '203.785.7833'
+        // }
     ]
     
     const departments = [
@@ -98,9 +97,10 @@ onMount(() => {
             class="py-8 text-2xl md:text-3xl font-extralight">
             Get in touch
         </p>        
-        <div class="py-8 grid grid-cols-1 md:grid-cols-2 justify-evenly  gap-4">
+        <div class="py-8 flex flex-row place-content-between gap-4 flex-wrap">
             {#each contactSquares as square, i (i)}
-                <ContactSquare                 
+                <ContactSquare          
+                    class="basis-full md:flex-1"       
                     href="{square.href}" 
                     howClass="{square.text}"
                     delay={i*100+100}
@@ -116,7 +116,7 @@ onMount(() => {
                         />                            
                     </span>
                     <span slot="how">
-                        {square.how}
+                        {@html square.how}
                     </span>
                 </ContactSquare>
             {/each}                        
