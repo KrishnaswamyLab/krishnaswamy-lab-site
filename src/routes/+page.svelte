@@ -8,9 +8,7 @@
     import ResearchCategoryBox from '$lib/Layout/ResearchCategoryBox.svelte';
     import AffiliationBox from '$lib/Layout/AffiliationBox.svelte';
 
-    import BackgroundCarousel from '$lib/Layout/BackgroundCarousel.svelte';
-    import BackgroundCarouselNoBtns from '$lib/Layout/BackgroundCarouselNoBtns.svelte';
-    import FlowbiteCarousal from '$lib/Flowbite/FlowbiteCarousal.svelte';
+    import BackgroundCarousel from '$lib/Layout/BackgroundCarousel.svelte';    
     // import { Carousel , CarouselTransition } from 'flowbite-svelte'
     import Carousel from '$lib/Carousal/Carousal.svelte'
     const images = [
@@ -33,9 +31,6 @@
         'Yale Innovation Summig',
         'Labe Meeting',
     ]
-    const flowbiteImages = images.map((url, id) => ({
-        id, imgurl:url, name:'hi'
-    }))
     const myImages = images.map((url, id) => ({
         id, url, name: imageCaptions[id],
         caption: imageCaptions[id]
@@ -78,44 +73,6 @@ const backgroundImage="/images/lab_hero.jpg"
 </div>
 
 
-
-
-
-
-
-
-
-
-<div class="hidden md:flex flex-row ">    
-    <div class="hero w-1/2 h-[36rem] bg-base-200 {$$props.class}" style="background-image: url({backgroundImage});">
-        {#if backgroundImage}
-              <div class="hero-overlay bg-opacity-60"></div>
-        {/if}   
-        <div class="hero-content text-center text-neutral-content">
-          <div class="max-w-md">
-            <h1 class="mb-5 text-5xl md:text-7xl font-light capitalize break-all">
-                <span class="uppercase break-keep text-5xl md:text-7xl">
-                    The<wbr> Krishna<wbr>swamy Lab
-                </span>
-            </h1>              
-            <FollowUsBtn />     
-          </div>
-        </div>
-    </div>
-    <div class="w-1/2 h-[36rem]">
-        <FlowbiteCarousal
-            showIndicators={false}
-            images={flowbiteImages}
-            showCaptions={false} 
-            showThumbs={true}
-        />
-    </div>
-
-</div>
-
-
-
-<div class="py-0"></div> 
 {#if animate}
 <div class="block md:hidden">
     <JellyContainer class="">
