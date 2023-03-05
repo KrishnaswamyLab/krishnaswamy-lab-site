@@ -82,7 +82,15 @@ const backgroundImage="/images/lab_hero.jpg"
                 We work across the beautiful Yale campus in New Haven, Connecticut.                       
             </div>
         </div>
-        <BackgroundCarousel {images}/>
+        <div class="h-[36rem]">
+            <Carousel
+                showIndicators={false}
+                images={myImages}
+                showCaptions={false} 
+                showThumbs={true}
+            />
+        </div>        
+        <!-- <BackgroundCarousel {images}/> -->
         <div class="flex place-content-center py-8">
             <div class="text-slate-700 leading-relaxed">
                 Images above courtesy of Yale University, taken by Michael Marsland and 
