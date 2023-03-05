@@ -20,6 +20,7 @@ onMount(() => {
     card card-bordered border-slate-700 grid-cols-1
     hover:shadow-2xl transition-all ease-in-out
     duration-300 hover:-translate-y-2
+    {$$props.class}
     "
 >
     <div class="card-body place-items-center">
