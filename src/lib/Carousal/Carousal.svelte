@@ -44,7 +44,7 @@ const toGivenImage = (index:number) => {
 
 if (loop) {
     setInterval(()=>{
-        // toNextImage()
+        toNextImage()
     }, duration)
 }
 
