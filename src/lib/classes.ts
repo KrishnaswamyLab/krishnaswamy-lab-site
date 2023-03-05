@@ -1,8 +1,27 @@
 import type {
     Member as MemberInterface,
     Publication as PublicationInterface,
-    Project as ProjectInterface
+    Project as ProjectInterface,
+    CarousalImage as CarousalImageInterface
 } from '$lib/types'
+
+export class CarousalImage implements CarousalImageInterface {
+    url
+    caption?;
+    id?;
+    name?;
+    attribution?;
+    license?;
+    constructor(image: CarousalImageInterface) {
+        this.url = image.url
+        this.caption = image?.caption
+        this.id = image?.id
+        this.name = image?.name
+        this.attribution = image?.attribution
+        this.license = image?.license
+    }
+}
+
 
 export class Member implements MemberInterface {
     name;

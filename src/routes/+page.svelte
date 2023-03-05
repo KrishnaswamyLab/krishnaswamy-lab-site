@@ -11,21 +11,35 @@
     import BackgroundCarousel from '$lib/Layout/BackgroundCarousel.svelte';
     import BackgroundCarouselNoBtns from '$lib/Layout/BackgroundCarouselNoBtns.svelte';
     import FlowbiteCarousal from '$lib/Flowbite/FlowbiteCarousal.svelte';
-    import { Carousel , CarouselTransition } from 'flowbite-svelte'
+    // import { Carousel , CarouselTransition } from 'flowbite-svelte'
+    import Carousel from '$lib/Carousal/Carousal.svelte'
     const images = [
-        '/images/yale/2015_04_21_15_53_1_Michael_Marsland.jpg',
         '/images/yale/2005_09_30_13-33-58_School_of_Medicine_Michael_Marsland.jpg',
         '/images/yale/lab_members_2019.jpeg',
         '/images/yale/2012_10_16_16-55-33_DSC_0714a_Michael_Marsland.jpg',
         '/images/yale/cold_spring_harbor_teaching_crew.png',
+        '/images/yale/2015_04_21_15_53_1_Michael_Marsland.jpg',
         '/images/yale/lab_hackathon.png',
         '/images/yale/yale_innovation_summit.png',
         '/images/yale/lab_meeting.png'
     ]
+    const imageCaptions = [
+        'School of Medicine',
+        'Lab Members',
+        'Yale Campus',
+        'Cold Spring Harbor Teaching Crew',
+        'Yale Campus in Bloom',
+        'Lab Hackathon',
+        'Yale Innovation Summig',
+        'Labe Meeting',
+    ]
     const flowbiteImages = images.map((url, id) => ({
         id, imgurl:url, name:'hi'
     }))
-
+    const myImages = images.map((url, id) => ({
+        id, url, name: imageCaptions[id],
+        caption: imageCaptions[id]
+    }))
 
 import { onMount } from 'svelte'
 
@@ -41,7 +55,36 @@ const backgroundImage="/images/lab_hero.jpg"
         <FollowUsBtn />  
     </svelte:fragment>
 </Hero>
+
 <Hero class="hidden md:block"></Hero>
+<div class="hidden md:flex flex-row ">    
+    <Hero {backgroundImage} class="hero w-1/2 h-[36rem] max-h-[36rem] bg-base-200">
+        <span class="uppercase break-keep text-5xl md:text-7xl">
+            The<wbr> Krishna<wbr>swamy Lab
+        </span>
+        <svelte:fragment slot="tagline">
+            <FollowUsBtn />  
+        </svelte:fragment>
+    </Hero>    
+
+    <div class="w-1/2 h-[36rem]">
+        <Carousel
+            showIndicators={false}
+            images={myImages}
+            showCaptions={false} 
+            showThumbs={true}
+        />
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
 
 <div class="hidden md:flex flex-row ">    
     <div class="hero w-1/2 h-[36rem] bg-base-200 {$$props.class}" style="background-image: url({backgroundImage});">

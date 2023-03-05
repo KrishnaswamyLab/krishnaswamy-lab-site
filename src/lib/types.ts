@@ -1,3 +1,19 @@
+export interface CarousalImage {
+    // link to image
+    url: string;
+    // caption for image
+    caption?: string;
+    // optional id for the image
+    id?: string;    
+    // optional name for image
+    name?: string;
+    // Who took the image
+    attribution?: string;
+    // Licensing information to use the image
+    license?: string;
+}
+export type CarousalImages = Array<CarousalImage>
+
 export type GlobResults = Record<string, ()=>Promise<unknown>>
 
 export interface Course {
