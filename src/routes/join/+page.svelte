@@ -4,7 +4,11 @@
     
     let backgroundImage = '/images/heroes/join_hero.jpg'
     
+    import TwitterSEO from '$lib/SEO/Twitter.svelte'
+import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
 </script>
+<TwitterSEO/>
+<OpenGraphSEO/>
 <Hero></Hero>
 <JellyContainer>
     <div>

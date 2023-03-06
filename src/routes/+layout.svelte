@@ -25,9 +25,8 @@
 	import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
 	
 </script>
-
-<TwitterSEO/>
-<OpenGraphSEO/>
+<!-- <TwitterSEO/>
+<OpenGraphSEO/> -->
 
 <Navigation {routes} />
 

@@ -6,7 +6,11 @@ import JellyContainer from '$lib/Layout/JellyContainer.svelte';
 import Hero from '$lib/Layout/Hero/Hero.svelte';
 
 let backgroundImage = "/images/heroes/teaching_hero.jpg"
+import TwitterSEO from '$lib/SEO/Twitter.svelte'
+import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
 </script>
+<TwitterSEO/>
+<OpenGraphSEO/>
 <Hero {backgroundImage}>
     Teaching
 </Hero>

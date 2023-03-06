@@ -17,7 +17,11 @@
     
     import Hero from '$lib/Layout/Hero/Hero.svelte';
     import JellyContainer from "$lib/Layout/JellyContainer.svelte";
+    import TwitterSEO from '$lib/SEO/Twitter.svelte'
+import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
 </script>
+<TwitterSEO/>
+<OpenGraphSEO/>
 <Hero backgroundImage="/images/projects_hero.jpeg">
     Projects
 </Hero>
