@@ -1,30 +1,41 @@
 <script lang="ts">
-	/** @type {import('./$types').PageData} */
-    import type {Publications, Projects} from '$lib/types'
-    interface data {
-        projects:Projects    
-    }
+/** @type {import('./$types').PageData} */
+import type {Publications, Projects} from '$lib/types'
+interface data {
+    projects:Projects    
+}
 
-    export let data:data;
-    import { goto } from '$app/navigation';
-    import {LabGitHubLink, openUrlInNewTab} from '$lib/utils';
+export let data:data;
+import { goto } from '$app/navigation';
+import {LabGitHubLink, openUrlInNewTab} from '$lib/utils';
 
-    import ProjectListItem from '$lib/Projects/ProjectListItem.svelte';
-    import ProjectInfo from '$lib/Projects/ProjectInfo.svelte';
-    
-    import GitHub from '$lib/Icons/GitHub.svelte';    
-    const toGitHub = () => openUrlInNewTab(LabGitHubLink)
-    
-    import Hero from '$lib/Layout/Hero/Hero.svelte';
-    import JellyContainer from "$lib/Layout/JellyContainer.svelte";
-    import TwitterSEO from '$lib/SEO/Twitter.svelte'
+import ProjectListItem from '$lib/Projects/ProjectListItem.svelte';
+import ProjectInfo from '$lib/Projects/ProjectInfo.svelte';
+
+import GitHub from '$lib/Icons/GitHub.svelte';    
+const toGitHub = () => openUrlInNewTab(LabGitHubLink)
+
+import Hero from '$lib/Layout/Hero/Hero.svelte';
+import JellyContainer from "$lib/Layout/JellyContainer.svelte";
+
+import TwitterSEO from '$lib/SEO/Twitter.svelte'
 import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
+
 </script>
-<TwitterSEO/>
-<OpenGraphSEO/>
+
+<TwitterSEO
+    title="Projects of the Krishnaswamy Lab"
+    url="https://www.krishnaswamylab.org/projects"
+/>
+<OpenGraphSEO
+    title="Projects of the Krishnaswamy Lab"
+    url="https://www.krishnaswamylab.org/projects"
+/>
+
 <Hero backgroundImage="/images/projects_hero.jpeg">
     Projects
 </Hero>
+
 <JellyContainer class="pt-16">   
     <div class="text-2xl font-light text-center">
         You can access the Lab's Github Repository by clicking the link below

@@ -20,6 +20,9 @@ export const LabGitHubLink = 'https://github.com/KrishnaswamyLab'
 export const toTwitter = () => openUrlInNewTab(LabTwitterLink)
 export const toGitHub = () => openUrlInNewTab(LabGitHubLink)
 
+export const LabShortDescription = `We work on developing foundational mathematical machine learning and deep 
+learning methods that incorporate signal processing, data geometry and topology to enable exploratory analysis, 
+scientific inference and prediction from big biomedical datasets.`
 
 export const lipsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere 
     lectus libero, non feugiat odio finibus sed. Lorem ipsum dolor sit amet, consectetur adipiscing 

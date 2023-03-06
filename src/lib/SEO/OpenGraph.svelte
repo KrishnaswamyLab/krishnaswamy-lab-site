@@ -1,29 +1,29 @@
 <script lang="ts">
-    type OGType = 'website' | 'article'
+  import {LabShortDescription} from '$lib/utils'
+  type OGType = 'website' | 'article'
 
-    export let url: string = 'https://www.KrishnaswamyLab.org'
-    export let ogType: OGType = 'website'
-    export let title: string = 'Krishnaswamy Lab'
-    export let localLanguage: string = 'en'
-    export let siteName: string = 'Krishnaswamy Lab'
-    export let description: string = 'Krishnaswamy Lab'
-    
-    export let image: string = '/images/lab_hero.jpg';
-    export let imageAlt: string = 'Krishnaswamy Lab hero image';
+  export let url: string = 'https://www.KrishnaswamyLab.org'
+  export let ogType: OGType = 'website'
+  export let title: string = 'Krishnaswamy Lab'
+  export let localLanguage: string = 'en'
+  export let siteName: string = 'Krishnaswamy Lab'
+  export let description: string = LabShortDescription
+  
+  export let image: string = '/images/lab_hero.jpg';
+  export let imageAlt: string = 'Krishnaswamy Lab hero image';
 
-    export let squareImage: string = '/images/lab_hero.jpg';
-    export let squareImageAlt: string = 'Krishnaswamy Lab hero image';
+  export let squareImage: string = '/images/lab_hero.jpg';
+  export let squareImageAlt: string = 'Krishnaswamy Lab hero image';
 
-    export let articlePublisher: string = 'Smita Krishnaswamy'
-    export let articleAuthor: string = 'Smita Krishnaswamy\'s Webmaster'
+  export let articlePublisher: string = 'Smita Krishnaswamy'
+  export let articleAuthor: string = 'Smita Krishnaswamy\'s Webmaster'
 
-    export let article: boolean = false;
-    export let datePublished: Date | string | number = '2023/02/26'
-    export let lastUpdated: Date | string | number = '2023/02/26'
+  export let article: boolean = false;
+  export let datePublished: Date | string | number = '2023/02/26'
+  export let lastUpdated: Date | string | number = '2023/02/26'
 
-    $: utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
-    
-  </script>
+  $: utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+</script>
   
   <svelte:head>
     <meta property="og:url" content={url} />

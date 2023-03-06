@@ -1,73 +1,73 @@
 <script>
-    import {LabTwitterLink, LabGitHubLink} from '$lib/utils';
+import {LabTwitterLink, LabGitHubLink} from '$lib/utils';
 
-    import GitHub from '$lib/Icons/GitHub.svelte';
-    import Twitter from '$lib/Icons/Twitter.svelte';
-    import Mail from '$lib/Icons/Mail.svelte';
-    import Phone from '$lib/Icons/Phone.svelte';
+import GitHub from '$lib/Icons/GitHub.svelte';
+import Twitter from '$lib/Icons/Twitter.svelte';
+import Mail from '$lib/Icons/Mail.svelte';
+import Phone from '$lib/Icons/Phone.svelte';
 
-    import JellyContainer from '$lib/Layout/JellyContainer.svelte';
-    import ContactSquare from '$lib/Layout/ContactSquare.svelte';
+import JellyContainer from '$lib/Layout/JellyContainer.svelte';
+import ContactSquare from '$lib/Layout/ContactSquare.svelte';
 
 
-    const contactSquares = [
-        {
-            what: 'Follow Us',
-            icon: Twitter,
-            href: LabTwitterLink,
-            fill: 'fill-sky-400',
-            text: 'text-sky-400',
-            how: '@KrishnaswamyLab'
-        },
-        {
-            what: 'Fork Us',
-            icon: GitHub,
-            href: LabGitHubLink,
-            fill: '',
-            text: 'text-slate-900',
-            how: '@KrishnaswamyLab'
-        },
-        {
-            what: 'Email Us',
-            icon: Mail,
-            href: 'mailto:smita.krishnaswamy@yale.edu',
-            fill: 'fill-slate-900',
-            text: 'text-slate-900',
-            how: 'smita<wbr>.<wbr>krish<wbr>naswamy<wbr>@yale<wbr>.edu'
-        },
-        // {
-        //     what: 'Call Us',
-        //     icon: Phone,
-        //     href: 'tel:203.785.7833',
-        //     fill: 'fill-green-400',
-        //     text: 'text-green-500',
-        //     how: '203.785.7833'
-        // }
-    ]
-    
-    const departments = [
-        {
-            dept: 'Genetics Department',
-            school: 'Yale School of Medicine',
-            street: '333 Cedar Street',
-            room: 'SHM I-336A',
-            city: 'New Haven',
-            state: 'CT',
-            zip: '06520',
-        },
-        {
-            dept: 'Computer Science Department',
-            school: 'Yale School of Applied Science and Engineering',
-            street: '10 Hillhouse Avenue',
-            room: 'DL 227',
-            city: 'New Haven',
-            state: 'CT',
-            zip: '06511',
-        },
-    ]
+const contactSquares = [
+    {
+        what: 'Follow Us',
+        icon: Twitter,
+        href: LabTwitterLink,
+        fill: 'fill-sky-400',
+        text: 'text-sky-400',
+        how: '@KrishnaswamyLab'
+    },
+    {
+        what: 'Fork Us',
+        icon: GitHub,
+        href: LabGitHubLink,
+        fill: '',
+        text: 'text-slate-900',
+        how: '@KrishnaswamyLab'
+    },
+    {
+        what: 'Email Us',
+        icon: Mail,
+        href: 'mailto:smita.krishnaswamy@yale.edu',
+        fill: 'fill-slate-900',
+        text: 'text-slate-900',
+        how: 'smita<wbr>.<wbr>krish<wbr>naswamy<wbr>@yale<wbr>.edu'
+    },
+    // {
+    //     what: 'Call Us',
+    //     icon: Phone,
+    //     href: 'tel:203.785.7833',
+    //     fill: 'fill-green-400',
+    //     text: 'text-green-500',
+    //     how: '203.785.7833'
+    // }
+]
 
-    import Hero from '$lib/Layout/Hero/Hero.svelte';
-    import MapBox from '$lib/Contact/MapBox.svelte';
+const departments = [
+    {
+        dept: 'Genetics Department',
+        school: 'Yale School of Medicine',
+        street: '333 Cedar Street',
+        room: 'SHM I-336A',
+        city: 'New Haven',
+        state: 'CT',
+        zip: '06520',
+    },
+    {
+        dept: 'Computer Science Department',
+        school: 'Yale School of Applied Science and Engineering',
+        street: '10 Hillhouse Avenue',
+        room: 'DL 227',
+        city: 'New Haven',
+        state: 'CT',
+        zip: '06511',
+    },
+]
+
+import Hero from '$lib/Layout/Hero/Hero.svelte';
+import MapBox from '$lib/Contact/MapBox.svelte';
 
 import { onMount } from 'svelte'
 import { fly, fade } from 'svelte/transition';
@@ -76,11 +76,20 @@ let animate = false
 onMount(() => {
     animate = true
 })
+
 import TwitterSEO from '$lib/SEO/Twitter.svelte'
 import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
+
 </script>
-<TwitterSEO/>
-<OpenGraphSEO/>
+
+<TwitterSEO
+    title="Contact the Krishnaswamy Lab"
+    url="https://www.krishnaswamylab.org/contact"
+/>
+<OpenGraphSEO
+    title="Contact the Krishnaswamy Lab"
+    url="https://www.krishnaswamylab.org/contact"
+/>
 
 <Hero></Hero>
 
