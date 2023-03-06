@@ -22,6 +22,7 @@ So what should you put in a record? Well that is dependant on its *type*. The en
 **NOTE**: the presence of a `?` means that the property is optional!
 
 # Types
+Types are defined [here](https://github.com/KrishnaswamyLab/krishnaswamy-lab-site/blob/main/src/lib/types.ts)
 
 ## Affiliations
 
