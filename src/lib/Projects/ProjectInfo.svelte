@@ -21,7 +21,8 @@
 {#if project?.publication.title === undefined}
     <!--  -->
 {:else}
-<div class="inline-block">
+
+<div class="">
     {#if useProjectHero}
         <Hero 
             backgroundImage={project.hero?.image ? project.hero.image : ''}
