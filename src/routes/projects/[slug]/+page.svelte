@@ -36,7 +36,12 @@
     description="{heroTitle}: {subtitle}. {data?.project?.publication?.abstract.slice(0,100)}..."
     image="{data?.project?.hero?.image}"
 />
-<OpenGraphSEO/>
+<OpenGraphSEO
+    url="https://www.KrishnaswamyLab.org/projects/{data?.slug}"
+    title="Kirshnaswamy Lab: {heroTitle}"
+    description="{heroTitle}: {subtitle}. {data?.project?.publication?.abstract.slice(0,100)}..."
+    image="{data?.project?.hero?.image}"
+/>
 
 
 
