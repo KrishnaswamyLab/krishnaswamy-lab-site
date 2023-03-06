@@ -33,14 +33,16 @@
 <TwitterSEO
     url="https://www.KrishnaswamyLab.org/projects/{data?.slug}"
     title="Kirshnaswamy Lab: {heroTitle}"
-    description="{heroTitle}: {subtitle}. {data?.project?.publication?.abstract.slice(0,100)}..."
+    description="{heroTitle}: {subtitle}. {data?.project?.publication?.abstract.slice(0,300)}..."
     image="{data?.project?.hero?.image}"
+    author={data?.project?.publication?.authors.join(', ')}
 />
 <OpenGraphSEO
     url="https://www.KrishnaswamyLab.org/projects/{data?.slug}"
     title="Kirshnaswamy Lab: {heroTitle}"
-    description="{heroTitle}: {subtitle}. {data?.project?.publication?.abstract.slice(0,100)}..."
+    description="{heroTitle}: {subtitle}. {data?.project?.publication?.abstract.slice(0,300)}..."
     image="{data?.project?.hero?.image}"
+    articleAuthor={data?.project?.publication?.authors.join(', ')}
 />
 
 
