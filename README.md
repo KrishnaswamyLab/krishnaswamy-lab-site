@@ -120,6 +120,7 @@ Note that:
 | year | number | year of publication |
 | title | string | title of publication |
 |authors | string[] | list of authors |
+|abstract| string | abstract of publication |
 | periodical | string | name of journal |
 | publisher? | string | publishing group of periodical |
 | periodicalImage? | string | image to use for periodical link |
