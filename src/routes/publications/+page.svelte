@@ -21,16 +21,25 @@ let animate = false
 onMount(() => {
     animate = true
 })
+
 import TwitterSEO from '$lib/SEO/Twitter.svelte'
 import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
-</script>
-<TwitterSEO/>
-<OpenGraphSEO/>
 
+</script>
+
+<TwitterSEO
+    title="Selected publications of the Krishnaswamy Lab"
+    url="https://www.krishnaswamylab.org/publications"
+/>
+<OpenGraphSEO
+    title="Selected publications of the Krishnaswamy Lab"
+    url="https://www.krishnaswamylab.org/publications"
+/>
 
 <Hero backgroundImage="/images/publications_hero.jpeg">
     Research
 </Hero>
+
 <JellyContainer>
     <div class="flex flex-col place-items-center gap-8 mt-8">
 

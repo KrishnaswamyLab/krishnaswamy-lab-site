@@ -1,17 +1,17 @@
 <script>
-    /** @type {import('./$types').PageData} */
-    export let data;
-    import MemberInfo from '$lib/MemberInfo.svelte';  
+/** @type {import('./$types').PageData} */
+export let data;
+import MemberInfo from '$lib/MemberInfo.svelte';  
 
-    import JellyContainer from '$lib/Layout/JellyContainer.svelte';
-    import TextHero from '$lib/Layout/Hero/TextHero.svelte';
-    
-    $: past = data?.members.filter(({isAlum})=>isAlum)
-    $: curr = data?.members.filter(({isAlum})=>!isAlum)
+import JellyContainer from '$lib/Layout/JellyContainer.svelte';
+import TextHero from '$lib/Layout/Hero/TextHero.svelte';
 
-    import Hero from '$lib/Layout/Hero/Hero.svelte';
-    const useStickyTextHero = false;
-    const stickyClasses = 'sticky top-0 bg-base-100 z-[100] pb-8'
+$: past = data?.members.filter(({isAlum})=>isAlum)
+$: curr = data?.members.filter(({isAlum})=>!isAlum)
+
+import Hero from '$lib/Layout/Hero/Hero.svelte';
+const useStickyTextHero = false;
+const stickyClasses = 'sticky top-0 bg-base-100 z-[100] pb-8'
 
 
 import { onMount } from 'svelte'
@@ -21,11 +21,21 @@ let animate = false
 onMount(() => {
     animate = true
 })
+
 import TwitterSEO from '$lib/SEO/Twitter.svelte'
 import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
+
 </script>
-<TwitterSEO/>
-<OpenGraphSEO/>
+
+<TwitterSEO
+    title="Members of the Krishnaswamy Lab"
+    url="https://www.krishnaswamylab.org/members"
+/>
+<OpenGraphSEO
+    title="Members of the Krishnaswamy Lab"
+    url="https://www.krishnaswamylab.org/members"
+/>
+
 <Hero></Hero>
 
 {#if animate}

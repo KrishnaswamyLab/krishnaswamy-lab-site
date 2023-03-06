@@ -1,26 +1,36 @@
 <script>
-    /** @type {import('./$types').PageData} */
-    export let data;    
-    import Carousel from '$lib/Workshops/Carousel.svelte';
+/** @type {import('./$types').PageData} */
+export let data;    
+import Carousel from '$lib/Workshops/Carousel.svelte';
 
-    const images = [
-        '/images/workshops/workshop_1.jpg',
-        '/images/workshops/workshop_2.jpeg',
-        '/images/workshops/workshop_3.jpeg',
-        '/images/workshops/workshop_4.jpg',
-        '/images/workshops/workshop_5.jpg',
-        '/images/workshops/workshop_6.jpg',
-        '/images/workshops/workshop_7.jpeg',
-        '/images/workshops/workshop_8.jpg',
-    ]    
+const images = [
+    '/images/workshops/workshop_1.jpg',
+    '/images/workshops/workshop_2.jpeg',
+    '/images/workshops/workshop_3.jpeg',
+    '/images/workshops/workshop_4.jpg',
+    '/images/workshops/workshop_5.jpg',
+    '/images/workshops/workshop_6.jpg',
+    '/images/workshops/workshop_7.jpeg',
+    '/images/workshops/workshop_8.jpg',
+]    
 
-    import Hero from '$lib/Layout/Hero/Hero.svelte';
-    import JellyContainer from "$lib/Layout/JellyContainer.svelte";
-    import TwitterSEO from '$lib/SEO/Twitter.svelte'
+import Hero from '$lib/Layout/Hero/Hero.svelte';
+import JellyContainer from "$lib/Layout/JellyContainer.svelte";
+
+import TwitterSEO from '$lib/SEO/Twitter.svelte'
 import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
+
 </script>
-<TwitterSEO/>
-<OpenGraphSEO/>
+
+
+<TwitterSEO
+    title="Workshops of the Krishnaswamy Lab"
+    url="https://www.krishnaswamylab.org/workshops"
+/>
+<OpenGraphSEO
+    title="Workshops of the Krishnaswamy Lab"
+    url="https://www.krishnaswamylab.org/workshops"
+/>
 
 <Hero 
     backgroundImage="/images/workshops/workshop_hero.png"

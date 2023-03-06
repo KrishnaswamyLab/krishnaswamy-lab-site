@@ -1,15 +1,25 @@
 <script>
-    import Hero from '$lib/Layout/Hero/Hero.svelte';
-    import JellyContainer from '$lib/Layout/JellyContainer.svelte';    
-    
-    let backgroundImage = '/images/heroes/join_hero.jpg'
-    
-    import TwitterSEO from '$lib/SEO/Twitter.svelte'
+import Hero from '$lib/Layout/Hero/Hero.svelte';
+import JellyContainer from '$lib/Layout/JellyContainer.svelte';    
+
+let backgroundImage = '/images/heroes/join_hero.jpg'
+
+import TwitterSEO from '$lib/SEO/Twitter.svelte'
 import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
+
 </script>
-<TwitterSEO/>
-<OpenGraphSEO/>
+
+<TwitterSEO
+    title="Join the Krishnaswamy Lab"
+    url="https://www.krishnaswamylab.org/join"
+/>
+<OpenGraphSEO
+    title="Join the Krishnaswamy Lab"
+    url="https://www.krishnaswamylab.org/join"
+/>
+
 <Hero></Hero>
+
 <JellyContainer>
     <div>
         <Hero>

@@ -1,17 +1,16 @@
 <script lang="ts">
-    import {LabTwitterLink} from '$lib/utils'
-    
-    export let title:string = 'The Krishnaswamy Lab'
-    export let description:string = 'We work at the intersection of computer science, applied math, computational biology, and signal processing to develop representation-learning and deep learning methods that enable exploratory analysis, scientific inference and prediction from big biomedical datasets.'
-    export let url:string = 'https://www.krishnaswamylab.org'
+  import {LabTwitterLink} from '$lib/utils'
+  import {LabShortDescription} from '$lib/utils'
+  export let title:string = 'The Krishnaswamy Lab'
+  export let description:string = LabShortDescription
+  export let url:string = 'https://www.krishnaswamylab.org'
 
-    export let image:string = '/images/lab_hero.jpg';
-    export let imageAlt:string = 'Krishnaswamy Lab hero image';
+  export let image:string = '/images/lab_hero.jpg';
+  export let imageAlt:string = 'Krishnaswamy Lab hero image';
 
-    export let author:string = 'Smita Krishnaswamy\'s Webmaster'
-    export let article:string = '';
-    export let minutesToRead:number = 0;
-
+  export let author:string = 'Smita Krishnaswamy\'s Webmaster'
+  export let article:string = '';
+  export let minutesToRead:number = 0;
 </script>
 
 <svelte:head>

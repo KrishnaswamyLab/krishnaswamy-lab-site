@@ -48,6 +48,7 @@ const backgroundImage="/images/lab_hero.jpg"
 
 import TwitterSEO from '$lib/SEO/Twitter.svelte'
 import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
+import {LabShortDescription} from '$lib/utils'
 </script>
 <TwitterSEO/>
 <OpenGraphSEO/>
@@ -115,7 +116,7 @@ import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
     <Hero>What we work on</Hero>
     <div class="flex place-content-center pt-8">
         <div class="text-slate-700 leading-relaxed">
-            We work on developing foundational mathematical machine learning and deep learning methods that incorporate signal processing, data geometry and topology to enable exploratory analysis, scientific inference and prediction from big biomedical datasets.
+            {LabShortDescription}
         </div>
     </div>
 </JellyContainer>
