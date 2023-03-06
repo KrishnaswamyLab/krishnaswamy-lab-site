@@ -120,7 +120,7 @@
         {/if} 
     </div>
 
-    {#if youtubeId !== null && browser}
+    {#if youtubeId !== null && youtubeId !== undefined && browser}
         <div class="flex justify-center">
             <div class="w-[48rem] my-4">                
                 <Youtube id={youtubeId}/>

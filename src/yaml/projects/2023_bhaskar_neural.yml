@@ -7,7 +7,7 @@ hero:
   image: /images/projects/neural_fim_hero.jpg
   title: NeuralFIM
 href: neural_fim
-publication:
+publication:  
   authors:
   - Dhananjay Bhaskar
   - Oluwadamilola Fasina

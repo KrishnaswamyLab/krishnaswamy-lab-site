@@ -22,8 +22,15 @@ export async function load({ params }) {
   let sorted = projects.map(e => new Project(e)).sort(SortProjectByYear)
   
   const slug = params.slug
+  
   const matches = projects.filter(({href}) => href === slug)
   if (matches.length !== 1) {
+    throw error(404, `Project with slug=${slug} not found`);
+  }
+  const project = new Project(matches[0] as ProjectInterface)  
+
+  const pubTitle = project?.publication?.title
+  if (pubTitle === undefined || pubTitle === null) {
     throw error(404, `Project with slug=${slug} not found`);
   }
   
@@ -33,7 +40,6 @@ export async function load({ params }) {
         return {title, abbreviation, href}
     })
     
-  const project = new Project(matches[0] as ProjectInterface)  
   const data = {project, routes, slug} as ProjectData  
   return data;
 }

@@ -74,6 +74,10 @@ So what should you put in a record? Well that is dependant on its *type*. The en
 
 ## Projects
 
+Note that:
+> For projects to show up as a link it needs a publication title! e.g.
+> `project.publication.title`
+
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | href | string | relative url to project specific page `/project/<href>` |

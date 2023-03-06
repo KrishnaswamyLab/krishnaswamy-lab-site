@@ -1,6 +1,7 @@
 <script lang="ts">
     import type {Links} from '$lib/types'
 	import Hamburger from '$lib/Icons/Hamburger.svelte';
+    import { goto } from '$app/navigation';
 	export let routes: Links = [
 		{text: 'projects', href: '/projects'},
 		{text: 'workshop', href: '/workshop'},
@@ -45,7 +46,7 @@
 				bg-primary text-primary-content
 			">
 				{#each routes as {text, href}, i}
-				<li>
+				<li on:click={()=>goto(href)} on:keydown={()=>goto(href)}>
 					<a href={href} class="inline-block btn-link text-right">
 						{text}
 					</a>
