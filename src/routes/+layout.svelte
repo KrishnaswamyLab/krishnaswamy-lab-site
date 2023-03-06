@@ -26,8 +26,8 @@
 	
 </script>
 
-<TwitterSEO/>
-<OpenGraphSEO/>
+<!-- <TwitterSEO/>
+<OpenGraphSEO/> -->
 
 <Navigation {routes} />
 

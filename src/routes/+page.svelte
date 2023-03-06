@@ -168,4 +168,5 @@ const backgroundImage="/images/lab_hero.jpg"
         </div>
     </div>
 </div>
+
 {/if}
