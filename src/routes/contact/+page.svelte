@@ -76,7 +76,11 @@ let animate = false
 onMount(() => {
     animate = true
 })
+import TwitterSEO from '$lib/SEO/Twitter.svelte'
+import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
 </script>
+<TwitterSEO/>
+<OpenGraphSEO/>
 
 <Hero></Hero>
 

@@ -25,7 +25,6 @@
 	import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
 	
 </script>
-
 <!-- <TwitterSEO/>
 <OpenGraphSEO/> -->
 

@@ -16,7 +16,12 @@
 
     import Hero from '$lib/Layout/Hero/Hero.svelte';
     import JellyContainer from "$lib/Layout/JellyContainer.svelte";
+    import TwitterSEO from '$lib/SEO/Twitter.svelte'
+import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
 </script>
+<TwitterSEO/>
+<OpenGraphSEO/>
+
 <Hero 
     backgroundImage="/images/workshops/workshop_hero.png"
     class="break-keep"

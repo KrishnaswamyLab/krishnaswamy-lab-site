@@ -37,7 +37,7 @@
     }))
 
 import { onMount } from 'svelte'
-    import { goto } from '$app/navigation';
+import { goto } from '$app/navigation';
 
 let animate = false
 onMount(() => {
@@ -45,7 +45,13 @@ onMount(() => {
 })
 
 const backgroundImage="/images/lab_hero.jpg"
+
+import TwitterSEO from '$lib/SEO/Twitter.svelte'
+import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
 </script>
+<TwitterSEO/>
+<OpenGraphSEO/>
+
 <Hero {backgroundImage} class="md:hidden">
     <svelte:fragment slot="tagline">
         <FollowUsBtn />  
