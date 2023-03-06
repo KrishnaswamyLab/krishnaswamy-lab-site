@@ -37,6 +37,7 @@
     }))
 
 import { onMount } from 'svelte'
+    import { goto } from '$app/navigation';
 
 let animate = false
 onMount(() => {
@@ -158,12 +159,12 @@ const backgroundImage="/images/lab_hero.jpg"
         <div class="max-w-md">
             <h1 class="mb-5 text-2xl text-black font-light">
                 Click below to access the latest Krishnaswamy Lab Projects & Software
-            </h1>        
-            <a href="/projects">
-                <button class="btn gap-2 btn-outline uppercase">
-                        Explore Lab Projects
-                </button>
-            </a>
+            </h1>                    
+            <button class="btn gap-2 btn-outline uppercase" on:click={()=>goto('/projects')}>
+                <a href="/projects" on:click={()=>goto('/projects')}>    
+                    Explore Lab Projects
+                </a>
+            </button>
         </div>
     </div>
 </div>
