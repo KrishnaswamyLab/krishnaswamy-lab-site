@@ -113,9 +113,13 @@ import {LabShortDescription} from '$lib/utils'
 
 <JellyContainer>
 
-    <Hero>What we work on</Hero>
-    <div class="flex place-content-center pt-8">
-        <div class="text-slate-700 leading-relaxed">
+    <!-- <Hero>What we work on</Hero> -->
+    <div class="flex place-content-center md:pt-8">
+        <div class="
+            text-slate-700 leading-relaxed
+            text-xl md:text-2xl font-extralight 
+            break-keep md:break-normal
+        ">
             {LabShortDescription}
         </div>
     </div>
@@ -125,7 +129,7 @@ import {LabShortDescription} from '$lib/utils'
 {#await data?.categories}
 
 {:then categories } 
-<div class="divider divider-vertical py-16"></div> 
+<div class="divider divider-vertical py-8"></div> 
 
 <div class="flex flex-row flex-wrap justify-evenly gap-4">
     {#each categories as {title, about, examples, image}, i (i)}
