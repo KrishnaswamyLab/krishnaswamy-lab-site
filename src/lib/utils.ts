@@ -22,7 +22,7 @@ export const toGitHub = () => openUrlInNewTab(LabGitHubLink)
 
 let labshortdescription = `We work on developing foundational mathematical <span class="font-bold text-sky-400">machine learning</span> and`
 labshortdescription += ` <span class="font-bold text-sky-400">deep learning</span> methods that incorporate signal processing, <span class="font-bold text-sky-400">data geometry and topology</span> to enable exploratory analysis,`
-labshortdescription += ` scientific inference and prediction from <span class="font-bold text-sky-400">dbig biomedical datasets</span>.`
+labshortdescription += ` scientific inference and prediction from <span class="font-bold text-sky-400">big biomedical datasets</span>.`
 export const LabShortDescription = labshortdescription
 
 export const lipsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere 
