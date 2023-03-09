@@ -49,11 +49,12 @@ const backgroundImage="/images/lab_hero.jpg"
 import TwitterSEO from '$lib/SEO/Twitter.svelte'
 import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
 import {LabShortDescription} from '$lib/utils'
+const subtitle = ''//"on AI for Science"
 </script>
 <TwitterSEO/>
 <OpenGraphSEO/>
 
-<Hero {backgroundImage} class="md:hidden">
+<Hero {backgroundImage} class="md:hidden" {subtitle}>
     <svelte:fragment slot="tagline">
         <FollowUsBtn />  
     </svelte:fragment>
@@ -61,7 +62,9 @@ import {LabShortDescription} from '$lib/utils'
 
 <Hero class="hidden md:block"></Hero>
 <div class="hidden md:flex flex-row ">    
-    <Hero {backgroundImage} class="hero w-1/2 h-[36rem] max-h-[36rem] bg-base-200">
+    <Hero {backgroundImage} class="hero w-1/2 h-[36rem] max-h-[36rem] bg-base-200"
+        {subtitle}
+    >
         <span class="uppercase break-keep text-5xl md:text-7xl">
             The<wbr> Krishna<wbr>swamy Lab
         </span>
@@ -113,14 +116,14 @@ import {LabShortDescription} from '$lib/utils'
 
 <JellyContainer>
 
-    <!-- <Hero>What we work on</Hero> -->
+    <!-- <Hero>Krishnaswamy Lab on AI for Science</Hero> -->
     <div class="flex place-content-center md:pt-8">
         <div class="
             text-slate-700 leading-relaxed
             text-xl md:text-2xl font-extralight 
             break-keep md:break-normal
         ">
-            {LabShortDescription}
+            {@html LabShortDescription}
         </div>
     </div>
 </JellyContainer>

@@ -20,8 +20,8 @@ export const LabGitHubLink = 'https://github.com/KrishnaswamyLab'
 export const toTwitter = () => openUrlInNewTab(LabTwitterLink)
 export const toGitHub = () => openUrlInNewTab(LabGitHubLink)
 
-let labshortdescription = `We work on developing foundational mathematical machine learning and deep`
-labshortdescription += ` learning methods that incorporate signal processing, data geometry and topology to enable exploratory analysis,`
+let labshortdescription = `We work on developing foundational mathematical <span class="font-bold text-sky-400">machine learning</span> and`
+labshortdescription += ` <span class="font-bold text-sky-400">deep learning</span> methods that incorporate signal processing, <span class="font-bold text-sky-400">data geometry and topology</span> to enable exploratory analysis,`
 labshortdescription += ` scientific inference and prediction from big biomedical datasets.`
 export const LabShortDescription = labshortdescription
 
