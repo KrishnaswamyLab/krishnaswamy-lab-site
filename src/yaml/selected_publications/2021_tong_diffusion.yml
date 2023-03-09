@@ -30,7 +30,7 @@ keywords:
 - Machine Learning
 month: 7
 pages: 10336-10346
-periodical: Proceedings of Machine Learning Research
+periodical: PMLR #Proceedings of Machine Learning Research
 publisher: PMLR
 selected: true
 title: Diffusion Earth Mover's Distance and Distribution Embeddings

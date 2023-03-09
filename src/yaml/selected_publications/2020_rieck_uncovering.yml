@@ -24,7 +24,8 @@ authors:
 href: https://arxiv.org/abs/2006.07882v2
 keywords: []
 month: 6
-periodical: Advances in Neural Information Processing Systems
+periodical: NeurIPS
+# periodical: Advances in Neural Information Processing Systems
 publisher: Neural information processing systems foundation
 selected: true
 title: Uncovering the Topology of Time-Varying fMRI Data using Cubical Persistence
