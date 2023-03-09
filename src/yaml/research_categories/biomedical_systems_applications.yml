@@ -1,7 +1,4 @@
-about: Combining all our prior efforts - understanding data topology, producing useful
-  data embeddings, characterizing data dynamics - we produce state-of-the-art pipelines
-  for biological insight. Whether it's cancers, immunology, or developmental biology
-  we continue to unravel mysteries of biological systems.
+about: "Combining all our prior efforts, we apply them to high dimensional, high throughput data to unravel the mysteries of biomedical systems including: stem cell development, behavioral neuroscience, molecular neuroscience, immunology cancer, and structural biology." 
 examples:
 - href: /projects/phemd
   text: PhEMD

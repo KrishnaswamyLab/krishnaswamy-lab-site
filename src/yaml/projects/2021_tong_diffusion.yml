@@ -5,8 +5,12 @@ hero:
   blurb: Fast approximations for earth mover's distance between distributions on a
     manifold
   title: DEMD
+  # image: /images/projects/demd_image.png
+  image: /images/projects/demd_hero3.jpg
 href: demd
 publication:
+  keyImage: /images/projects/demd_image.png
+  title: Diffusion Earth Mover's Distance and Distribution Embeddings
   abstract: "We propose a new fast method of measuring distances between large numbers
     of related high dimensional datasets called the Diffusion Earth Mover's Distance
     (EMD). We model the datasets as distributions supported on common data graph that
@@ -41,4 +45,6 @@ publication:
   type: Journal Article
   year: 2021
   youtube: 3Lwi_nYsmDs
+  poster: https://www.alextong.net/publication/tong-diffusion-2021/DiffusionEMD_poster.pdf
+  slides: https://www.alextong.net/publication/tong-diffusion-2021/DiffusionEMD_slides.pdf
 title: Diffusion Earth Mover's Distance and Distribution Embeddings

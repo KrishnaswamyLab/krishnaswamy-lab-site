@@ -1,11 +1,16 @@
+abbreviation: UDEMD
 description: a fast multi-scale approximation of the Earth Mover's Distance with manifold
   geodesics as a ground distance between distributions on a manifold.
 hero:
   blurb: Fast approximations for earth mover's distance between distributions on a
     manifold
-  title: Embedding Signals on Knowledge Graphs with Unbalanced Diffusion Earth Mover's
-    Distance
+  title: UDEMD
+  # image: /images/heroes/geometric_3.png
+  image: /images/projects/udemd_hero2.jpg
+href: udemd
 publication:
+  title: "Embedding Signals on Knowledge Graphs with Unbalanced Diffusion Earth Mover's
+  Distance"
   abstract: In modern relational machine learning it is common to encounter large
     graphs that arise via interactions or similarities between observations in many
     domains. Further, in many cases the target entities for analysis are actually
@@ -36,9 +41,10 @@ publication:
   - Smita Krishnaswamy
   github: https://github.com/KrishnaswamyLab/DiffusionEMD
   href: https://arxiv.org/abs/2107.12334
-  keyImage: /images/projects/udemd_signal_graphs_image.png
+  keyImage: /images/projects/udemd_image.png
   periodical: ICASSP
-  periodicalImage: /images/journals/arxiv.png
+  # periodicalImage: /images/journals/arxiv.png
   type: Journal Article
-title: Embedding Signals on Knowledge Graphs with Unbalanced Diffusion Earth Mover's
-  Distance
+  year: 2022
+title: "Embedding Signals on Knowledge Graphs with Unbalanced Diffusion Earth Mover's
+  Distance"

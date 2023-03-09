@@ -1,8 +1,4 @@
-about: "Sculpting the coarse readout of experimentation towards a useful embedding
-  preserving the data's characteristics is a fundamental problem we undertake. Our
-  methods provide the foundations of analyzing molecules for drug discovery, images
-  for dynamic characterization, and networks for gaining insight from knowledge graphs.
-  \n            "
+about: We learn representations of complex affinities by creating easy to represent spaces. We make these spaces amenable for downstream analysis and apply these procedures to challenges such as drug discovery and neuroscience.
 examples:
 - href: /projects/phate
   text: PHATE
