@@ -25,7 +25,14 @@
             dispatch('searching', {query});            
 		}, 750);
 	}
-    
+        
+    type WithTarget<Event, Target> = Event & { currentTarget: Target };
+    //     ({ target : { value } }: WithTarget ) => debounce(value)
+    const onKeyUp = (event:WithTarget<KeyboardEvent, HTMLInputElement>) => {
+        const target = event.target
+        const value = target?.value
+        debounce(value)
+    }
 </script>
 <svelte:options accessors={true}/>
 
@@ -40,7 +47,7 @@
             !outline-none
             border-transparent focus:border-transparent focus:ring-0            
             "
-            on:keyup={({ target: { value } }) => debounce(value)}
+            on:keyup={onKeyUp}
             bind:this={input} 
             bind:value={query}
         >

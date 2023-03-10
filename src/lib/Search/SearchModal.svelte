@@ -3,69 +3,70 @@
     import { setContext, getContext, onDestroy } from 'svelte';
     import { modal } from '$lib/Stores/search.js';
 	import { fade, fly } from 'svelte/transition';    
-
-    import {pb} from '$lib/Utils/pocketbase'
-    import { ClientResponseError } from "pocketbase";
+    
     import SearchInput from '$lib/Search/SearchInput.svelte';
     import SearchButton from '$lib/Search/SearchButton.svelte';
     import SearchSkeleton from '$lib/Search/SearchSkeleton.svelte';
     import SearchSectionWaiting from '$lib/Search/SearchSectionWaiting.svelte';
     import SearchSection from '$lib/Search/SearchSection.svelte';
     import FuzzySearch from '$lib/Fuzzy/FuzzySearch.svelte';
-    import Modal from '$lib/Utils/Modal.svelte'
+    import Modal from '$lib/Layout/Modal.svelte'
 
+    
     const queryMap = {
-        slugs: {
-            collection: 'slugs',
-            filter: (s) => `slug~"${s}" || original~"${s}"`,            
+        affiliations: {
+            collection: 'affiliations',
+            filter: (s:string) => `slug~"${s}" || original~"${s}"`,            
         },
-        songs: {
-            collection: 'songs',
-            filter: (s) => `title~"${s}" || about~"${s}" || genres?~"${s}"`,
+        courses: {
+            collection: 'courses',
+            filter: (s:string) => `title~"${s}" || about~"${s}" || genres?~"${s}"`,
             expand: `albums, artists, writers, producers, lyrics, labels, slug`
         },
-        albums: {
-            collection: 'albums',
-            filter: (s) => `name~"${s}" || genres?~"${s}"`,
+        members: {
+            collection: 'members',
+            filter: (s:string) => `name~"${s}" || genres?~"${s}"`,
             expand: `songs, slug`
         },
-        labels: {
-            collection: 'labels',
-            filter: (s) => `name~"${s}"`,
+        projects: {
+            collection: 'projects',
+            filter: (s:string) => `name~"${s}"`,
             expand: `slug`
         },
-        persons: {
-            collection: 'persons',
-            filter: (s) => `name~"${s}" || roles?~"${s}"`,
+        publications: {
+            collection: 'selected_publications',
+            filter: (s:string) => `name~"${s}" || roles?~"${s}"`,
             expand: `slug`  
         },    
     }
 
     // NOTE: for search
     let query: string = ''    
-	let input
+	let input: HTMLInputElement
     let isSearching = false;
 
     // NOTE: for modal
     // let modal = false
-    let cmd, k, slash
+    let cmd:boolean, k:boolean, slash:boolean
     $: hotKeyActive = (cmd && k) || slash
 
     
     // NOTE: for results
-    let foundSlugs, foundSongs, foundAlbums, foundLabels, foundPersons
+    let foundAffiliation, foundCourses, foundMembers, foundProjects, foundPublications
     let totalResults = 0
 
-    const searchSectionsNames = 'songs albums labels persons links'.split(' ')
-    $: searchSectionsPromises = [foundSongs, foundAlbums, foundLabels, foundPersons, foundSlugs]
+    const searchSectionsNames = 'affiliations courses members projects publications'.split(' ')
+    $: searchSectionsPromises = [
+        foundAffiliation, foundCourses, foundMembers, foundProjects, foundPublications
+    ]
     
     function clearSearch() {
         query = ''
-        foundSlugs = undefined 
-        foundSongs = undefined 
-        foundAlbums = undefined  
-        foundLabels = undefined 
-        foundPersons = undefined 
+        foundAffiliation = undefined 
+        foundCourses = undefined 
+        foundMembers = undefined  
+        foundProjects = undefined 
+        foundPublications = undefined 
         totalResults = 0
         isSearching = false
 
@@ -75,13 +76,14 @@
         isSearching = true
         totalResults = 0;
 
-        foundSlugs = generateSearch(queryMap.slugs)().then(r=>{totalResults += r.length; return r})
-        foundSongs = generateSearch(queryMap.songs)().then(r=>{totalResults += r.length; return r})
-        foundAlbums = generateSearch(queryMap.albums)().then(r=>{totalResults += r.length; return r})
-        foundLabels = generateSearch(queryMap.labels)().then(r=>{totalResults += r.length; return r})
-        foundPersons = generateSearch(queryMap.persons)().then(r=>{totalResults += r.length; return r})        
+        foundAffiliation = generateSearch(queryMap.affiliations)().then(r=>{totalResults += r.length; return r})
+        foundCourses = generateSearch(queryMap.courses)().then(r=>{totalResults += r.length; return r})
+        foundMembers = generateSearch(queryMap.members)().then(r=>{totalResults += r.length; return r})
+        foundProjects = generateSearch(queryMap.projects)().then(r=>{totalResults += r.length; return r})
+        foundPublications = generateSearch(queryMap.publications)().then(r=>{totalResults += r.length; return r})        
+        
         Promise
-            .allSettled([foundSlugs, foundSongs, foundAlbums, foundLabels, foundPersons])
+            .allSettled([foundAffiliation, foundCourses, foundMembers, foundProjects, foundPublications])
             .then(()=>{
                 isSearching=false                
             })
@@ -103,21 +105,24 @@
                     .collection(collection)
                     .getList(start, end, queryParams)                            
                 return results?.items
+
             } catch (ClientResponseError) {
                 return []
             }
         }
+
         return searchFunction
+
     }
 
-    function updateStoreModal(b) {
-        if (b) {
-            modal.update(v=>b)
+    function updateStoreModal(bool:boolean) {
+        if (bool) {
+            modal.update(v=>bool)
             setTimeout(()=>{
                 input?.focus()
             }, 5)
         } else {
-            modal.update(v=>b)
+            modal.update(v=>bool)
             setTimeout(()=>{
                 input?.blur()
             }, 5)
@@ -139,6 +144,7 @@
             clearSearch()
         }
     }
+
     function triggerModal(event, keyDirection = 'down') {        
         let which = keyDirection === 'down' ? true : false
         if ($modal) escapeModal(event)
@@ -173,11 +179,13 @@
                     break;
             }
         }        
+
         if (hotKeyActive && !$modal) {  
             updateStoreModal(true)
             event.preventDefault();
         }
     }
+    
     function onKeyDown(event) {
         triggerModal(event, 'down')        
 	}
