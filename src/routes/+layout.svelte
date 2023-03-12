@@ -23,7 +23,7 @@
 	import FollowUsBtn from "$lib/Layout/FollowUsBtn.svelte";
 	import TwitterSEO from '$lib/SEO/Twitter.svelte'
 	import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
-	
+	import SearchModal from '$lib/Search/SearchModal.svelte'
 </script>
 <!-- <TwitterSEO/>
 <OpenGraphSEO/> -->
@@ -35,3 +35,4 @@
 	<div class="flex-1 py-8"></div>	
 	<Footer/>
 </div>
+<SearchModal/>	

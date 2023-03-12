@@ -1,40 +1,13 @@
 <script>
-    /** @type {import('./$types').PageData} */
-    export let data;
-    import { fly, fade } from 'svelte/transition';
-    import Hero from '$lib/Layout/Hero/Hero.svelte';
-    import FollowUsBtn from '$lib/Layout/FollowUsBtn.svelte';
-    import JellyContainer from '$lib/Layout/JellyContainer.svelte';
-    import ResearchCategoryBox from '$lib/Layout/ResearchCategoryBox.svelte';
-    import AffiliationBox from '$lib/Layout/AffiliationBox.svelte';
-
-    import BackgroundCarousel from '$lib/Layout/BackgroundCarousel.svelte';    
-    // import { Carousel , CarouselTransition } from 'flowbite-svelte'
-    import Carousel from '$lib/Carousal/Carousal.svelte'
-    const images = [
-        '/images/yale/2005_09_30_13-33-58_School_of_Medicine_Michael_Marsland.jpg',
-        '/images/yale/lab_members_2019.jpeg',
-        '/images/yale/2012_10_16_16-55-33_DSC_0714a_Michael_Marsland.jpg',
-        '/images/yale/cold_spring_harbor_teaching_crew.png',
-        '/images/yale/2015_04_21_15_53_1_Michael_Marsland.jpg',
-        '/images/yale/lab_hackathon.png',
-        '/images/yale/yale_innovation_summit.png',
-        '/images/yale/lab_meeting.png'
-    ]
-    const imageCaptions = [
-        'School of Medicine',
-        'Lab Members',
-        'Yale Campus',
-        'Cold Spring Harbor Teaching Crew',
-        'Yale Campus in Bloom',
-        'Lab Hackathon',
-        'Yale Innovation Summig',
-        'Labe Meeting',
-    ]
-    const myImages = images.map((url, id) => ({
-        id, url, name: imageCaptions[id],
-        caption: imageCaptions[id]
-    }))
+/** @type {import('./$types').PageData} */
+export let data;
+import { fly, fade } from 'svelte/transition';
+import Hero from '$lib/Layout/Hero/Hero.svelte';
+import FollowUsBtn from '$lib/Layout/FollowUsBtn.svelte';
+import JellyContainer from '$lib/Layout/JellyContainer.svelte';
+import ResearchCategoryBox from '$lib/Layout/ResearchCategoryBox.svelte';
+import AffiliationBox from '$lib/Layout/AffiliationBox.svelte';
+import Carousel from '$lib/Carousal/Carousal.svelte'
 
 import { onMount } from 'svelte'
 import { goto } from '$app/navigation';
@@ -48,9 +21,10 @@ const backgroundImage="/images/lab_hero.jpg"
 
 import TwitterSEO from '$lib/SEO/Twitter.svelte'
 import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
-import {LabShortDescription} from '$lib/utils'
+import {LabShortDescription, LabCarousalImages} from '$lib/utils'
 const subtitle = ''//"on AI for Science"
 </script>
+
 <TwitterSEO/>
 <OpenGraphSEO/>
 
@@ -75,7 +49,7 @@ const subtitle = ''//"on AI for Science"
 
     <div class="w-1/2 h-[36rem]">
         <Carousel            
-            images={myImages}
+            images={LabCarousalImages}
             showCaptions={false}             
         />
     </div>
@@ -93,7 +67,7 @@ const subtitle = ''//"on AI for Science"
         </div>
         <div class="h-[36rem]">
             <Carousel                
-                images={myImages}
+                images={LabCarousalImages}
                 showCaptions={false} 
             />
         </div>        
@@ -112,11 +86,7 @@ const subtitle = ''//"on AI for Science"
 {/if}
 
 {#if animate}
-<!-- <div class="block md:hidden divider divider-vertical py-8"></div>  -->
-
 <JellyContainer>
-
-    <!-- <Hero>Krishnaswamy Lab on AI for Science</Hero> -->
     <div class="flex place-content-center md:pt-8">
         <div class="
             text-slate-700 leading-relaxed

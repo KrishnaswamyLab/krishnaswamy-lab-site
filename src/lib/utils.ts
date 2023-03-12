@@ -110,3 +110,55 @@ export const SortMemberByImage = (a:MemberInterface, b:MemberInterface) => {
     let imageFirst = doesBHaveImage - doesAHaveImage      
     return imageFirst
 }
+
+
+export const LabCarousalImages = [
+    {
+        id: 0,
+        url: '/images/yale/2005_09_30_13-33-58_School_of_Medicine_Michael_Marsland.jpg',
+        name: 'School of Medicine',
+        caption: 'School of Medicine',
+    },
+    {
+        id: 1,
+        url: '/images/yale/lab_members_2019.jpeg',
+        name: 'Lab Members',
+        caption: 'Lab Members',
+    },
+    {
+        id: 2,
+        url:  '/images/yale/2012_10_16_16-55-33_DSC_0714a_Michael_Marsland.jpg',
+        name: 'Yale Campus',
+        caption: 'Yale Campus',
+    },
+    {
+        id: 3,
+        url: '/images/yale/cold_spring_harbor_teaching_crew.png',
+        name: 'Cold Spring Harbor Teaching Crew',
+        caption: 'Cold Spring Harbor Teaching Crew',
+    },
+    {
+        id: 4,
+        url: '/images/yale/2015_04_21_15_53_1_Michael_Marsland.jpg',
+        name: 'Yale Campus in Bloom',
+        caption: 'Yale Campus in Bloom',
+    },
+    {
+        id: 5,
+        url: '/images/yale/lab_hackathon.png',
+        name: 'Lab Hackathon',
+        caption: 'Lab Hackathon',
+    },
+    {
+        id: 6,
+        url: '/images/yale/yale_innovation_summit.png',
+        name: 'Yale Innovation Summit',
+        caption: 'Yale Innovation Summit',
+    },
+    {
+        id: 7,
+        url: '/images/yale/lab_meeting.png',
+        name: 'Lab Meeting',
+        caption: 'Lab Meeting',
+    },
+]
