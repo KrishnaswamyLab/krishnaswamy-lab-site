@@ -3,6 +3,7 @@
     import type {ComponentType, SvelteComponentTyped} from 'svelte'
 
     import Magnify from "$lib/Icons/Magnify.svelte";
+    import { modal } from '$lib/Stores/search';
     
     let input: HTMLInputElement 
     export function focus() {        
@@ -13,6 +14,7 @@
 	}
     const openModal = () => {
         dispatch('open');
+        modal.update(v=>true)
     }
 	const dispatch = createEventDispatcher();
 

@@ -11,6 +11,7 @@
 		{text: 'join', href: '/join'},
 		{text: 'contact', href: '/contact'},		
 	]
+	import SearchButton from '$lib/Search/SearchButton.svelte'	
 </script>
 
 
@@ -19,6 +20,7 @@
 		<a class="btn btn-ghost normal-case text-2xl font-bold" href="/">
 			Krishnaswamy Lab
 		</a>
+		<SearchButton/>		
 	</div>
 
 	<div class="navbar-end">

@@ -1,11 +1,9 @@
 <!-- https://github.com/Sarodus/svelte-quicksearch-bar/blob/master/src/QuickSearchBar.svelte -->
 <script lang="ts">
     import { setContext, getContext, onDestroy } from 'svelte';
-    import { modal } from '$lib/Stores/search.js';
-	import { fade, fly } from 'svelte/transition';    
+    import { modal } from '$lib/Stores/search';
     
     import SearchInput from '$lib/Search/SearchInput.svelte';
-    import SearchButton from '$lib/Search/SearchButton.svelte';
     import SearchSkeleton from '$lib/Search/SearchSkeleton.svelte';
     import SearchSectionWaiting from '$lib/Search/SearchSectionWaiting.svelte';
     import SearchSection from '$lib/Search/SearchSection.svelte';
