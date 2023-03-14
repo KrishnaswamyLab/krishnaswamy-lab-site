@@ -31,7 +31,6 @@ publication:
   - Maximilian Nickel
   - Ian Adelstein
   - Smita Krishnaswamy
-  github: https://github.com/guillaumehu/phate_fim
   keyImage: /images/projects/schematic_3_14_neuralFIM.png
   title: Neural FIM for learning Fisher information metrics from point cloud data
   type: Journal Article
