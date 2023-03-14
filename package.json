@@ -42,6 +42,7 @@
 		"daisyui": "^2.50.0",
 		"flowbite": "^1.6.3",
 		"flowbite-svelte": "^0.30.6",
+		"layercake": "^7.2.2",
 		"svelte-youtube-embed": "^0.1.8",
 		"vite-plugin-yaml2": "^1.1.5"
 	}
