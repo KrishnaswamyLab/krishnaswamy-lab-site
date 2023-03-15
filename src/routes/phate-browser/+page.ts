@@ -25,16 +25,35 @@ export async function load({  fetch }) {
 
     
     const counts = []
-    stubs.forEach(stub => {
-        fetch(`/data/eb_2018_counts_${stub}.json`)
-            .then((response) => {
-                return response.json()
+    // stubs.forEach(stub => {
+    //     fetch(`/data/eb_2018_counts_${stub}.json`)
+    //         .then((response) => {
+    //             return response.json()
+    //         })
+    //         .then((arr) => {
+    //             arr.map((e, i) => {
+    //                 counts[i] = {...counts[i], ...e}
+    //             })
+    //         })
+    // })
+    
+        
+    fetch(`/data/eb_2018_counts_Timepoint.json`)
+        .then((response) => {
+            return response.json()            
+        }).then((arr)=>{
+            arr.map((e, i) => {
+                counts[i] = {...counts[i], ...e}
             })
-            .then((arr) => {
-                arr.map((e, i) => {
-                    counts[i] = {...counts[i], ...e}
-                })
+        })
+    
+    fetch(`/data/eb_2018_counts_DPPA4.json`)
+        .then((response) => {
+            return response.json()            
+        }).then((arr)=>{
+            arr.map((e, i) => {
+                counts[i] = {...counts[i], ...e}
             })
-    })
-    return {points, counts};
+        })
+    return {points, counts, stubs};
 }
