@@ -13,8 +13,8 @@ export async function load({ }) {
     // const points = (await LoadGlobsAllAtOnces(points_json))[0]
     // console.log(points_json[0])
     const points =  Object.values(points_json)[0]()
-    // const counts =  Object.values(counts_json)[0]()
+    const counts =  Object.values(counts_json)[0]()
     // const counts = (await LoadGlobsAllAtOnces(counts_json))[0]
-    const counts = []
+    // const counts = []
     return {points, counts};
 }

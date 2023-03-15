@@ -1,132 +1,170 @@
 <script lang="ts">
-    /** @type {import('./$types').PageData} */
-    export let data;   
-    import Hero from '$lib/Layout/Hero/Hero.svelte';
+/** @type {import('./$types').PageData} */
+export let data;   
+
+import { onMount } from 'svelte'
+import { goto } from '$app/navigation';
+import { browser } from '$app/environment';
+
+
+import TwitterSEO from '$lib/SEO/Twitter.svelte'
+import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
+import Hero from '$lib/Layout/Hero/Hero.svelte';
+import JellyContainer from '$lib/Layout/JellyContainer.svelte';
+
+const backgroundImage="/images/lab_hero.jpg"
+
+import Axis from '$lib/Canvas/Axis.svelte';
+import Point from '$lib/Canvas/Point.svelte';
+import { Canvas } from 'svelte-canvas';
+import { extent, map } from 'd3-array';
+import { scaleLinear, scaleOrdinal, scaleSequential, scaleBand} from 'd3-scale';
+import { Delaunay } from 'd3-delaunay';
+import {set} from 'd3-collection'
+import {interpolateYlGn, interpolatePiYG, schemeRdBu, interpolateRdBu, schemeAccent} from 'd3-scale-chromatic';
+
+
+const margin = { top: 10, right: 10, bottom: 25, left: 25 };
+
+let points = [];
+let width, height;
+let picked, click = false;
+
+
+let keyX = 'P1'
+let keyY = 'P2'
+let keyC = 'Timepoint'
+// let keyC = 'samples'
+
+let pointIds = []  
+$: points = data.points
+$: pointIds = Object.keys(points).sort((a, b)=> getCountsValue(a) - getCountsValue(b))
+
+$: counts = data.counts
+$: colorOptions = Object.keys(counts[0]).map(e=>e.trim())
+
+
+
+$: scaleX = scaleLinear()
+    .domain(extent(points, d => d[keyX]))
+    .range([margin.left, width - margin.right])
+    .nice();
+
+$: scaleY = scaleLinear()
+    .domain(extent(points, d => d[keyY]))
+    .range([height - margin.bottom, margin.top])
+    .nice();
+
+    $: distinctColors = set(points.map(d=>d[keyC])).values()
+
+$: scaleCat = scaleBand(schemeAccent)
+    .domain(distinctColors)
+    .range([0, 1])
+
+$: scaleColor = scaleLinear()
+    .domain(extent(counts, d => d[keyC]))
+    .range([0, 1])
     
-    import JellyContainer from '$lib/Layout/JellyContainer.svelte';
-    
-    import { onMount } from 'svelte'
-    import { goto } from '$app/navigation';
+$: scaleC = scaleSequential(interpolateRdBu)
 
-    import { browser } from '$app/environment';
+$: getCountsValue = (i) => {
+    let cur = counts[i]
+    let val = cur[keyC] 
+    return val
+}
 
-    const backgroundImage="/images/lab_hero.jpg"
-    
-    import TwitterSEO from '$lib/SEO/Twitter.svelte'
-    import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
+$: getColor = (pnt, i) => {    
+    let val = getCountsValue(i)
+    let clr = scaleC(scaleColor(val))
+    return clr
+}
 
-    import { LayerCake, Svg, WebGL, Html } from 'layercake';
+$: delaunay = Delaunay.from(points, d => scaleX(d[keyX]), d => scaleY(d[keyY]));
 
-    
-  import ScatterWebGL from '$lib/LayerCake/Scatter.webgl.svelte';
-  import AxisX from '$lib/LayerCake/AxisX.svelte';
-  import AxisY from '$lib/LayerCake/AxisY.svelte';
-  import QuadTree from '$lib/LayerCake/QuadTree.html.svelte';
+let found
+let timer
+const debounce = (x, y) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+        found = delaunay.find(x - 8, y - 8)
+        return found
+    }, 10);
+}
 
-    const xKey = 'x';
-    const yKey = 'y';
-    const r = 3;
-    const padding = 6;
-    const points = [
-        {x:1, y:1},
-        {x:2, y:2},
-        {x:3, y:1},
-        {x:4, y:4},
-    ]
-
-
-    let pointIds = []
-    // let pointXYs = []
-    $: pointXYs = pointIds.map((id, i) => {
-        return {
-            x: data?.points?.P1?.[id],
-            y: data?.points?.P2?.[id],
-            t: data?.points?.samples?.[id],
-        }
-    })
-    
-    let layercake
-    onMount(async () => {
-        await updateData()
-        layercake.resize()
-        layercake.render()
-    })
-
-    async function updateData() {
-        await data.points
-        pointIds = Object.keys(data.points.samples)
-        // pointXYs = pointIds.map((id, i) => {
-        //     return {
-        //         x: data?.points?.P1?.[id],
-        //         y: data?.points?.P2?.[id],
-        //         t: data?.points?.samples?.[id],
-        //     }
-        // })
-    }
+// This contains the debounced values
+let dimensions = { height, width };
+let timeoutHandle;
+$: {
+    clearTimeout(timeoutHandle);
+    timeoutHandle = setTimeout(() => {
+        dimensions = { height, width };
+    }, 500);
+}
+onMount(()=>{
+    setTimeout(() => {
+        keyC = 'DPPA4'
+    }, 2500);    
+})
 
 </script>
-
-<style>
-    .circle {
-      position: absolute;
-      border-radius: 50%;
-      background-color: rgba(171,0, 214);
-      transform: translate(-50%, -50%);
-      pointer-events: none;
-      width: 10px;
-      height: 10px;
-    }
-</style>
-  
 
 <TwitterSEO/>
 <OpenGraphSEO/>
 <Hero></Hero>
 {#if browser}
 <JellyContainer>
-    <div class="h-92">        
+    <div class="">
         {#await data.points}
             
         {:then results} 
-            <LayerCake
-                padding={{ top: 20, right: 15, bottom: 20, left: 25 }}
-                x={xKey} y={yKey}
-                xPadding={[padding, padding]}
-                yPadding={[padding, padding]}
-                data={pointXYs}
-            >
-                <Svg>
-                    <AxisX/>
-                    <AxisY ticks={5} />
-                </Svg>
-                <WebGL>
-                    <ScatterWebGL 
-                        r={r}
-                        bind:this={layercake}
-                    />
-                </WebGL>
-                <Html>
-                    <QuadTree
-                        let:x
-                        let:y
-                        let:visible
-                    >
-                        <div
-                            class="circle"
-                            style="
-                                top:{y}px; 
-                                left:{x}px;
-                                display: { visible ? 'block' : 'none' };
-                            "
-                        >
-                        </div>
-                    </QuadTree>
-                </Html>
-            
-            </LayerCake>
+        <div class="h-112" 
+            bind:clientWidth={width} 
+            bind:clientHeight={height}
+        >
+        <Canvas
+            width={dimensions.width} height={dimensions.height} style="cursor: pointer"
+            on:mousemove={({ clientX: x, clientY: y }) => {
+            // debounce(x, y)
+            if (picked = found)
+                points = [...points.filter((_, i) => i !== picked), points[picked]]
+            }}
+            on:mousedown={() => (click = true)}
+            on:mouseup={() => (click = false)}
+            on:mouseout={() => (picked = null)}
+        >
+            <Axis type="x" scale={scaleX} tickNumber={8} {margin} />
+            <Axis type="y" scale={scaleY} tickNumber={8} {margin} />
+
+            {#each pointIds as pid, i (i)}
+            {@const pnt = points[pid]}
+            <Point
+                x={scaleX(pnt[keyX])} y={scaleY(pnt[keyY])} 
+                fill={getColor(pnt, pid)}
+                r={keyC == 'Timepoint' ? 3 : Math.max(2, 2 + scaleColor(getCountsValue(i)) * 5)}
+                stroke={'#000'}                
+                strokeWidth={keyC == 'Timepoint' ? 0.1 : Math.max(0.1, 0.1+scaleColor(getCountsValue(i)) * 0.5)}
+            /> 
+            {/each}
+        </Canvas>
+        </div> 
+        <div class="form-control w-full max-w-xs">
+            <label class="label">
+              <span class="label-text">Color by</span>
+              <span class="label-text-alt">{keyC == 'Timepoint' ? 'time' : 'expression'}</span>
+            </label>
+
+            <select class="select select-bordered w-full max-w-xs pa-8" bind:value={keyC}>
+                <option disabled selected>Color by</option>
+                {#each colorOptions as option}
+                    <option value={option}>
+                        {option}
+                    </option>
+                {/each}
+            </select>
+        </div>
         {:catch error}
             whoops
-        {/await}
+        {/await}        
         
     </div>
 </JellyContainer>
