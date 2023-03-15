@@ -22,6 +22,7 @@ import { scaleLinear, scaleOrdinal, scaleSequential, scaleBand} from 'd3-scale';
 import { Delaunay } from 'd3-delaunay';
 import {set} from 'd3-collection'
 import {interpolateYlGn, interpolatePiYG, schemeRdBu, interpolateRdBu, schemeAccent} from 'd3-scale-chromatic';
+    import { get } from 'svelte/store';
 
 
 const margin = { top: 10, right: 10, bottom: 25, left: 25 };
@@ -67,6 +68,9 @@ $: scaleColor = scaleLinear()
     
 $: scaleC = scaleSequential(interpolateRdBu)
 
+
+
+
 $: getCountsValue = (i) => {
     let cur = counts[i]
     let val = cur[keyC] 
@@ -100,12 +104,42 @@ $: {
         dimensions = { height, width };
     }, 500);
 }
-onMount(async ()=>{
+
+
+const fetchStub = async (stub) => {
+    let response = await fetch(`/data/eb_2018_counts_${stub}.json`)
+    let arr = await response.json()    
+    arr.forEach(async (e, i) => {
+        counts[i] = {...counts[i], ...e}
+    })
+}
+
+
+$: getStubs = async () => data.stubs.forEach(
+    async stub => {   
+        console.log(stub)    
+        fetchStub(stub)
+        // setTimeout(() => {        
+        //     fetchStub(stub)
+        // }, Math.floor(Math.random() * 100));            
+    }
+)
+
+onMount(async () => {
     // console.log(await data.counts)
+    // await data.stubs
+
     setTimeout(() => {        
         keyC = 'DPPA4'
-    }, 2500);    
+    }, 2500);   
+
+    getStubs()
+    
 })
+
+
+
+
 
 </script>
 
