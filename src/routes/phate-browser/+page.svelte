@@ -208,9 +208,9 @@ onMount(async () => {
             <Point
                 x={scaleX(pnt[keyX])} y={scaleY(pnt[keyY])} 
                 fill={getColor(pnt, pid)}
-                r={keyC == 'Timepoint' ? 3 : Math.max(2, 2 + scaleColor(getCountsValue(i)) * 5)}
+                r={keyC == 'Timepoint' ? 3 : Math.max(2, 2 + scaleColor(getCountsValue(pid)) * 3)}
                 stroke={'#000'}                
-                strokeWidth={keyC == 'Timepoint' ? 0.1 : Math.max(0.1, 0.1+scaleColor(getCountsValue(i)) * 0.5)}
+                strokeWidth={keyC == 'Timepoint' ? 0.1 : Math.max(0.1, 0.1+scaleColor(getCountsValue(pid)) * 0.5)}
             /> 
             {/each}
         </Canvas>
@@ -223,7 +223,10 @@ onMount(async () => {
 
             <select class="select select-bordered w-full max-w-xs pa-8" bind:value={keyC}>
                 <option disabled selected>Color by</option>
-                {#each colorOptions as option}
+                {#each colorOptions.sort((a, b) => {
+                    if (b === 'Timepoint') return 10
+                    return b<a
+                }) as option}
                     <option value={option}>
                         {option}
                     </option>
