@@ -100,8 +100,9 @@ $: {
         dimensions = { height, width };
     }, 500);
 }
-onMount(()=>{
-    setTimeout(() => {
+onMount(async ()=>{
+    // console.log(await data.counts)
+    setTimeout(() => {        
         keyC = 'DPPA4'
     }, 2500);    
 })
