@@ -23,6 +23,7 @@ import { Delaunay } from 'd3-delaunay';
 import {set} from 'd3-collection'
 import {interpolateYlGn, interpolatePiYG, schemeRdBu, interpolateRdBu, schemeAccent} from 'd3-scale-chromatic';
     import { get } from 'svelte/store';
+    import { each } from 'svelte/internal';
 
 
 const margin = { top: 10, right: 10, bottom: 25, left: 25 };
@@ -114,27 +115,24 @@ const fetchStub = async (stub) => {
     })
 }
 
-
-$: getStubs = async () => data.stubs.forEach(
-    async stub => {   
+const getStubs = async () => {
+    await Promise.all(data.stubs.map(async stub => {   
         console.log(stub)    
-        fetchStub(stub)
-        // setTimeout(() => {        
-        //     fetchStub(stub)
-        // }, Math.floor(Math.random() * 100));            
-    }
-)
+        await fetchStub(stub)        
+    }))
+    return true
+}
 
+let waitingStubs;
 onMount(async () => {
     // console.log(await data.counts)
     // await data.stubs
-
-    setTimeout(() => {        
-        keyC = 'DPPA4'
-    }, 2500);   
-
-    getStubs()
-    
+    waitingStubs = getStubs().then(() => {
+        setTimeout(() => {        
+            keyC = 'DPPA4'
+        }, 2500);   
+    })
+    console.log('mount', waitingStubs)
 })
 
 
@@ -148,10 +146,45 @@ onMount(async () => {
 <Hero></Hero>
 {#if browser}
 <JellyContainer>
-    <div class="">
+    <div class="pt-16">
+                
         {#await data.points}
             
         {:then results} 
+        
+        {#await waitingStubs}
+        <div class="flex flex-1 my-auto place-content-center place-items-center flex-col grow ">
+            <div class="bg-base-200 shadow rounded-md p-4 max-w-sm w-full mx-auto">
+                <div class="flex place-content-center">
+                    <div class="prose text-center">
+                        <h1 class="font-extralight">
+                            Loading data
+                        </h1>                        
+                    </div>
+                </div>
+                
+                <div class="animate-pulse flex space-x-4">                                
+                <div class="flex-1 w-full space-y-6 py-1">                    
+                    <div class="flex flex-row space-y-3 gap-4">
+                        <div class="h-64 my-4 w-2 bg-slate-700 rounded"></div>                        
+                        <div class="h-64  grid grid-cols-3 gap-4 place-items-center place-content-evenly w-full">
+                            {#each Array(9) as e, i }
+                                <div class="
+                                    rounded-full bg-slate-700 h-10 w-10 
+                                    hover:shadow-2xl transition-all ease-in-out
+                                    duration-300 hover:-translate-y-2
+                                ">
+                                </div>
+                            {/each}
+                                                                                                           
+                        </div>                                                
+                    </div>
+                    <div class="h-2 col-span-1 w-full bg-slate-700 rounded"></div>
+                </div>
+                </div>
+            </div>
+        </div>
+        {:then res} 
         <div class="h-112" 
             bind:clientWidth={width} 
             bind:clientHeight={height}
@@ -197,6 +230,8 @@ onMount(async () => {
                 {/each}
             </select>
         </div>
+        {/await}
+       
         {:catch error}
             whoops
         {/await}        
