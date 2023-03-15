@@ -138,19 +138,98 @@ onMount(async () => {
 
 
 
-
+import GitHubShield from '$lib/Shields/GitHub.svelte'
 </script>
 
-<TwitterSEO/>
-<OpenGraphSEO/>
+<TwitterSEO
+    title="PHATE browser of Embryoid Bodies data by the Krishnaswamy Lab"
+    url="https://www.krishnaswamylab.org/phate-browser"
+/>
+<OpenGraphSEO
+    title="PHATE browser of Embryoid Bodies data by the Krishnaswamy Lab"
+    url="https://www.krishnaswamylab.org/phate-browser"
+/>
 <Hero></Hero>
 {#if browser}
-<JellyContainer>
-    <div class="pt-16">
-                
+
+<Hero>
+    Potential of Heat-diffusion for Affinity-based Transition Embedding (PHATE)
+</Hero>
+
+<JellyContainer class="pt-16">
+    <div>
+        
+        <div class='flex place-content-center'>
+
+            <div class="prose">
+
+                <div>
+                    This 27-day time course of embryoid body (EB) differentiation dataset is publically available as <code>scRNAseq.zip</code> at Mendelay Datasets at 
+                    <a 
+                        href="https://data.mendeley.com/datasets/v6n743h5ng/" 
+                        class="link link-hover link-info"
+                    >
+                        https://data.mendeley.com/datasets/v6n743h5ng/
+                    </a>.
+                </div>
+        
+                <h2>
+                    Time course of human embryoid body differentation
+                </h2>
+                <div>
+                    Low passage H1 hESCs were maintained on Matrigel-coated dishes in DMEM/F12-N2B27 media supplemented with FGF2. For EB formation, 
+                    cells were treated with Dispase, dissociated into small clumps and plated in non-adherent plates 
+                    in media supplemented with 20% FBS, 45 which was prescreened for EB differentiation. 
+                    Samples were collected during 3-day intervals during a 27 day-long differentiation 
+                    timecourse. An undifferentiated hESC sample was also included (Figure S7D). 
+                    Induction of key germ layer markers in these EB cultures was validated by qPCR 
+                    (data not shown). For single cell analyses, EB cultures were dissociated, FACS 
+                    sorted to remove doublets and dead cells and processed on a 10x genomics instrument 
+                    to generate cDNA libraries, which were then sequenced. Small scale sequencing 
+                    determined that we have successfully collected data on approximately 31,000 cells 
+                    equally distributed throughout the timecourse.
+                </div>
+        
+                <h2>
+                    Embedding Data Using PHATE
+                </h2>
+                <div  class="pb-4">
+                    Since we are looking for subtle structure and we expect some of the trajectories to be sparse, we might want 
+                    to decrease knn from the default of 5, and reduce t from the automatic value of 21 
+                    (printed in the output above). For single-cell RNA-seq you can try knn as low as 3 
+                    or 4 if you're looking for subtle structure, or as high as 30 or 40 if you have 
+                    hundreds of thousands of cells. We'll also reduce alpha here to 15 to partially 
+                    offset the decreased connectivity as a result of decreasing knn.
+                </div>
+                <div class="mockup-code bg-primary text-primary-content text-xs py-4">
+                    <pre><code>phate_operator = phate.PHATE(n_jobs=-2, random_state=42)</code></pre>
+                    <pre><code>Y_phate = phate_operator.fit_transform(EBT_counts)</code></pre>
+                </div>
+
+                <h2>
+                    Exploratory visualization
+                </h2>
+                <div  class="pb-8">
+                    Below you'll find an interactive visualization of the 2D-PHATE embedding. Use the drop down to color each point (cell)
+                    by the corresponding gene.
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+
+</JellyContainer>
+    <div class="py-16 bg-base-300">
+        <div class="
+            mx-12 px-12 
+            flex place-content-center
+        ">
+        <div class="w-3/4 max-w-3/4 2xl:w-[72rem]">
         {#await data.points}
             
         {:then results} 
+        
         
         {#await waitingStubs}
         <div class="flex flex-1 my-auto place-content-center place-items-center flex-col grow ">
@@ -185,7 +264,7 @@ onMount(async () => {
             </div>
         </div>
         {:then res} 
-        <div class="h-112" 
+        <div class="h-112 " 
             bind:clientWidth={width} 
             bind:clientHeight={height}
         >
@@ -215,7 +294,10 @@ onMount(async () => {
             {/each}
         </Canvas>
         </div> 
-        <div class="form-control w-full max-w-xs">
+
+
+
+        <div class="form-control w-full max-w-xs pt-8">
             <label class="label">
               <span class="label-text">Color by</span>
               <span class="label-text-alt">{keyC == 'Timepoint' ? 'time' : 'expression'}</span>
@@ -237,8 +319,43 @@ onMount(async () => {
        
         {:catch error}
             whoops
-        {/await}        
-        
+        {/await}               
     </div>
+</div>
+</div>
+    <JellyContainer>
+        <div class='flex place-content-center pt-8'>
+
+            <div class="prose">
+                <h2>
+                    Cite us
+                </h2>
+                <div class="pb-4">
+                    A complete tutorial notebook can be found on 
+                    <a 
+                        class="link link-hover link-info"
+                        href="https://github.com/KrishnaswamyLab/TrajectoryNet/blob/master/notebooks/EmbryoidBody_TrajectoryInference.ipynb"
+                    >
+                        GitHub
+                    </a>
+                </div>
+                <div class="mockup-code bg-primary text-primary-content text-xs py-4">
+                    <style>
+                        pre {
+                            margin: 0px !important;
+                            padding: 0px !important;
+                        }
+                    </style>
+                    <pre><code >@inproceedings&lcub;tong2020trajectorynet,</code></pre>
+                    <pre data-prefix="  "  class="bg-info text-info-content"><code>title = &lcub;TrajectoryNet: A Dynamic Optimal Transport Network for Modeling Cellular Dynamics&rcub;,</code></pre>
+                    <pre data-prefix="  "><code>shorttitle = &lcub;TrajectoryNet&rcub;,</code></pre>
+                    <pre data-prefix="  "><code>booktitle = &lcub;Proceedings of the 37th International Conference on Machine Learning&rcub;,</code></pre>
+                    <pre data-prefix="  "><code>author = &lcub;Tong, Alexander and Huang, Jessie and Wolf, Guy and &lcub;van Dijk&rcub;, David and Krishnaswamy, Smita&rcub;,</code></pre>
+                    <pre data-prefix="  "><code>year = &lcub;2020&rcub;</code></pre>
+                    <pre><code>&rcub;</code></pre> 
+                </div>
+                
+            </div>
+        </div>
 </JellyContainer>
 {/if}
