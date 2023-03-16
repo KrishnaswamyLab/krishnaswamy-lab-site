@@ -118,7 +118,7 @@ const fetchStub = async (stub) => {
 const getStubs = async () => {
     await Promise.all(data.stubs.map(async stub => {   
         console.log(stub)    
-        await fetchStub(stub)        
+        // await fetchStub(stub)        
     }))
     return true
 }
@@ -323,39 +323,76 @@ import GitHubShield from '$lib/Shields/GitHub.svelte'
     </div>
 </div>
 </div>
-    <JellyContainer>
-        <div class='flex place-content-center pt-8'>
-
-            <div class="prose">
-                <h2>
-                    Cite us
-                </h2>
-                <div class="pb-4">
-                    A complete tutorial notebook can be found on 
-                    <a 
-                        class="link link-hover link-info"
-                        href="https://github.com/KrishnaswamyLab/TrajectoryNet/blob/master/notebooks/EmbryoidBody_TrajectoryInference.ipynb"
-                    >
-                        GitHub
-                    </a>
-                </div>
-                <div class="mockup-code bg-primary text-primary-content text-xs py-4">
-                    <style>
-                        pre {
-                            margin: 0px !important;
-                            padding: 0px !important;
-                        }
-                    </style>
-                    <pre><code >@inproceedings&lcub;tong2020trajectorynet,</code></pre>
-                    <pre data-prefix="  "  class="bg-info text-info-content"><code>title = &lcub;TrajectoryNet: A Dynamic Optimal Transport Network for Modeling Cellular Dynamics&rcub;,</code></pre>
-                    <pre data-prefix="  "><code>shorttitle = &lcub;TrajectoryNet&rcub;,</code></pre>
-                    <pre data-prefix="  "><code>booktitle = &lcub;Proceedings of the 37th International Conference on Machine Learning&rcub;,</code></pre>
-                    <pre data-prefix="  "><code>author = &lcub;Tong, Alexander and Huang, Jessie and Wolf, Guy and &lcub;van Dijk&rcub;, David and Krishnaswamy, Smita&rcub;,</code></pre>
-                    <pre data-prefix="  "><code>year = &lcub;2020&rcub;</code></pre>
-                    <pre><code>&rcub;</code></pre> 
+    <JellyContainer>        
+        <div class='flex place-content-center pt-8 w-full'>
+                <div class="prose w-full">
+                    <h2>
+                        Cite us
+                    </h2>
+                    <div class="pb-4">
+                        A complete tutorial notebook can be found on 
+                        <a 
+                            class="link link-hover link-info"
+                            href="https://github.com/KrishnaswamyLab/TrajectoryNet/blob/master/notebooks/EmbryoidBody_TrajectoryInference.ipynb"
+                        >
+                            GitHub
+                        </a>
+                    </div>                
+                    <div class="flex w-full overflow-x-scroll bg-base-300">
+                        <div class="flex flex-col w-full py-4 text-xs overflow-x-scroll ">
+                            <div class="px-4 whitespace-nowrap overflow-x-scroll">
+                                <p class="m-0">
+                                    @inproceedings&lcub;tong2020trajectorynet,
+                                </p>
+                                <p class="m-0 ml-4">
+                                    &nbsp;&nbsp;title = &lcub;TrajectoryNet: A Dynamic Optimal Transport Network for Modeling Cellular Dynamics&rcub;,
+                                </p>
+                                <p class="m-0 ml-4">
+                                    &nbsp;&nbsp;title = &lcub;TrajectoryNet: A Dynamic Optimal Transport Network for Modeling Cellular Dynamics&rcub;,
+                                </p>
+                                <p class="m-0 ml-4">
+                                    &nbsp;&nbsp;shorttitle = &lcub;TrajectoryNet&rcub;,
+                                </p>
+                                <p class="m-0 ml-4">
+                                    &nbsp;&nbsp;booktitle = &lcub;Proceedings of the 37th International Conference on Machine Learning&rcub;,
+                                </p>
+                                <p class="m-0 ml-4">
+                                    &nbsp;&nbsp;author = &lcub;Tong, Alexander and Huang, Jessie and Wolf, Guy and &lcub;van Dijk&rcub;, David and Krishnaswamy, Smita&rcub;,
+                                </p>
+                                <p class="m-0 ml-4">
+                                    &nbsp;&nbsp;year = &lcub;2020&rcub;
+                                </p>
+                                <p class="m-0">
+                                    &rcub; 
+                                </p>                    
+                            </div>                        
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="overflow-x-scroll max-w-full">
+                        <div class="w-full overflow-x-scroll flex">
+                            <div class="mockup-code bg-primary text-primary-content text-xs py-4">
+                                <style>
+                                    pre {
+                                        margin: 0px !important;
+                                        padding: 0px !important;
+                                    }
+                                </style>
+                                <pre><code >@inproceedings&lcub;tong2020trajectorynet,</code></pre>
+                                <pre data-prefix="  "  class=""><code>title = &lcub;TrajectoryNet: A Dynamic Optimal Transport Network for Modeling Cellular Dynamics&rcub;,</code></pre>
+                                <pre data-prefix="  "><code>shorttitle = &lcub;TrajectoryNet&rcub;,</code></pre>
+                                <pre data-prefix="  "><code>booktitle = &lcub;Proceedings of the 37th International Conference on Machine Learning&rcub;,</code></pre>
+                                <pre data-prefix="  "><code>author = &lcub;Tong, Alexander and Huang, Jessie and Wolf, Guy and &lcub;van Dijk&rcub;, David and Krishnaswamy, Smita&rcub;,</code></pre>
+                                <pre data-prefix="  "><code>year = &lcub;2020&rcub;</code></pre>
+                                <pre><code>&rcub;</code></pre> 
+                            </div>
+                        </div>
+                        
+                        
+                    </div> -->
                 </div>
                 
-            </div>
-        </div>
+            
+        </div>    
 </JellyContainer>
 {/if}
