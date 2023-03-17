@@ -118,7 +118,7 @@ const fetchStub = async (stub) => {
 const getStubs = async () => {
     await Promise.all(data.stubs.map(async stub => {   
         console.log(stub)    
-        // await fetchStub(stub)        
+        await fetchStub(stub)        
     }))
     return true
 }
