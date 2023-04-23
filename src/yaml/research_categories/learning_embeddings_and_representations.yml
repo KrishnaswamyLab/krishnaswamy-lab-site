@@ -1,4 +1,4 @@
-about: We learn representations of complex affinities by creating easy to represent spaces. We make these spaces amenable for downstream analysis and apply these procedures to challenges such as drug discovery and neuroscience.
+about: We learn representations of complex affinities by creating easy to represent spaces. We make these spaces amenable for downstream analysis and apply these procedures to challenges such as drug discovery and neuroscience. Often this includes construction of graphs and signal processing thereon to denoise, impute, and study our data.
 examples:
 - href: /projects/phate
   text: PHATE
