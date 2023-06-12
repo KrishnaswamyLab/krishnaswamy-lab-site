@@ -11,7 +11,7 @@
 			<p>
 				The Krishnaswamy Lab at Yale University.
 				<br/>
-				51 Prospect Street, AKW 204, New Haven, CT 06511
+				100 College Street, New Haven, CT 06510
 			</p>
 		</div> 
 		<div class="flex flex-col place-content-center place-items-center">
