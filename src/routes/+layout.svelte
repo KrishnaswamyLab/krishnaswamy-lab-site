@@ -9,8 +9,8 @@
 	
 	const routes: Links = [
 		{text: 'projects', href: '/projects'},
-		{text: 'workshop', href: '/workshop'},
 		{text: 'publications', href: '/publications'},
+		{text: 'workshop', href: '/workshop'},
 		{text: 'teaching', href: '/teaching'},
 		{text: 'members', href: '/members'},
 		{text: 'join', href: '/join'},
