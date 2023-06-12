@@ -16,6 +16,8 @@ export async function load({ }) {
     .sort(SortMemberByPI)
     .sort(SortMemberByName)
     .sort(SortMemberByImage)
+
+  
     
     
   return { members: sorted };
