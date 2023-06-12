@@ -12,11 +12,14 @@
     // import { Carousel , CarouselTransition } from 'flowbite-svelte'
     import Carousel from '$lib/Carousal/Carousal.svelte'
     const images = [
-        '/images/yale/2005_09_30_13-33-58_School_of_Medicine_Michael_Marsland.jpg',
+        // '/images/yale/2005_09_30_13-33-58_School_of_Medicine_Michael_Marsland.jpg',
+        '/images/yale/100_college_st.png',
         '/images/yale/lab_members_2019.jpeg',
-        '/images/yale/2012_10_16_16-55-33_DSC_0714a_Michael_Marsland.jpg',
+        // '/images/yale/2012_10_16_16-55-33_DSC_0714a_Michael_Marsland.jpg',
+        '/images/yale/durham_lab.png',
         '/images/yale/cold_spring_harbor_teaching_crew.png',
-        '/images/yale/2015_04_21_15_53_1_Michael_Marsland.jpg',
+        // '/images/yale/2015_04_21_15_53_1_Michael_Marsland.jpg',
+        '/images/yale/hillhouse.png',
         '/images/yale/lab_hackathon.png',
         '/images/yale/yale_innovation_summit.png',
         '/images/yale/lab_meeting.png'
