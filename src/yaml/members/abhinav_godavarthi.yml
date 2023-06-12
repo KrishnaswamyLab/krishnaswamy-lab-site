@@ -8,6 +8,7 @@ name:
   last: Godavarthi
   preferred: Abhinav
 name_str: Abhinav Godavarthi
+isAlum: true
 publications:
 - Multimodal Data Visualization and Denoising with Integrated Diffusion
 - Multiscale PHATE identifies multimodal signatures of COVID-19
