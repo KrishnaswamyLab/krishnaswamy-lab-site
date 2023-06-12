@@ -108,7 +108,7 @@
                         Website
                     </button>
                 {/if}
-                {#if member?.cv!==null} 
+                {#if member?.cv} 
                     <button class="btn btn-secondary btn-outline" on:click={toCv}>C.V.</button>
                 {/if}                
             </div>

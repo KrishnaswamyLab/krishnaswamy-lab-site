@@ -47,6 +47,7 @@
 		"flowbite": "^1.6.3",
 		"flowbite-svelte": "^0.30.6",
 		"layercake": "^7.2.2",
+		"lodash": "^4.17.21",
 		"regl": "^2.1.0",
 		"svelte-youtube-embed": "^0.1.8",
 		"vite-plugin-yaml2": "^1.1.5"

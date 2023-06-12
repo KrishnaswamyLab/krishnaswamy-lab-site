@@ -1,0 +1,10 @@
+about: 'Arman Afrasiyabi is a postdoctoral associate at Yale University in the Krishnaswamy Lab. He is interested in the development of representation learning algorithms designed to process multi-modal data, specifically those requiring minimal to no supervision. In 2022, Arman received his Ph.D. from Université Laval & Mila-Montréal Canada, where he concentrated on research in meta-learning representations. During his spare time, he enjoys hiking and playing soccer.'
+image: /images/members/arman_afrasiyabi.jpg
+name:
+  first: Arman
+  last: Afrasiyabi
+  preferred: Arman
+name_str: Arman Afrasiyabi
+title: PhD
+website: https://armanafrasiyabi.github.io/
+status: postdoc

@@ -1,3 +1,5 @@
+about: 'Holly is a postdoctoral fellow in Genetics and Human Translational Immunology at Yale School of Medicine. Her research is focused on geometric deep learning for various kind of biomedical data to identify cellular populations, gene expression patterns, and metabolic programs operative in different biological processes. Applications include predicting metabolic activity of cells using deep learning on biochemical networks represented as directed graphs and geometric feature extraction and interpretation on point clouds constructed from single-cell gene expression data.
+She holds a PhD in Immunobiology from Yale where she studied metabolic regulation of immunity advised by Drs. Richard Flavell and Joe Craft as an NSF GRFP fellow, prior to which she spent 1 year working with Dr. Marion Pepper in UW Immunology and 2 years working with Dr. Justin Taylor at Fred Hutch Cancer Research Center. As an undergraduate at University of Washington she initially majored in English where she became interested in philosophy of science and the evolving reciprocal relationship between scientific rationality and culture. This ultimately led her to change majors and complete a B.S. in molecular, cell, and developmental biology, however her research interests continue to be motivated by interdisciplinary context and implications.'
 name:
   first: Holly
   last: Steach
@@ -5,3 +7,5 @@ name:
 name_str: Holly Steach
 publications: []
 title: PhD
+status: postdoc
+image: /images/members/holly_steach.jpeg

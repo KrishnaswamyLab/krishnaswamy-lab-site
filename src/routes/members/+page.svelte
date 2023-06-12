@@ -6,8 +6,12 @@ import MemberInfo from '$lib/MemberInfo.svelte';
 import JellyContainer from '$lib/Layout/JellyContainer.svelte';
 import TextHero from '$lib/Layout/Hero/TextHero.svelte';
 
+import _ from 'lodash'
+// console.log('members', _.groupBy(sorted, 'status')) 
+
 $: past = data?.members.filter(({isAlum})=>isAlum)
 $: curr = data?.members.filter(({isAlum})=>!isAlum)
+$: groups = _.groupBy(curr, 'status')
 
 import Hero from '$lib/Layout/Hero/Hero.svelte';
 const useStickyTextHero = false;
@@ -21,6 +25,45 @@ let animate = false
 onMount(() => {
     animate = true
 })
+
+const adjustGroup = (group) => {
+    switch (group) {
+        case 'PI':
+            return 'Principal Investigator'
+            break;
+        case 'postdoc':
+            return 'Postdoctoral Fellows'
+            break;
+        case 'PhD Student':
+            return 'PhD Students'
+            break;
+        case 'undergraduate':
+            return 'Undergraduate Students'
+            break;
+        case 'Masters Student':
+            return 'Masters Students'
+            break;
+        case 'Undergraduate Student':
+            return 'Undergraduate Students'
+            break;
+        case 'Research Assistant':
+            return 'Research Assistants'
+            break;
+        case 'Research Associate':
+            return 'Research Associates'
+            break;
+        default:
+            'Members'
+            break
+    }
+}
+
+const groupOrder = [
+    'PI', 
+    'postdoc', 
+    'PhD Student', 
+    'undergraduate',
+]
 
 import TwitterSEO from '$lib/SEO/Twitter.svelte'
 import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
@@ -40,9 +83,9 @@ import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
 
 {#if animate}
 <JellyContainer>
-    {#await curr}
+    {#await groups}
         Loading Members...
-    {:then members}
+    {:then results}
         <div in:fly={{y:200, delay: 100, duration: 1500}} >
             <TextHero 
                 class="{useStickyTextHero ? stickyClasses : ''}"
@@ -51,14 +94,27 @@ import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
             </TextHero>
         </div>
         <div class="my-4 py-4">
-        {#each members as member, i }
-            {#if member?.about}
-                <MemberInfo 
-                    {member} {useStickyTextHero}
-                    delay={i * 100}
-                    showDivider={i < curr.length - 1}
-                />   
-            {/if}             
+        {#each groupOrder as group, g}
+        {@const members = results[group]}
+            <div class="my-4 py-4">         
+                <div in:fly={{y:200, delay: 0, duration: 1500}} >
+                    <TextHero class="py-0 pt-0">
+                        <div slot="tagline" class="py-0 pt-0">
+                        {adjustGroup(group)}
+                        </div>
+                    </TextHero>
+
+                    {#each members as member, i }
+                        {#if member?.about}
+                            <MemberInfo 
+                                {member} {useStickyTextHero}
+                                delay={i * 100}
+                                showDivider={i < curr.length - 1}
+                            />   
+                        {/if}             
+                    {/each}
+                </div>
+            </div>
         {/each}
         </div>
     {:catch error}
