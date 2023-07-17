@@ -1,0 +1,7 @@
+# In the realm of Multiscale Graph Signal Processing, we leverage intricate data relationships by utilizing graph theory. This enables us to dissect complex signals across various scales and dimensions, helping to uncover hidden patterns. Our focus is on the robust analysis of signals on graphs across multiple scales, which is integral to diverse fields such as computational biology, network science, and social sciences. This often involves the design of innovative multiscale frameworks and tools for graph signal processing, with applications spanning anomaly detection, community detection, and graph visualization.
+about: >
+  We explore Multiscale Graph Signal Processing, applying graph theory to dissect complex signals across various scales. We design innovative tools for robust signal analysis, aiding in anomaly detection, community detection, and graph visualization.
+
+image: /images/heroes/geometric_2.png
+title: Multiscale Graph Signal Processing
+sort: 4

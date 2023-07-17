@@ -1,0 +1,21 @@
+#   The methodology employed for data acquisition can itself limit insights that be gleaned.
+  # For example the static snapshots of data for an otherwise continuous process.
+  # We specialize in characterizing data representations to provide more holistic analyses 
+  # e.g. constructing a singular representation of these static snapshots that temporally respects the entire process and leveraging optimal transport (OT) across applications to learn distributions. 
+  # As such OT provides the means through which we can understand data dynamics.
+
+about: >
+  The data acquisition method can restrict insights gained, such as static snapshots hindering analysis of continuous processes. We specializatize in characterizing data representations, constructing a unified representation of static snapshots respecting the entire process, and leveraging optimal transport (OT) for understanding data dynamics.
+image: /images/heroes/geometric_8.jpg
+
+title: Dynamics and Optimal Transport
+
+examples:
+- href: /projects/mioflow
+  text: MIOFlow
+- href: /projects/trajectory_net
+  text: TrajectoryNet
+- href: /projects/dymon
+  text: DyMoN
+
+sort: 3
