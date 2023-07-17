@@ -1,0 +1,10 @@
+about: 'Rahul is a postdoc in Computer Science Department and a Wu Tsai Postdoctoral Fellow. He is also associated with the Brain Function Laboratory at Yale School of Medicine. His research interests are in the areas of signal processing, graph neural networks, and machine learning applications in bioinformatics and neuroscience. He received is PhD in Machine Learning from Georgia Institute of Technology in 2023. During his PhD, he worked on various topics including signed graph neural networks, collective graphical models, optimal transport, and distributional reinforcement learning.'
+image: /images/members/rahul_singh.jpeg
+name:
+  first: Rahul
+  last: Singh
+  preferred: Rahul
+name_str: Rahul Singh
+title: PhD
+status: postdoc
+website: https://rahulsinghchandraul.github.io
