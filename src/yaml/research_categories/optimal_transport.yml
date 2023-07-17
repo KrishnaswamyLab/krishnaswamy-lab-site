@@ -1,5 +1,0 @@
-about: We leverage optimal transport (OT) across applications to learn distributions. These can be either native to the data or that which we derived. As such OT provides the means through which we can understand data by moving between representations.
-examples:
-image: /images/heroes/geometric_8.jpg
-title: Optimal Transport
-sort: 4
