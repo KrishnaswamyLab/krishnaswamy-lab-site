@@ -46,6 +46,8 @@ const adjustGroup = (group) => {
         case 'Undergraduate Student':
             return 'Undergraduate Students'
             break;
+        case 'Associate Research Scientist':
+            return 'Research Associates'
         case 'Research Assistant':
             return 'Research Assistants'
             break;
@@ -60,6 +62,7 @@ const adjustGroup = (group) => {
 
 const groupOrder = [
     'PI', 
+    'Associate Research Scientist',
     'postdoc', 
     'PhD Student', 
     'undergraduate',
@@ -96,9 +99,9 @@ import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
         <div class="my-4 py-4">
         {#each groupOrder as group, g}
         {@const members = results[group]}
-            <div class="my-4 py-4">         
+            <div class="">
                 <div in:fly={{y:200, delay: 0, duration: 1500}} >
-                    <TextHero class="py-0 pt-0">
+                    <TextHero class="py-0 mt-4 pt-4">
                         <div slot="tagline" class="py-0 pt-0">
                         {adjustGroup(group)}
                         </div>
