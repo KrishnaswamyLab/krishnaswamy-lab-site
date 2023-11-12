@@ -40,24 +40,19 @@ import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
         <div class="divider divider-vertical"></div>
     
         <p class="py-8 text-2xl md:text-3xl font-extralight text-center">
-            Postdoctoral Positions in Machine Learning for Biomedical Data at Yale
+            Postdoctoral Position in ML and Neuroscience
         </p>
 
         <div class="flex place-content-center pt-8 text-left">
             <div class="text-slate-700 leading-relaxed ">
                 <p class="my-4">
-                    The Krishnaswamy Laboratory at Yale University is recruiting senior scientist / postdoctoral researchers with a background in machine learning, deep learning, applied math or signal processing.  Our group is jointly affiliated with the Department of Genetics in the Yale School of Medicine and the Department of Computer Science in School of Engineering and Applied Sciences. Our group is also affiliated with the the Program in Applied Math, the Yale Institute for Network Science, Yale Cancer Center, and the Yale Center for Biomedical Data Science.
+                    The Colon-Ramos and Krishnaswamy Labs are searching for a joint postdoctoral fellow or research associate to develop novel mathematical and computational methods to problems in connectomic discovery and understanding in neuroscience. Connectomic datasets, describing the connectivity and network structure of neurons have expanded tremendously over the past years and hold the promise of providing detailed maps of brain wiring and rewiring during learning, memory formation or disease. Connectomics datasets are multidimensional and complex and require new methods for understanding the topology, geometry, dynamics and generative principles of their organization.
                 </p>
                 <p class="my-4">
-                    The focus of our group is developing machine learning and applied mathematical techniques for extracting structure and patterns in high-dimensional and high-throughput biomedical data. Our recent projects include algorithms for: data denoising (Cell 2018), data generation (NeurIPS 2018), deep learning-based manifold alignment (ICML 2018), data visualization, and developing software for single cell analysis. The projects in the lab tend to be flexible, seeking computationally novel solutions to new problems that are motivated by the explosion of new biomedical measurement technologies and collected patient data. As such we work with data from many disciplines, including genomics, electronic health records, and neuro-imaging.
+                    The postdoctoral fellow should have expertise in machine learning method development, with preference for those with interests in utilizing fundamentals from network science, graph signal processing, and geometric deep learning to these problems. The postdoc will be embedded in the Colón-Ramos laboratory, who are experts in the architecture of neurons and the nervous system. This will expose the postdoc to biological datasets that would benefit from implementation of machine learning approaches. The postdoc will be co-mentored by Smita Krishnaswamy, an expert Machine Learning for scientific discovery. These labs are collaborating in the use the C. elegans connectome to develop and apply new machine learning approaches in the examination of neuronal relationships in connectomes. Applying these approaches to the relatively small nervous system of the nematode C. elegans enables establishment of verifiable ground truths to the methodologies, while elucidating principles of connectivity that are relevant for other nervous systems.
+                <p class="my-4"> 
+                    The postdoc will also be part of the stimulating environment of the new Wu Tsai Institute, which fosters collaborations between data scientists and biologists towards generating fundamental understanding that explains human cognition.
                 </p>
-                <p class="my-4">
-                    The lab maintains active collaborations with research groups in the Departments of Immunology, Neuroscience, Genetics, Neurology, Radiation Oncology, and Endocrinology as well as outside institutions like Weill Cornell and the Salk Institute. Our group publishes in top-tier computational venues (such as NeurIPS and ICML) and biomedical journals (such as Cell and Nature family journals).
-                </p>
-                <p class="my-4">
-                    Candidates who apply should have a Ph.D. in Computer Science, Electrical Engineering, Applied Mathematics or related field. Prior experience in biological research is not required, but interest in collaborating with biologists and physicians is essential.
-                </p>
-                
                 <p class="my-4">
                     To apply, please contact 
                     <a class="link link-hover" href="mailto:smita.krishnaswamy@yale.edu">
