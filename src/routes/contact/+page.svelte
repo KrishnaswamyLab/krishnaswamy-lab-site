@@ -47,19 +47,19 @@ const contactSquares = [
 
 const departments = [
     {
-        dept: 'Genetics Department',
-        school: 'Yale School of Medicine',
-        street: '333 Cedar Street',
-        room: 'SHM I-336A',
+        dept: 'Wu-Tsai Institute',
+        school: 'Center for Neurocomputation and Machine Intelligence',
+        street: '100 College Street',
+        room: '#1127',
         city: 'New Haven',
         state: 'CT',
-        zip: '06520',
+        zip: '06511',
     },
     {
         dept: 'Computer Science Department',
         school: 'Yale School of Applied Science and Engineering',
-        street: '10 Hillhouse Avenue',
-        room: 'DL 227',
+        street: '17 Hillhouse Avenue',
+        room: '#323',
         city: 'New Haven',
         state: 'CT',
         zip: '06511',
