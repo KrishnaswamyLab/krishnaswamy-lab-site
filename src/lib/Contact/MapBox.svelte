@@ -12,8 +12,10 @@
     
     let zoom = 14
     
-    const lat = 41.303190
-    const lng = -72.933910
+    // const lat = 41.303190
+    // const lng = -72.933910
+    const lat = 41.304215
+    const lng = -72.9317535
     
     $: center = {lat, lng}
     
