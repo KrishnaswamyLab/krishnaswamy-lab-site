@@ -44,7 +44,6 @@ import OpenGraphSEO from '$lib/SEO/OpenGraph.svelte'
             <div class="text-slate-700 leading-relaxed ">
                 <p class="my-4">
                     The Krishnaswamy and Murat Gunel labs are jointly looking for talented postdocs who are interested in the intersection of deep learning, neuroscience, psychology and neuromodulation. Our projects involve 1) creating foundation models for decoding brain signals (from EEG, MEG, fMRI and intracranial recordings) into speech, text, and images, as well as 2) creating dynamic models of brain activity during various tasks in both neurotypical and atypical individuals. We envision these projects to have joint impact in AI, neuroscience, and clinical treatment of individuals with conditions such as autism, Angelman syndrome and epilepsy. 
-                </p>
                 <p class="my-4">
                     Candidates should hold a Ph.D. in computer science, applied math, computational neuroscience or related field. Extensive experience building deep neural network models is essential. Familiarity with large language models and/or dynamics modeling is desired. Experience with neuroscientific data is a bonus. Postdocs will work as part of an interdisciplinary team of researchers consisting of computer scientists, neurosurgeons, psychologists, and biomedical engineers on applications that will lead to novel non-invasive BCI and other treatments for patients in the conditions mentioned above.  
                 </p>
